@@ -1,32 +1,23 @@
-package com.sena.test.entity;
-
-import jakarta.persistence.*;
-
 @Entity
-@Table(name = "products")
+@Table(name = "product")
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nombre;
-    private Double precio;
+    private String name;
+    private Double price;
 
-    public Product() {}
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 
-    public Product(Long id, String nombre, Double precio) {
-        this.id = id;
-        this.nombre = nombre;
-        this.precio = precio;
-    }
+    @ManyToOne
+    @JoinColumn(name = "supplier_id")
+    private Supplier supplier;
 
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    private Boolean status = true;
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
-
-    public Double getPrecio() { return precio; }
-    public void setPrecio(Double precio) { this.precio = precio; }
+    // Getters y Setters...
 }

@@ -146,3 +146,7 @@ Confirmar que la información realmente llega a la base de datos MySQL.
 ### Flujo de Gestión y Entrega (Cafetería)
 
 ![BPMN Gestión Entrega](img/bpmn_gestion.png)
+ sesion dos /////--------------------------------------------------------------------------------------------------
+En esta nueva versión del proyecto, se ha realizado una reestructuración profunda de
+la base de datos para cumplir con los estándares de Seguridad RBAC, Gestión de Inventarios 
+y Facturación Automatizada. Se pasó de un modelo básico a uno de nivel empresarial con 23 entidades interconectadas.

@@ -1,37 +1,32 @@
-package com.sena.test.entity;
-
-import jakarta.persistence.*;
-
 @Entity
-@Table(name = "persons")
+@Table(name = "person")
+@Data
 public class Person {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nombre;
-    private String apellido;
-    private String tipoUsuario; // aprendiz, instructor, visitante
+    @Column(name = "first_name")
+    private String firstName;
 
-    public Person() {}
+    @Column(name = "last_name")
+    private String lastName;
 
-    public Person(Long id, String nombre, String apellido, String tipoUsuario) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.tipoUsuario = tipoUsuario;
-    }
+    @Column(unique = true)
+    private String email;
 
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    @Column(name = "tipo_usuario")
+    private String tipoUsuario;
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    // RELACIÓN: Muchas personas tienen un mismo Tipo de Documento
+    @ManyToOne
+    @JoinColumn(name = "type_document_id")
+    private TypeDocument typeDocument;
 
-    public String getApellido() { return apellido; }
-    public void setApellido(String apellido) { this.apellido = apellido; }
+    // RELACIÓN: Muchas personas pertenecen a una misma Ficha
+    @ManyToOne
+    @JoinColumn(name = "ficha_id")
+    private Ficha ficha;
 
-    public String getTipoUsuario() { return tipoUsuario; }
-    public void setTipoUsuario(String tipoUsuario) { this.tipoUsuario = tipoUsuario; }
+    private Boolean status = true;
 }
