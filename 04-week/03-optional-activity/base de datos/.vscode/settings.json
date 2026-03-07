@@ -1,0 +1,26 @@
+{
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 15432,
+            "driver": "PostgreSQL",
+            "name": "coffe-postgres",
+            "database": "coffee-shop",
+            "username": "user",
+            "password": "Nicolas123."
+        },
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 15432,
+            "driver": "PostgreSQL",
+            "name": "coffee-postgres",
+            "database": "coffee-shop",
+            "username": "user",
+            "password": "Nicolas123."
+        }
+    ]
+}
