@@ -1,11 +1,15 @@
-version: '3.8'
 services:
   db:
-    image: mysql:8.0
-    container_name: mysql_cafetin
+    image: postgres:latest
+    container_name: postgres_cafetin
     environment:
-      # Aquí defines la contraseña y el nombre de la BD
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: cafetin
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=sena_adso
+      - POSTGRES_DB=cafetin_sena
     ports:
-      - "3306:3306"
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:

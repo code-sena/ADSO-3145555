@@ -1,106 +1,125 @@
-DROP DATABASE IF EXISTS `coffee-shop`;
-CREATE DATABASE `coffee-shop`;
-USE `coffee-shop`;
+DROP DATABASE IF EXISTS `coffee_shop`;
+CREATE DATABASE `coffee_shop`;
+USE `coffee_shop`;
 
-
+-- ===============================
 -- MODULO 2: PARÁMETROS
+-- ===============================
+
 CREATE TABLE type_document (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     code VARCHAR(10) UNIQUE NOT NULL,
     name VARCHAR(50) NOT NULL,
     status BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMPTZ DEFAULT NOW(),
-    updated_at TIMESTAMPTZ,
-    deleted_at TIMESTAMPTZ
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME,
+    deleted_at DATETIME
 );
 
 CREATE TABLE ficha (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     code VARCHAR(20) UNIQUE NOT NULL,
     name VARCHAR(100) NOT NULL,
     status BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMPTZ DEFAULT NOW()
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE person (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     phone VARCHAR(20),
     tipo_usuario VARCHAR(50),
-    type_document_id INT REFERENCES type_document(id),
-    ficha_id INT REFERENCES ficha(id),
+    type_document_id INT,
+    ficha_id INT,
     status BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMPTZ DEFAULT NOW()
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (type_document_id) REFERENCES type_document(id),
+    FOREIGN KEY (ficha_id) REFERENCES ficha(id)
 );
 
--- MODULO 1: SEGURIDAD (RBAC)
+-- ===============================
+-- MODULO 1: SEGURIDAD
+-- ===============================
+
 CREATE TABLE role (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) UNIQUE NOT NULL,
     status BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMPTZ DEFAULT NOW()
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE role_hierarchy (
-    id SERIAL PRIMARY KEY,
-    parent_role_id INT REFERENCES role(id),
-    child_role_id INT REFERENCES role(id)
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    parent_role_id INT,
+    child_role_id INT,
+    FOREIGN KEY (parent_role_id) REFERENCES role(id),
+    FOREIGN KEY (child_role_id) REFERENCES role(id)
 );
 
 CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
-    person_id INT REFERENCES person(id),
+    person_id INT,
     status BOOLEAN DEFAULT TRUE,
-    created_at TIMESTAMPTZ DEFAULT NOW()
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (person_id) REFERENCES person(id)
 );
 
 CREATE TABLE user_role (
-    id SERIAL PRIMARY KEY,
-    user_id INT REFERENCES users(id),
-    role_id INT REFERENCES role(id),
-    status BOOLEAN DEFAULT TRUE
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    role_id INT,
+    status BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (role_id) REFERENCES role(id)
 );
 
 CREATE TABLE module (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) UNIQUE NOT NULL,
     status BOOLEAN DEFAULT TRUE
 );
 
 CREATE TABLE view (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     route VARCHAR(100) NOT NULL,
     status BOOLEAN DEFAULT TRUE
 );
 
 CREATE TABLE role_module (
-    id SERIAL PRIMARY KEY,
-    role_id INT REFERENCES role(id),
-    module_id INT REFERENCES module(id),
-    status BOOLEAN DEFAULT TRUE
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    role_id INT,
+    module_id INT,
+    status BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (role_id) REFERENCES role(id),
+    FOREIGN KEY (module_id) REFERENCES module(id)
 );
 
 CREATE TABLE module_view (
-    id SERIAL PRIMARY KEY,
-    module_id INT REFERENCES module(id),
-    view_id INT REFERENCES view(id),
-    status BOOLEAN DEFAULT TRUE
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    module_id INT,
+    view_id INT,
+    status BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (module_id) REFERENCES module(id),
+    FOREIGN KEY (view_id) REFERENCES view(id)
 );
 
+-- ===============================
 -- MODULO 3: INVENTARIO
+-- ===============================
+
 CREATE TABLE category (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     status BOOLEAN DEFAULT TRUE
 );
 
 CREATE TABLE supplier (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     contact_name VARCHAR(100),
     phone VARCHAR(20),
@@ -108,88 +127,110 @@ CREATE TABLE supplier (
 );
 
 CREATE TABLE product (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     price DECIMAL(10,2) NOT NULL,
-    category_id INT REFERENCES category(id),
-    supplier_id INT REFERENCES supplier(id),
-    status BOOLEAN DEFAULT TRUE
+    category_id INT,
+    supplier_id INT,
+    status BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (category_id) REFERENCES category(id),
+    FOREIGN KEY (supplier_id) REFERENCES supplier(id)
 );
 
 CREATE TABLE inventory (
-    id SERIAL PRIMARY KEY,
-    product_id INT REFERENCES product(id),
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    product_id INT,
     stock_actual INT NOT NULL DEFAULT 0,
     stock_minimo INT DEFAULT 5,
-    last_update TIMESTAMPTZ DEFAULT NOW()
+    last_update DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (product_id) REFERENCES product(id)
 );
 
+-- ===============================
 -- MODULO 4: VENTAS
+-- ===============================
+
 CREATE TABLE customer (
-    id SERIAL PRIMARY KEY,
-    person_id INT REFERENCES person(id),
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    person_id INT,
     points INT DEFAULT 0,
-    status BOOLEAN DEFAULT TRUE
+    status BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (person_id) REFERENCES person(id)
 );
 
 CREATE TABLE method_payment (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     status BOOLEAN DEFAULT TRUE
 );
 
 CREATE TABLE orders (
-    id SERIAL PRIMARY KEY,
-    user_id INT REFERENCES users(id),
-    customer_id INT REFERENCES customer(id),
-    order_date TIMESTAMPTZ DEFAULT NOW(),
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    customer_id INT,
+    order_date DATETIME DEFAULT CURRENT_TIMESTAMP,
     total DECIMAL(10,2) DEFAULT 0,
-    status VARCHAR(20) DEFAULT 'PENDIENTE'
+    status VARCHAR(20) DEFAULT 'PENDIENTE',
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (customer_id) REFERENCES customer(id)
 );
 
 CREATE TABLE order_item (
-    id SERIAL PRIMARY KEY,
-    order_id INT REFERENCES orders(id),
-    product_id INT REFERENCES product(id),
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT,
+    product_id INT,
     quantity INT NOT NULL,
-    price_at_time DECIMAL(10,2) NOT NULL
+    price_at_time DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES orders(id),
+    FOREIGN KEY (product_id) REFERENCES product(id)
 );
 
+-- ===============================
 -- MODULO 5: FACTURACIÓN
+-- ===============================
+
 CREATE TABLE invoice (
-    id SERIAL PRIMARY KEY,
-    order_id INT REFERENCES orders(id),
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT,
     invoice_number VARCHAR(20) UNIQUE,
     total DECIMAL(10,2),
     pago_con DECIMAL(10,2),
     cambio DECIMAL(10,2),
-    created_at TIMESTAMPTZ DEFAULT NOW()
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (order_id) REFERENCES orders(id)
 );
 
 CREATE TABLE invoice_item (
-    id SERIAL PRIMARY KEY,
-    invoice_id INT REFERENCES invoice(id),
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    invoice_id INT,
     product_name VARCHAR(100),
     quantity INT,
-    price DECIMAL(10,2)
+    price DECIMAL(10,2),
+    FOREIGN KEY (invoice_id) REFERENCES invoice(id)
 );
 
 CREATE TABLE payment (
-    id SERIAL PRIMARY KEY,
-    invoice_id INT REFERENCES invoice(id),
-    method_payment_id INT REFERENCES method_payment(id),
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    invoice_id INT,
+    method_payment_id INT,
     amount DECIMAL(10,2),
-    payment_date TIMESTAMPTZ DEFAULT NOW()
+    payment_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (invoice_id) REFERENCES invoice(id),
+    FOREIGN KEY (method_payment_id) REFERENCES method_payment(id)
 );
 
+-- ===============================
 -- AUDITORÍA
+-- ===============================
+
 CREATE TABLE audit_log (
-    id SERIAL PRIMARY KEY,
-    user_id INT REFERENCES users(id),
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
     action VARCHAR(255),
     table_name VARCHAR(50),
     description TEXT,
-    created_at TIMESTAMPTZ DEFAULT NOW()
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
 -- =============================================================

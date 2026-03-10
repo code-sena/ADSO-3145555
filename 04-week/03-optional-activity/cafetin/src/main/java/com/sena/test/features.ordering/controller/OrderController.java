@@ -15,10 +15,6 @@ public class OrderController {
 
     @PostMapping
     public Order crear(@RequestBody Order order) {
-        // Lógica automática para evitar errores del personal del Sena:
-        if (order.getPagoCon() != null && order.getTotal() != null) {
-            order.setCambio(order.getPagoCon() - order.getTotal());
-        }
         return orderService.crearPedido(order);
     }
 
