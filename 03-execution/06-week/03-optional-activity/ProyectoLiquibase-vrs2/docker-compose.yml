@@ -34,7 +34,7 @@ services:
     container_name: liquibase_zoo
     depends_on:
       db:
-        condition: service_healthy     # espera que Postgres esté listo
+        condition: service_healthy
     volumes:
       - .:/liquibase/changelog
       - ./lib:/liquibase/lib
@@ -45,6 +45,7 @@ services:
       --password=${DB_PASSWORD:-changeme_en_produccion}
       --driver=org.postgresql.Driver
       --classpath=/liquibase/lib/postgresql-42.7.10.jar
+      --search-path=/liquibase/changelog
       update
 
 volumes:
