@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
 
-    <changeSet id="dml-002-seed-especies" author="emily">
+    <changeSet id="dml-002-seed-especies" author="emily" context="dev">
         <comment>Datos iniciales: catálogo de especies animales con clasificación UICN</comment>
 
         <!-- Felinos -->

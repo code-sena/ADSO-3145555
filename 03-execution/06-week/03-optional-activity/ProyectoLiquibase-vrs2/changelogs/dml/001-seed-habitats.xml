@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
 
-    <changeSet id="dml-001-seed-habitats" author="emily">
+    <changeSet id="dml-001-seed-habitats" author="emily" context="dev">
         <comment>Datos iniciales: hábitats del zoológico</comment>
 
         <insert tableName="habitats">

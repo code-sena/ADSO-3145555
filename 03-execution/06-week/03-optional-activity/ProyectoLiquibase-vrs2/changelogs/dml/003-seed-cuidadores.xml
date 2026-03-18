@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
 
-    <changeSet id="dml-003-seed-cuidadores" author="emily">
+    <changeSet id="dml-003-seed-cuidadores" author="emily" context="dev">
         <comment>Datos iniciales: personal cuidador del zoológico</comment>
 
         <insert tableName="cuidadores">

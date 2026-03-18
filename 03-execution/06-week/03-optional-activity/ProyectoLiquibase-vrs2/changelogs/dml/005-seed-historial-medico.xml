@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
 
-    <changeSet id="dml-005-seed-historial-medico" author="emily">
+    <changeSet id="dml-005-seed-historial-medico" author="emily" context="dev">
         <comment>Datos iniciales: revisiones veterinarias de los animales</comment>
 
         <!-- Simba (animal_id=1) -->
