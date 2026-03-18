@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="dml-005-seed-historial-medico" author="emily">
+        <comment>Datos iniciales: revisiones veterinarias de los animales</comment>
+
+        <!-- Simba (animal_id=1) -->
+        <insert tableName="historial_medico">
+            <column name="animal_id"           valueNumeric="1"/>
+            <column name="veterinario_nombre"  value="Dra. Patricia Nieto"/>
+            <column name="fecha_revision"      valueDate="2026-01-10"/>
+            <column name="tipo_revision"       value="Preventiva"/>
+            <column name="diagnostico"         value="Salud excelente. Pelaje en buen estado. Sin señales de parásitos internos."/>
+            <column name="medicamento"         value="Ninguno"/>
+            <column name="dosis"               value="N/A"/>
+            <column name="proxima_revision"    valueDate="2026-07-10"/>
+            <column name="peso_registrado_kg"  valueNumeric="190.50"/>
+        </insert>
+
+        <!-- Nala (animal_id=2) -->
+        <insert tableName="historial_medico">
+            <column name="animal_id"           valueNumeric="2"/>
+            <column name="veterinario_nombre"  value="Dra. Patricia Nieto"/>
+            <column name="fecha_revision"      valueDate="2026-01-10"/>
+            <column name="tipo_revision"       value="Preventiva"/>
+            <column name="diagnostico"         value="Estado estable. Leve pérdida de apetito observada en las últimas 2 semanas."/>
+            <column name="medicamento"         value="Vitamina B12 + Hierro"/>
+            <column name="dosis"               value="2ml IM cada 72 horas por 2 semanas"/>
+            <column name="proxima_revision"    valueDate="2026-04-01"/>
+            <column name="peso_registrado_kg"  valueNumeric="130.00"/>
+        </insert>
+
+        <!-- Arjun (animal_id=3) -->
+        <insert tableName="historial_medico">
+            <column name="animal_id"           valueNumeric="3"/>
+            <column name="veterinario_nombre"  value="Dr. Hernán Suárez"/>
+            <column name="fecha_revision"      valueDate="2026-02-15"/>
+            <column name="tipo_revision"       value="Vacunación"/>
+            <column name="diagnostico"         value="Sin novedad clínica. Se aplicó refuerzo de vacuna antirrábica."/>
+            <column name="medicamento"         value="Vacuna antirrábica (Nobivac Rabies)"/>
+            <column name="dosis"               value="1 dosis SC"/>
+            <column name="proxima_revision"    valueDate="2027-02-15"/>
+            <column name="peso_registrado_kg"  valueNumeric="220.80"/>
+        </insert>
+
+        <!-- Ukuku (animal_id=8) — en tratamiento -->
+        <insert tableName="historial_medico">
+            <column name="animal_id"           valueNumeric="8"/>
+            <column name="veterinario_nombre"  value="Dr. Hernán Suárez"/>
+            <column name="fecha_revision"      valueDate="2026-03-01"/>
+            <column name="tipo_revision"       value="Urgencia"/>
+            <column name="diagnostico"         value="Infección gastrointestinal moderada con deshidratación leve. Se inicia fluidoterapia."/>
+            <column name="medicamento"         value="Metronidazol + Suero Ringer Lactato"/>
+            <column name="dosis"               value="Metronidazol 15mg/kg cada 12h VO. Suero 500ml SC cada 24h"/>
+            <column name="proxima_revision"    valueDate="2026-03-22"/>
+            <column name="peso_registrado_kg"  valueNumeric="138.50"/>
+        </insert>
+
+        <rollback>
+            <delete tableName="historial_medico">
+                <where>animal_id IN (1,2,3,8)</where>
+            </delete>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

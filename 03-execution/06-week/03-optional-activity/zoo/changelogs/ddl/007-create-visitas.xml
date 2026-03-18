@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!--
+        Tabla: visitas
+        Registro de entradas de visitantes al zoológico por día.
+    -->
+    <changeSet id="ddl-007-create-visitas" author="emily">
+        <comment>Crea la tabla de registro de visitas al zoológico</comment>
+
+        <createTable tableName="visitas" remarks="Afluencia de visitantes al zoológico por fecha">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="pk_visitas" nullable="false"/>
+            </column>
+            <column name="fecha" type="DATE" remarks="Fecha de la visita">
+                <constraints nullable="false" unique="true" uniqueConstraintName="uq_visitas_fecha"/>
+            </column>
+            <column name="total_visitantes" type="INT" remarks="Número total de visitantes ese día">
+                <constraints nullable="false"/>
+            </column>
+            <column name="visitantes_adultos" type="INT" defaultValueNumeric="0"/>
+            <column name="visitantes_menores" type="INT" defaultValueNumeric="0"/>
+            <column name="ingresos_cop" type="NUMERIC(15,2)" remarks="Ingresos totales del día en COP"/>
+            <column name="created_at" type="TIMESTAMP" defaultValueComputed="NOW()">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <sql>
+            ALTER TABLE visitas
+            ADD CONSTRAINT chk_visitas_total
+                CHECK (total_visitantes >= 0);
+            ALTER TABLE visitas
+            ADD CONSTRAINT chk_visitas_suma
+                CHECK (visitantes_adultos + visitantes_menores = total_visitantes OR total_visitantes = 0);
+        </sql>
+
+        <rollback>
+            <dropTable tableName="visitas"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

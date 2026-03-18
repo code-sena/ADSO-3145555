@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="dml-004-seed-animales" author="emily">
+        <comment>Datos iniciales: animales del zoológico con datos completos</comment>
+
+        <!-- Leonas y leones (especie_id=1, habitat_id=1 Sabana, cuidador_id=1 Ramiro) -->
+        <insert tableName="animales">
+            <column name="nombre"            value="Simba"/>
+            <column name="especie_id"        valueNumeric="1"/>
+            <column name="habitat_id"        valueNumeric="1"/>
+            <column name="cuidador_id"       valueNumeric="1"/>
+            <column name="fecha_nacimiento"  valueDate="2018-05-12"/>
+            <column name="sexo"              value="M"/>
+            <column name="peso_kg"           valueNumeric="190.50"/>
+            <column name="estado_salud"      value="Excelente"/>
+            <column name="en_exhibicion"     valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="animales">
+            <column name="nombre"            value="Nala"/>
+            <column name="especie_id"        valueNumeric="1"/>
+            <column name="habitat_id"        valueNumeric="1"/>
+            <column name="cuidador_id"       valueNumeric="1"/>
+            <column name="fecha_nacimiento"  valueDate="2019-08-03"/>
+            <column name="sexo"              value="F"/>
+            <column name="peso_kg"           valueNumeric="130.00"/>
+            <column name="estado_salud"      value="Estable"/>
+            <column name="en_exhibicion"     valueBoolean="true"/>
+        </insert>
+
+        <!-- Tigre de Bengala (especie_id=2, habitat_id=2 Selva, cuidador_id=1 Ramiro) -->
+        <insert tableName="animales">
+            <column name="nombre"            value="Arjun"/>
+            <column name="especie_id"        valueNumeric="2"/>
+            <column name="habitat_id"        valueNumeric="2"/>
+            <column name="cuidador_id"       valueNumeric="1"/>
+            <column name="fecha_nacimiento"  valueDate="2016-02-20"/>
+            <column name="sexo"              value="M"/>
+            <column name="peso_kg"           valueNumeric="220.80"/>
+            <column name="estado_salud"      value="Estable"/>
+            <column name="en_exhibicion"     valueBoolean="true"/>
+        </insert>
+
+        <!-- Jaguar (especie_id=3, habitat_id=2 Selva, cuidador_id=1 Ramiro) -->
+        <insert tableName="animales">
+            <column name="nombre"            value="Tupã"/>
+            <column name="especie_id"        valueNumeric="3"/>
+            <column name="habitat_id"        valueNumeric="2"/>
+            <column name="cuidador_id"       valueNumeric="1"/>
+            <column name="fecha_nacimiento"  valueDate="2020-11-15"/>
+            <column name="sexo"              value="F"/>
+            <column name="peso_kg"           valueNumeric="75.30"/>
+            <column name="estado_salud"      value="Excelente"/>
+            <column name="en_exhibicion"     valueBoolean="true"/>
+        </insert>
+
+        <!-- Gorila (especie_id=4, habitat_id=2 Selva, cuidador_id=2 Laura) -->
+        <insert tableName="animales">
+            <column name="nombre"            value="Kongo"/>
+            <column name="especie_id"        valueNumeric="4"/>
+            <column name="habitat_id"        valueNumeric="2"/>
+            <column name="cuidador_id"       valueNumeric="2"/>
+            <column name="fecha_nacimiento"  valueDate="2012-06-08"/>
+            <column name="sexo"              value="M"/>
+            <column name="peso_kg"           valueNumeric="180.00"/>
+            <column name="estado_salud"      value="Estable"/>
+            <column name="en_exhibicion"     valueBoolean="true"/>
+        </insert>
+
+        <!-- Flamenco (especie_id=5, habitat_id=5 Humedal, cuidador_id=4 Sofía) -->
+        <insert tableName="animales">
+            <column name="nombre"            value="Rosa"/>
+            <column name="especie_id"        valueNumeric="5"/>
+            <column name="habitat_id"        valueNumeric="5"/>
+            <column name="cuidador_id"       valueNumeric="4"/>
+            <column name="fecha_nacimiento"  valueDate="2021-03-01"/>
+            <column name="sexo"              value="F"/>
+            <column name="peso_kg"           valueNumeric="3.20"/>
+            <column name="estado_salud"      value="Excelente"/>
+            <column name="en_exhibicion"     valueBoolean="true"/>
+        </insert>
+
+        <!-- Caimán (especie_id=6, habitat_id=5 Humedal, cuidador_id=3 Carlos) -->
+        <insert tableName="animales">
+            <column name="nombre"            value="Cocodrilo del Orinoco #1"/>
+            <column name="especie_id"        valueNumeric="6"/>
+            <column name="habitat_id"        valueNumeric="5"/>
+            <column name="cuidador_id"       valueNumeric="3"/>
+            <column name="fecha_nacimiento"  valueDate="2008-01-01"/>
+            <column name="sexo"              value="M"/>
+            <column name="peso_kg"           valueNumeric="95.00"/>
+            <column name="estado_salud"      value="Estable"/>
+            <column name="en_exhibicion"     valueBoolean="false"/>
+        </insert>
+
+        <!-- Oso de anteojos (especie_id=7, habitat_id=4 Desierto Andino, cuidador_id=5 Andrés) -->
+        <insert tableName="animales">
+            <column name="nombre"            value="Ukuku"/>
+            <column name="especie_id"        valueNumeric="7"/>
+            <column name="habitat_id"        valueNumeric="4"/>
+            <column name="cuidador_id"       valueNumeric="5"/>
+            <column name="fecha_nacimiento"  valueDate="2017-09-30"/>
+            <column name="sexo"              value="M"/>
+            <column name="peso_kg"           valueNumeric="140.00"/>
+            <column name="estado_salud"      value="En tratamiento"/>
+            <column name="en_exhibicion"     valueBoolean="false"/>
+        </insert>
+
+        <rollback>
+            <delete tableName="animales">
+                <where>nombre IN ('Simba','Nala','Arjun','Tupã','Kongo','Rosa','Cocodrilo del Orinoco #1','Ukuku')</where>
+            </delete>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

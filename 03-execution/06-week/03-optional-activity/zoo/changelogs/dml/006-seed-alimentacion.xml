@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="dml-006-seed-alimentacion" author="emily">
+        <comment>Datos iniciales: registros de alimentación reciente</comment>
+
+        <!-- Simba — 17 Mar 2026 -->
+        <insert tableName="alimentacion">
+            <column name="animal_id"    valueNumeric="1"/>
+            <column name="cuidador_id"  valueNumeric="1"/>
+            <column name="fecha_hora"   valueDate="2026-03-17"/>
+            <column name="tipo_alimento" value="Carne de res (presa entera)"/>
+            <column name="cantidad_kg"  valueNumeric="8.000"/>
+            <column name="observaciones" value="Consumió la totalidad. Comportamiento activo y alerta."/>
+        </insert>
+
+        <!-- Nala — 17 Mar 2026 -->
+        <insert tableName="alimentacion">
+            <column name="animal_id"    valueNumeric="2"/>
+            <column name="cuidador_id"  valueNumeric="1"/>
+            <column name="fecha_hora"   valueDate="2026-03-17"/>
+            <column name="tipo_alimento" value="Carne de pollo + suplemento vitamínico"/>
+            <column name="cantidad_kg"  valueNumeric="5.500"/>
+            <column name="observaciones" value="Consumió el 80%. Apetito en recuperación gradual."/>
+        </insert>
+
+        <!-- Arjun — 17 Mar 2026 -->
+        <insert tableName="alimentacion">
+            <column name="animal_id"    valueNumeric="3"/>
+            <column name="cuidador_id"  valueNumeric="1"/>
+            <column name="fecha_hora"   valueDate="2026-03-17"/>
+            <column name="tipo_alimento" value="Cerdo + res alternados"/>
+            <column name="cantidad_kg"  valueNumeric="9.000"/>
+            <column name="observaciones" value="Consumió todo. Se observó marcaje de territorio posterior."/>
+        </insert>
+
+        <!-- Kongo — 17 Mar 2026 -->
+        <insert tableName="alimentacion">
+            <column name="animal_id"    valueNumeric="5"/>
+            <column name="cuidador_id"  valueNumeric="2"/>
+            <column name="fecha_hora"   valueDate="2026-03-17"/>
+            <column name="tipo_alimento" value="Frutas tropicales + hojas de bambú + verduras"/>
+            <column name="cantidad_kg"  valueNumeric="12.000"/>
+            <column name="observaciones" value="Excelente apetito. Uso de herramienta para extraer semillas observado."/>
+        </insert>
+
+        <!-- Ukuku — 17 Mar 2026 (dieta blanda por tratamiento) -->
+        <insert tableName="alimentacion">
+            <column name="animal_id"    valueNumeric="8"/>
+            <column name="cuidador_id"  valueNumeric="5"/>
+            <column name="fecha_hora"   valueDate="2026-03-17"/>
+            <column name="tipo_alimento" value="Dieta blanda: arroz + pollo hervido + frutas suaves"/>
+            <column name="cantidad_kg"  valueNumeric="3.500"/>
+            <column name="observaciones" value="Solo consumió el 60%. Continúa con diarrea leve. En monitoreo."/>
+        </insert>
+
+        <rollback>
+            <delete tableName="alimentacion">
+                <where>animal_id IN (1,2,3,5,8) AND fecha_hora::date = '2026-03-17'</where>
+            </delete>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
