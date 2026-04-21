@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: f5a6b7c8-0001-4001-8001-000000000001
+      author: ariel5253
+      labels: "BD-01-dev,tcl,transaction,purchase"
+      comment: "Transaction block for a full purchase flow with SAVEPOINTs."
+      runOnChange: true
+      changes:
+        - sqlFile:
+            path: 001_transaction_purchase_flow.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - empty

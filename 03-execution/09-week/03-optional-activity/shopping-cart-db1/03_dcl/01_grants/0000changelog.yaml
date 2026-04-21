@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: e4f5a6b7-0001-4001-8001-000000000001
+      author: ariel5253
+      labels: "BD-01-dev,dcl,grants,permissions"
+      comment: "Grants schema/table privileges to each database role."
+      changes:
+        - sqlFile:
+            path: 001_grant_permissions.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../05_rollbacks/03_dcl/01_grants/001_grant_permissions.rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

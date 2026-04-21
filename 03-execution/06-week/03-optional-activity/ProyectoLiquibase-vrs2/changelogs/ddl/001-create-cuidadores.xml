@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!--
+        Tabla: cuidadores
+        Almacena el personal encargado del cuidado de los animales.
+    -->
+    <changeSet id="ddl-001-create-cuidadores" author="emily">
+        <comment>Crea la tabla principal de cuidadores del zoológico</comment>
+
+        <createTable tableName="cuidadores" remarks="Personal responsable del cuidado de los animales">
+            <column name="id" type="SERIAL" remarks="Identificador único autoincremental">
+                <constraints primaryKey="true" primaryKeyName="pk_cuidadores" nullable="false"/>
+            </column>
+            <column name="nombre" type="VARCHAR(100)" remarks="Nombre completo del cuidador">
+                <constraints nullable="false"/>
+            </column>
+            <column name="especialidad" type="VARCHAR(100)" remarks="Tipo de animales que maneja (ej: Felinos, Reptiles)"/>
+            <column name="email" type="VARCHAR(150)" remarks="Correo electrónico institucional">
+                <constraints unique="true" uniqueConstraintName="uq_cuidadores_email"/>
+            </column>
+            <column name="telefono" type="VARCHAR(20)" remarks="Número de contacto"/>
+            <column name="fecha_contratacion" type="DATE" remarks="Fecha de ingreso a la institución">
+                <constraints nullable="false"/>
+            </column>
+            <column name="activo" type="BOOLEAN" defaultValueBoolean="true" remarks="Indica si el cuidador está activo">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="TIMESTAMP" defaultValueComputed="NOW()" remarks="Fecha de creación del registro">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="TIMESTAMP" defaultValueComputed="NOW()" remarks="Última modificación del registro">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <rollback>
+            <dropTable tableName="cuidadores"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
