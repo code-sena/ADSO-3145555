@@ -1,0 +1,53 @@
+version: '3.8'
+
+# ============================================================
+#  Zoológico DB — Docker Compose
+#  Descripción: Levanta PostgreSQL y aplica migraciones
+#               Liquibase de forma reproducible.
+# ============================================================
+
+services:
+
+  # ── Base de datos ──────────────────────────────────────────
+  db:
+    image: postgres:16-alpine
+    container_name: postgres_zoo
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER:     ${DB_USER:-admin_zoo}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-changeme_en_produccion}
+      POSTGRES_DB:       ${DB_NAME:-zoologico_db}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-admin_zoo} -d ${DB_NAME:-zoologico_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  # ── Migraciones Liquibase ──────────────────────────────────
+  liquibase:
+    image: liquibase/liquibase:4.27
+    container_name: liquibase_zoo
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - .:/liquibase/changelog
+      - ./lib:/liquibase/lib
+    command: >
+      --changelog-file=db.changelog-master.xml
+      --url=jdbc:postgresql://db:5432/${DB_NAME:-zoologico_db}
+      --username=${DB_USER:-admin_zoo}
+      --password=${DB_PASSWORD:-changeme_en_produccion}
+      --driver=org.postgresql.Driver
+      --classpath=/liquibase/lib/postgresql-42.7.10.jar
+      --search-path=/liquibase/changelog
+      update
+
+volumes:
+  postgres_data:
+    driver: local

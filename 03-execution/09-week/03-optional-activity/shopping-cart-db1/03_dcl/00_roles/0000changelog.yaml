@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: d3e4f5a6-0001-4001-8001-000000000001
+      author: ariel5253
+      labels: "BD-01-dev,dcl,roles,db-roles"
+      comment: "Creates PostgreSQL database roles for all application roles."
+      changes:
+        - sqlFile:
+            path: 001_create_db_roles.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../05_rollbacks/03_dcl/00_roles/001_create_db_roles.rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
