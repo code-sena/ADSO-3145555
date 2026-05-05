@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-create-schemas
+      author: corhuila
+      labels: "BD-01-dev,ddl,base,schema"
+      comment: "Creates the baseline schemas: security, inventory, and bill."
+      changes:
+        - sqlFile:
+            path: 001_create_schema.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../05_rollbacks/01_ddl/01_schemas/001_create_schema_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

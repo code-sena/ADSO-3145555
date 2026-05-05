@@ -1,0 +1,48 @@
+databaseChangeLog:
+  - include:
+      file: 01_geo/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 02_airline/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 03_identity/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 04_Security/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 05_loyalty/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 06_Airport/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 07_Aircraft/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 08_flight_ops/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 09_sales/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 10_Boarding/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 11_Payment/changelog.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: 12_Billing/changelog.yaml
+      relativeToChangelogFile: true

@@ -1,0 +1,145 @@
+databaseChangeLog:
+  - changeSet:
+      id: 11111111-2222-3333-4444-555555555555
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/05_loyalty/001_customer_category.sql
+      labels: "BD-01-dev,ddl,base,loyalty"
+      comment: Creates the customer_category table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 001_customer_category.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/05_loyalty/001_customer_category_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 22222222-3333-4444-5555-666666666666
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/05_loyalty/002_benefit_type.sql
+      labels: "BD-01-dev,ddl,base,loyalty"
+      comment: Creates the benefit_type table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 002_benefit_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/05_loyalty/002_benefit_type_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 33333333-4444-5555-6666-777777777777
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/05_loyalty/003_loyalty_program.sql
+      labels: "BD-01-dev,ddl,base,loyalty"
+      comment: Creates the loyalty_program table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 003_loyalty_program.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/05_loyalty/003_loyalty_program_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 44444444-5555-6666-7777-888888888888
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/05_loyalty/004_loyalty_tier.sql
+      labels: "BD-01-dev,ddl,base,loyalty"
+      comment: Creates the loyalty_tier table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 004_loyalty_tier.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/05_loyalty/004_loyalty_tier_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 005-customer
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/05_loyalty/005_customer.sql
+      labels: "BD-01-dev,ddl,base,loyalty"
+      comment: Creates the customer table. Depends on customer_category.
+      changes:
+        - sqlFile:
+            path: 005_customer.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/05_loyalty/005_customer_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 006-loyalty-account
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/05_loyalty/006_loyalty_account.sql
+      labels: "BD-01-dev,ddl,base,loyalty"
+      comment: Creates the loyalty_account table. Depends on customer and loyalty_program.
+      changes:
+        - sqlFile:
+            path: 006_loyalty_account.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/05_loyalty/006_loyalty_account_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 007-loyalty-account-tier
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/05_loyalty/007_loyalty_account_tier.sql
+      labels: "BD-01-dev,ddl,base,loyalty"
+      comment: Creates the loyalty_account_tier table. Depends on loyalty_account and loyalty_tier.
+      changes:
+        - sqlFile:
+            path: 007_loyalty_account_tier.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/05_loyalty/007_loyalty_account_tier_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 008-miles-transaction
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/05_loyalty/008_miles_transaction.sql
+      labels: "BD-01-dev,ddl,base,loyalty"
+      comment: Creates the miles_transaction table. Depends on loyalty_account.
+      changes:
+        - sqlFile:
+            path: 008_miles_transaction.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/05_loyalty/008_miles_transaction_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 009-customer-benefit
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/05_loyalty/009_customer_benefit.sql
+      labels: "BD-01-dev,ddl,base,loyalty"
+      comment: Creates the customer_benefit table. Depends on customer and benefit_type.
+      changes:
+        - sqlFile:
+            path: 009_customer_benefit.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/05_loyalty/009_customer_benefit_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

@@ -1,0 +1,97 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1c1c1c1c-2c2c-3c3c-4c4c-5c5c5c5c5c5c
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/04_Security/001_user_status.sql
+      labels: "BD-01-dev,ddl,base,security"
+      comment: Creates the user_status table.
+      changes:
+        - sqlFile:
+            path: 001_user_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/04_Security/001_user_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 2d2d2d2d-3d3d-4d4d-5d5d-6d6d6d6d6d6d
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/04_Security/002_security_role.sql
+      labels: "BD-01-dev,ddl,base,security"
+      comment: Creates the security_role table.
+      changes:
+        - sqlFile:
+            path: 002_security_role.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/04_Security/002_security_role.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 3e3e3e3e-4e4e-5e5e-6e6e-7e7e7e7e7e7e
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/04_Security/003_security_permission.sql
+      labels: "BD-01-dev,ddl,base,security"
+      comment: Creates the security_permission table.
+      changes:
+        - sqlFile:
+            path: 003_security_permission.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/04_Security/003_security_permission.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 4f4f4f4f-5f5f-6f6f-7f7f-8f8f8f8f8f8f
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/04_Security/004_user_account.sql
+      labels: "BD-01-dev,ddl,base,security"
+      comment: Creates the user_account table.
+      changes:
+        - sqlFile:
+            path: 004_user_account.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/04_Security/004_user_account.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 005-user-role
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/04_Security/005_user_role.sql
+      labels: "BD-01-dev,ddl,base,security"
+      comment: Creates the user_role table.
+      changes:
+        - sqlFile:
+            path: 005_user_role.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/04_Security/005_user_role.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 006-role-permission
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/04_Security/006_role_permission.sql
+      labels: "BD-01-dev,ddl,base,security"
+      comment: Creates the role_permission table.
+      changes:
+        - sqlFile:
+            path: 006_role_permission.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/04_Security/006_role_permission.sql
+            relativeToChangelogFile: true
+            stripComments: false

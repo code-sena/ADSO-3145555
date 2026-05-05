@@ -1,0 +1,81 @@
+databaseChangeLog:
+  - changeSet:
+      id: aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/11_Payment/001_payment_status.sql
+      labels: "BD-01-dev,ddl,base,payment"
+      comment: Creates the payment_status table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 001_payment_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/11_Payment/001_payment_status_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: bbbbbbbb-cccc-dddd-eeee-ffffffffffff
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/11_Payment/002_payment_method.sql
+      labels: "BD-01-dev,ddl,base,payment"
+      comment: Creates the payment_method table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 002_payment_method.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/11_Payment/002_payment_method_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: cccccccc-dddd-eeee-ffff-111111111111
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/11_Payment/003_payment.sql
+      labels: "BD-01-dev,ddl,base,payment"
+      comment: Creates the payment table. Depends on payment_status and payment_method.
+      changes:
+        - sqlFile:
+            path: 003_payment.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/11_Payment/003_payment_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: dddddddd-eeee-ffff-1111-222222222222
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/11_Payment/004_payment_transaction.sql
+      labels: "BD-01-dev,ddl,base,payment"
+      comment: Creates the payment_transaction table. Depends on payment.
+      changes:
+        - sqlFile:
+            path: 004_payment_transaction.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/11_Payment/004_payment_transaction_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 005-refund
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/11_Payment/005_refund.sql
+      labels: "BD-01-dev,ddl,base,payment"
+      comment: Creates the refund table. Depends on payment_transaction.
+      changes:
+        - sqlFile:
+            path: 005_refund.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/11_Payment/005_refund_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

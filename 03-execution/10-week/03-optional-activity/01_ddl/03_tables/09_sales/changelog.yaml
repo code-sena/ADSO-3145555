@@ -1,0 +1,193 @@
+databaseChangeLog:
+  - changeSet:
+      id: 22222222-3333-4444-5555-666666666666
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/001_reservation_status.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the reservation_status table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 001_reservation_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/001_reservation_status_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 33333333-4444-5555-6666-777777777777
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/002_sale_channel.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the sale_channel table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 002_sale_channel.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/002_sale_channel_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 44444444-5555-6666-7777-888888888888
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/003_fare_class.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the fare_class table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 003_fare_class.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/003_fare_class_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 55555555-6666-7777-8888-999999999999
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/004_fare.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the fare table. Depends on fare_class.
+      changes:
+        - sqlFile:
+            path: 004_fare.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/004_fare_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 005-ticket-status
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/005_ticket_status.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the ticket_status table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 005_ticket_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/005_ticket_status_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 006-reservation
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/006_reservation.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the reservation table. Depends on reservation_status.
+      changes:
+        - sqlFile:
+            path: 006_reservation.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/006_reservation_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 007-reservation-passenger
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/007_reservation_passenger.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the reservation_passenger table. Depends on reservation.
+      changes:
+        - sqlFile:
+            path: 007_reservation_passenger.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/007_reservation_passenger_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 008-sale
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/008_sale.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the sale table. Depends on reservation and sale_channel.
+      changes:
+        - sqlFile:
+            path: 008_sale.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/008_sale_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 009-ticket
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/009_ticket.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the ticket table. Depends on sale and ticket_status.
+      changes:
+        - sqlFile:
+            path: 009_ticket.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/009_ticket_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 010-ticket-segment
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/010_ticket_segment.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the ticket_segment table. Depends on ticket.
+      changes:
+        - sqlFile:
+            path: 010_ticket_segment.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/010_ticket_segment_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 011-seat-assignment
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/011_seat_assignment.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the seat_assignment table. Depends on ticket_segment.
+      changes:
+        - sqlFile:
+            path: 011_seat_assignment.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/011_seat_assignment_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 012-baggage
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/09_sales/012_baggage.sql
+      labels: "BD-01-dev,ddl,base,sales"
+      comment: Creates the baggage table. Depends on ticket.
+      changes:
+        - sqlFile:
+            path: 012_baggage.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/09_sales/012_baggage_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

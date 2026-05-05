@@ -1,0 +1,81 @@
+databaseChangeLog:
+  - changeSet:
+      id: 55555555-6666-7777-8888-999999999999
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/06_Airport/001_airport.sql
+      labels: "BD-01-dev,ddl,base,airport"
+      comment: Creates the airport table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 001_airport.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/06_Airport/001_airport_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 66666666-7777-8888-9999-aaaaaaaaaaaa
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/06_Airport/002_terminal.sql
+      labels: "BD-01-dev,ddl,base,airport"
+      comment: Creates the terminal table. Depends on airport.
+      changes:
+        - sqlFile:
+            path: 002_terminal.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/06_Airport/002_terminal_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 77777777-8888-9999-aaaa-bbbbbbbbbbbb
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/06_Airport/003_boarding_gate.sql
+      labels: "BD-01-dev,ddl,base,airport"
+      comment: Creates the boarding_gate table. Depends on terminal.
+      changes:
+        - sqlFile:
+            path: 003_boarding_gate.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/06_Airport/003_boarding_gate_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 88888888-9999-aaaa-bbbb-cccccccccccc
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/06_Airport/004_runway.sql
+      labels: "BD-01-dev,ddl,base,airport"
+      comment: Creates the runway table. Depends on airport.
+      changes:
+        - sqlFile:
+            path: 004_runway.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/06_Airport/004_runway_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 005-airport-regulation
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/06_Airport/005_airport_regulation.sql
+      labels: "BD-01-dev,ddl,base,airport"
+      comment: Creates the airport_regulation table. Depends on airport.
+      changes:
+        - sqlFile:
+            path: 005_airport_regulation.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/06_Airport/005_airport_regulation_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

@@ -1,0 +1,145 @@
+databaseChangeLog:
+  - changeSet:
+      id: 99999999-aaaa-bbbb-cccc-dddddddddddd
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/07_Aircraft/001_aircraft_manufacturer.sql
+      labels: "BD-01-dev,ddl,base,aircraft"
+      comment: Creates the aircraft_manufacturer table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 001_aircraft_manufacturer.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/07_Aircraft/001_aircraft_manufacturer_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/07_Aircraft/002_aircraft_model.sql
+      labels: "BD-01-dev,ddl,base,aircraft"
+      comment: Creates the aircraft_model table. Depends on aircraft_manufacturer.
+      changes:
+        - sqlFile:
+            path: 002_aircraft_model.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/07_Aircraft/002_aircraft_model_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: bbbbbbbb-cccc-dddd-eeee-ffffffffffff
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/07_Aircraft/003_cabin_class.sql
+      labels: "BD-01-dev,ddl,base,aircraft"
+      comment: Creates the cabin_class table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 003_cabin_class.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/07_Aircraft/003_cabin_class_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: cccccccc-dddd-eeee-ffff-111111111111
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/07_Aircraft/004_aircraft.sql
+      labels: "BD-01-dev,ddl,base,aircraft"
+      comment: Creates the aircraft table. Depends on aircraft_model.
+      changes:
+        - sqlFile:
+            path: 004_aircraft.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/07_Aircraft/004_aircraft_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 005-aircraft-cabin
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/07_Aircraft/005_aircraft_cabin.sql
+      labels: "BD-01-dev,ddl,base,aircraft"
+      comment: Creates the aircraft_cabin table. Depends on aircraft and cabin_class.
+      changes:
+        - sqlFile:
+            path: 005_aircraft_cabin.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/07_Aircraft/005_aircraft_cabin_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 006-aircraft-seat
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/07_Aircraft/006_aircraft_seat.sql
+      labels: "BD-01-dev,ddl,base,aircraft"
+      comment: Creates the aircraft_seat table. Depends on aircraft_cabin.
+      changes:
+        - sqlFile:
+            path: 006_aircraft_seat.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/07_Aircraft/006_aircraft_seat_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 007-maintenance-provider
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/07_Aircraft/007_maintenance_provider.sql
+      labels: "BD-01-dev,ddl,base,aircraft"
+      comment: Creates the maintenance_provider table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 007_maintenance_provider.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/07_Aircraft/007_maintenance_provider_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 008-maintenance-type
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/07_Aircraft/008_maintenance_type.sql
+      labels: "BD-01-dev,ddl,base,aircraft"
+      comment: Creates the maintenance_type table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 008_maintenance_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/07_Aircraft/008_maintenance_type_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 009-maintenance-event
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/07_Aircraft/009_maintenance_event.sql
+      labels: "BD-01-dev,ddl,base,aircraft"
+      comment: Creates the maintenance_event table. Depends on maintenance_provider and maintenance_type.
+      changes:
+        - sqlFile:
+            path: 009_maintenance_event.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/07_Aircraft/009_maintenance_event_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
