@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="dml-003-seed-cuidadores" author="emily" context="dev">
+        <comment>Datos iniciales: personal cuidador del zoológico</comment>
+
+        <insert tableName="cuidadores">
+            <column name="nombre"             value="Ramiro Amézquita"/>
+            <column name="especialidad"       value="Felinos Grandes"/>
+            <column name="email"              value="r.amezquita@zoo.co"/>
+            <column name="telefono"           value="+57 310 123 4567"/>
+            <column name="fecha_contratacion" valueDate="2018-03-15"/>
+            <column name="activo"             valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="cuidadores">
+            <column name="nombre"             value="Laura Pedraza"/>
+            <column name="especialidad"       value="Primates"/>
+            <column name="email"              value="l.pedraza@zoo.co"/>
+            <column name="telefono"           value="+57 315 987 6543"/>
+            <column name="fecha_contratacion" valueDate="2020-07-01"/>
+            <column name="activo"             valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="cuidadores">
+            <column name="nombre"             value="Carlos Montoya"/>
+            <column name="especialidad"       value="Reptiles y Anfibios"/>
+            <column name="email"              value="c.montoya@zoo.co"/>
+            <column name="telefono"           value="+57 301 555 7890"/>
+            <column name="fecha_contratacion" valueDate="2019-11-20"/>
+            <column name="activo"             valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="cuidadores">
+            <column name="nombre"             value="Sofía Rincón"/>
+            <column name="especialidad"       value="Aves Acuáticas"/>
+            <column name="email"              value="s.rincon@zoo.co"/>
+            <column name="telefono"           value="+57 320 444 1122"/>
+            <column name="fecha_contratacion" valueDate="2022-01-10"/>
+            <column name="activo"             valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="cuidadores">
+            <column name="nombre"             value="Andrés Vargas"/>
+            <column name="especialidad"       value="Úrsidos y Mamíferos Medianos"/>
+            <column name="email"              value="a.vargas@zoo.co"/>
+            <column name="telefono"           value="+57 316 222 9988"/>
+            <column name="fecha_contratacion" valueDate="2021-04-05"/>
+            <column name="activo"             valueBoolean="true"/>
+        </insert>
+
+        <rollback>
+            <delete tableName="cuidadores">
+                <where>email IN (
+                    'r.amezquita@zoo.co','l.pedraza@zoo.co','c.montoya@zoo.co',
+                    's.rincon@zoo.co','a.vargas@zoo.co'
+                )</where>
+            </delete>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

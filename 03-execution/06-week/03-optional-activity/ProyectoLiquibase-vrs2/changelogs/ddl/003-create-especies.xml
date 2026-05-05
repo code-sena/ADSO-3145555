@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!--
+        Tabla: especies
+        Catálogo de especies animales reconocidas en el zoológico.
+    -->
+    <changeSet id="ddl-003-create-especies" author="emily">
+        <comment>Crea la tabla catálogo de especies animales</comment>
+
+        <createTable tableName="especies" remarks="Catálogo taxonómico de las especies del zoológico">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="pk_especies" nullable="false"/>
+            </column>
+            <column name="nombre_comun" type="VARCHAR(100)" remarks="Nombre coloquial (ej: León)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="nombre_cientifico" type="VARCHAR(150)" remarks="Nomenclatura binomial (ej: Panthera leo)">
+                <constraints nullable="false" unique="true" uniqueConstraintName="uq_especies_cientifico"/>
+            </column>
+            <column name="familia" type="VARCHAR(100)" remarks="Familia taxonómica (ej: Felidae)"/>
+            <column name="estado_conservacion" type="VARCHAR(50)"
+                    remarks="Estado UICN: LC, NT, VU, EN, CR, EW, EX">
+                <constraints nullable="false"/>
+            </column>
+            <column name="dieta" type="VARCHAR(30)"
+                    remarks="Tipo de dieta: Herbívoro, Carnívoro, Omnívoro">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="TIMESTAMP" defaultValueComputed="NOW()">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- CHECK: valores válidos para estado de conservación UICN -->
+        <sql>
+            ALTER TABLE especies
+            ADD CONSTRAINT chk_especies_estado_conservacion
+                CHECK (estado_conservacion IN ('LC','NT','VU','EN','CR','EW','EX'));
+
+            ALTER TABLE especies
+            ADD CONSTRAINT chk_especies_dieta
+                CHECK (dieta IN ('Herbívoro','Carnívoro','Omnívoro'));
+        </sql>
+
+        <rollback>
+            <dropTable tableName="especies"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

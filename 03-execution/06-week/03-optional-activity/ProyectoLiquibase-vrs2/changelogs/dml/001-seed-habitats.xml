@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="dml-001-seed-habitats" author="emily" context="dev">
+        <comment>Datos iniciales: hábitats del zoológico</comment>
+
+        <insert tableName="habitats">
+            <column name="nombre"          value="Sabana Africana"/>
+            <column name="tipo_clima"      value="Cálido"/>
+            <column name="capacidad_maxima" valueNumeric="20"/>
+            <column name="superficie_m2"   valueNumeric="5000.00"/>
+            <column name="descripcion"     value="Recinto de clima cálido y seco que replica la sabana del África subsahariana. Cuenta con vegetación arbustiva y pozas de agua."/>
+        </insert>
+
+        <insert tableName="habitats">
+            <column name="nombre"          value="Selva Tropical"/>
+            <column name="tipo_clima"      value="Tropical"/>
+            <column name="capacidad_maxima" valueNumeric="30"/>
+            <column name="superficie_m2"   valueNumeric="8000.00"/>
+            <column name="descripcion"     value="Bosque húmedo con alta biodiversidad, temperatura constante y humedad elevada. Incluye zonas arborícolas y acuáticas."/>
+        </insert>
+
+        <insert tableName="habitats">
+            <column name="nombre"          value="Hábitat Polar"/>
+            <column name="tipo_clima"      value="Polar"/>
+            <column name="capacidad_maxima" valueNumeric="10"/>
+            <column name="superficie_m2"   valueNumeric="3000.00"/>
+            <column name="descripcion"     value="Recinto refrigerado que simula el Ártico con piscina de agua fría y plataformas de hielo artificial."/>
+        </insert>
+
+        <insert tableName="habitats">
+            <column name="nombre"          value="Desierto Andino"/>
+            <column name="tipo_clima"      value="Árido"/>
+            <column name="capacidad_maxima" valueNumeric="15"/>
+            <column name="superficie_m2"   valueNumeric="2500.00"/>
+            <column name="descripcion"     value="Zona árida con suelo rocoso, cactáceas y temperatura variable. Replica el desierto alto andino."/>
+        </insert>
+
+        <insert tableName="habitats">
+            <column name="nombre"          value="Humedal Amazónico"/>
+            <column name="tipo_clima"      value="Subtropical"/>
+            <column name="capacidad_maxima" valueNumeric="25"/>
+            <column name="superficie_m2"   valueNumeric="6000.00"/>
+            <column name="descripcion"     value="Laguna artificial con vegetación acuática y terrestre que alberga especies anfibias y aves."/>
+        </insert>
+
+        <rollback>
+            <delete tableName="habitats">
+                <where>nombre IN ('Sabana Africana','Selva Tropical','Hábitat Polar','Desierto Andino','Humedal Amazónico')</where>
+            </delete>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

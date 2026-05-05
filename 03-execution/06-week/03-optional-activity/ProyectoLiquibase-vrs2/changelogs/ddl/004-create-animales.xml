@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!--
+        Tabla: animales
+        Entidad central del sistema. Relaciona especie, hábitat y cuidador.
+        NOTA: la columna 'especie_old' del diseño original fue removida;
+              se usa la FK a la tabla especies en su lugar.
+    -->
+    <changeSet id="ddl-004-create-animales" author="emily">
+        <comment>Crea la tabla central de animales del zoológico</comment>
+
+        <createTable tableName="animales" remarks="Registro individual de cada animal en el zoológico">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="pk_animales" nullable="false"/>
+            </column>
+            <column name="nombre" type="VARCHAR(100)" remarks="Nombre asignado al animal">
+                <constraints nullable="false"/>
+            </column>
+            <column name="especie_id" type="INT" remarks="FK a la tabla especies">
+                <constraints nullable="false"
+                             foreignKeyName="fk_animales_especie"
+                             referencedTableName="especies"
+                             referencedColumnNames="id"/>
+            </column>
+            <column name="habitat_id" type="INT" remarks="FK al hábitat donde reside">
+                <constraints nullable="false"
+                             foreignKeyName="fk_animales_habitat"
+                             referencedTableName="habitats"
+                             referencedColumnNames="id"/>
+            </column>
+            <column name="cuidador_id" type="INT" remarks="FK al cuidador responsable">
+                <constraints nullable="false"
+                             foreignKeyName="fk_animales_cuidador"
+                             referencedTableName="cuidadores"
+                             referencedColumnNames="id"/>
+            </column>
+            <column name="fecha_nacimiento" type="DATE" remarks="Fecha de nacimiento o estimada"/>
+            <column name="sexo" type="CHAR(1)" remarks="M = Macho, F = Hembra, I = Indeterminado">
+                <constraints nullable="false"/>
+            </column>
+            <column name="peso_kg" type="NUMERIC(8,2)" remarks="Peso en kilogramos (última medición)"/>
+            <column name="estado_salud" type="VARCHAR(20)" defaultValue="Estable"
+                    remarks="Estado general: Excelente, Estable, En tratamiento, Crítico">
+                <constraints nullable="false"/>
+            </column>
+            <column name="en_exhibicion" type="BOOLEAN" defaultValueBoolean="true"
+                    remarks="Si el animal está disponible para el público">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_at" type="TIMESTAMP" defaultValueComputed="NOW()">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="TIMESTAMP" defaultValueComputed="NOW()">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <sql>
+            ALTER TABLE animales
+            ADD CONSTRAINT chk_animales_sexo
+                CHECK (sexo IN ('M','F','I'));
+
+            ALTER TABLE animales
+            ADD CONSTRAINT chk_animales_peso
+                CHECK (peso_kg IS NULL OR peso_kg > 0);
+
+            ALTER TABLE animales
+            ADD CONSTRAINT chk_animales_estado_salud
+                CHECK (estado_salud IN ('Excelente','Estable','En tratamiento','Crítico'));
+        </sql>
+
+        <rollback>
+            <dropTable tableName="animales"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
