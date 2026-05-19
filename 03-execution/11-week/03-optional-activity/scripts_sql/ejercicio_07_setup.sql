@@ -74,29 +74,21 @@ $$;
 -- Consulta resuelta: trazabilidad aeroportuaria tiquete-segmento-vuelo-asiento-cabina-equipaje
 SELECT
     t.ticket_number,
-    ts.sequence_number            AS secuencia_segmento,
+    ts.segment_sequence_no        AS secuencia_segmento,
     f.flight_number,
     cc.class_name                 AS cabina,
-    ase.row_number                AS fila_asiento,
-    ase.column_letter             AS columna_asiento,
+    ase.seat_row_number           AS fila_asiento,
+    ase.seat_column_code          AS columna_asiento,
     b.baggage_tag                 AS etiqueta_equipaje,
     b.baggage_type                AS tipo_equipaje,
     b.baggage_status              AS estado_equipaje
 FROM ticket t
-INNER JOIN ticket_segment ts
-    ON ts.ticket_id = t.ticket_id
-INNER JOIN flight_segment fs
-    ON fs.flight_segment_id = ts.flight_segment_id
-INNER JOIN flight f
-    ON f.flight_id = fs.flight_id
-INNER JOIN seat_assignment sa
-    ON sa.ticket_segment_id = ts.ticket_segment_id
-INNER JOIN aircraft_seat ase
-    ON ase.aircraft_seat_id = sa.aircraft_seat_id
-INNER JOIN aircraft_cabin ac
-    ON ac.aircraft_cabin_id = ase.aircraft_cabin_id
-INNER JOIN cabin_class cc
-    ON cc.cabin_class_id = ac.cabin_class_id
-INNER JOIN baggage b
-    ON b.ticket_segment_id = ts.ticket_segment_id
-ORDER BY t.ticket_number, ts.sequence_number;
+INNER JOIN ticket_segment    ts  ON ts.ticket_id            = t.ticket_id
+INNER JOIN flight_segment    fs  ON fs.flight_segment_id    = ts.flight_segment_id
+INNER JOIN flight             f  ON f.flight_id             = fs.flight_id
+INNER JOIN seat_assignment   sa  ON sa.ticket_segment_id    = ts.ticket_segment_id
+INNER JOIN aircraft_seat    ase  ON ase.aircraft_seat_id    = sa.aircraft_seat_id
+INNER JOIN aircraft_cabin    ac  ON ac.aircraft_cabin_id    = ase.aircraft_cabin_id
+INNER JOIN cabin_class       cc  ON cc.cabin_class_id       = ac.cabin_class_id
+INNER JOIN baggage            b  ON b.ticket_segment_id     = ts.ticket_segment_id
+ORDER BY t.ticket_number, ts.segment_sequence_no;

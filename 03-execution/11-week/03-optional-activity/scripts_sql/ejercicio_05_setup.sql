@@ -86,26 +86,20 @@ $$;
 
 -- Consulta resuelta: trazabilidad técnica aeronave-aerolínea-modelo-fabricante-mantenimiento-proveedor
 SELECT
-    a.registration_code        AS matricula,
-    al.airline_name            AS aerolinea,
-    am.model_name              AS modelo,
-    amf.manufacturer_name      AS fabricante,
-    mt.type_name               AS tipo_mantenimiento,
-    mp.provider_name           AS proveedor,
-    me.event_status            AS estado_evento,
-    me.start_date              AS fecha_inicio,
-    me.end_date                AS fecha_finalizacion
+    a.registration_number   AS matricula,       
+    al.airline_name         AS aerolinea,
+    am.model_name           AS modelo,
+    amf.manufacturer_name   AS fabricante,
+    mt.type_name            AS tipo_mantenimiento,
+    mp.provider_name        AS proveedor,
+    me.status_code          AS estado_evento,   
+    me.started_at           AS fecha_inicio,   
+    me.completed_at         AS fecha_finalizacion 
 FROM aircraft a
-INNER JOIN airline al
-    ON al.airline_id = a.airline_id
-INNER JOIN aircraft_model am
-    ON am.aircraft_model_id = a.aircraft_model_id
-INNER JOIN aircraft_manufacturer amf
-    ON amf.aircraft_manufacturer_id = am.aircraft_manufacturer_id
-INNER JOIN maintenance_event me
-    ON me.aircraft_id = a.aircraft_id
-INNER JOIN maintenance_type mt
-    ON mt.maintenance_type_id = me.maintenance_type_id
-INNER JOIN maintenance_provider mp
-    ON mp.maintenance_provider_id = me.maintenance_provider_id
-ORDER BY me.start_date DESC, a.registration_code;
+INNER JOIN airline            al  ON al.airline_id             = a.airline_id
+INNER JOIN aircraft_model     am  ON am.aircraft_model_id      = a.aircraft_model_id
+INNER JOIN aircraft_manufacturer amf ON amf.aircraft_manufacturer_id = am.aircraft_manufacturer_id
+INNER JOIN maintenance_event  me  ON me.aircraft_id            = a.aircraft_id
+INNER JOIN maintenance_type   mt  ON mt.maintenance_type_id    = me.maintenance_type_id
+INNER JOIN maintenance_provider mp ON mp.maintenance_provider_id = me.maintenance_provider_id
+ORDER BY me.started_at DESC, a.registration_number;
