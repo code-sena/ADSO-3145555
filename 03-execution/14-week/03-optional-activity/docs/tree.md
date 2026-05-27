@@ -1,4 +1,5 @@
-'# Estructura de documentación – PRJ-EDU-HORARIOS
+''
+# Estructura de documentación – PRJ-EDU-HORARIOS
 
 design-software-docs/
 │
@@ -180,4 +181,4 @@ design-software-docs/
     ├── README.md
     ├── validate-docs.ps1
     └── validate-links.ps1 
-    '
+    ''
