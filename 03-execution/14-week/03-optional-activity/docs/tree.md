@@ -1,7 +1,7 @@
-'''
+
 # Estructura de documentación – PRJ-EDU-HORARIOS
 
-design-software-docs/
+''' design-software-docs/
 │
 ├── README.md
 ├── CHANGELOG.md
