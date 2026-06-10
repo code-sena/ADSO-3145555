@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+
+  db:
+    image: postgres:16
+    container_name: postgres_liquibase
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5444:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  liquibase:
+    image: liquibase/liquibase
+    container_name: liquibase_runner
+    depends_on:
+      - db
+    env_file:
+      - .env
+    volumes:
+      - ./:/liquibase/project
+      - ./liquibase:/liquibase/config
+    working_dir: /liquibase/project
+    command: >
+      sh -c "sleep 10 && liquibase --classpath=/liquibase/config/driver/postgresql-42.7.9.jar --defaultsFile=/liquibase/config/liquibase.properties update"
+
+volumes:
+  pgdata:

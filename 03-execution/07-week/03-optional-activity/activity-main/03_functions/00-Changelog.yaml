@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-fn-get-person-by-email
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: function get person by email
+      changes:
+        - sqlFile:
+            path: 03_functions/01-fn-get-person-by-email.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/03_functions/01-fn-get-person-by-email-rollback.sql
+
+  - changeSet:
+      id: 02-fn-count-persons
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: function count persons
+      changes:
+        - sqlFile:
+            path: 03_functions/02-fn-count-persons.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/03_functions/02-fn-count-persons-rollback.sql
