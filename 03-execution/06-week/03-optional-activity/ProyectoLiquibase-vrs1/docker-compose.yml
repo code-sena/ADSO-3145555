@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_zoo
+    environment:
+      POSTGRES_USER: admin_zoo
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: zoologico_db
+    ports:
+      - "5432:5432"
+
+  liquibase:
+    image: liquibase/liquibase
+    volumes:
+      - .:/liquibase/changelog
+      - ./lib:/liquibase/lib  # <--- AÑADE ESTA LÍNEA
+    depends_on:
+      - db
+    command: >
+      --changelog-file=db.changelog.xml
+      --url=jdbc:postgresql://db:5432/zoologico_db
+      --username=admin_zoo
+      --password=password123
+      update

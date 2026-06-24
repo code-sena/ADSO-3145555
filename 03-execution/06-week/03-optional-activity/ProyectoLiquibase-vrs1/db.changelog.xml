@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="1" author="emily">
+        <createTable tableName="cuidadores">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nombre" type="varchar(100)"><constraints nullable="false"/></column>
+            <column name="especialidad" type="varchar(50)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="emily">
+        <createTable tableName="animales">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nombre" type="varchar(50)"><constraints nullable="false"/></column>
+            <column name="especie_old" type="varchar(50)"/>
+            <column name="cuidador_id" type="int">
+                <constraints foreignKeyName="fk_animal_cuidador" referencedTableName="cuidadores" referencedColumnNames="id"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="3" author="emily">
+        <createTable tableName="habitats">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nombre" type="varchar(100)"><constraints nullable="false"/></column>
+            <column name="tipo_clima" type="varchar(50)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="4" author="emily">
+        <addColumn tableName="animales">
+            <column name="habitat_id" type="int">
+                <constraints foreignKeyName="fk_animal_habitat" referencedTableName="habitats" referencedColumnNames="id"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="5" author="emily">
+        <createTable tableName="especies">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nombre_comun" type="varchar(100)"><constraints nullable="false"/></column>
+            <column name="nombre_cientifico" type="varchar(150)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="6" author="emily">
+        <addColumn tableName="animales">
+            <column name="especie_id" type="int">
+                <constraints foreignKeyName="fk_animal_especie" referencedTableName="especies" referencedColumnNames="id"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="7" author="emily">
+        <insert tableName="habitats">
+            <column name="nombre" value="Sabana Africana"/>
+            <column name="tipo_clima" value="Cálido"/>
+        </insert>
+        <insert tableName="especies">
+            <column name="nombre_comun" value="León"/>
+            <column name="nombre_cientifico" value="Panthera leo"/>
+        </insert>
+        <insert tableName="cuidadores">
+            <column name="nombre" value="Ramiro Amezquita"/>
+            <column name="especialidad" value="Felinos"/>
+        </insert>
+        <insert tableName="animales">
+            <column name="nombre" value="Simba"/>
+            <column name="cuidador_id" value="1"/>
+            <column name="habitat_id" value="1"/>
+            <column name="especie_id" value="1"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="8" author="emily">
+        <createTable tableName="historial_medico">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="animal_id" type="int">
+                <constraints foreignKeyName="fk_historial_animal" referencedTableName="animales" referencedColumnNames="id"/>
+            </column>
+            <column name="fecha_revision" type="date"><constraints nullable="false"/></column>
+            <column name="diagnostico" type="varchar(255)"/>
+            <column name="medicamento" type="varchar(100)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="9" author="emily">
+        <insert tableName="historial_medico">
+            <column name="animal_id" value="1"/>
+            <column name="fecha_revision" valueDate="2026-03-17"/>
+            <column name="diagnostico" value="Salud excelente, peso ideal para su edad."/>
+            <column name="medicamento" value="Ninguno (Solo vitaminas)"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

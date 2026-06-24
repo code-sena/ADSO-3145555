@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!--
+        Tabla: historial_medico
+        Registro de revisiones veterinarias por animal.
+    -->
+    <changeSet id="ddl-005-create-historial-medico" author="emily">
+        <comment>Crea la tabla de historial médico veterinario de los animales</comment>
+
+        <createTable tableName="historial_medico" remarks="Revisiones y tratamientos veterinarios por animal">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="pk_historial_medico" nullable="false"/>
+            </column>
+            <column name="animal_id" type="INT" remarks="FK al animal revisado">
+                <constraints nullable="false"
+                             foreignKeyName="fk_historial_animal"
+                             referencedTableName="animales"
+                             referencedColumnNames="id"/>
+            </column>
+            <column name="veterinario_nombre" type="VARCHAR(150)"
+                    remarks="Nombre del veterinario que realizó la revisión">
+                <constraints nullable="false"/>
+            </column>
+            <column name="fecha_revision" type="TIMESTAMP" defaultValueComputed="NOW()"
+                    remarks="Fecha y hora de la revisión">
+                <constraints nullable="false"/>
+            </column>
+            <column name="tipo_revision" type="VARCHAR(50)"
+                    remarks="Preventiva, Urgencia, Vacunación, Cirugía, Seguimiento">
+                <constraints nullable="false"/>
+            </column>
+            <column name="diagnostico" type="TEXT" remarks="Descripción del estado observado"/>
+            <column name="medicamento" type="VARCHAR(200)" remarks="Medicamento(s) recetados si aplica"/>
+            <column name="dosis" type="VARCHAR(100)" remarks="Dosis y frecuencia del medicamento"/>
+            <column name="proxima_revision" type="DATE" remarks="Fecha sugerida para la siguiente revisión"/>
+            <column name="peso_registrado_kg" type="NUMERIC(8,2)"
+                    remarks="Peso del animal en esta revisión"/>
+            <column name="created_at" type="TIMESTAMP" defaultValueComputed="NOW()">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <sql>
+            ALTER TABLE historial_medico
+            ADD CONSTRAINT chk_historial_tipo_revision
+                CHECK (tipo_revision IN ('Preventiva','Urgencia','Vacunación','Cirugía','Seguimiento'));
+
+            ALTER TABLE historial_medico
+            ADD CONSTRAINT chk_historial_peso
+                CHECK (peso_registrado_kg IS NULL OR peso_registrado_kg > 0);
+        </sql>
+
+        <rollback>
+            <dropTable tableName="historial_medico"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

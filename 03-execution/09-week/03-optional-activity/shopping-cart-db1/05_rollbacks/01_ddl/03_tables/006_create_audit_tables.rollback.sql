@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS audit.login_log CASCADE;
+DROP TABLE IF EXISTS audit.event_log CASCADE;

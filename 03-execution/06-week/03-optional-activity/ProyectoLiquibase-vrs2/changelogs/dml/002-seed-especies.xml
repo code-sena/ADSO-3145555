@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="dml-002-seed-especies" author="emily" context="dev">
+        <comment>Datos iniciales: catálogo de especies animales con clasificación UICN</comment>
+
+        <!-- Felinos -->
+        <insert tableName="especies">
+            <column name="nombre_comun"        value="León"/>
+            <column name="nombre_cientifico"   value="Panthera leo"/>
+            <column name="familia"             value="Felidae"/>
+            <column name="estado_conservacion" value="VU"/>
+            <column name="dieta"               value="Carnívoro"/>
+        </insert>
+
+        <insert tableName="especies">
+            <column name="nombre_comun"        value="Tigre de Bengala"/>
+            <column name="nombre_cientifico"   value="Panthera tigris tigris"/>
+            <column name="familia"             value="Felidae"/>
+            <column name="estado_conservacion" value="EN"/>
+            <column name="dieta"               value="Carnívoro"/>
+        </insert>
+
+        <insert tableName="especies">
+            <column name="nombre_comun"        value="Jaguar"/>
+            <column name="nombre_cientifico"   value="Panthera onca"/>
+            <column name="familia"             value="Felidae"/>
+            <column name="estado_conservacion" value="NT"/>
+            <column name="dieta"               value="Carnívoro"/>
+        </insert>
+
+        <!-- Primates -->
+        <insert tableName="especies">
+            <column name="nombre_comun"        value="Gorila Occidental"/>
+            <column name="nombre_cientifico"   value="Gorilla gorilla"/>
+            <column name="familia"             value="Hominidae"/>
+            <column name="estado_conservacion" value="CR"/>
+            <column name="dieta"               value="Herbívoro"/>
+        </insert>
+
+        <!-- Aves -->
+        <insert tableName="especies">
+            <column name="nombre_comun"        value="Flamenco Rosado"/>
+            <column name="nombre_cientifico"   value="Phoenicopterus roseus"/>
+            <column name="familia"             value="Phoenicopteridae"/>
+            <column name="estado_conservacion" value="LC"/>
+            <column name="dieta"               value="Omnívoro"/>
+        </insert>
+
+        <!-- Reptiles -->
+        <insert tableName="especies">
+            <column name="nombre_comun"        value="Caimán del Orinoco"/>
+            <column name="nombre_cientifico"   value="Crocodylus intermedius"/>
+            <column name="familia"             value="Crocodylidae"/>
+            <column name="estado_conservacion" value="CR"/>
+            <column name="dieta"               value="Carnívoro"/>
+        </insert>
+
+        <!-- Osos -->
+        <insert tableName="especies">
+            <column name="nombre_comun"        value="Oso de Anteojos"/>
+            <column name="nombre_cientifico"   value="Tremarctos ornatus"/>
+            <column name="familia"             value="Ursidae"/>
+            <column name="estado_conservacion" value="VU"/>
+            <column name="dieta"               value="Omnívoro"/>
+        </insert>
+
+        <rollback>
+            <delete tableName="especies">
+                <where>nombre_cientifico IN (
+                    'Panthera leo','Panthera tigris tigris','Panthera onca',
+                    'Gorilla gorilla','Phoenicopterus roseus',
+                    'Crocodylus intermedius','Tremarctos ornatus'
+                )</where>
+            </delete>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

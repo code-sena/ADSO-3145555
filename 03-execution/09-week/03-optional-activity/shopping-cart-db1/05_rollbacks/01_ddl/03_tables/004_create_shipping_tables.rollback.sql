@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS shipping.shipment CASCADE;
+DROP TABLE IF EXISTS shipping.address CASCADE;

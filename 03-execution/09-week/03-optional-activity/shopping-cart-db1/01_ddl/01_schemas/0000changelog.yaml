@@ -1,0 +1,46 @@
+databaseChangeLog:
+  - changeSet:
+      id: a1b2c3d4-0001-4001-8001-000000000001
+      author: ariel5253
+      labels: "BD-01-dev,ddl,base,schemas"
+      comment: Creates baseline schemas (security, inventory, bill, ubication).
+      changes:
+        - sqlFile:
+            path: 001_create_schemas.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../05_rollbacks/01_ddl/01_schemas/001_create_schemas.rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: a1b2c3d4-0001-4001-8001-000000000002
+      author: ariel5253
+      labels: "BD-01-dev,ddl,base,schemas"
+      comment: Creates ubication schema.
+      changes:
+        - sqlFile:
+            path: 002_create_schemas.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../05_rollbacks/01_ddl/01_schemas/002_create_schemas.rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: a1b2c3d4-0001-4001-8001-000000000003
+      author: ariel5253
+      labels: "BD-01-dev,ddl,shipping,payment,audit,schemas"
+      comment: Creates shipping, payment and audit schemas.
+      changes:
+        - sqlFile:
+            path: 003_create_schemas.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../05_rollbacks/01_ddl/01_schemas/003_create_schemas.rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

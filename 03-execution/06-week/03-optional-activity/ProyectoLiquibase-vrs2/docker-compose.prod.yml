@@ -1,0 +1,36 @@
+version: '3.8'
+
+# ============================================================
+#  Zoológico DB — Docker Compose PRODUCCIÓN
+#
+#  USO:
+#    docker compose -f docker-compose.prod.yml --env-file .env.prod up
+#
+#  IMPORTANTE:
+#    - Este archivo NO levanta Postgres.
+#      La BD de producción ya existe en tu servidor/nube.
+#    - Solo corre Liquibase para aplicar los changesets
+#      pendientes contra esa BD externa.
+#    - Nunca subas el archivo .env.prod al repositorio.
+# ============================================================
+
+services:
+
+  liquibase:
+    image: liquibase/liquibase:4.27
+    container_name: liquibase_zoo_prod
+    volumes:
+      - .:/liquibase/changelog
+      - ./lib:/liquibase/lib
+    command: >
+      --changelog-file=db.changelog-master.xml
+      --url=jdbc:postgresql://${PROD_DB_HOST}:${PROD_DB_PORT}/${PROD_DB_NAME}
+      --username=${PROD_DB_USER}
+      --password=${PROD_DB_PASSWORD}
+      --driver=org.postgresql.Driver
+      --classpath=/liquibase/lib/postgresql-42.7.10.jar
+      --contexts=prod
+      update
+    # Sin restart: se ejecuta una vez y termina.
+    # Si Liquibase falla, Docker reporta el error y para.
+    restart: "no"

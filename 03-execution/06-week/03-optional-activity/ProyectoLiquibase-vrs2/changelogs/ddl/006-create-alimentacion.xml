@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!--
+        Tabla: alimentacion
+        Registra el plan y seguimiento de la dieta de cada animal.
+    -->
+    <changeSet id="ddl-006-create-alimentacion" author="emily">
+        <comment>Crea la tabla de registro de alimentación de los animales</comment>
+
+        <createTable tableName="alimentacion" remarks="Plan y seguimiento diario de la alimentación de los animales">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="pk_alimentacion" nullable="false"/>
+            </column>
+            <column name="animal_id" type="INT" remarks="FK al animal alimentado">
+                <constraints nullable="false"
+                             foreignKeyName="fk_alimentacion_animal"
+                             referencedTableName="animales"
+                             referencedColumnNames="id"/>
+            </column>
+            <column name="cuidador_id" type="INT" remarks="FK al cuidador que realizó la alimentación">
+                <constraints nullable="false"
+                             foreignKeyName="fk_alimentacion_cuidador"
+                             referencedTableName="cuidadores"
+                             referencedColumnNames="id"/>
+            </column>
+            <column name="fecha_hora" type="TIMESTAMP" defaultValueComputed="NOW()"
+                    remarks="Fecha y hora exacta de la alimentación">
+                <constraints nullable="false"/>
+            </column>
+            <column name="tipo_alimento" type="VARCHAR(150)" remarks="Descripción del alimento suministrado">
+                <constraints nullable="false"/>
+            </column>
+            <column name="cantidad_kg" type="NUMERIC(8,3)" remarks="Cantidad en kilogramos suministrada">
+                <constraints nullable="false"/>
+            </column>
+            <column name="observaciones" type="TEXT" remarks="Notas sobre el comportamiento o apetito del animal"/>
+            <column name="created_at" type="TIMESTAMP" defaultValueComputed="NOW()">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <sql>
+            ALTER TABLE alimentacion
+            ADD CONSTRAINT chk_alimentacion_cantidad
+                CHECK (cantidad_kg > 0);
+        </sql>
+
+        <rollback>
+            <dropTable tableName="alimentacion"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

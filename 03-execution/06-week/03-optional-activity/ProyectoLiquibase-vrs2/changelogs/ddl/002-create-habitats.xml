@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!--
+        Tabla: habitats
+        Define los recintos o zonas ambientales del zoológico.
+    -->
+    <changeSet id="ddl-002-create-habitats" author="emily">
+        <comment>Crea la tabla de hábitats / recintos del zoológico</comment>
+
+        <createTable tableName="habitats" remarks="Recintos o zonas ambientales donde viven los animales">
+            <column name="id" type="SERIAL">
+                <constraints primaryKey="true" primaryKeyName="pk_habitats" nullable="false"/>
+            </column>
+            <column name="nombre" type="VARCHAR(100)" remarks="Nombre descriptivo del hábitat">
+                <constraints nullable="false" unique="true" uniqueConstraintName="uq_habitats_nombre"/>
+            </column>
+            <column name="tipo_clima" type="VARCHAR(50)" remarks="Clima predominante (Tropical, Árido, Polar, etc.)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="capacidad_maxima" type="INT" remarks="Máximo de animales permitidos en el recinto">
+                <constraints nullable="false"/>
+            </column>
+            <column name="superficie_m2" type="NUMERIC(10,2)" remarks="Área total del recinto en metros cuadrados"/>
+            <column name="descripcion" type="TEXT" remarks="Descripción detallada del hábitat"/>
+            <column name="created_at" type="TIMESTAMP" defaultValueComputed="NOW()">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- CHECK: capacidad positiva -->
+        <sql>
+            ALTER TABLE habitats
+            ADD CONSTRAINT chk_habitats_capacidad CHECK (capacidad_maxima > 0);
+        </sql>
+
+        <rollback>
+            <dropTable tableName="habitats"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

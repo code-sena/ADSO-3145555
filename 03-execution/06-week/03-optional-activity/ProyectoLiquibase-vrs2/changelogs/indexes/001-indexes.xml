@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <!--
+        Índices para optimizar las consultas más frecuentes.
+        Se crean DESPUÉS de las tablas y ANTES de insertar datos.
+    -->
+    <changeSet id="idx-001-animales" author="emily">
+        <comment>Índices sobre la tabla animales para acelerar JOINs frecuentes</comment>
+
+        <createIndex tableName="animales" indexName="idx_animales_especie_id">
+            <column name="especie_id"/>
+        </createIndex>
+        <createIndex tableName="animales" indexName="idx_animales_habitat_id">
+            <column name="habitat_id"/>
+        </createIndex>
+        <createIndex tableName="animales" indexName="idx_animales_cuidador_id">
+            <column name="cuidador_id"/>
+        </createIndex>
+        <createIndex tableName="animales" indexName="idx_animales_estado_salud">
+            <column name="estado_salud"/>
+        </createIndex>
+
+        <rollback>
+            <dropIndex tableName="animales" indexName="idx_animales_especie_id"/>
+            <dropIndex tableName="animales" indexName="idx_animales_habitat_id"/>
+            <dropIndex tableName="animales" indexName="idx_animales_cuidador_id"/>
+            <dropIndex tableName="animales" indexName="idx_animales_estado_salud"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="idx-002-historial-medico" author="emily">
+        <comment>Índices sobre historial_medico para búsquedas por animal y fecha</comment>
+
+        <createIndex tableName="historial_medico" indexName="idx_historial_animal_id">
+            <column name="animal_id"/>
+        </createIndex>
+        <createIndex tableName="historial_medico" indexName="idx_historial_fecha_revision">
+            <column name="fecha_revision"/>
+        </createIndex>
+
+        <rollback>
+            <dropIndex tableName="historial_medico" indexName="idx_historial_animal_id"/>
+            <dropIndex tableName="historial_medico" indexName="idx_historial_fecha_revision"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="idx-003-alimentacion" author="emily">
+        <comment>Índices sobre alimentacion para reportes diarios</comment>
+
+        <createIndex tableName="alimentacion" indexName="idx_alimentacion_animal_id">
+            <column name="animal_id"/>
+        </createIndex>
+        <createIndex tableName="alimentacion" indexName="idx_alimentacion_fecha_hora">
+            <column name="fecha_hora"/>
+        </createIndex>
+
+        <rollback>
+            <dropIndex tableName="alimentacion" indexName="idx_alimentacion_animal_id"/>
+            <dropIndex tableName="alimentacion" indexName="idx_alimentacion_fecha_hora"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

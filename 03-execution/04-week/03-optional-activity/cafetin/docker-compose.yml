@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql_cafetin
+    environment:
+      # Aquí defines la contraseña y el nombre de la BD
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cafetin
+    ports:
+      - "3306:3306"

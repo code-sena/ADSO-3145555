@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: f5a6b7c8-0002-4002-8002-000000000002
+      author: ariel5253
+      labels: "BD-01-dev,tcl,recovery,manual"
+      comment: "Manual recovery script to reverse an erroneously committed bill."
+      runOnChange: true
+      changes:
+        - sqlFile:
+            path: 001_manual_recovery_overbilled.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - empty
