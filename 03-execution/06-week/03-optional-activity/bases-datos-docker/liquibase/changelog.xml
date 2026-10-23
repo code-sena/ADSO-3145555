@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+    <changeSet id="1" author="santiago">
+        <validCheckSum>ANY</validCheckSum> <createTable tableName="tabla_prueba">
+            <column name="id" type="int">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nombre" type="varchar(100)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="santiago">
+        <createTable tableName="productos">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nombre_producto" type="varchar(150)"/>
+            <column name="precio" type="decimal(10,2)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="3" author="santiago">
+        <insert tableName="productos">
+            <column name="id" valueNumeric="1"/>
+            <column name="nombre_producto" value="Laptop Gamer"/>
+            <column name="precio" valueNumeric="1500.00"/>
+        </insert>
+        
+        <insert tableName="productos">
+            <column name="id" valueNumeric="2"/>
+            <column name="nombre_producto" value="Mouse Inalámbrico"/>
+            <column name="precio" valueNumeric="25.50"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
