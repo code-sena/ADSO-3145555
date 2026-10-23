@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-view-person-active
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: view active persons
+      changes:
+        - sqlFile:
+            path: 02_views/01-create-view-person-active.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/02_views/01-create-view-person-active-rollback.sql
+
+  - changeSet:
+      id: 02-create-view-rol-active
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: view active roles
+      changes:
+        - sqlFile:
+            path: 02_views/02-create-view-rol-active.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/02_views/02-create-view-rol-active-rollback.sql

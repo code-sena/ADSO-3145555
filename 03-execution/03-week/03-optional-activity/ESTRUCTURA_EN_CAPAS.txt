@@ -1,0 +1,1 @@
+ahora que opina de Entity Security Bill Inventory DTO SecurityDTO BillDTO InventoryDTO IRepository ISecurityRepository IBillRepository IInventoryRepository IService ISecurityService IBillService IInventoryService Service SecurityService BillService InventoryService Controller SecurityController BillController InventoryController Utils

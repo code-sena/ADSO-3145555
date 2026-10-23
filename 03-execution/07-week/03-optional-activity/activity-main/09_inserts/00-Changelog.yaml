@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-insert-roles
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: insert initial roles
+      changes:
+        - sqlFile:
+            path: 09_inserts/01-insert-roles.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/09_inserts/01-insert-roles-rollback.sql
+
+  - changeSet:
+      id: 02-insert-persons
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: insert initial persons
+      changes:
+        - sqlFile:
+            path: 09_inserts/02-insert-persons.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/09_inserts/02-insert-persons-rollback.sql

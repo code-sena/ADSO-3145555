@@ -1,0 +1,33 @@
+Person ***
+User ***
+Role ***
+UserRole
+Product
+Category
+Bill
+BillDetail
+----------------
+Entity
+	Person
+	User
+	UserRole
+IReposository
+	IPersonReposository
+	IUserReposository
+	IUserRoleReposository
+IService
+	IPersonService
+	IUserService
+	IUserRoleService
+Service
+	PersonService
+	UserService
+	UserRoleService
+Controller
+	PersonController
+	UserController
+	UserRoleController
+Utils
+	**
+	
+***** 

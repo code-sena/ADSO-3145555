@@ -1,0 +1,86 @@
+# Conocimientos previos — Reto de inicio (ADSO)
+## Proyecto: Carrito de compras para el cafetín del SENA (Industria)
+
+### Propósito de la actividad
+Se requiere estructurar los **requerimientos iniciales** del proyecto “Carrito de compras para el cafetín del SENA (Industria)”, con el fin de evidenciar tus conocimientos previos en:
+
+- **Levantamiento y especificación de requerimientos**
+- **Modelado de datos (entidades, relaciones y reglas)**
+- **Diseño de una propuesta de solución (mockup inicial)**
+- **Planeación del trabajo (backlog / plan de trabajo)**
+- Capacidad para llegar a un **MVP viable** dentro de la jornada
+
+> Esta actividad es de **conocimientos previos**: se evalúa tu capacidad para analizar y estructurar una solución. Debes avanzar **hasta donde alcances** durante la jornada, dejando evidencia clara en el repositorio.
+
+---
+
+## Contexto del problema
+El cafetín requiere un sistema que permita **gestionar pedidos de forma rápida**, reduciendo filas, tiempos de atención y errores en la toma de pedidos. El objetivo es que el usuario pueda **seleccionar productos**, **armar un carrito**, **confirmar el pedido**, y que el cafetín pueda **recibir, preparar y entregar** pedidos con control básico del proceso.
+
+---
+
+## Entregables (lo que debes dejar en el repositorio)
+Al finalizar la jornada debes entregar una solución **hasta donde alcances**, dejando el trabajo organizado y versionado en Git. Como mínimo, tu repositorio debe contener:
+
+1. **Planteamiento del problema** (1–2 párrafos)
+2. **Objetivo general** y **3 objetivos específicos**
+3. **Alcance** (qué incluye / qué no incluye)
+4. **Requerimientos**:
+   - Requerimientos funcionales (RF)
+   - Requerimientos no funcionales (RNF)
+   - Reglas de negocio (RN)
+5. **Priorización MoSCoW**:
+   - Must / Should / Could / Won’t
+6. **Mockup inicial (baja fidelidad)**:
+   - Pantallas mínimas del MVP (imagen, dibujo o herramienta)
+7. **Backlog / Plan de trabajo**:
+   - Historias de usuario con criterios de aceptación
+   - Priorización y estimación simple
+8. **Modelo de datos (propuesto)**:
+   - Entidades, relaciones (ERD o listado estructurado)
+   - Campos mínimos por entidad y llaves (PK/FK)
+
+> Si alcanzas a implementar código, inclúyelo. Si no, deja al menos el diseño completo y coherente (requerimientos + mockup + backlog + datos).
+
+---
+
+## Metodología sugerida (Design Thinking + MoSCoW)
+
+### 1) Empatizar
+- Identifica usuarios: aprendices, instructores, personal del cafetín.
+- Describe los dolores: filas, demoras, errores, falta de orden.
+
+### 2) Definir
+- Redacta el problema central en una frase clara.
+- Define el objetivo del MVP.
+
+### 3) Idear
+- Propón funcionalidades posibles (lista amplia).
+
+### 4) Prototipar
+- Diseña mockups mínimos del MVP (pantallas esenciales).
+
+### 5) Evaluar
+- Asegura coherencia entre requerimientos ↔ mockup ↔ backlog ↔ modelo de datos.
+
+Luego aplica **MoSCoW** para decidir qué entra al MVP (Must) y qué queda para fases posteriores.
+
+---
+
+## Criterio de éxito (MVP viable)
+Tu propuesta se considera viable si:
+
+- Define un flujo mínimo: **catálogo → carrito → confirmación del pedido**
+- Incluye gestión básica para el cafetín: **ver pedidos → cambiar estado**
+- Mantiene coherencia entre:
+  - requerimientos ↔ mockup ↔ backlog ↔ datos
+- Todo queda **versionado en Git** con evidencias del avance
+
+---
+
+## Forma de entrega (obligatoria)
+1. Debes trabajar en un repositorio Git (GitHub u otro).
+2. Al finalizar la jornada, publica tu avance **hasta donde alcances**.
+3. Comparte el **enlace del repositorio** en el **canal de Discord** indicado por el instructor.
+
+**Entrega final:** link del repo + evidencia organizada dentro del repositorio (README y/o carpeta `docs/`).

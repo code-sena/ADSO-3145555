@@ -1,0 +1,65 @@
+git fork 
+ejemplo funcional - proposito 
+ambiente  develop,qa,stanting, prod (main)
+liquibase (socializacion)(practico)
+
+
+validation cunado corra el backen no cree las nuevas entidades coger el modeloa nivel y compararlo que sea lo existente 
+conocer la infraestructura del codigo 
+
+quue es DDD:ENFOQUE DE DISEÑO QUE PRIORIZA DOMINIO
+
+MICROSERVICIO DDD DDL
+RUBRICA DE EVALUACION VS LO QUE SE SUBE OPTION ACTIVITY 
+
+NUNCA VA UN REPOSITORIO DENTRO OTRO REPOSITORIO Y MARDAIN QUE PERMITA LINKEAR A AL OTRO REPOSITORIO 
+----------------------------------------------------------------------------------------------------------------------------
+REPO: USING-ENV-GITHUB-ACTIVITY
+----------------------------------------------------------------------------------------------------------------------------
+AMBIENTES RAMAS FAMOSOS SWITH CONTROLADO EL SEGUIMIENTO DE NUESTRA BASE DE DATOS 
+
+Develop,qa,main
+
+*NUNCA SE TOCA UNA RAMA PADRE DE MANERA DIRECTA.
+*ambientes:
+ *develop`procesos de desarrollo,suele haber muchos errores
+ *QA:Solo recibe  cambios,cuando se ha  culminado el desarrolloy se quiere probar que todo haya quedado bien. 
+-- todo este bien revision documentar cambios lo que este desplegado un chef 
+main:producion unicamnete recibe cambios probados 
+*los cambios del repo se realizan mediante hu cambios planificados 
+*las HU unicamente afecta a su rama padre directa,cada HU tiene su derivacion en env.
+la HU01 si se tiene  que corresponde a crear unicamente la base de datos tes-security entonces su alcance es solo el DDL 
+sql
+-------------------------------
+--usar base de datos
+USE test-security
+-------------------------------
+--Eliminar base de datos 
+DROP DATABASE  IF EXISTS test-SECURITY
+------------------------------- 
+--crear base de datos 
+CREATE DATABASE 
+--------------------------------
+*bajo este ejemplo en el repositorio debe existir 
+r`poo:using--env--github-activity
+branch : develop,qa,main
+------------------------------------------------------------------------------------------------------------------------------
+-`process
+git switch develop 
+ git switch -c HU-01-DEVELOP
+ git pull origin HU-01-DEVELOP
+ CREAR MR
+-------------------------------------------------------------------------------------------------------------------------------
+el plan de trabajo -> cada carpeta script vbase de datos este listo para ejecutar aplicar investigar likinbeis ejercicio,preparacion de un document,
+preparacion del equipo de trabajo,como funciona como sirve y para que sirve ,repositorio hacer crearle un brah hacerle cambio probarlo y si sale bien  des y qa main 
+mr rama hija  base de datos y repositorio limites , 
+* dentro de la base de datos procesos almacenados  tables tigress 
+linkinbeis entenderlo montar base de datos
+2 comprender un poco sobre manejo de ambientes en git hub
+requerimiento medible y alcanzable   
+  correr por motor planificar 
+
+reunirse y organizar 
+quien crea repo
+quien da permisos 
+historia de usuario

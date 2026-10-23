@@ -1,0 +1,640 @@
+// PRJ-EDU-HORARIOS / SIGHA SENA
+// Modelo relacional en DBML generado desde database_postgres_prj_edu_horarios.sql
+// Abrir en https://dbdiagram.io o con una extension DBML de VS Code.
+
+Project prj_edu_horarios {
+  database_type: 'PostgreSQL'
+  Note: 'Sistema institucional para gestion de horarios SENA, sin cruces de ficha, instructor y ambiente.'
+}
+
+// =========================================================
+// ESTRUCTURA INSTITUCIONAL Y CATALOGOS
+// =========================================================
+
+Table regional {
+  id uuid [pk]
+  codigo varchar(30) [unique, not null]
+  nombre varchar(150) [not null]
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table centro_formacion {
+  id uuid [pk]
+  regional_id uuid [not null]
+  codigo varchar(30) [unique, not null]
+  nombre varchar(180) [not null]
+  ciudad varchar(100)
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table sede {
+  id uuid [pk]
+  centro_formacion_id uuid [not null]
+  nombre varchar(150) [not null]
+  direccion varchar(220)
+  ciudad varchar(100)
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+
+  indexes {
+    (centro_formacion_id, nombre) [unique]
+  }
+}
+
+Table modalidad {
+  id uuid [pk]
+  nombre varchar(80) [unique, not null]
+  descripcion text
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table tipo_ambiente {
+  id uuid [pk]
+  nombre varchar(100) [unique, not null]
+  descripcion text
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table tipo_contrato {
+  id uuid [pk]
+  nombre varchar(100) [unique, not null]
+  max_horas_semana integer
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table jornada {
+  id uuid [pk]
+  nombre varchar(80) [unique, not null]
+  hora_inicio time [not null]
+  hora_fin time [not null]
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table parametro_sistema {
+  id uuid [pk]
+  clave varchar(120) [unique, not null]
+  valor text [not null]
+  descripcion text
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+// =========================================================
+// SEGURIDAD Y ACCESO
+// =========================================================
+
+Table rol {
+  id uuid [pk]
+  nombre varchar(100) [unique, not null]
+  descripcion text
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table permiso {
+  id uuid [pk]
+  codigo varchar(120) [unique, not null]
+  descripcion text
+  modulo varchar(80) [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table rol_permiso {
+  id uuid [pk]
+  rol_id uuid [not null]
+  permiso_id uuid [not null]
+  created_at timestamp [not null]
+
+  indexes {
+    (rol_id, permiso_id) [unique]
+  }
+}
+
+Table usuario {
+  id uuid [pk]
+  documento varchar(30) [unique, not null]
+  nombre varchar(100) [not null]
+  apellido varchar(100) [not null]
+  correo varchar(180) [unique, not null]
+  contrasena_hash varchar(255) [not null]
+  rol_id uuid [not null]
+  sede_id uuid
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table sesion {
+  id uuid [pk]
+  usuario_id uuid [not null]
+  token_hash varchar(255) [not null]
+  ip_origen varchar(80)
+  user_agent text
+  activa boolean [not null]
+  expires_at timestamp [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table auditoria {
+  id uuid [pk]
+  tabla_afectada varchar(120) [not null]
+  registro_id uuid
+  accion varchar(30) [not null]
+  datos_anteriores jsonb
+  datos_nuevos jsonb
+  usuario_id uuid
+  usuario_documento varchar(30)
+  usuario_nombre varchar(220)
+  usuario_rol varchar(120)
+  ip_origen varchar(80)
+  created_at timestamp [not null]
+}
+
+// =========================================================
+// PROGRAMA ACADEMICO Y OFERTA
+// =========================================================
+
+Table linea_tecnologica {
+  id uuid [pk]
+  nombre varchar(150) [unique, not null]
+  descripcion text
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table red_conocimiento {
+  id uuid [pk]
+  nombre varchar(150) [unique, not null]
+  descripcion text
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table programa_formacion {
+  id uuid [pk]
+  linea_tecnologica_id uuid
+  nombre varchar(220) [not null]
+  codigo varchar(60) [unique, not null]
+  nivel_formacion varchar(80) [not null]
+  duracion_meses integer
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table programa_red {
+  id uuid [pk]
+  programa_id uuid [not null]
+  red_conocimiento_id uuid [not null]
+  created_at timestamp [not null]
+
+  indexes {
+    (programa_id, red_conocimiento_id) [unique]
+  }
+}
+
+Table oferta_formacion {
+  id uuid [pk]
+  programa_id uuid [not null]
+  sede_id uuid [not null]
+  modalidad_id uuid [not null]
+  codigo_oferta varchar(80) [unique, not null]
+  fecha_inicio date [not null]
+  fecha_fin date [not null]
+  estado varchar(30) [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table competencia {
+  id uuid [pk]
+  codigo varchar(80) [unique, not null]
+  nombre varchar(250) [not null]
+  descripcion text
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table resultado_aprendizaje {
+  id uuid [pk]
+  codigo varchar(80) [unique, not null]
+  nombre varchar(250) [not null]
+  descripcion text
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table competencia_resultado {
+  id uuid [pk]
+  competencia_id uuid [not null]
+  resultado_id uuid [not null]
+  created_at timestamp [not null]
+
+  indexes {
+    (competencia_id, resultado_id) [unique]
+  }
+}
+
+Table programa_competencia {
+  id uuid [pk]
+  programa_id uuid [not null]
+  competencia_id uuid [not null]
+  horas_lectivas integer [not null]
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+
+  indexes {
+    (programa_id, competencia_id) [unique]
+  }
+}
+
+// =========================================================
+// INSTRUCTORES
+// =========================================================
+
+Table instructor {
+  id uuid [pk]
+  usuario_id uuid [unique]
+  documento varchar(30) [unique, not null]
+  nombre varchar(100) [not null]
+  apellido varchar(100) [not null]
+  correo varchar(180) [unique, not null]
+  telefono varchar(40)
+  tipo_contrato_id uuid [not null]
+  sede_id uuid [not null]
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table instructor_competencia {
+  id uuid [pk]
+  instructor_id uuid [not null]
+  competencia_id uuid [not null]
+  programa_id uuid [not null]
+  fecha_inicio date [not null]
+  fecha_fin date
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+
+  indexes {
+    (instructor_id, competencia_id, programa_id) [unique]
+  }
+}
+
+Table disponibilidad_instructor {
+  id uuid [pk]
+  instructor_id uuid [not null]
+  dia_semana smallint [not null]
+  franja_horaria_id uuid [not null]
+  disponible boolean [not null]
+  fecha_desde date
+  fecha_hasta date
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table novedad_instructor {
+  id uuid [pk]
+  instructor_id uuid [not null]
+  tipo varchar(40) [not null]
+  descripcion text
+  fecha_desde date [not null]
+  fecha_hasta date [not null]
+  created_by uuid
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+// =========================================================
+// AMBIENTES
+// =========================================================
+
+Table ambiente {
+  id uuid [pk]
+  codigo varchar(80) [unique, not null]
+  nombre varchar(150) [not null]
+  capacidad integer [not null]
+  ubicacion varchar(180)
+  sede_id uuid [not null]
+  tipo_ambiente_id uuid [not null]
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table recurso_ambiente {
+  id uuid [pk]
+  ambiente_id uuid [not null]
+  nombre varchar(120) [not null]
+  cantidad integer [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+// =========================================================
+// FICHAS Y APRENDICES
+// =========================================================
+
+Table franja_horaria {
+  id uuid [pk]
+  nombre varchar(100) [not null]
+  hora_inicio time [not null]
+  hora_fin time [not null]
+  jornada_id uuid [not null]
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+
+  indexes {
+    (jornada_id, hora_inicio, hora_fin) [unique]
+  }
+}
+
+Table disponibilidad_ambiente {
+  id uuid [pk]
+  ambiente_id uuid [not null]
+  dia_semana smallint [not null]
+  franja_horaria_id uuid [not null]
+  disponible boolean [not null]
+  motivo_bloqueo varchar(180)
+  fecha_desde date
+  fecha_hasta date
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table ficha {
+  id uuid [pk]
+  codigo varchar(80) [unique, not null]
+  oferta_id uuid [not null]
+  sede_id uuid [not null]
+  jornada_id uuid [not null]
+  fecha_inicio date [not null]
+  fecha_fin date [not null]
+  fecha_fin_extendida date
+  numero_aprendices integer [not null]
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table extension_ficha {
+  id uuid [pk]
+  ficha_id uuid [not null]
+  fecha_fin_anterior date [not null]
+  fecha_fin_nueva date [not null]
+  motivo text [not null]
+  usuario_id uuid
+  created_at timestamp [not null]
+}
+
+Table aprendiz {
+  id uuid [pk]
+  usuario_id uuid [unique]
+  documento varchar(30) [unique, not null]
+  nombre varchar(100) [not null]
+  apellido varchar(100) [not null]
+  correo varchar(180) [unique, not null]
+  telefono varchar(40)
+  sede_id uuid [not null]
+  activo boolean [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table aprendiz_ficha {
+  id uuid [pk]
+  aprendiz_id uuid [not null]
+  ficha_id uuid [not null]
+  fecha_matricula date [not null]
+  estado varchar(30) [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+
+  indexes {
+    (aprendiz_id, ficha_id) [unique]
+  }
+}
+
+// =========================================================
+// MOTOR DE HORARIOS
+// =========================================================
+
+Table horario {
+  id uuid [pk]
+  ficha_id uuid [not null]
+  instructor_id uuid [not null]
+  ambiente_id uuid [not null]
+  competencia_id uuid [not null]
+  franja_horaria_id uuid [not null]
+  fecha date [not null]
+  estado varchar(30) [not null]
+  created_by uuid
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+
+  indexes {
+    (instructor_id, franja_horaria_id, fecha) [unique]
+    (ambiente_id, franja_horaria_id, fecha) [unique]
+    (ficha_id, franja_horaria_id, fecha) [unique]
+  }
+}
+
+Table validacion_horario {
+  id uuid [pk]
+  horario_id uuid
+  ficha_id uuid
+  instructor_id uuid
+  ambiente_id uuid
+  competencia_id uuid
+  franja_horaria_id uuid
+  fecha date
+  resultado varchar(30) [not null]
+  codigo_regla varchar(80) [not null]
+  mensaje text [not null]
+  created_by uuid
+  created_at timestamp [not null]
+}
+
+Table cambio_horario {
+  id uuid [pk]
+  horario_id uuid [not null]
+  datos_anteriores jsonb [not null]
+  datos_nuevos jsonb [not null]
+  motivo text [not null]
+  estado varchar(30) [not null]
+  solicitado_por uuid
+  aprobado_por uuid
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table revision_coordinacion {
+  id uuid [pk]
+  cambio_horario_id uuid
+  observacion text
+  decision varchar(30) [not null]
+  usuario_id uuid
+  created_at timestamp [not null]
+}
+
+// =========================================================
+// SEGUIMIENTO Y PROYECTOS
+// =========================================================
+
+Table observacion {
+  id uuid [pk]
+  tipo varchar(40) [not null]
+  severidad varchar(20) [not null]
+  descripcion text [not null]
+  estado varchar(30) [not null]
+  ficha_id uuid
+  instructor_id uuid
+  ambiente_id uuid
+  horario_id uuid
+  reportado_por uuid
+  resuelto_por uuid
+  fecha_resolucion timestamp
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table observacion_estado {
+  id uuid [pk]
+  observacion_id uuid [not null]
+  estado_anterior varchar(30)
+  estado_nuevo varchar(30) [not null]
+  comentario text
+  usuario_id uuid
+  created_at timestamp [not null]
+}
+
+Table notificacion {
+  id uuid [pk]
+  usuario_id uuid [not null]
+  titulo varchar(180) [not null]
+  mensaje text [not null]
+  tipo varchar(60) [not null]
+  leida boolean [not null]
+  referencia_id uuid
+  referencia_tabla varchar(120)
+  created_at timestamp [not null]
+}
+
+Table proyecto_formativo {
+  id uuid [pk]
+  nombre varchar(220) [not null]
+  descripcion text
+  fecha_inicio date
+  fecha_fin date
+  estado varchar(30) [not null]
+  created_at timestamp [not null]
+  updated_at timestamp [not null]
+}
+
+Table proyecto_ficha {
+  id uuid [pk]
+  proyecto_id uuid [not null]
+  ficha_id uuid [not null]
+  created_at timestamp [not null]
+
+  indexes {
+    (proyecto_id, ficha_id) [unique]
+  }
+}
+
+Ref: centro_formacion.regional_id > regional.id
+Ref: sede.centro_formacion_id > centro_formacion.id
+Ref: rol_permiso.rol_id > rol.id
+Ref: rol_permiso.permiso_id > permiso.id
+Ref: usuario.rol_id > rol.id
+Ref: usuario.sede_id > sede.id
+Ref: sesion.usuario_id > usuario.id
+Ref: auditoria.usuario_id > usuario.id
+Ref: programa_formacion.linea_tecnologica_id > linea_tecnologica.id
+Ref: programa_red.programa_id > programa_formacion.id
+Ref: programa_red.red_conocimiento_id > red_conocimiento.id
+Ref: oferta_formacion.programa_id > programa_formacion.id
+Ref: oferta_formacion.sede_id > sede.id
+Ref: oferta_formacion.modalidad_id > modalidad.id
+Ref: competencia_resultado.competencia_id > competencia.id
+Ref: competencia_resultado.resultado_id > resultado_aprendizaje.id
+Ref: programa_competencia.programa_id > programa_formacion.id
+Ref: programa_competencia.competencia_id > competencia.id
+Ref: instructor.usuario_id > usuario.id
+Ref: instructor.tipo_contrato_id > tipo_contrato.id
+Ref: instructor.sede_id > sede.id
+Ref: instructor_competencia.instructor_id > instructor.id
+Ref: instructor_competencia.competencia_id > competencia.id
+Ref: instructor_competencia.programa_id > programa_formacion.id
+Ref: disponibilidad_instructor.instructor_id > instructor.id
+Ref: novedad_instructor.instructor_id > instructor.id
+Ref: novedad_instructor.created_by > usuario.id
+Ref: ambiente.sede_id > sede.id
+Ref: ambiente.tipo_ambiente_id > tipo_ambiente.id
+Ref: recurso_ambiente.ambiente_id > ambiente.id
+Ref: franja_horaria.jornada_id > jornada.id
+Ref: disponibilidad_ambiente.ambiente_id > ambiente.id
+Ref: disponibilidad_ambiente.franja_horaria_id > franja_horaria.id
+Ref: ficha.oferta_id > oferta_formacion.id
+Ref: ficha.sede_id > sede.id
+Ref: ficha.jornada_id > jornada.id
+Ref: extension_ficha.ficha_id > ficha.id
+Ref: extension_ficha.usuario_id > usuario.id
+Ref: aprendiz.usuario_id > usuario.id
+Ref: aprendiz.sede_id > sede.id
+Ref: aprendiz_ficha.aprendiz_id > aprendiz.id
+Ref: aprendiz_ficha.ficha_id > ficha.id
+Ref: horario.ficha_id > ficha.id
+Ref: horario.instructor_id > instructor.id
+Ref: horario.ambiente_id > ambiente.id
+Ref: horario.competencia_id > competencia.id
+Ref: horario.franja_horaria_id > franja_horaria.id
+Ref: horario.created_by > usuario.id
+Ref: validacion_horario.horario_id > horario.id
+Ref: validacion_horario.ficha_id > ficha.id
+Ref: validacion_horario.instructor_id > instructor.id
+Ref: validacion_horario.ambiente_id > ambiente.id
+Ref: validacion_horario.competencia_id > competencia.id
+Ref: validacion_horario.franja_horaria_id > franja_horaria.id
+Ref: validacion_horario.created_by > usuario.id
+Ref: cambio_horario.horario_id > horario.id
+Ref: cambio_horario.solicitado_por > usuario.id
+Ref: cambio_horario.aprobado_por > usuario.id
+Ref: revision_coordinacion.cambio_horario_id > cambio_horario.id
+Ref: revision_coordinacion.usuario_id > usuario.id
+Ref: observacion.ficha_id > ficha.id
+Ref: observacion.instructor_id > instructor.id
+Ref: observacion.ambiente_id > ambiente.id
+Ref: observacion.horario_id > horario.id
+Ref: observacion.reportado_por > usuario.id
+Ref: observacion.resuelto_por > usuario.id
+Ref: observacion_estado.observacion_id > observacion.id
+Ref: observacion_estado.usuario_id > usuario.id
+Ref: notificacion.usuario_id > usuario.id
+Ref: proyecto_ficha.proyecto_id > proyecto_formativo.id
+Ref: proyecto_ficha.ficha_id > ficha.id
+Ref: disponibilidad_instructor.franja_horaria_id > franja_horaria.id

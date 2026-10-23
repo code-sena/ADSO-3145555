@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-idx-person-email
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: index on person email
+      changes:
+        - sqlFile:
+            path: 06_indexes/01-idx-person-email.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/06_indexes/01-idx-person-email-rollback.sql
+
+  - changeSet:
+      id: 02-idx-rol-nombre
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: index on rol nombre
+      changes:
+        - sqlFile:
+            path: 06_indexes/02-idx-rol-nombre.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/06_indexes/02-idx-rol-nombre-rollback.sql
