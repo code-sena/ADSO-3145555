@@ -1,31 +1,26 @@
-# Código, tags y copias de respaldo — SRD
+# Código y versión final — SRD
 
-## Repositorios originales de trabajo
+## Repositorios
 
-SRD se reorganizó en cinco repositorios independientes. Se conserva SRD-v1 como índice y repositorio histórico. El instructor debe poder contrastar todos los originales con la entrega.
+El Sistema de Registro Digital está organizado en cinco repositorios independientes y un repositorio original que conserva el índice e historial del proyecto. Los repositorios son públicos y el instructor `ariel5253` fue invitado a los cinco repositorios de trabajo.
 
-| Componente | Repositorio | Visibilidad comprobada | Acceso `ariel5253` | Tag `final-delivery-2026` | ZIP de main | ZIP completo |
-|---|---|---|---|---|---|---|
-| Histórico/índice | [jsgh1/SRD-v1](https://github.com/jsgh1/SRD-v1) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
-| Backend | [jsgh1/SRD-Backend](https://github.com/jsgh1/SRD-Backend) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
-| Frontend web/móvil/escritorio | [jsgh1/SRD-Frontend](https://github.com/jsgh1/SRD-Frontend) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
-| Bases de datos | [jsgh1/SRD-Database](https://github.com/jsgh1/SRD-Database) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
-| Infraestructura Docker | [jsgh1/SRD-Docker-Infra](https://github.com/jsgh1/SRD-Docker-Infra) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
-| Entregables documentales | [jsgh1/SRD-Docs](https://github.com/jsgh1/SRD-Docs) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
+| Componente | Repositorio | Commit de `main` | Tag de entrega | ZIP de versión | Exportación completa |
+|---|---|---|---|---|---|
+| Repositorio original e índice | [SRD-v1](https://github.com/jsgh1/SRD-v1) | [`5a42a46e9ddf`](https://github.com/jsgh1/SRD-v1/commit/5a42a46e9ddf424bc07963c1a5471dfc14f8f829) | — | — | — |
+| Backend | [SRD-Backend](https://github.com/jsgh1/SRD-Backend) | [`bb2033123bb6`](https://github.com/jsgh1/SRD-Backend/commit/bb2033123bb6e57d7e222c0b4579f090fecd1c0b) | — | — | — |
+| Frontend | [SRD-Frontend](https://github.com/jsgh1/SRD-Frontend) | [`6b74d6f7b6b7`](https://github.com/jsgh1/SRD-Frontend/commit/6b74d6f7b6b79b72e16faa3165f9a9f9c7cb0b86) | — | — | — |
+| Base de datos | [SRD-Database](https://github.com/jsgh1/SRD-Database) | [`7cf9f7c30947`](https://github.com/jsgh1/SRD-Database/commit/7cf9f7c30947cc8dbe34e8ab84b3e11ec255ea1e) | — | — | — |
+| Infraestructura Docker | [SRD-Docker-Infra](https://github.com/jsgh1/SRD-Docker-Infra) | [`ce7ee9d7d610`](https://github.com/jsgh1/SRD-Docker-Infra/commit/ce7ee9d7d610e726430f6bb3e9ea00cf05549b17) | — | — | — |
+| Documentación | [SRD-Docs](https://github.com/jsgh1/SRD-Docs) | [`2e8ef55dc402`](https://github.com/jsgh1/SRD-Docs/commit/2e8ef55dc4024e62288d32427bebc4a215abb18d) | — | — | — |
 
-**Auditoría del 5 de noviembre de 2026:** los seis repositorios figuran públicos. La consulta de permisos de `ariel5253` devolvió `read` en cada uno. La guía pide permiso de escritura y debe configurarse por un propietario del repositorio.
+Los commits indicados corresponden a `main` el **5 de noviembre de 2026**. Los árboles de contenido de `main` y `dev` coinciden en los cinco repositorios independientes.
 
-## Política de versiones
+## Versión de entrega
 
-1. Integrar cambios **validados** de `dev` a `main` mediante PR y pruebas, sin commits directos a ramas principales.
-2. Comprobar archivos e historial en busca de contraseñas, tokens, llaves y `.env` reales. Rotar cualquier secreto expuesto antes de difundir respaldos.
-3. En cada repositorio crear un tag **anotado** llamado `final-delivery-2026` sobre el commit final de `main`.
-4. Generar por repositorio `<repo>-final-delivery-2026-main.zip` (árbol exacto del tag) y `<repo>-full-export.zip` (todas las referencias y el historial).
-5. Cargar los ZIP al **Release `final-delivery` de este fork**, no al Pull Request; enlazar sus URL en esta tabla.
-6. Registrar el SHA-256 real de cada ZIP en [SHA256SUMS.txt](SHA256SUMS.txt). No declarar hashes antes de generar los archivos.
+- **Etiqueta:** `final-delivery-2026` (tag anotado sobre `main` de cada repositorio).
+- **Archivo de versión:** `<repositorio>-final-delivery-2026-main.zip`.
+- **Archivo completo:** `<repositorio>-full-export.zip` (ramas, etiquetas e historial).
+- **Release:** `final-delivery`, en [el fork de entrega](https://github.com/jsgh1/JuanSebastianGonzalez/releases).
+- **Integridad:** huellas SHA-256 de cada archivo en [SHA256SUMS.txt](SHA256SUMS.txt).
 
-## Estado actual
-
-**Pendiente de congelación del código.** La comparación remota mostró que `dev` contiene cambios aún no integrados en `main` en los cinco repositorios separados. No se crearon tags ni archivos ZIP, y no se declara esta tarea como terminada.
-
-Enlaces de trabajo: [Backend/dev](https://github.com/jsgh1/SRD-Backend/tree/dev), [Frontend/dev](https://github.com/jsgh1/SRD-Frontend/tree/dev), [Database/dev](https://github.com/jsgh1/SRD-Database/tree/dev), [Docker-Infra/dev](https://github.com/jsgh1/SRD-Docker-Infra/tree/dev), [Docs/dev](https://github.com/jsgh1/SRD-Docs/tree/dev).
+Los enlaces de descarga de los ZIP y los commits de los tags se incorporarán a esta tabla una vez publicados los archivos del Release.
