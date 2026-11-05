@@ -1,1 +1,12 @@
-# sha256  file / archivo
+6b75ecd858f906d62be8c7fe8c35aa812480884c1f81728630cad4745c4fe707  SRD-v1-final-delivery-2026-main.zip
+984a4243830a458cc8330853165622502f994fd1137941bb04ce1a93b1bba179  SRD-v1-full-export.zip
+255691a9fa9c5a32044b93b4f6ef30f77ba574230c994559fec05837f03d2e19  SRD-Backend-final-delivery-2026-main.zip
+686a1dde265cd75dd77759574006b46ce0dc4a34a00d40386a12eed119d15956  SRD-Backend-full-export.zip
+6702075edb6ea8093bf84cae25860a66ecae43832e50827517658cd4a6954f77  SRD-Frontend-final-delivery-2026-main.zip
+2184af35830eff7da8bd135b7f8d8ed3bba6f96d6508e6e2260966d91b2b7b58  SRD-Frontend-full-export.zip
+d0341729650443d538173a0fc6373b982156c6d75c8bffba569f6897a8d9a53f  SRD-Database-final-delivery-2026-main.zip
+45306a0e34bcc0a6df1749337aea1e01076de40a82bfb7388a7a959df688b1b1  SRD-Database-full-export.zip
+7d55ec06a2b18e20b1a28a9df7cbe4946202c8ecb004b860e4d0dd30d0650b64  SRD-Docker-Infra-final-delivery-2026-main.zip
+55f844626534f69a612e7ced96bcb44ccaa0b26ef7b297ae5c11a6fa984227c9  SRD-Docker-Infra-full-export.zip
+a46d36b89d046d97f41f64d1ea5382963d7ea29ed65f06389aba79223289de7f  SRD-Docs-final-delivery-2026-main.zip
+c9a39be785d545b887ea124aad283470524469c4ba4981ed47a2dbc64c48ac3f  SRD-Docs-full-export.zip
