@@ -2,7 +2,7 @@
 
 Two videos are required. / Se requieren dos videos.
 
-## Archivo recibido / Received file
+## Archivos recibidos / Received files
 
 Se localizó el archivo de presentación entregado por el equipo: `Presentación FaceLit.mp4`.
 
@@ -13,12 +13,12 @@ Se localizó el archivo de presentación entregado por el equipo: `Presentación
 - Clasificación confirmada por el equipo: **video de presentación**, no tutorial. La duración no cumple el rango de 1-2 minutos exigido para el pitch.
 - Acceso a la carpeta sin iniciar sesión: **comprobado el 2026-11-05**, mediante una solicitud HTTP sin autenticación: respuesta 200, título «presentación - Google Drive» y nombre del video visible. La reproducción completa del archivo permanece **pendiente de comprobar**.
 
-El video permanece fuera de Git. El enlace ya fue recibido; no se marca como entrega conforme hasta comprobar contenido, permisos y el requisito de duración. El tutorial sigue pendiente.
+Los videos permanecen fuera de Git. El equipo confirmó que la misma carpeta contiene la presentación y el tutorial. Una nueva consulta sin autenticación del 2026-11-05 devolvió HTTP 200 y mostró ambos nombres: `Presentación FaceLit.mp4` y `Tutorial.mp4`. El tutorial ya tiene enlace aportado y nombre visible; su duración, contenido y reproducción completa siguen pendientes de comprobar. No se marca conformidad final por la sola presencia de los archivos.
 
 | Video | Duration / Duración | Link / Enlace | Done / Listo |
 |---|---|---|---|
 | Advertising pitch / Pitch publicitario | Recibido: 4 min 31 s; exigido: 1 a 2 minutos | [Presentación de FaceLit — Drive](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT) | ☐ Carpeta accesible; duración fuera de rango y reproducción completa pendiente |
-| Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | | ☐ |
+| Short usage tutorial / Tutorial corto de uso | Exigido: 3 a 5 minutos; duración del archivo por comprobar | [Tutorial.mp4 — Drive](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT) | ☐ Archivo visible sin sesión; contenido y reproducción completa pendientes |
 
 ## 1. Advertising pitch / Pitch publicitario
 

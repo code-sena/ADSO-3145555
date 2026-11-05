@@ -14,7 +14,7 @@ The delivery coordinator confirmed that her colleague deliberately retained the 
 
 Accordingly, the prepared ZIPs represent the selected GitHub source, not an exact export of the running Hostinger deployment. This is an explicit delivery limitation, not evidence that the deployed-only adjustments are included in the archives. Existing ZIP bytes and SHA-256 values are unchanged by this documentary clarification. It does not establish instructor acceptance of the limitation or replace independent installation verification of the delivered source.
 
-The provided presentation video was identified locally: 270.8333 seconds (4 min 31 s), 215,064,307 bytes; SHA-256 `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`. The user confirmed that it is the presentation video and supplied [this Drive folder](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT). It is not committed to Git. A subsequent unauthenticated HTTP request on 2026-11-05 returned 200 with folder title "presentación - Google Drive" and the video name visible. Folder access is therefore verified; complete playback and a byte-for-byte comparison of the remote video remain unverified. Its duration is outside the guide's 1-2 minute pitch range. A separate usage tutorial remains pending.
+The provided presentation video was identified locally: 270.8333 seconds (4 min 31 s), 215,064,307 bytes; SHA-256 `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`. The user confirmed that it is the presentation video and supplied [this Drive folder](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT). It is not committed to Git. The user subsequently confirmed that the same folder contains the separate usage tutorial. A new unauthenticated HTTP request on 2026-11-05 returned 200 and showed both `Presentación FaceLit.mp4` and `Tutorial.mp4`. Both video links have now been supplied and their names are visible without signing in. Full playback, tutorial duration/content and byte-for-byte comparison with remote files remain unverified. The known local presentation duration remains outside the guide's 1-2 minute pitch range.
 
 ## Source revisions and CI
 
@@ -80,7 +80,7 @@ Attach a redacted record stating date, clean environment, component commits, ins
 
 1. Confirmation of real credential revocation/rotation, without disclosing values.
 2. Independent clean-installation evidence and acceptance from the tester.
-3. Resolve the presentation/pitch duration requirement, verify full playback, and provide the separate usage tutorial and its public link. Anonymous access to the presentation folder has been checked.
+3. Resolve the presentation/pitch duration requirement and verify the tutorial's duration/content and full playback of both files. Both video links have been supplied in the same anonymously accessible folder; the tutorial is no longer missing.
 4. Actual contributor roles, individual authorization of preloaded personal data, and registration applicant/declarations confirmed by the team/instructor. These fields must not be inferred or checked on someone's behalf.
 
 ZIP links and SHA-256 entries must refer to actual, verified assets, never planned filenames represented as published downloads.
