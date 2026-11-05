@@ -4,8 +4,13 @@
 
 ## Required content / Contenido requerido
 
-- [ ] Software technical proposal / Propuesta técnica del software
-- [ ] Selected technologies and why / Tecnologías seleccionadas y su justificación
+- [x] Software technical proposal / Propuesta técnica del software
+- [x] Selected technologies and why / Tecnologías seleccionadas y su justificación
+
+## Delivered files / Archivos entregados
+
+- `technical-proposal.docx` — editable source / fuente editable
+- `technical-proposal.pdf` — PDF export / exportación PDF
 
 ## Format / Formato
 

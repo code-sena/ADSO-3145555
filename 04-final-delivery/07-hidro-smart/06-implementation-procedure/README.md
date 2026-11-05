@@ -4,8 +4,15 @@
 
 ## Required content / Contenido requerido
 
-- [ ] Implementation procedure, with environments and steps / Procedimiento de implementación, con ambientes y pasos
+- [x] Implementation procedure, with environments and steps / Procedimiento de implementación, con ambientes y pasos
 - [ ] Deployment evidence and production URL, if deployed / Evidencia de despliegue y URL de producción, si se desplegó
+
+Deployment evidence and a production URL were not found in the official consolidated source and therefore remain pending.
+
+## Delivered files / Archivos entregados
+
+- `implementation-procedure.docx` — editable source / fuente editable
+- `implementation-procedure.pdf` — PDF export / exportación PDF
 
 ## Format / Formato
 

@@ -12,11 +12,12 @@ Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo
 
 | Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
 |---|---|---|---|---|---|---|
-| Main repository | [joseale879/PT_HS](https://github.com/joseale879/PT_HS) | Public / Público | **Add / Agregar** | | | |
-| Database | [joseamaya009/BD_HS](https://github.com/joseamaya009/BD_HS) | Public / Público<br>Fork: the original is listed below / Fork: el original está abajo | **Add / Agregar** | | | |
-| Backend | [joseamaya009/BK_HS](https://github.com/joseamaya009/BK_HS) | Public / Público | **Add / Agregar** | | | |
-| Web frontend | [joseamaya009/FT_HS](https://github.com/joseamaya009/FT_HS) | Public / Público | **Add / Agregar** | | | |
-| Database | [EmersonMolano/BD_HS](https://github.com/EmersonMolano/BD_HS) | Public / Público | **Add / Agregar** | | | |
+| Main repository | [joseale879/PT_HS](https://github.com/joseale879/PT_HS) | Public / Público | **Add / Agregar** | Not verified; HEAD `8dd45ca` | | |
+| Database | [EmersonMolano/BD_HS](https://github.com/EmersonMolano/BD_HS) | Public / Público | **Add / Agregar** | Not verified; HEAD `42ee03b` | | |
+| Backend | [joseamaya009/BK_HS](https://github.com/joseamaya009/BK_HS) | Public / Público | **Add / Agregar** | Not verified; HEAD `190263d` | | |
+| Web frontend | [joseamaya009/FT_HS](https://github.com/joseamaya009/FT_HS) | Public / Público | **Add / Agregar** | Not verified; HEAD `91a5ef3` | | |
+| Firmware | [joseamaya009/Firmaware_HS](https://github.com/joseamaya009/Firmaware_HS) | Public / Público | **Add / Agregar** | Not verified; HEAD `917fcfd` | | |
+| Documentation | [EmersonMolano/DOCS_HS](https://github.com/EmersonMolano/DOCS_HS) | Public / Público | **Add / Agregar** | Not verified; HEAD `eab6c78` | | |
 
 Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
 
@@ -25,6 +26,10 @@ Antes de hacer público un repositorio, quite los archivos `.env` y cambie toda 
 The instructor account `ariel5253` needs write access to every repository, so pending items can be corrected for the software registration. Add it as a collaborator where the table says so.
 
 La cuenta del instructor, `ariel5253`, necesita acceso de escritura en cada repositorio, para poder corregir pendientes del registro de software. Agréguela como colaboradora donde la tabla lo indique.
+
+The tag `final-delivery-2026`, both ZIP variants, Release links and collaborator access were not verified in the local audit. The blanks and “Not verified” markers are intentional; they are not claims that those publication artifacts exist.
+
+El tag `final-delivery-2026`, las dos variantes ZIP, los enlaces del Release y el acceso de colaborador no se verificaron en la auditoría local. Los campos vacíos y las marcas “Not verified” son intencionales; no afirman que esos artefactos de publicación existan.
 
 ## Why two ZIP files / Por qué dos ZIP
 
