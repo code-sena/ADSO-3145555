@@ -27,4 +27,4 @@ Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, Q
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role in the project / Rol en el proyecto | Author / Autor |
 |---|---|---|---|---|---|---|
-| JUAN SEBASTIAN GONZALEZ HORTA | CC | 1077227978 | 3145555 | jsgh1 | | Yes / Sí |
+| JUAN SEBASTIAN GONZALEZ HORTA | CC | 1077227978 | 3145555 | jsgh1 | Desarrollo full-stack (backend, frontend web/móvil/escritorio), datos, infraestructura, QA y documentación | Yes / Sí |

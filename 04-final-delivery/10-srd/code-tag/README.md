@@ -1,40 +1,26 @@
-# Code and tags / Código y tags: SRD
+# Código y versión final — SRD
 
-## Original repositories / Repositorios originales
+## Repositorios
 
-Every original working repository of the project must be listed here and must be **public**. The instructor compares what was delivered against these repositories, so they must stay public and keep their full history until the review ends.
+El Sistema de Registro Digital está organizado en cinco repositorios independientes y un repositorio original que conserva el índice e historial del proyecto. Los repositorios son públicos y el instructor `ariel5253` fue invitado a los cinco repositorios de trabajo.
 
-Todos los repositorios originales de trabajo del proyecto deben estar aquí y deben ser **públicos**. El instructor contrasta lo entregado contra estos repositorios, así que deben seguir públicos y con todo su historial hasta terminar la revisión.
+| Componente | Repositorio | Commit de `main` | Tag de entrega | ZIP de versión | Exportación completa |
+|---|---|---|---|---|---|
+| Repositorio original e índice | [SRD-v1](https://github.com/jsgh1/SRD-v1) | [`5a42a46e9ddf`](https://github.com/jsgh1/SRD-v1/commit/5a42a46e9ddf424bc07963c1a5471dfc14f8f829) | [final-delivery-2026](https://github.com/jsgh1/SRD-v1/tree/final-delivery-2026) | [ZIP main](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-v1-final-delivery-2026-main.zip) | [ZIP completo](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-v1-full-export.zip) |
+| Backend | [SRD-Backend](https://github.com/jsgh1/SRD-Backend) | [`bb2033123bb6`](https://github.com/jsgh1/SRD-Backend/commit/bb2033123bb6e57d7e222c0b4579f090fecd1c0b) | [final-delivery-2026](https://github.com/jsgh1/SRD-Backend/tree/final-delivery-2026) | [ZIP main](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-Backend-final-delivery-2026-main.zip) | [ZIP completo](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-Backend-full-export.zip) |
+| Frontend | [SRD-Frontend](https://github.com/jsgh1/SRD-Frontend) | [`6b74d6f7b6b7`](https://github.com/jsgh1/SRD-Frontend/commit/6b74d6f7b6b79b72e16faa3165f9a9f9c7cb0b86) | [final-delivery-2026](https://github.com/jsgh1/SRD-Frontend/tree/final-delivery-2026) | [ZIP main](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-Frontend-final-delivery-2026-main.zip) | [ZIP completo](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-Frontend-full-export.zip) |
+| Base de datos | [SRD-Database](https://github.com/jsgh1/SRD-Database) | [`7cf9f7c30947`](https://github.com/jsgh1/SRD-Database/commit/7cf9f7c30947cc8dbe34e8ab84b3e11ec255ea1e) | [final-delivery-2026](https://github.com/jsgh1/SRD-Database/tree/final-delivery-2026) | [ZIP main](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-Database-final-delivery-2026-main.zip) | [ZIP completo](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-Database-full-export.zip) |
+| Infraestructura Docker | [SRD-Docker-Infra](https://github.com/jsgh1/SRD-Docker-Infra) | [`ce7ee9d7d610`](https://github.com/jsgh1/SRD-Docker-Infra/commit/ce7ee9d7d610e726430f6bb3e9ea00cf05549b17) | [final-delivery-2026](https://github.com/jsgh1/SRD-Docker-Infra/tree/final-delivery-2026) | [ZIP main](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-Docker-Infra-final-delivery-2026-main.zip) | [ZIP completo](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-Docker-Infra-full-export.zip) |
+| Documentación | [SRD-Docs](https://github.com/jsgh1/SRD-Docs) | [`2e8ef55dc402`](https://github.com/jsgh1/SRD-Docs/commit/2e8ef55dc4024e62288d32427bebc4a215abb18d) | [final-delivery-2026](https://github.com/jsgh1/SRD-Docs/tree/final-delivery-2026) | [ZIP main](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-Docs-final-delivery-2026-main.zip) | [ZIP completo](https://github.com/jsgh1/JuanSebastianGonzalez/releases/download/final-delivery/SRD-Docs-full-export.zip) |
 
-If one is missing, add a row. If one is empty or no longer used, write that in the commit column. The visibility shown was checked on 2026-11-04.
+Los commits indicados corresponden a `main` el **5 de noviembre de 2026**. Los árboles de contenido de `main` y `dev` coinciden en los cinco repositorios independientes.
 
-Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo en la columna del commit. La visibilidad indicada se revisó el 2026-11-04.
+## Versión de entrega
 
-| Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
-|---|---|---|---|---|---|---|
-| Main repository | [jsgh1/SRD-v1](https://github.com/jsgh1/SRD-v1) | Public / Público | **Add / Agregar** | | | |
+- **Etiqueta:** `final-delivery-2026` (tag anotado sobre `main` de cada repositorio).
+- **Archivo de versión:** `<repositorio>-final-delivery-2026-main.zip`.
+- **Archivo completo:** `<repositorio>-full-export.zip` (ramas, etiquetas e historial).
+- **Release:** `final-delivery`, en [el fork de entrega](https://github.com/jsgh1/JuanSebastianGonzalez/releases).
+- **Integridad:** huellas SHA-256 de cada archivo en [SHA256SUMS.txt](SHA256SUMS.txt).
 
-Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
-
-Antes de hacer público un repositorio, quite los archivos `.env` y cambie toda contraseña, token o llave que se haya subido alguna vez.
-
-The instructor account `ariel5253` needs write access to every repository, so pending items can be corrected for the software registration. Add it as a collaborator where the table says so.
-
-La cuenta del instructor, `ariel5253`, necesita acceso de escritura en cada repositorio, para poder corregir pendientes del registro de software. Agréguela como colaboradora donde la tabla lo indique.
-
-## Why two ZIP files / Por qué dos ZIP
-
-| File / Archivo | Content / Contenido | Purpose / Para qué sirve |
-|---|---|---|
-| `<repo>-final-delivery-2026-main.zip` | Only the code of `main` at tag `final-delivery-2026` / Solo el código de `main` en el tag | The exact version delivered, used for software registration / La versión exacta entregada, la que se usa para registro de software |
-| `<repo>-full-export.zip` | The whole repository: all branches, tags and history / Todo el repositorio: ramas, tags e historial | Proof of the work done and a complete backup / Prueba del trabajo realizado y respaldo completo |
-
-## Where the ZIP files live / Dónde quedan los ZIP
-
-The ZIP files do not go in this folder. They are attached to a GitHub Release in the fork of the person who delivers, named `final-delivery`, and linked in the table above.
-
-Los ZIP no van en esta carpeta. Se adjuntan a un Release de GitHub llamado `final-delivery` en el fork de quien entrega, y se enlazan en la tabla de arriba.
-
-## Integrity / Integridad
-
-Copy the SHA-256 of every ZIP into [`SHA256SUMS.txt`](SHA256SUMS.txt). / Copie el SHA-256 de cada ZIP en ese archivo.
+Los enlaces de los ZIP publicados y sus versiones se detallan en la tabla. Los hashes SHA-256 estan disponibles en SHA256SUMS.txt.
