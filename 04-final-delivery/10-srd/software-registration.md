@@ -87,8 +87,8 @@ At least one is required. Attach all three. / Se exige al menos uno. Adjunte los
 
 | Element / Elemento | Where it is / Dónde está | Ready / Listo |
 |---|---|---|
-| Computer program / Programa de computador | ZIP de los repositorios publicados en el Release final-delivery (ver code-tag/README.md) | Pendiente |
-| Program description / Descripción de programa | `02-software-analysis/` y `04-software-design/` | Parcial |
+| Computer program / Programa de computador | [Archivos ZIP publicados en el Release final-delivery](https://github.com/jsgh1/JuanSebastianGonzalez/releases/tag/final-delivery); repositorios y hashes documentados en `code-tag/README.md` | Incluido |
+| Program description / Descripción de programa | `02-software-analysis/` y `04-software-design/`, ambos con PDF y Word | Incluido |
 | Auxiliary material / Material auxiliar | `08-manuals/` contiene manual técnico, de instalación y de usuario en PDF y DOCX | Incluido |
 
 ## 8. Third-party components / Componentes de terceros
