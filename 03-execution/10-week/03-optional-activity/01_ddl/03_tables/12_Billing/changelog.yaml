@@ -1,0 +1,81 @@
+databaseChangeLog:
+  - changeSet:
+      id: eeeeeeee-ffff-1111-2222-333333333333
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/12_Billing/001_tax.sql
+      labels: "BD-01-dev,ddl,base,billing"
+      comment: Creates the tax table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 001_tax.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/12_Billing/001_tax_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: ffffffff-1111-2222-3333-444444444444
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/12_Billing/002_exchange_rate.sql
+      labels: "BD-01-dev,ddl,base,billing"
+      comment: Creates the exchange_rate table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 002_exchange_rate.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/12_Billing/002_exchange_rate_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 11111111-2222-3333-4444-555555555555
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/12_Billing/003_invoice_status.sql
+      labels: "BD-01-dev,ddl,base,billing"
+      comment: Creates the invoice_status table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 003_invoice_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/12_Billing/003_invoice_status_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 22222222-3333-4444-5555-666666666666
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/12_Billing/004_invoice.sql
+      labels: "BD-01-dev,ddl,base,billing"
+      comment: Creates the invoice table. Depends on invoice_status.
+      changes:
+        - sqlFile:
+            path: 004_invoice.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/12_Billing/004_invoice_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 005-invoice-line
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/12_Billing/005_invoice_line.sql
+      labels: "BD-01-dev,ddl,base,billing"
+      comment: Creates the invoice_line table. Depends on invoice and tax.
+      changes:
+        - sqlFile:
+            path: 005_invoice_line.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/12_Billing/005_invoice_line_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

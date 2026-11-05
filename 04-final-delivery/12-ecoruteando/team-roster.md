@@ -27,4 +27,4 @@ Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, Q
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role in the project / Rol en el proyecto | Author / Autor |
 |---|---|---|---|---|---|---|
-| DANIEL SALAZAR VARGAS | CC | 1075790810 | 3145555 | daniel2004-lsd | | Yes / Sí |
+| DANIEL SALAZAR VARGAS | CC | 1075790810 | 3145555 | daniel2004-lsd | Líder de Desarrollo / Full Stack Developer (Backend, Frontend, Mobile, DB) | Yes / Sí |

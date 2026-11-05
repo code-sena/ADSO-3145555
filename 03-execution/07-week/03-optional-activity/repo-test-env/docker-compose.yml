@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres-liquibase
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 23241234
+      POSTGRES_DB: liquibase_db
+    ports:
+      - "5432:5432"
+
+  liquibase:
+    image: liquibase/liquibase
+    depends_on:
+      - postgres
+    volumes:
+      - .:/liquibase/changelog
+      - ./postgresql.jar:/liquibase/lib/postgresql.jar 
+    working_dir: /liquibase/changelog
+    command: >
+      --url=jdbc:postgresql://postgres:5432/liquibase_db
+      --username=postgres
+      --password=23241234
+      --driver=org.postgresql.Driver  
+      --changeLogFile=changelog.yaml
+      update

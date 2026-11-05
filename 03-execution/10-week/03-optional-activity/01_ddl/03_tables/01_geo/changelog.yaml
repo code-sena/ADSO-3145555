@@ -1,0 +1,129 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 8b1d420c-9e56-40ba-a39c-d00b092a71e0
+      author: daniel2004-lsd
+      labels: "BD-01-dev,ddl,base,geo"
+      comment: Creates the time_zone table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 001_time_zone.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/01_geo/001_time_zone_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+
+  - changeSet:
+      id: 77bb8688-5311-49b6-8501-4ccd78e81ca0
+      author: daniel2004-lsd
+      labels: "BD-01-dev,ddl,base,geo"
+      comment: Creates the continent table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 002_continent.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/01_geo/002_continen_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+
+  - changeSet:
+      id: 8dc77931-1614-4ca7-859b-4cc34c458f78
+      author: daniel2004-lsd
+      labels: "BD-01-dev,ddl,base,geo"
+      comment: Creates the country table. Depends on continent.
+      changes:
+        - sqlFile:
+            path: 003_country.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/01_geo/003_country_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+
+  - changeSet:
+      id: 76828508-801d-49dc-ac7f-2f59ee4ee341
+      author: daniel2004-lsd
+      labels: "BD-01-dev,ddl,base,geo"
+      comment: Creates the state_province table. Depends on country.
+      changes:
+        - sqlFile:
+            path: 004_state_province.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/01_geo/004_state_province_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+
+  - changeSet:
+      id: ebd5dd52-dbfb-431d-977b-e22f8089311c
+      author: daniel2004-lsd
+      labels: "BD-01-dev,ddl,base,geo"
+      comment: Creates the city table. Depends on state_province and time_zone.
+      changes:
+        - sqlFile:
+            path: 005_city.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/01_geo/005_city_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+
+  - changeSet:
+      id: fd1eb589-e80c-4a5c-b0e3-d550faf231d1
+      author: dnaiel2004-lsd
+      labels: "BD-01-dev,ddl,base,geo"
+      comment: Creates the district table. Depends on city.
+      changes:
+        - sqlFile:
+            path: 006_district.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/01_geo/006_district.rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+
+  - changeSet:
+      id: 17b13ebf-59fd-41e9-9a47-465755f8d281
+      author: daniel2004-lsd
+      labels: "BD-01-dev,ddl,base,geo"
+      comment: Creates the address table. Depends on district.
+      changes:
+        - sqlFile:
+            path: 007_address.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/01_geo/007_address_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+
+  - changeSet:
+      id: 0817f39a-7565-4473-8689-be99cfcdf9da
+      author: daniel2004-lsd
+      labels: "BD-01-dev,ddl,base,geo"
+      comment: Creates the currency table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 008_currency.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/01_geo/008_currency_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

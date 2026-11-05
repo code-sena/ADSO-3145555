@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: 00001_create_tabla
+      author: daniel
+
+      changes:
+        - sqlFile:
+            path: 01_tables/usuarios.sql
+            endDelimiter: "\nGO"
+            stripComments: false
+
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/01_tables/rollback_usuarios.sql
+
+
+  - changeSet:
+      id: 00002_create_table
+      author: daniel
+
+      changes:
+        - sqlFile:
+            path: 01_tables/pedidos.sql
+
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/01_tables/rollback_pedidos.sql
+
+
+
+  - changeSet:
+      id: 00003_create_table
+      author: daniel
+
+
+      changes:
+        - sqlFile:
+            path: 01_tables/productos.sql
+
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/01_tables/rollback_productos.sql
+      
+      

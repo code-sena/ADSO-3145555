@@ -1,0 +1,81 @@
+databaseChangeLog:
+  - changeSet:
+      id: 66666666-7777-8888-9999-aaaaaaaaaaaa
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/10_Boarding/001_boarding_group.sql
+      labels: "BD-01-dev,ddl,base,boarding"
+      comment: Creates the boarding_group table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 001_boarding_group.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/10_Boarding/001_boarding_group_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 77777777-8888-9999-aaaa-bbbbbbbbbbbb
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/10_Boarding/002_check_in_status.sql
+      labels: "BD-01-dev,ddl,base,boarding"
+      comment: Creates the check_in_status table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 002_check_in_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/10_Boarding/002_check_in_status_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 88888888-9999-aaaa-bbbb-cccccccccccc
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/10_Boarding/003_check_in.sql
+      labels: "BD-01-dev,ddl,base,boarding"
+      comment: Creates the check_in table. Depends on check_in_status.
+      changes:
+        - sqlFile:
+            path: 003_check_in.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/10_Boarding/003_check_in_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 99999999-aaaa-bbbb-cccc-dddddddddddd
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/10_Boarding/004_boarding_pass.sql
+      labels: "BD-01-dev,ddl,base,boarding"
+      comment: Creates the boarding_pass table. Depends on check_in and boarding_group.
+      changes:
+        - sqlFile:
+            path: 004_boarding_pass.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/10_Boarding/004_boarding_pass_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 005-boarding-validation
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/10_Boarding/005_boarding_validation.sql
+      labels: "BD-01-dev,ddl,base,boarding"
+      comment: Creates the boarding_validation table. Depends on boarding_pass.
+      changes:
+        - sqlFile:
+            path: 005_boarding_validation.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/10_Boarding/005_boarding_validation_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

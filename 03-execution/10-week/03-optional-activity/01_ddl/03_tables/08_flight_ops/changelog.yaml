@@ -1,0 +1,81 @@
+databaseChangeLog:
+  - changeSet:
+      id: dddddddd-eeee-ffff-1111-222222222222
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/08_flight_ops/001_flight_status.sql
+      labels: "BD-01-dev,ddl,base,flight_ops"
+      comment: Creates the flight_status table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 001_flight_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/08_flight_ops/001_flight_status_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: eeeeeeee-ffff-1111-2222-333333333333
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/08_flight_ops/002_delay_reason_type.sql
+      labels: "BD-01-dev,ddl,base,flight_ops"
+      comment: Creates the delay_reason_type table. No external dependencies.
+      changes:
+        - sqlFile:
+            path: 002_delay_reason_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/08_flight_ops/002_delay_reason_type_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: ffffffff-1111-2222-3333-444444444444
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/08_flight_ops/003_flight.sql
+      labels: "BD-01-dev,ddl,base,flight_ops"
+      comment: Creates the flight table. Depends on flight_status.
+      changes:
+        - sqlFile:
+            path: 003_flight.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/08_flight_ops/003_flight_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 11111111-2222-3333-4444-555555555555
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/08_flight_ops/004_flight_segment.sql
+      labels: "BD-01-dev,ddl,base,flight_ops"
+      comment: Creates the flight_segment table. Depends on flight.
+      changes:
+        - sqlFile:
+            path: 004_flight_segment.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/08_flight_ops/004_flight_segment_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 005-flight-delay
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/08_flight_ops/005_flight_delay.sql
+      labels: "BD-01-dev,ddl,base,flight_ops"
+      comment: Creates the flight_delay table. Depends on flight and delay_reason_type.
+      changes:
+        - sqlFile:
+            path: 005_flight_delay.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/08_flight_ops/005_flight_delay_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

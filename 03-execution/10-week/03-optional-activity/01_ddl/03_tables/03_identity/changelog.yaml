@@ -1,0 +1,97 @@
+databaseChangeLog:
+  - changeSet:
+      id: 7e2e2e7c-1c7c-4e7e-9e2e-1e7c1c7c4e7e
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/03_identity/001_person_type.sql
+      labels: "BD-01-dev,ddl,base,identity"
+      comment: Creates the person_type table.
+      changes:
+        - sqlFile:
+            path: 001_person_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/03_identity/001_person_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 8f3f3f8d-2d8d-5f8f-a3f3-2f8d2d8d5f8f
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/03_identity/002_document_type.sql
+      labels: "BD-01-dev,ddl,base,identity"
+      comment: Creates the document_type table.
+      changes:
+        - sqlFile:
+            path: 002_document_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/03_identity/002_document_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 9a4a4a9e-3e9e-6a9a-b4a4-3a9e3e9e6a9a
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/03_identity/003_contact_type.sql
+      labels: "BD-01-dev,ddl,base,identity"
+      comment: Creates the contact_type table.
+      changes:
+        - sqlFile:
+            path: 003_contact_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/03_identity/003_contact_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: ab5b5bab-4bab-7bab-c5b5-4bab4bab7bab
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/03_identity/004_person.sql
+      labels: "BD-01-dev,ddl,base,identity"
+      comment: Creates the person table.
+      changes:
+        - sqlFile:
+            path: 004_person.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/03_identity/004_person.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 005-person-document
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/03_identity/005_person_document.sql
+      labels: "BD-01-dev,ddl,base,identity"
+      comment: Creates the person_document table.
+      changes:
+        - sqlFile:
+            path: 005_person_document.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/03_identity/005_person_document.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 006-person-contact
+      author: corhuila
+      logicalFilePath: db/changelog/changes/001_base/03_identity/006_person_contact.sql
+      labels: "BD-01-dev,ddl,base,identity"
+      comment: Creates the person_contact table.
+      changes:
+        - sqlFile:
+            path: 006_person_contact.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/03_identity/006_person_contact.sql
+            relativeToChangelogFile: true
+            stripComments: false

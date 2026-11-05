@@ -1,0 +1,18 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: b81ae6ca-224a-4532-8d96-3e59d10fa2c7
+      author: daniel2004-lsd
+      logicalFilePath: db/changelog/changes/02_airline/001_airline.sql
+      labels: "BD-01-dev,ddl,base,airline"
+      comment: Creates the airline table. Depends on country.
+      changes:
+        - sqlFile:
+            path: 001_airline.sql
+            relativeToChangelogFile: true
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/03_tables/02_airline/001_airline_rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false

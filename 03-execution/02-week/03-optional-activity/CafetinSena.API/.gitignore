@@ -1,0 +1,40 @@
+# Carpeta de configuraciones locales de Visual Studio
+.vs/
+
+# Archivos de usuario y configuraciones locales
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Carpetas de compilación
+bin/
+obj/
+
+# Archivos de bases de datos locales
+*.mdf
+*.ldf
+
+# Archivos de logs y backups
+*.log
+*.bak
+
+# Archivos de configuración temporales
+*.dbmdl
+*.jfm
+
+# Archivos de paquetes NuGet
+*.nupkg
+packages/
+
+# Archivos de publicación
+publish/
+
+# Archivos de test y cobertura
+TestResults/
+*.coverage
+*.coveragexml
+
+# Archivos de cache
+*.tmp
+*.temp
