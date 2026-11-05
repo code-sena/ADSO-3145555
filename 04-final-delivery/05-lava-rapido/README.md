@@ -14,16 +14,16 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 | Process / Proceso | Completion of the technologist taught stage / Finalización de la etapa lectiva del tecnólogo |
 | Research seedbed / Semillero de investigación | Developers & Geeks |
 | Delivery version / Versión entregada | `final-delivery-2026` |
-| Delivery date / Fecha de entrega | |
-| Delivered by / Entregado por | |
+| Delivery date / Fecha de entrega | Pending confirmation / Pendiente de confirmación |
+| Delivered by / Entregado por | Pending confirmation / Pendiente de confirmación |
 
 ## Summary / Resumen
 
-- **Problem it solves / Problema que resuelve:**
-- **Target users / Usuarios:**
-- **Main features / Funciones principales:**
-- **Technology stack / Tecnologías:**
-- **Production URL / URL en producción:**
+- **Problem it solves / Problema que resuelve:** Pending confirmation / Pendiente de confirmación
+- **Target users / Usuarios:** Pending confirmation / Pendiente de confirmación
+- **Main features / Funciones principales:** Pending confirmation / Pendiente de confirmación
+- **Technology stack / Tecnologías:** Pending confirmation / Pendiente de confirmación
+- **Production URL / URL en producción:** Pending confirmation / Pendiente de confirmación
 - **Demo credentials / Credenciales de prueba:** do not write real passwords here / no escriba contraseñas reales aquí
 
 ## Team members / Integrantes
@@ -59,6 +59,8 @@ Autorización de datos: al marcar la casilla, el integrante confirma sus datos y
 | [`team-roster.md`](team-roster.md) | Team and roles / Equipo y roles | ☐ |
 | [`software-registration.md`](software-registration.md) | Software registration data / Datos para registro de software | ☐ |
 
+The nine academic PDFs are present in their respective folders in the local clone. Their content and privacy review is pending, so the delivery boxes above remain unchecked. / Los nueve PDF académicos están presentes en sus respectivas carpetas del clon local. La revisión de contenido y privacidad está pendiente, por eso las casillas de entrega siguen sin marcar.
+
 ## Large files on Google Drive / Archivos pesados en Google Drive
 
 Only files too heavy for GitHub go here, such as demo videos. Everything else stays in this folder.
@@ -67,4 +69,4 @@ Aquí solo van archivos demasiado pesados para GitHub, como videos de demostraci
 
 | File / Archivo | Size / Tamaño | Link / Enlace |
 |---|---|---|
-| | | |
+| Project videos folder / Carpeta de videos del proyecto | Not verified / No verificado | [Google Drive](https://drive.google.com/drive/folders/15mfTHVmDV6jwredvwi8G6rzBHi3baOMV?usp=sharing) |

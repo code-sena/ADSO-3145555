@@ -4,8 +4,10 @@ Two videos are required. / Se requieren dos videos.
 
 | Video | Duration / Duración | Link / Enlace | Done / Listo |
 |---|---|---|---|
-| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos | | ☐ |
-| Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | | ☐ |
+| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos | [YouTube](https://youtu.be/QIOAoyDC6K4) | ☐ |
+| Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | [YouTube](https://youtu.be/V_kr6wDmqRw) | ☐ |
+
+The links were supplied by the project team. Video duration, content, and public access to both YouTube and the Drive folder have not yet been verified. / El equipo proporcionó los enlaces. Aún no se han verificado la duración ni el contenido de los videos, ni el acceso público a YouTube y a la carpeta de Drive.
 
 ## 1. Advertising pitch / Pitch publicitario
 

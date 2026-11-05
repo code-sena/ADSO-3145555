@@ -8,6 +8,8 @@ The apprentices complete their role, such as backend, frontend, database, QA or 
 
 Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, QA o documentación. El instructor marca el tipo de aporte. Los documentos de los instructores quedan en custodia del instructor líder.
 
+Each apprentice must confirm their role. The lead instructor must confirm whether each instructor contribution was direct or indirect. Repository ownership alone does not establish an individual contribution or authorship. / Cada aprendiz debe confirmar su rol. El instructor líder debe confirmar si el aporte de cada instructor fue directo o indirecto. La titularidad de un repositorio por sí sola no demuestra el aporte ni la autoría individual.
+
 ## Instructors / Instructores
 
 | Full name / Nombre completo | Role / Rol | Area / Área | Contribution / Aporte | Author / Autor |
@@ -27,5 +29,5 @@ Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, Q
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role in the project / Rol en el proyecto | Author / Autor |
 |---|---|---|---|---|---|---|
-| SANTIAGO GORDO PEREZ | CC | 1075236732 | 3145555 | Santiag077127 | | Yes / Sí |
-| JOSE STIVEN PERDOMO MARTINEZ | CC | 1075793962 | 3145555 | STIVENPM | | Yes / Sí |
+| SANTIAGO GORDO PEREZ | CC | 1075236732 | 3145555 | Santiag077127 | Pending confirmation / Pendiente de confirmación | Yes / Sí |
+| JOSE STIVEN PERDOMO MARTINEZ | CC | 1075793962 | 3145555 | STIVENPM | Pending confirmation / Pendiente de confirmación | Yes / Sí |
