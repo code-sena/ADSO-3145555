@@ -17,8 +17,8 @@ Llene todos los campos vacíos. Sigue el Decreto 1360 de 1989.
 
 | Field / Campo | Value / Valor |
 |---|---|
-| Full name / Nombre |  |
-| ID document / Identificación | |
+| Full name / Nombre | JUAN SEBASTIAN GONZALEZ HORTA (pendiente de confirmación formal como solicitante) |
+| ID document / Identificación | Véase identificación precargada en la sección 2; confirmar con el titular y el instructor |
 | Acts on own behalf or as representative / Actúa en nombre propio o como representante | ☐ Own behalf / Nombre propio ☐ Representative / Representante |
 | Proof of representation / Prueba de representación, si aplica | |
 
@@ -38,7 +38,7 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | EDDIER YAIR LIBERATO CUENCA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | JHON WILLIAN CORREDOR ARAUJO | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | ANDRES MORENO COLLAZOS | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| JUAN SEBASTIAN GONZALEZ HORTA | CC | 1077227978 | 3145555 | |
+| JUAN SEBASTIAN GONZALEZ HORTA | CC | 1077227978 | 3145555 | Desarrollo full-stack, arquitectura de microservicios, bases de datos, infraestructura, QA y documentación (aportes a confirmar) |
 
 ## 3. Producer / Productor (art. 5, num. 3)
 
@@ -61,13 +61,13 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | Field / Campo | Value / Valor |
 |---|---|
 | Title / Título de la obra | SRD |
-| Year of creation / Año de creación | |
+| Year of creation / Año de creación | 2026 (año documentado; confirmar fecha de creación original) |
 | Country of origin / País de origen | Colombia |
 | Version registered / Versión a registrar | `final-delivery-2026` |
-| Short description of its functions / Breve descripción de sus funciones | |
-| What sets it apart from similar software / Qué la diferencia de obras similares |  |
-| Programming languages / Lenguajes | |
-| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | |
+| Short description of its functions / Breve descripción de sus funciones | SRD es una plataforma multi-tenant orientada a Juntas de Acción Comunal: gestión de identidad y roles, registros, archivos, configuración, calendario, notificaciones, tesorería, inventario, chat y auditoría. |
+| What sets it apart from similar software / Qué la diferencia de obras similares | Enfoque a la operación de JAC, segregación lógica por junta, dominios de microservicios y clientes web, móvil y escritorio. Estas son características de diseño; su validación funcional total debe sustentarse con pruebas. |
+| Programming languages / Lenguajes | PHP, TypeScript, JavaScript y SQL; comprobar inventario final por repositorio. |
+| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | Web (React), móvil (React Native/Expo) y escritorio Windows (Electron). |
 
 ## 6. Declarations / Declaraciones (art. 4 y art. 5, num. 5 y 6)
 
@@ -89,9 +89,9 @@ At least one is required. Attach all three. / Se exige al menos uno. Adjunte los
 
 | Element / Elemento | Where it is / Dónde está | Ready / Listo |
 |---|---|---|
-| Computer program / Programa de computador | ZIP files `final-delivery-2026` listed in `code-tag/README.md` / ZIP relacionados en `code-tag/README.md` | ☐ |
-| Program description / Descripción de programa | `02-software-analysis/` and `04-software-design/` | ☐ |
-| Auxiliary material / Material auxiliar | `08-manuals/` | ☐ |
+| Computer program / Programa de computador | ZIP del tag final-delivery-2026, aún pendientes de generar y publicar en Release | Pendiente |
+| Program description / Descripción de programa | `02-software-analysis/` incluye PDF/Word; `04-software-design/` tiene enlaces a los originales, faltan los dos archivos en esta carpeta | Parcial |
+| Auxiliary material / Material auxiliar | `08-manuals/` contiene manual técnico, de instalación y de usuario en PDF y DOCX | Incluido; verificar contenido |
 
 ## 8. Third-party components / Componentes de terceros
 
@@ -101,7 +101,9 @@ Relacione código, librerías, modelos, imágenes o datos que el equipo no creó
 
 | Component / Componente | Author or source / Autor o fuente | License / Licencia | Where it is used / Dónde se usa |
 |---|---|---|---|
-| | | | |
+| Laravel | Proyecto Laravel | Licencia y versión por verificar | Backend de microservicios y API Gateway |
+| React, React Native, Expo y Electron | Proyectos respectivos | Licencias/versiones por verificar | Clientes web, móvil y escritorio |
+| MySQL, Docker, Nginx, ClamAV y Reverb | Proyectos respectivos | Licencias/versiones y distribución por verificar | Persistencia, infraestructura, proxy, antivirus y tiempo real |
 
 ## 9. Private data / Datos privados
 
@@ -115,3 +117,12 @@ Relacione código, librerías, modelos, imágenes o datos que el equipo no creó
 - [ ] The listed authors are the people who created the software. / Los autores relacionados son quienes crearon el software.
 - [ ] Third-party components are declared. / Los componentes de terceros están declarados.
 - [ ] No passwords, tokens or keys are included. / No se incluyen contraseñas, tokens ni llaves.
+
+## 11. Observaciones para validación del instructor
+
+- Esta es una **ficha preliminar de registro**, no un registro concedido ni una declaración jurídica firmada.
+- Confirmar solicitante, rol de los instructores, aportes de los autores, titularidad y soportes antes de presentar solicitud formal.
+- Las declaraciones sobre originalidad, derivación, tipo de obra y publicación permanecen **sin seleccionar** hasta que el equipo y la institución las validen.
+- Completar inventario de bibliotecas, dependencias, licencias y componentes de terceros a partir de las versiones definitivas de los repositorios.
+- Completar códigos archivados, hashes SHA-256, enlaces Release y revisión de credenciales antes de marcar los elementos adjuntos como definitivos.
+- Datos de contacto y dirección solo por canal privado.
