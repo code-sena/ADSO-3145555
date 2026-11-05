@@ -6,7 +6,13 @@ Verification date: 2026-11-05. This report distinguishes completed checks from p
 
 The user designated `Downloads/04-facelit/04-facelit` as the authoritative delivery document set. Its 106 files outside `code-tag/` were copied byte-for-byte and checked by SHA-256. The two `code-tag/` templates were not used to overwrite the already verified repository, invitation and security status. Superseded files from the previous preparation were moved to a temporary recovery backup, not mixed into this document set. The original Downloads package is unchanged.
 
-The supplied [delivery review](../delivery-review.md) records document provenance, installation-evidence limitations and differences between the reported deployment package and remote source revisions. These differences must be reconciled before asserting that the final source tags reproduce the deployed system.
+The supplied [delivery review](../delivery-review.md) records document provenance, installation-evidence limitations and differences between the reported deployment package and remote source revisions. The team has confirmed that these differences are intentional for this delivery; no exact equivalence between the source tags and the deployed system is claimed.
+
+### Team-confirmed delivery scope — 2026-11-05
+
+The delivery coordinator confirmed that her colleague deliberately retained the additional deployment adjustments locally to avoid last-minute project changes. The team is delivering the current remote `main` revisions and defers integrating those adjustments for reconstruction on another VPS to a future update. No further changes to the component `main` branches were reported.
+
+Accordingly, the prepared ZIPs represent the selected GitHub source, not an exact export of the running Hostinger deployment. This is an explicit delivery limitation, not evidence that the deployed-only adjustments are included in the archives. Existing ZIP bytes and SHA-256 values are unchanged by this documentary clarification. It does not establish instructor acceptance of the limitation or replace independent installation verification of the delivered source.
 
 The provided presentation video was identified locally: 270.8333 seconds (4 min 31 s), 215,064,307 bytes; SHA-256 `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`. The user confirmed that it is the presentation video and supplied [this Drive folder](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT). It is not committed to Git. A subsequent unauthenticated HTTP request on 2026-11-05 returned 200 with folder title "presentación - Google Drive" and the video name visible. Folder access is therefore verified; complete playback and a byte-for-byte comparison of the remote video remain unverified. Its duration is outside the guide's 1-2 minute pitch range. A separate usage tutorial remains pending.
 
@@ -59,7 +65,7 @@ All ten files are attached to the unpublished `final-delivery` draft in the [for
 
 The Release remains a draft. These assets preserve the current lightweight tags and must be regenerated as necessary after final tag/source changes. No public final-download links are claimed. Integrity and upload checks do not certify credential revocation or independent application installation.
 
-The supplied deployment document reports a DB commit `422aac6` and an uncommitted frontend batching adjustment. The DB commit was not found in the inspected local checkout, and the referenced deployment package/manifests were not found in the four component directories or the checked Downloads files. Those artifacts were not invented or reconstructed from the narrative; reproducibility remains pending confirmation against the actual delivered source.
+The supplied deployment document reports a DB commit `422aac6` and an uncommitted frontend batching adjustment. The DB commit was not found in the inspected local checkout, and the referenced deployment package/manifests were not found in the four component directories or the checked Downloads files. The team subsequently confirmed that the deployment-only adjustments will be integrated in a future update. Those artifacts were not invented or reconstructed from the narrative; exact reconstruction of the current Hostinger deployment from these ZIPs is not claimed.
 
 ## Independent installation record required
 

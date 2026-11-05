@@ -19,6 +19,8 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 
 ## Summary / Resumen
 
+**Alcance confirmado por el equipo (2026-11-05):** esta entrega corresponde a los `main` actuales de GitHub. Hostinger incorpora ajustes locales adicionales cuya integración se pospone a una actualización futura; no se declara que los ZIP permitan reconstruir exactamente ese despliegue. Consulta la [decisión y sus límites](code-tag/delivery-status.md).
+
 - **Problem it solves / Problema que resuelve:** Centralizar la información académica y relacionar registros de asistencia con aprendices y sesiones.
 - **Target users / Usuarios:** Coordinación, instructores y aprendices.
 - **Main features / Funciones principales:** Gestión académica y usuarios, importación CSV, enrolamiento facial, sesiones, registro y consulta de asistencia, perfil y notificaciones; alcance final sujeto al tag entregado.
