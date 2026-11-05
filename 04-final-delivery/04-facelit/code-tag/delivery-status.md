@@ -8,7 +8,7 @@ The user designated `Downloads/04-facelit/04-facelit` as the authoritative deliv
 
 The supplied [delivery review](../delivery-review.md) records document provenance, installation-evidence limitations and differences between the reported deployment package and remote source revisions. These differences must be reconciled before asserting that the final source tags reproduce the deployed system.
 
-The provided presentation video was identified locally: 270.8333 seconds (4 min 31 s), 215,064,307 bytes; SHA-256 `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`. It is not committed or uploaded. Its public Drive link and classification as pitch/tutorial remain pending. Its duration is outside the guide's 1-2 minute pitch range.
+The provided presentation video was identified locally: 270.8333 seconds (4 min 31 s), 215,064,307 bytes; SHA-256 `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`. The user confirmed that it is the presentation video and supplied [this Drive folder](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT). It is not committed to Git. Anonymous access and playback remain unverified: the web tool could not retrieve the folder, which is not evidence of incorrect sharing settings. Its duration is outside the guide's 1-2 minute pitch range. A separate usage tutorial remains pending.
 
 ## Source revisions and CI
 
@@ -61,7 +61,7 @@ Attach a redacted record stating date, clean environment, component commits, ins
 
 1. Confirmation of real credential revocation/rotation, without disclosing values.
 2. Independent clean-installation evidence and acceptance from the tester.
-3. Public links to the advertising pitch and the usage tutorial, with durations.
+3. Verify anonymous access to the supplied presentation folder and resolve the pitch-duration requirement; provide the separate usage tutorial and its public link.
 4. Actual contributor roles, individual authorization of preloaded personal data, and registration applicant/declarations confirmed by the team/instructor. These fields must not be inferred or checked on someone's behalf.
 
 ZIP links and SHA-256 entries must refer to actual, verified assets, never planned filenames represented as published downloads.

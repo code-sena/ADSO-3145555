@@ -9,14 +9,15 @@ Se localizó el archivo de presentación entregado por el equipo: `Presentación
 - Duración medida: **4 min 31 s** (270.8333 s).
 - Tamaño: **215,064,307 bytes** (aproximadamente 205.1 MiB).
 - SHA-256: `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`.
-- Enlace público en Drive: **pendiente de aportar**.
-- Clasificación y revisión del contenido: **pendientes**. La duración no cumple el rango de 1-2 minutos exigido para el pitch; estar dentro del rango del tutorial no acredita que el contenido sea un tutorial.
+- Enlace aportado por el equipo: [carpeta de Drive — presentación de FaceLit](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT).
+- Clasificación confirmada por el equipo: **video de presentación**, no tutorial. La duración no cumple el rango de 1-2 minutos exigido para el pitch.
+- Acceso público y reproducción sin iniciar sesión: **pendientes de comprobar**. La herramienta de consulta no pudo abrir la carpeta; esto no demuestra que sus permisos sean incorrectos.
 
-El video permanece fuera de Git. No se marca como entregado hasta disponer del enlace público y verificar su contenido y permisos.
+El video permanece fuera de Git. El enlace ya fue recibido; no se marca como entrega conforme hasta comprobar contenido, permisos y el requisito de duración. El tutorial sigue pendiente.
 
 | Video | Duration / Duración | Link / Enlace | Done / Listo |
 |---|---|---|---|
-| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos | | ☐ |
+| Advertising pitch / Pitch publicitario | Recibido: 4 min 31 s; exigido: 1 a 2 minutos | [Presentación de FaceLit — Drive](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT) | ☐ Duración y acceso por verificar |
 | Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | | ☐ |
 
 ## 1. Advertising pitch / Pitch publicitario
