@@ -68,7 +68,7 @@ Aquí solo van archivos demasiado pesados para GitHub, como videos de demostraci
 
 | File / Archivo | Size / Tamaño | Link / Enlace |
 |---|---|---|
-| Presentación FaceLit.mp4 | 215,064,307 bytes (205.1 MiB), 4 min 31 s | [Carpeta de presentación — Drive](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT); acceso sin sesión pendiente de comprobar. |
+| Presentación FaceLit.mp4 | 215,064,307 bytes (205.1 MiB), 4 min 31 s | [Carpeta de presentación — Drive](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT); carpeta accesible sin sesión comprobada el 2026-11-05; reproducción completa pendiente. |
 
 
 ## Actualización documental - Persona 2

@@ -11,13 +11,13 @@ Se localizó el archivo de presentación entregado por el equipo: `Presentación
 - SHA-256: `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`.
 - Enlace aportado por el equipo: [carpeta de Drive — presentación de FaceLit](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT).
 - Clasificación confirmada por el equipo: **video de presentación**, no tutorial. La duración no cumple el rango de 1-2 minutos exigido para el pitch.
-- Acceso público y reproducción sin iniciar sesión: **pendientes de comprobar**. La herramienta de consulta no pudo abrir la carpeta; esto no demuestra que sus permisos sean incorrectos.
+- Acceso a la carpeta sin iniciar sesión: **comprobado el 2026-11-05**, mediante una solicitud HTTP sin autenticación: respuesta 200, título «presentación - Google Drive» y nombre del video visible. La reproducción completa del archivo permanece **pendiente de comprobar**.
 
 El video permanece fuera de Git. El enlace ya fue recibido; no se marca como entrega conforme hasta comprobar contenido, permisos y el requisito de duración. El tutorial sigue pendiente.
 
 | Video | Duration / Duración | Link / Enlace | Done / Listo |
 |---|---|---|---|
-| Advertising pitch / Pitch publicitario | Recibido: 4 min 31 s; exigido: 1 a 2 minutos | [Presentación de FaceLit — Drive](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT) | ☐ Duración y acceso por verificar |
+| Advertising pitch / Pitch publicitario | Recibido: 4 min 31 s; exigido: 1 a 2 minutos | [Presentación de FaceLit — Drive](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT) | ☐ Carpeta accesible; duración fuera de rango y reproducción completa pendiente |
 | Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | | ☐ |
 
 ## 1. Advertising pitch / Pitch publicitario

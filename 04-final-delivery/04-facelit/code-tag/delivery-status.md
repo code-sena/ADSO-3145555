@@ -8,7 +8,7 @@ The user designated `Downloads/04-facelit/04-facelit` as the authoritative deliv
 
 The supplied [delivery review](../delivery-review.md) records document provenance, installation-evidence limitations and differences between the reported deployment package and remote source revisions. These differences must be reconciled before asserting that the final source tags reproduce the deployed system.
 
-The provided presentation video was identified locally: 270.8333 seconds (4 min 31 s), 215,064,307 bytes; SHA-256 `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`. The user confirmed that it is the presentation video and supplied [this Drive folder](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT). It is not committed to Git. Anonymous access and playback remain unverified: the web tool could not retrieve the folder, which is not evidence of incorrect sharing settings. Its duration is outside the guide's 1-2 minute pitch range. A separate usage tutorial remains pending.
+The provided presentation video was identified locally: 270.8333 seconds (4 min 31 s), 215,064,307 bytes; SHA-256 `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`. The user confirmed that it is the presentation video and supplied [this Drive folder](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT). It is not committed to Git. A subsequent unauthenticated HTTP request on 2026-11-05 returned 200 with folder title "presentación - Google Drive" and the video name visible. Folder access is therefore verified; complete playback and a byte-for-byte comparison of the remote video remain unverified. Its duration is outside the guide's 1-2 minute pitch range. A separate usage tutorial remains pending.
 
 ## Source revisions and CI
 
@@ -24,7 +24,7 @@ Remote commits were checked through the GitHub API. Successful CI does not estab
 
 ## Repository visibility and instructor access
 
-All five active repositories are public. Write invitations were sent to `ariel5253` on 2026-11-05. The invitations are pending acceptance; the permissions endpoint still reports read access. Do not mark write access as effective until the invitation is accepted and rechecked.
+All five active repositories are public. Write invitations were sent to `ariel5253` on 2026-11-05. A subsequent check on the same date still returned read access for all five repositories, so invitation acceptance remains pending. Do not mark write access as effective until the invitation is accepted and rechecked.
 
 | Repository | Invitation ID | Requested permission |
 |---|---|---|
@@ -49,7 +49,17 @@ The empty, unused repository remains listed for traceability and is not a source
 - Gitleaks also scanned the prepared Downloads-based delivery directory on 2026-11-05 with fully redacted output: 0 matches. Binary or screenshot text, credential rotation and independent installation are not certified by this result. Three sample role screenshots were visually checked and contained visible masks over identifying fields; this is not a complete audit of all evidence.
 - Existing `final-delivery-2026` references are lightweight tags, not annotated tags. Their public references have not been changed by this preparation.
 - The remote documentation tag currently points to `2993404`; the local documentation tag still points to `91dd4b7`. Do not force-update either without reviewing the intended final commit.
-- Final annotated tags, ten final ZIP archives, checksums and a published final Release remain pending the installation/security gates.
+- Final annotated tags, approval of the final archive snapshot and public Release publication remain pending the installation/security gates. Ten current review-candidate ZIPs and their actual checksums are now prepared, restored/verified and uploaded to the unpublished draft; they are not accepted as final annotated-tag exports.
+
+## Candidate archives and draft Release
+
+Ten review ZIPs were prepared from fresh public mirrors, with peeled tag commits checked against the selected `main` revisions. Each full-export ZIP was restored independently, passed `git fsck --full --no-dangling` and retained identical ref names/object IDs. The five source ZIP commit comments also match the selected commits. Local object reuse, where used, was followed by `--dissociate` and verification that no external alternates remained.
+
+All ten files are attached to the unpublished `final-delivery` draft in the [fork's Releases list](https://github.com/pemarival/ADSO-3145555/releases), Release ID `434892695`. Draft preview URLs can change when the draft is edited; the owner can locate it by this name and ID while signed in. For every uploaded file, GitHub's SHA-256 digest and byte count matched the actual local ZIP. The checksums are recorded in [SHA256SUMS.txt](SHA256SUMS.txt); detailed scope/ref counts and restoration instructions are in [archive-verification.md](archive-verification.md).
+
+The Release remains a draft. These assets preserve the current lightweight tags and must be regenerated as necessary after final tag/source changes. No public final-download links are claimed. Integrity and upload checks do not certify credential revocation or independent application installation.
+
+The supplied deployment document reports a DB commit `422aac6` and an uncommitted frontend batching adjustment. The DB commit was not found in the inspected local checkout, and the referenced deployment package/manifests were not found in the four component directories or the checked Downloads files. Those artifacts were not invented or reconstructed from the narrative; reproducibility remains pending confirmation against the actual delivered source.
 
 ## Independent installation record required
 
@@ -61,7 +71,7 @@ Attach a redacted record stating date, clean environment, component commits, ins
 
 1. Confirmation of real credential revocation/rotation, without disclosing values.
 2. Independent clean-installation evidence and acceptance from the tester.
-3. Verify anonymous access to the supplied presentation folder and resolve the pitch-duration requirement; provide the separate usage tutorial and its public link.
+3. Resolve the presentation/pitch duration requirement, verify full playback, and provide the separate usage tutorial and its public link. Anonymous access to the presentation folder has been checked.
 4. Actual contributor roles, individual authorization of preloaded personal data, and registration applicant/declarations confirmed by the team/instructor. These fields must not be inferred or checked on someone's behalf.
 
 ZIP links and SHA-256 entries must refer to actual, verified assets, never planned filenames represented as published downloads.
