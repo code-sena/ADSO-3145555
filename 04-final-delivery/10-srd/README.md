@@ -43,7 +43,7 @@ El registro de instructores, áreas y contribuciones está en [team-roster.md](t
 | [01-requirements-specification](01-requirements-specification/) | Especificación de requisitos (PDF y Word) |
 | [02-software-analysis](02-software-analysis/) | Análisis del software (PDF y Word) |
 | [03-technical-proposal](03-technical-proposal/) | Propuesta técnica (PDF y Word) |
-| [04-software-design](04-software-design/) | Diseño del software (documentos enlazados desde SRD-Docs) |
+| [04-software-design](04-software-design/) | Diseño del software (PDF y Word) |
 | [05-test-documentation](05-test-documentation/) | Documentación de pruebas (PDF y Word) |
 | [06-implementation-procedure](06-implementation-procedure/) | Procedimiento de implementación y despliegue (PDF y Word) |
 | [07-improvement-actions](07-improvement-actions/) | Acciones correctivas, preventivas y de mejoramiento (PDF y Word) |
