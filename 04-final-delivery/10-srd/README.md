@@ -19,12 +19,12 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 
 ## Summary / Resumen
 
-- **Problem it solves / Problema que resuelve:**
-- **Target users / Usuarios:**
-- **Main features / Funciones principales:**
-- **Technology stack / Tecnologías:**
-- **Production URL / URL en producción:**
-- **Demo credentials / Credenciales de prueba:** do not write real passwords here / no escriba contraseñas reales aquí
+- **Problem it solves / Problema que resuelve:** Digitaliza y centraliza los procesos administrativos de las Juntas de Acción Comunal (JAC) para reducir trámites manuales y facilitar la trazabilidad.
+- **Target users / Usuarios:** Juntas de Acción Comunal, administradores, responsables de procesos y usuarios con permisos asignados por rol y junta.
+- **Main features / Funciones principales:** Gestión de identidad, roles, registros, archivos, configuración, calendario, notificaciones, tesorería, inventario, chat y auditoría.
+- **Technology stack / Tecnologías:** Backend Laravel/PHP con API Gateway y microservicios; React/TypeScript; React Native/Expo; Electron; MySQL; Docker Compose; Nginx; Reverb.
+- **Production URL / URL en producción:** [Instancia publicada de SRD](https://srv2093837.hstgr.cloud/login) (disponibilidad y versión final no verificadas durante esta revisión).
+- **Demo credentials / Credenciales de prueba:** No se publican contraseñas reales; solicitar credenciales de demostración por canal privado.
 
 ## Team members / Integrantes
 
