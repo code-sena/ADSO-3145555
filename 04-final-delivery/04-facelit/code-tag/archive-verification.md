@@ -23,6 +23,8 @@ Ten delivery ZIPs were regenerated after the coordinator authorized replacing th
 
 Before publication, GitHub Release ID `434892695` returned exactly ten uploaded ZIP assets. Each asset's `sha256:` digest and byte count matched its regenerated local archive. No candidate archive remains among these ten uploads. This verifies transfer integrity, not application acceptance.
 
+GitHub subsequently confirmed public publication at 2026-11-05 12:52:23 UTC, `draft=false`, with all ten assets retained: [final-delivery](https://github.com/pemarival/ADSO-3145555/releases/tag/final-delivery).
+
 ## Restoring a component
 
 Extract a full export outside any existing checkout. For example:

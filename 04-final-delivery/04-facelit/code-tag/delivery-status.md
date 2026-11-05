@@ -16,8 +16,8 @@ Updated 2026-11-05. The coordinator authorized delivery publication with the lim
 | 8. Annotated tags | Completed | Five annotated tags retain the selected main commits |
 | 9. ZIPs | Completed | Ten regenerated ZIPs; five full restores passed integrity/ref checks |
 | 10. SHA-256 | Completed for these bytes | [ZIP manifest](SHA256SUMS.txt) |
-| 11. Release | Authorized for publication | [final-delivery](https://github.com/pemarival/ADSO-3145555/releases/tag/final-delivery), subject to actual publication verification |
-| 12. Links | Prepared | [Repository/tag/download inventory](README.md) |
+| 11. Release | Published | [final-delivery](https://github.com/pemarival/ADSO-3145555/releases/tag/final-delivery), ten assets; GitHub confirms `draft=false`, published 2026-11-05 12:52:23 UTC |
+| 12. Links | Completed | [Repository/tag/download inventory](README.md); ten uploaded asset URLs |
 | 13. Documents / PR | Integrated; review pending | [PR #10](https://github.com/code-sena/ADSO-3145555/pull/10); not merged or declared accepted |
 
 ## Selected source and annotated tags
