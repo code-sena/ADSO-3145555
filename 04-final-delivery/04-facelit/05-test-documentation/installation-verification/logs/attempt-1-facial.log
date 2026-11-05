@@ -1,0 +1,50 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)
+INFO:     172.21.0.1:39146 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46782 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34180 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33442 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42844 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43380 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33906 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43376 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60470 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58316 - "GET /health HTTP/1.1" 200 OK
+/opt/venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'validation_alias' attribute with value AliasChoices(choices=['image_frames', 'imageFrames']) was provided to the `Field()` function, which has no effect in the context it was used. 'validation_alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+  warnings.warn(
+/opt/venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'validation_alias' attribute with value AliasChoices(choices=['liveness_challenge', 'livenessChallenge']) was provided to the `Field()` function, which has no effect in the context it was used. 'validation_alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/liveness-check HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/from-image HTTP/1.1" 201 Created
+/opt/venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'validation_alias' attribute with value AliasChoices(choices=['liveness_challenges', 'livenessChallenges']) was provided to the `Field()` function, which has no effect in the context it was used. 'validation_alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/opt/venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'validation_alias' attribute with value AliasChoices(choices=['record_environment_id', 'recordEnvironmentId']) was provided to the `Field()` function, which has no effect in the context it was used. 'validation_alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+/opt/venv/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'validation_alias' attribute with value AliasChoices(choices=['image_base64', 'imageBase64']) was provided to the `Field()` function, which has no effect in the context it was used. 'validation_alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/verify-session HTTP/1.1" 200 OK
+INFO:     172.21.0.1:57646 - "POST /api/v1/facial-embeddings/verify-session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56082 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44272 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58102 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43688 - "GET /health HTTP/1.1" 200 OK

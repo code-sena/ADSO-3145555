@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="com.FaceLit.backend.facial.ArchitectureFlowPostgresIT" time="166.431" tests="1" errors="0" skipped="0" failures="0"><testcase name="realHttpRegistrationAttendanceReportsAndCsvKeepTheirContracts" classname="com.FaceLit.backend.facial.ArchitectureFlowPostgresIT" time="74.592" /></testsuite>

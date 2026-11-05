@@ -19,6 +19,8 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 
 ## Summary / Resumen
 
+Entrega de código y descargas: [Release final-delivery](https://github.com/pemarival/ADSO-3145555/releases/tag/final-delivery), [tags, ZIP y huellas](code-tag/README.md). Evidencia recibida: [reprueba de instalación](05-test-documentation/installation-verification/README.md) y [aportes del equipo](05-test-documentation/team-contributions/README.md). La publicación conserva los `main` sin modificaciones y no declara aprobado el punto 6: consulta [las diferencias de versión y alcance](05-test-documentation/installation-final-scope.md).
+
 **Alcance confirmado por el equipo (2026-11-05):** esta entrega corresponde a los `main` actuales de GitHub. Hostinger incorpora ajustes locales adicionales cuya integración se pospone a una actualización futura; no se declara que los ZIP permitan reconstruir exactamente ese despliegue. Consulta la [decisión y sus límites](code-tag/delivery-status.md).
 
 - **Problem it solves / Problema que resuelve:** Centralizar la información académica y relacionar registros de asistencia con aprendices y sesiones.

@@ -1,2 +1,5 @@
 # Preserve document bytes and keep PDF contents out of textual diffs.
 *.pdf binary
+# Keep imported evidence byte-exact so its supplied SHA-256 manifests remain valid.
+05-test-documentation/installation-verification/** -text
+05-test-documentation/team-contributions/** -text

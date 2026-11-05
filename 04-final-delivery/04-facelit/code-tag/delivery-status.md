@@ -1,100 +1,62 @@
-# FaceLit delivery verification
+# FaceLit — delivery status
 
-Verification date: 2026-11-05. This report distinguishes completed checks from pending acceptance; it is not a declaration that the final version has been approved.
+Updated 2026-11-05. The coordinator authorized delivery publication with the limitations below, without changes to any component `main`. Packaging completion is not instructor or runtime acceptance.
 
-## User-supplied documentary package
+## Checklist
 
-The user designated `Downloads/04-facelit/04-facelit` as the authoritative delivery document set. Its 106 files outside `code-tag/` were copied byte-for-byte and checked by SHA-256. The two `code-tag/` templates were not used to overwrite the already verified repository, invitation and security status. Superseded files from the previous preparation were moved to a temporary recovery backup, not mixed into this document set. The original Downloads package is unchanged.
-
-The supplied [delivery review](../delivery-review.md) records document provenance, installation-evidence limitations and differences between the reported deployment package and remote source revisions. The team has confirmed that these differences are intentional for this delivery; no exact equivalence between the source tags and the deployed system is claimed.
-
-### Team-confirmed delivery scope — 2026-11-05
-
-The delivery coordinator confirmed that her colleague deliberately retained the additional deployment adjustments locally to avoid last-minute project changes. The team is delivering the current remote `main` revisions and defers integrating those adjustments for reconstruction on another VPS to a future update. No further changes to the component `main` branches were reported.
-
-Accordingly, the prepared ZIPs represent the selected GitHub source, not an exact export of the running Hostinger deployment. This is an explicit delivery limitation, not evidence that the deployed-only adjustments are included in the archives. Existing ZIP bytes and SHA-256 values are unchanged by this documentary clarification. It does not establish instructor acceptance of the limitation or replace independent installation verification of the delivered source.
-
-The provided presentation video was identified locally: 270.8333 seconds (4 min 31 s), 215,064,307 bytes; SHA-256 `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`. The user confirmed that it is the presentation video and supplied [this Drive folder](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT). It is not committed to Git. The user subsequently confirmed that the same folder contains the separate usage tutorial. A new unauthenticated HTTP request on 2026-11-05 returned 200 and showed both `Presentación FaceLit.mp4` and `Tutorial.mp4`. Both video links have now been supplied and their names are visible without signing in. Full playback, tutorial duration/content and byte-for-byte comparison with remote files remain unverified. The known local presentation duration remains outside the guide's 1-2 minute pitch range.
-
-## Source revisions and CI
-
-| Repository | Remote main commit | CI evidence for that commit |
+| Item | Status | Evidence / remaining limitation |
 |---|---|---|
-| FaceLit | `6efd92cdd7e4e358b131cbe860cd8585d13e5550` | [Successful run](https://github.com/FaceID-Proyect-2026/FaceLit/actions/runs/41781364166) |
-| FaceLit-Backend | `2ba739853a808c8e5902f70eae98706a612f91e6` | [Successful run](https://github.com/FaceID-Proyect-2026/FaceLit-Backend/actions/runs/41781369880) |
-| FaceLit-DB | `cd069ae0cb4947d4b7ebbff17e9d6dc280ab86fd` | [Successful run](https://github.com/FaceID-Proyect-2026/FaceLit-DB/actions/runs/41928525520) |
-| micro-facial | `166e4a7f2245456277d57015259c678d8febfa9f` | [Successful run](https://github.com/FaceID-Proyect-2026/micro-facial/actions/runs/41781416826) |
-| facelit-docs | `299340428bc7b04fa013cd1b4d034f673b9d3dbc` | No Actions run returned for main at the time of inspection |
+| 1. Folder and instructions | Completed | FaceLit delivery folder identified and guide reviewed with the team |
+| 2. Fork | Prepared | `pemarival/ADSO-3145555`, delivery branch `entrega-final-facelit` |
+| 3. Repository inventory | Completed | Five active components; unused empty repository retained for traceability |
+| 4. Source in main | Team-confirmed snapshot | No main changed during finalization; deployment-only changes deferred |
+| 5. Credentials | Closed in documented production scope | [Valery's operator record](credential-rotation-record.md); not independent production replay |
+| 6. Installation | Partial final acceptance | Passing automatic retest has DB revision/harness differences; no positive camera test |
+| 7. Visibility / write access | Partial | Five originals public; instructor invitations require effective-write confirmation |
+| 8. Annotated tags | Completed | Five annotated tags retain the selected main commits |
+| 9. ZIPs | Completed | Ten regenerated ZIPs; five full restores passed integrity/ref checks |
+| 10. SHA-256 | Completed for these bytes | [ZIP manifest](SHA256SUMS.txt) |
+| 11. Release | Authorized for publication | [final-delivery](https://github.com/pemarival/ADSO-3145555/releases/tag/final-delivery), subject to actual publication verification |
+| 12. Links | Prepared | [Repository/tag/download inventory](README.md) |
+| 13. Documents / PR | Integrated; review pending | [PR #10](https://github.com/code-sena/ADSO-3145555/pull/10); not merged or declared accepted |
 
-Remote commits were checked through the GitHub API. Successful CI does not establish a clean installation by the independent tester, credential rotation, camera acceptance or SMTP delivery.
+## Selected source and annotated tags
 
-## Repository visibility and instructor access
+See [archive verification](archive-verification.md) for exact main/tag object hashes and restored ref counts. The selected commits remain FaceLit `6efd92c`, backend `2ba7398`, DB `cd069ae`, micro-facial `166e4a7`, docs `2993404`. Replacing lightweight tags with annotations did not change their peeled commits.
 
-All five active repositories are public. Write invitations were sent to `ariel5253` on 2026-11-05. A subsequent check on the same date still returned read access for all five repositories, so invitation acceptance remains pending. Do not mark write access as effective until the invitation is accepted and rechecked.
+The developer checkouts may still retain old local tags. Do not force-update local refs blindly. The archives use refreshed, verified mirrors, not those checkouts.
 
-| Repository | Invitation ID | Requested permission |
-|---|---|---|
-| FaceLit | 341662667 | write |
-| FaceLit-Backend | 341662702 | write |
-| FaceLit-DB | 341662733 | write |
-| micro-facial | 341662766 | write |
-| facelit-docs | 341662803 | write |
+## Independent installation evidence received — partial
 
-The empty, unused repository remains listed for traceability and is not a source component.
+Responsible tester: María José Rodríguez Oyola. Delivery coordinator: Mariana Valenzuela Penagos.
 
-## Security and finalization gates
+The [initial execution record](../05-test-documentation/installation-execution-record.md) preserves incomplete startup/coordinator screenshots. The [new automatic report](../05-test-documentation/installation-verification/README.md) provides complete backend startup, successful migration, login/persistence/browser integration and ten passing coordinator tests with H2 and mocked email. Its second integral attempt passes with zero failures; its first failure is retained.
 
-- No real `.env` file was found in the tracked files of the five current local main checkouts during the initial review.
-- Sensitive variable names were found in historical environment files/examples. Their presence is not proof that the values were used in a real environment.
-- The updated operator record attributed by the delivery coordinator to Valery now reports completed production rotation of JWT, the internal facial key, database credentials and Gmail SMTP, with old credentials rejected and replacement credentials accepted. The historical Resend value is classified as an example marker. **Item 5 is closed for the production credentials covered by that supplied record**, with final verification reported at 2026-11-05 05:07:46, Colombia; see [credential-rotation-record.md](credential-rotation-record.md). This is documented operator evidence, not an independent production replay by this agent or a guarantee that no unlisted secret exists anywhere in history.
-- The earlier local follow-up on 2026-11-05 found no root `.env`, `.env.local`, `.env.production` or `liquibase.properties` in the five inspected Desktop checkouts, and no owner-provided rotation record was available at that time. The subsequently supplied record is documented below; README instructions alone remain procedures rather than execution evidence.
-- The GitHub secret-scanning alerts API was queried for all five repositories, returning HTTP 404 with "Secret scanning is disabled on this repository" in each case. This is not a zero-alert result and provides no revocation evidence. No scanning setting, provider credential or production configuration was changed during this check.
-- Item 5 is supported by the operator's credential-by-credential invalidation and replacement checks, not by deletion of files or changes to example values. Any additional real exposed credential identified outside the supplied record would require its own review; the record does not certify unrelated accounts or the absence of every possible historical secret.
-- Historical backend documentation contains a JWT signing-secret assignment and token examples requiring review. Values must not be copied into this report.
-- Automatic scanner matches must be triaged: frontend UI translation keys are not credentials.
-- Gitleaks 8.30.1 was downloaded from its official release, its ZIP SHA-256 was checked against the release checksum manifest, and all locally available Git refs were scanned with `--log-opts=--all --redact=100` on 2026-11-05. Results: FaceLit 5 matches (UI translation-key literals, false positives on inspection); backend 4 matches in historical authentication documentation (a signing-secret assignment and token examples, owner review pending); DB 0; micro-facial 0; documentation 0. This is a pattern-based scan, not proof that all passwords were detected or rotated. Reports remain local and no secret values are published.
-- Text extraction from 27 source PDFs found no matches for the selected private-key, GitHub-token, JWT-token and sensitive-environment-assignment patterns. This does not audit text inside screenshots, personal-data consent or document layout. The older SRS V3 had one page without extractable text and is not the current requirements source.
-- The earlier PDF extraction applies to the repository-documentation source inspected before the Downloads package replaced that preparation; it must not be read as a complete extraction audit of the replacement PDFs.
-- Gitleaks also scanned the prepared Downloads-based delivery directory on 2026-11-05 with fully redacted output: 0 matches. Binary or screenshot text, credential rotation and independent installation are not certified by this result. Three sample role screenshots were visually checked and contained visible masks over identifying fields; this is not a complete audit of all evidence.
-- Existing `final-delivery-2026` references are lightweight tags, not annotated tags. Their public references have not been changed by this preparation.
-- The remote documentation tag currently points to `2993404`; the local documentation tag still points to `91dd4b7`. Do not force-update either without reviewing the intended final commit.
-- Final annotated tags, approval of the final archive snapshot and public Release publication remain pending the installation/security gates. Ten current review-candidate ZIPs and their actual checksums are now prepared, restored/verified and uploaded to the unpublished draft; they are not accepted as final annotated-tag exports.
+**The delivered source is not identical to the full tested setup:** DB test commit `096cd3e99d6936a7dacfe4b216b5e548f0a6eaf8` differs from delivery `cd069ae0cb4947d4b7ebbff17e9d6dc280ab86fd`. The passing browser retest uses an uncommitted test-harness correction, retained as evidence but not applied to main. Positive facial inference is deterministic; the real model's negative black-frame response is not positive recognition. No actual-camera, SMTP-delivery or Hostinger acceptance is asserted.
 
-## Candidate archives and draft Release
-
-Ten review ZIPs were prepared from fresh public mirrors, with peeled tag commits checked against the selected `main` revisions. Each full-export ZIP was restored independently, passed `git fsck --full --no-dangling` and retained identical ref names/object IDs. The five source ZIP commit comments also match the selected commits. Local object reuse, where used, was followed by `--dissociate` and verification that no external alternates remained.
-
-All ten files are attached to the unpublished `final-delivery` draft in the [fork's Releases list](https://github.com/pemarival/ADSO-3145555/releases), Release ID `434892695`. Draft preview URLs can change when the draft is edited; the owner can locate it by this name and ID while signed in. For every uploaded file, GitHub's SHA-256 digest and byte count matched the actual local ZIP. The checksums are recorded in [SHA256SUMS.txt](SHA256SUMS.txt); detailed scope/ref counts and restoration instructions are in [archive-verification.md](archive-verification.md).
-
-The Release remains a draft. These assets preserve the current lightweight tags and must be regenerated as necessary after final tag/source changes. No public final-download links are claimed. Integrity and upload checks do not certify credential revocation or independent application installation.
-
-The supplied deployment document reports a DB commit `422aac6` and an uncommitted frontend batching adjustment. The DB commit was not found in the inspected local checkout, and the referenced deployment package/manifests were not found in the four component directories or the checked Downloads files. The team subsequently confirmed that the deployment-only adjustments will be integrated in a future update. Those artifacts were not invented or reconstructed from the narrative; exact reconstruction of the current Hostinger deployment from these ZIPs is not claimed.
+The coordinator explicitly chose unchanged main snapshots and publication with these limitations. See [full scope](../05-test-documentation/installation-final-scope.md). This does not mark point 6 passed, approve future commits or diagnose the old coordinator error.
 
 ## Received production rotation evidence
 
-The delivery coordinator supplied Valery's updated `Registro_Rotacion_Credenciales (1).md` from Downloads. It supersedes the earlier record in which Gmail was still pending. Its reported results are preserved in [credential-rotation-record.md](credential-rotation-record.md), without secret values. This is operator-provided evidence reviewed for scope, not a production verification independently executed by this agent.
+[Updated operator record](credential-rotation-record.md), attributed to Valery by the coordinator: JWT, internal facial key, PostgreSQL and Gmail replacement credentials accepted, old credentials rejected; final check reported 2026-11-05 05:07:46 Colombia. Gmail old app password returns SMTP 535. No email was sent. The historical Resend finding is classified as an example marker, not certification of an external account.
 
-| Category | Reported production result | Current evidence status |
-|---|---|---|
-| JWT | Old credential accepted before rotation and rejected with 401 afterward; new authenticated profile request returns 200 directly and through public HTTPS | Rotation and application check reported at 2026-11-05 04:18:25, Colombia |
-| Internal facial key | Old key rejected with 401; new key passes authentication and an unknown identifier returns 404; health returns 200 and backend key matches | Rotation and service check reported at the same timestamp; 404 is not claimed as successful facial recognition |
-| Database | Old password rejected through authenticated TCP; new password connects and executes `SELECT 1`; backend/facial health returns 200 | Rotation and connectivity check reported at the same timestamp |
-| Gmail SMTP | New credential installed/activated at 05:04:41; previous app password rejected with SMTP 535 at 05:07:46; new backend credential accepted; HTTPS/web/backend/facial health checks return 200 | Rotation and authentication checks reported complete on 2026-11-05, Colombia; **no emails were sent during this check** |
-| Historical Resend marker | The value in backend `.env.example` at `1bed26e` is explicitly classified as an example marker; inspected VPS uses Gmail and does not configure Resend | No real Resend credential identified in that finding; not a certification of an external Resend account's activity |
+Item 5 is closed for these documented production credentials only. This agent did not replay production checks or verify exhaustive absence of secrets. Full-history ZIPs preserve historical source.
 
-The operator's updated record closes the previously pending Gmail and identified Resend-marker items in its stated production scope. It demonstrates reported authentication/invalidation outcomes, not an actual email-delivery test, facial recognition acceptance, an exhaustive credential inventory or a new installation. Production health/credential checks do not replace Persona 2's independent installation test of the delivered GitHub source. Item 6 remains pending.
+Earlier Gitleaks 8.30.1 scans of available Git refs found frontend UI translation false positives (5), backend historical authentication documentation matches (4), and zero DB/facial/docs matches. Prepared delivery directory scan found zero pattern matches at that earlier stage. Those scans predate the newly imported evidence and are not a complete binary/screenshot audit. GitHub secret scanning returned disabled/404, not zero alerts.
 
-## Independent installation record required
+## Deployment scope
 
-Responsible tester: Maria Jose Rodriguez Oyola. Delivery coordinator: Mariana Valenzuela Penagos (`pemarival`).
+The team deliberately retained Hostinger-only changes locally and deferred their integration to a future update. ZIPs are GitHub source snapshots, not an exact reconstruction of the running VPS. The supplied report refers to a DB deployment commit `422aac6` and an uncommitted frontend batching adjustment; neither was invented or included from the narrative. Instructor acceptance of this limitation is not assumed.
 
-Attach a redacted record stating date, clean environment, component commits, installation commands, migration outcome, first-account setup, login, authorized facial registration and attendance, persistence and any relevant email test. Include failures and the successful retest after corrections. Historical CI or a working production site does not replace this test.
+## Documents, contributions and videos
 
-## Team input still required
+The coordinator's authoritative Downloads document package supplied 106 non-code-tag files; original PDF bytes were preserved. New installation evidence (29 files) and contribution evidence (5 files) were imported byte-for-byte; the 28 installation-manifest hashes and four contribution hashes matched. The CSV has 677 rows; its contribution percentages count commits, not effort, rights or grades. See [contributions](../05-test-documentation/team-contributions/README.md). Personal authorizations remain unchecked.
 
-1. No further rotation confirmation is pending for the production credentials covered by Valery's updated record: item 5 is closed in that scope. Retain this evidence without disclosing secrets; review separately if a new exposed real credential is identified.
-2. Independent clean-installation evidence and acceptance from the tester.
-3. Resolve the presentation/pitch duration requirement and verify the tutorial's duration/content and full playback of both files. Both video links have been supplied in the same anonymously accessible folder; the tutorial is no longer missing.
-4. Actual contributor roles, individual authorization of preloaded personal data, and registration applicant/declarations confirmed by the team/instructor. These fields must not be inferred or checked on someone's behalf.
+[Both videos](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT) were listed in an unauthenticated folder response. Full playback/tutorial duration remain unverified. The known presentation duration is 4:31, outside the guide's 1–2 minute pitch range. See [video details](../10-videos/README.md).
 
-ZIP links and SHA-256 entries must refer to actual, verified assets, never planned filenames represented as published downloads.
+## Remaining human acceptance
+
+- A fresh permission check on 2026-11-05 still returns `read` for `ariel5253` on all five repositories. Confirm effective write after invitation acceptance; public visibility does not imply write.
+- Accept or resolve installation/version/camera limitations with the tester and instructor; do not turn automatic fixtures into camera evidence.
+- Confirm video requirements and individual data authorizations, applicant/declarations and instructor contribution fields.
+- Review the PR; publication does not authorize merge or represent completed academic acceptance.

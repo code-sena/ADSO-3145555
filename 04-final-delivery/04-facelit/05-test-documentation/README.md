@@ -1,5 +1,15 @@
 # Test documentation / Documentación de pruebas
 
+## Evidencia de instalación recibida — 2026-11-05
+
+**Actualización posterior:** se recibió la [reprueba automática satisfactoria](installation-verification/README.md) y los [archivos de contribuciones faltantes](team-contributions/README.md). Consultar primero el [alcance final y diferencias de versiones](installation-final-scope.md). El resumen siguiente describe el primer intento y conserva su resultado histórico; no resume la nueva reprueba.
+
+[Registro de ejecución de María José](installation-execution-record.md), acompañado de seis capturas originales en [installation-evidence/](installation-evidence/).
+
+**Punto 6: parcial; no aprobado todavía.** Las capturas acreditan validación y aplicación exitosa de 47 cambios de Liquibase, construcción/inicio del contenedor facial y arranque de Expo. El intento de crear la coordinadora muestra un error; el recorte del backend termina antes de confirmar su arranque. No constan los commits probados, la disponibilidad del servicio facial ni un inicio de sesión y flujo integral satisfactorios. La causa del error no puede determinarse con estos recortes.
+
+Para cerrar la prueba, aportar los commits y cambios locales de las cuatro capas, el resultado completo del backend y del acceso con una cuenta de prueba, la salud y operación del servicio facial y un flujo frontend–backend–base de datos. Si hubo correcciones, registrar su versión y una reprueba satisfactoria. No publicar credenciales ni repetir el borrado de volúmenes que figura únicamente como antecedente en el registro.
+
 **Training project deliverable / Producto del proyecto formativo:** Documentación de pruebas.
 
 ## Required content / Contenido requerido
