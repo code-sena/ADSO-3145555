@@ -46,7 +46,7 @@ Copy the SHA-256 of every ZIP into [`SHA256SUMS.txt`](SHA256SUMS.txt). / Copie e
 
 ## Verification status / Estado de verificación
 
-Se recibió el [registro de rotación de Valery](credential-rotation-record.md): reporta JWT, clave facial y base de datos rotados y comprobados en producción. Gmail SMTP sigue pendiente: el propio registro indica que la contraseña anterior todavía autentica. El punto 5 no está cerrado; consulta el [estado completo](delivery-status.md#received-production-rotation-evidence).
+**Punto 5 cerrado en el alcance de producción documentado**, según el [registro actualizado de Valery](credential-rotation-record.md): JWT, clave facial, base de datos y Gmail rotados; credenciales anteriores rechazadas y nuevas aceptadas. El valor histórico de Resend fue clasificado como marcador de ejemplo. No se enviaron correos durante la comprobación; el registro no sustituye la prueba independiente de instalación. Consulta el [alcance y las limitaciones](delivery-status.md#received-production-rotation-evidence).
 
 See [delivery-status.md](delivery-status.md) for exact main commits, successful CI evidence, pending instructor invitations and the security/installation gates. All ten candidate ZIPs have been generated and locally verified; their actual SHA-256 values are in [SHA256SUMS.txt](SHA256SUMS.txt). See [archive-verification.md](archive-verification.md) for restoration/ref checks and scope. Existing tags are not yet accepted as final annotated tags.
 
