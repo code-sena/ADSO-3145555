@@ -38,8 +38,8 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | EDDIER YAIR LIBERATO CUENCA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | JHON WILLIAN CORREDOR ARAUJO | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | ANDRES MORENO COLLAZOS | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| JUAN PABLO GOMEZ PERDOMO | CC | 1138274575 | 3145555 | |
-| JOHAN ALEXANDER ACERO SALAZAR | CC | 1138274651 | 3145555 | |
+| JUAN PABLO GOMEZ PERDOMO | CC | Kept privately / En custodia privada | 3145555 | Frontend web/móvil e IA (propuesta según historial local; confirmar aporte real) |
+| JOHAN ALEXANDER ACERO SALAZAR | CC | Kept privately / En custodia privada | 3145555 | Backend y base de datos (propuesta según historial local; confirmar aporte real) |
 
 ## 3. Producer / Productor (art. 5, num. 3)
 
@@ -62,13 +62,13 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | Field / Campo | Value / Valor |
 |---|---|
 | Title / Título de la obra | One Language |
-| Year of creation / Año de creación | |
+| Year of creation / Año de creación | Por confirmar con los autores; los commits disponibles no prueban por sí solos la fecha original de creación. |
 | Country of origin / País de origen | Colombia |
 | Version registered / Versión a registrar | `final-delivery-2026` |
-| Short description of its functions / Breve descripción de sus funciones | |
-| What sets it apart from similar software / Qué la diferencia de obras similares |  |
-| Programming languages / Lenguajes | |
-| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | |
+| Short description of its functions / Breve descripción de sus funciones | Plataforma web y móvil que recibe video de cámara, clasifica señas aisladas de un vocabulario limitado de LSC y muestra la predicción en texto, con voz opcional. También gestiona cuentas, permisos y traducciones guardadas. |
+| What sets it apart from similar software / Qué la diferencia de obras similares | Integra clientes web y móvil con un servicio de inferencia en tiempo real y el historial de traducciones. El alcance actual es vocabulario limitado de señas aisladas; no afirmar traducción continua ni reemplazo de intérprete. |
+| Programming languages / Lenguajes | Java, Python, JavaScript, TypeScript y SQL; HTML y CSS para las interfaces. |
+| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | Aplicación web y móvil, API backend y servicio de inferencia de IA. |
 
 ## 6. Declarations / Declaraciones (art. 4 y art. 5, num. 5 y 6)
 

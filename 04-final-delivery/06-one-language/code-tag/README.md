@@ -12,10 +12,10 @@ Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo
 
 | Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
 |---|---|---|---|---|---|---|
-| Backend | [JohanAceroSalazar/OneLanguage-Backend](https://github.com/JohanAceroSalazar/OneLanguage-Backend) | Public / Público | **Add / Agregar** | | | |
-| Database | [JohanAceroSalazar/OneLanguage-Database](https://github.com/JohanAceroSalazar/OneLanguage-Database) | Public / Público | **Add / Agregar** | | | |
-| Web frontend | [JohanAceroSalazar/OneLanguage_Frontend](https://github.com/JohanAceroSalazar/OneLanguage_Frontend) | Public / Público | **Add / Agregar** | | | |
-| AI service | [Juan282007/OneLanguage-AI](https://github.com/Juan282007/OneLanguage-AI) | Public / Público | **Add / Agregar** | | | |
+| Backend | [JohanAceroSalazar/OneLanguage-Backend](https://github.com/JohanAceroSalazar/OneLanguage-Backend) | Public / Público | **Add / Agregar** | [93ac4091](https://github.com/JohanAceroSalazar/OneLanguage-Backend/commit/93ac4091d3c6a0e486b7cb7a0151e305f397761b) | [Main ZIP](https://github.com/Juan282007/ADSO-3145555/releases/download/final-delivery/OneLanguage-Backend-final-delivery-2026-main.zip) | [Full export](https://github.com/Juan282007/ADSO-3145555/releases/download/final-delivery/OneLanguage-Backend-full-export.zip) |
+| Database | [JohanAceroSalazar/OneLanguage-Database](https://github.com/JohanAceroSalazar/OneLanguage-Database) | Public / Público | **Add / Agregar** | [02a58628](https://github.com/JohanAceroSalazar/OneLanguage-Database/commit/02a58628f5b2bec1edd2fbd2bfc712b0714e5f51) | [Main ZIP](https://github.com/Juan282007/ADSO-3145555/releases/download/final-delivery/OneLanguage-Database-final-delivery-2026-main.zip) | [Full export](https://github.com/Juan282007/ADSO-3145555/releases/download/final-delivery/OneLanguage-Database-full-export.zip) |
+| Web frontend | [JohanAceroSalazar/OneLanguage_Frontend](https://github.com/JohanAceroSalazar/OneLanguage_Frontend) | Public / Público | **Add / Agregar** | [bc8f1dab](https://github.com/JohanAceroSalazar/OneLanguage_Frontend/commit/bc8f1dab5778dd7c457a0deb0ff75d7d97fd8aad) | [Main ZIP](https://github.com/Juan282007/ADSO-3145555/releases/download/final-delivery/OneLanguage_Frontend-final-delivery-2026-main.zip) | [Full export](https://github.com/Juan282007/ADSO-3145555/releases/download/final-delivery/OneLanguage_Frontend-full-export.zip) |
+| AI service | [Juan282007/OneLanguage-AI](https://github.com/Juan282007/OneLanguage-AI) | Public / Público | **Add / Agregar** | [922a5b33](https://github.com/Juan282007/OneLanguage-AI/commit/922a5b3313cefc4632787242a04e7a16dbd62245) | [Main ZIP](https://github.com/Juan282007/ADSO-3145555/releases/download/final-delivery/OneLanguage-AI-final-delivery-2026-main.zip) | [Full export](https://github.com/Juan282007/ADSO-3145555/releases/download/final-delivery/OneLanguage-AI-full-export.zip) |
 
 Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
 
@@ -34,9 +34,9 @@ La cuenta del instructor, `ariel5253`, necesita acceso de escritura en cada repo
 
 ## Where the ZIP files live / Dónde quedan los ZIP
 
-The ZIP files do not go in this folder. They are attached to a GitHub Release in the fork of the person who delivers, named `final-delivery`, and linked in the table above.
+The ZIP files are attached to the [final-delivery GitHub Release](https://github.com/Juan282007/ADSO-3145555/releases/tag/final-delivery) in the submitter fork and linked in the table above.
 
-Los ZIP no van en esta carpeta. Se adjuntan a un Release de GitHub llamado `final-delivery` en el fork de quien entrega, y se enlazan en la tabla de arriba.
+Los ZIP están adjuntos al [Release final-delivery de GitHub](https://github.com/Juan282007/ADSO-3145555/releases/tag/final-delivery) en el fork de quien entrega y sus enlaces están en la tabla.
 
 ## Integrity / Integridad
 

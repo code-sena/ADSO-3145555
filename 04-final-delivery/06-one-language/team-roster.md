@@ -27,5 +27,5 @@ Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, Q
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role in the project / Rol en el proyecto | Author / Autor |
 |---|---|---|---|---|---|---|
-| JUAN PABLO GOMEZ PERDOMO | CC | 1138274575 | 3145555 | Juan282007 | | Yes / Sí |
-| JOHAN ALEXANDER ACERO SALAZAR | CC | 1138274651 | 3145555 | JohanAceroSalazar | | Yes / Sí |
+| JUAN PABLO GOMEZ PERDOMO | Dato reservado | No publicar; canal privado | 3145555 | Juan282007 | Frontend web/móvil e IA (propuesta según historial local; validar con el autor) | Yes / Sí |
+| JOHAN ALEXANDER ACERO SALAZAR | Dato reservado | No publicar; canal privado | 3145555 | JohanAceroSalazar | Backend y base de datos (propuesta según historial local; validar con el autor) | Yes / Sí |

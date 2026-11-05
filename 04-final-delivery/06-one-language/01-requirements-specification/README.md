@@ -1,16 +1,24 @@
-# Requirements specification / Especificación de requisitos
+# Requirements Specification / Especificacion de requisitos
 
-**Training project deliverable / Producto del proyecto formativo:** Informe de especificación de requisitos.
+**Deliverable / Producto:** Informe de especificacion de requisitos de One Language.
+
+## Files / Archivos
+
+- [PDF](requirements-specification.pdf)
+- [Editable Word document / Documento Word editable](requirements-specification.docx)
+
+## Status / Estado
+
+Version 0.1 is a draft for team review. Its requirements and acceptance criteria were contrasted with the available project documentation and a static review of source code. Acceptance testing, team review, and formal approval are still pending. Do not treat this draft as an approved final specification.
+
+La version 0.1 es un borrador para revision del equipo. Sus requisitos y criterios de aceptacion se contrastaron con la documentacion disponible y una revision estatica del codigo fuente. Siguen pendientes las pruebas de aceptacion, la revision del equipo y la aprobacion formal. No se debe presentar este borrador como una especificacion final aprobada.
 
 ## Required content / Contenido requerido
 
-- [ ] Requirements specification report / Informe de especificación de requisitos
-- [ ] Functional and non-functional requirements / Requisitos funcionales y no funcionales
-- [ ] User stories and prioritized backlog, if used / Historias de usuario y backlog priorizado, si se usaron
+- [x] Requirements specification report / Informe de especificacion de requisitos (draft / borrador)
+- [x] Functional and non-functional requirements / Requisitos funcionales y no funcionales
+- [x] User stories and acceptance criteria / Historias de usuario y criterios de aceptacion
 
-## Format / Formato
+The acceptance criteria describe expected behavior; they are not evidence that tests have passed. Update the document's source revisions and implementation status before approval if the delivery uses newer commits.
 
-- Final version in PDF, plus the editable source when it exists. / Versión final en PDF y, si existe, el archivo fuente editable.
-- English file names, without spaces or accents: `requirements-specification.pdf`. / Nombres de archivo en inglés, sin espacios ni tildes.
-- Files over 50 MB go to Drive and are listed in the project `README.md`. / Los archivos de más de 50 MB van a Drive y se relacionan en el `README.md` del proyecto.
-- Do not add passwords, tokens, keys or real user data. / No incluya contraseñas, tokens, llaves ni datos reales de usuarios.
+Los criterios de aceptacion describen el comportamiento esperado; no demuestran que las pruebas hayan sido aprobadas. Antes de aprobar, actualice las revisiones de codigo fuente y el estado de implementacion si la entrega usa commits mas recientes.
