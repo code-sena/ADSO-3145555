@@ -13,11 +13,11 @@ Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo
 | Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
 |---|---|---|---|---|---|---|
 | Documentation | [FaceID-Proyect-2026/Documentaci-n-y-despliegue](https://github.com/FaceID-Proyect-2026/Documentaci-n-y-despliegue) | Público — vacío y fuera de uso | **Add / Agregar** | No aplica: repositorio vacío; reemplazado por facelit-docs | No aplica | No aplica |
-| Frontend | [FaceID-Proyect-2026/FaceLit](https://github.com/FaceID-Proyect-2026/FaceLit) | Public / Público | **Add / Agregar** | | | |
-| Backend | [FaceID-Proyect-2026/FaceLit-Backend](https://github.com/FaceID-Proyect-2026/FaceLit-Backend) | Public / Público | **Add / Agregar** | | | |
-| Database | [FaceID-Proyect-2026/FaceLit-DB](https://github.com/FaceID-Proyect-2026/FaceLit-DB) | Public / Público | **Add / Agregar** | | | |
-| Documentation | [FaceID-Proyect-2026/facelit-docs](https://github.com/FaceID-Proyect-2026/facelit-docs) | Public / Público | **Add / Agregar** | | | |
-| AI service | [FaceID-Proyect-2026/micro-facial](https://github.com/FaceID-Proyect-2026/micro-facial) | Public / Público | **Add / Agregar** | | | |
+| Frontend | [FaceID-Proyect-2026/FaceLit](https://github.com/FaceID-Proyect-2026/FaceLit) | Public / Público | Escritura invitada; aceptación pendiente | [`6efd92c`](https://github.com/FaceID-Proyect-2026/FaceLit/tree/final-delivery-2026) — tag remoto ligero; anotación pendiente | Pendiente de validación final | Pendiente de validación final |
+| Backend | [FaceID-Proyect-2026/FaceLit-Backend](https://github.com/FaceID-Proyect-2026/FaceLit-Backend) | Public / Público | Escritura invitada; aceptación pendiente | [`2ba7398`](https://github.com/FaceID-Proyect-2026/FaceLit-Backend/tree/final-delivery-2026) — tag remoto ligero; anotación pendiente | Pendiente de validación final | Pendiente de validación final |
+| Database | [FaceID-Proyect-2026/FaceLit-DB](https://github.com/FaceID-Proyect-2026/FaceLit-DB) | Public / Público | Escritura invitada; aceptación pendiente | [`cd069ae`](https://github.com/FaceID-Proyect-2026/FaceLit-DB/tree/final-delivery-2026) — tag remoto ligero; anotación pendiente | Pendiente de validación final | Pendiente de validación final |
+| Documentation | [FaceID-Proyect-2026/facelit-docs](https://github.com/FaceID-Proyect-2026/facelit-docs) | Public / Público | Escritura invitada; aceptación pendiente | [`2993404`](https://github.com/FaceID-Proyect-2026/facelit-docs/tree/final-delivery-2026) — tag remoto ligero; anotación pendiente | Pendiente de validación final | Pendiente de validación final |
+| AI service | [FaceID-Proyect-2026/micro-facial](https://github.com/FaceID-Proyect-2026/micro-facial) | Public / Público | Escritura invitada; aceptación pendiente | [`166e4a7`](https://github.com/FaceID-Proyect-2026/micro-facial/tree/final-delivery-2026) — tag remoto ligero; anotación pendiente | Pendiente de validación final | Pendiente de validación final |
 
 Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
 
@@ -43,3 +43,9 @@ Los ZIP no van en esta carpeta. Se adjuntan a un Release de GitHub llamado `fina
 ## Integrity / Integridad
 
 Copy the SHA-256 of every ZIP into [`SHA256SUMS.txt`](SHA256SUMS.txt). / Copie el SHA-256 de cada ZIP en ese archivo.
+
+## Verification status / Estado de verificación
+
+See [delivery-status.md](delivery-status.md) for exact main commits, successful CI evidence, pending instructor invitations and the security/installation gates. Existing tags are not yet accepted as final annotated tags. No ZIP downloads or checksums are claimed before the archives exist.
+
+The `final-delivery` Release has been prepared as an unpublished draft in the delivery coordinator's fork. It has no final ZIP assets yet; draft Release URLs are not public download links and must not be placed in the ZIP columns.

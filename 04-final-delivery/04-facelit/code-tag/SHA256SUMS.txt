@@ -1,1 +1,3 @@
 # sha256  file / archivo
+# Pending: generate final archives only after credential and installation acceptance.
+# No hashes are listed until the corresponding ZIP files exist and have been verified.
