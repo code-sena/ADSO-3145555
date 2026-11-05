@@ -1,17 +1,18 @@
-# Software design / Diseño del software
+# Diseño del software — SRD
 
-**Training project deliverable / Producto del proyecto formativo:** Documentación de diseño del software (interfaces gráficas, modelo arquitectónico, patrones de diseño, modelo de datos).
+**Producto de la entrega final ADSO-3145555.**
 
-## Required content / Contenido requerido
+## Requisitos de la guía
 
-- [ ] Graphical interfaces: mockups or prototype / Interfaces gráficas: mockups o prototipo
-- [ ] Architectural model / Modelo arquitectónico
-- [ ] Design patterns applied, with where they are used / Patrones de diseño aplicados, indicando dónde se usan
-- [ ] Data model: conceptual, logical and physical / Modelo de datos: conceptual, lógico y físico
+Interfaces, modelo arquitectónico, patrones aplicados y modelo de datos.
 
-## Format / Formato
+## Archivos y evidencias
 
-- Final version in PDF, plus the editable source when it exists. / Versión final en PDF y, si existe, el archivo fuente editable.
-- English file names, without spaces or accents: `requirements-specification.pdf`. / Nombres de archivo en inglés, sin espacios ni tildes.
-- Files over 50 MB go to Drive and are listed in the project `README.md`. / Los archivos de más de 50 MB van a Drive y se relacionan en el `README.md` del proyecto.
-- Do not add passwords, tokens, keys or real user data. / No incluya contraseñas, tokens, llaves ni datos reales de usuarios.
+**Pendiente de adjuntar físicamente:** los dos originales exceden el límite de lectura binaria de la conexión.
+
+- [PDF original del diseño](https://github.com/jsgh1/SRD-Docs/blob/dev/Entregables/PDF/04_SRD_Diseno_del_Software.pdf)
+- [Word original del diseño](https://github.com/jsgh1/SRD-Docs/blob/dev/Entregables/Word/04_SRD_Diseno_del_Software.docx)
+
+Añadir a esta misma carpeta los archivos software-design.pdf y software-design.docx antes del cierre definitivo.
+
+**Control de calidad:** la existencia de un archivo no reemplaza la verificación académica de contenido, versión y ausencia de información sensible.

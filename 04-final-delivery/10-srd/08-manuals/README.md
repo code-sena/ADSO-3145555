@@ -1,16 +1,20 @@
-# Manuals / Manuales
+# Manuales del sistema — SRD
 
-**Training project deliverable / Producto del proyecto formativo:** Manuales técnico, instalación y usuario final.
+**Producto de la entrega final ADSO-3145555.**
 
-## Required content / Contenido requerido
+## Requisitos de la guía
 
-- [ ] Technical manual / Manual técnico
-- [ ] Installation manual / Manual de instalación
-- [ ] End-user manual / Manual de usuario final
+Manual técnico, de instalación y de usuario final.
 
-## Format / Formato
+## Archivos y evidencias
 
-- Final version in PDF, plus the editable source when it exists. / Versión final en PDF y, si existe, el archivo fuente editable.
-- English file names, without spaces or accents: `requirements-specification.pdf`. / Nombres de archivo en inglés, sin espacios ni tildes.
-- Files over 50 MB go to Drive and are listed in the project `README.md`. / Los archivos de más de 50 MB van a Drive y se relacionan en el `README.md` del proyecto.
-- Do not add passwords, tokens, keys or real user data. / No incluya contraseñas, tokens, llaves ni datos reales de usuarios.
+- [technical-manual.pdf](technical-manual.pdf)
+- [technical-manual.docx](technical-manual.docx)
+- [installation-manual.pdf](installation-manual.pdf)
+- [installation-manual.docx](installation-manual.docx)
+- [end-user-manual.pdf](end-user-manual.pdf)
+- [end-user-manual.docx](end-user-manual.docx)
+
+Copias de los originales de [SRD-Docs, dev](https://github.com/jsgh1/SRD-Docs/tree/dev/Entregables). Los SHA de objeto coinciden; solo se normalizaron las rutas y los nombres.
+
+**Control de calidad:** la existencia de un archivo no reemplaza la verificación académica de contenido, versión y ausencia de información sensible.

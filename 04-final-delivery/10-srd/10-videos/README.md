@@ -1,33 +1,19 @@
-# Videos: SRD
+# Videos — SRD
 
-Two videos are required. / Se requieren dos videos.
-
-| Video | Duration / Duración | Link / Enlace | Done / Listo |
+| Video | Duración exigida | Enlace proporcionado | Estado |
 |---|---|---|---|
-| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos | | ☐ |
-| Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | | ☐ |
+| 1. SRD-Pitch publicitario | 1–2 minutos | [Ver video](https://youtu.be/1CATo7STpN4) | Enlazado; duración pendiente de validar |
+| 2. Explicación y demostración | 3–5 minutos | [Ver video](https://youtu.be/rozJl6MIEi8) | Enlazado; duración pendiente de validar |
 
-## 1. Advertising pitch / Pitch publicitario
+## Contenido requerido
 
-Sells the product to someone who does not know it. / Presenta el producto a alguien que no lo conoce.
+- Pitch: problema, usuarios, solución, diferenciación y cierre.
+- Tutorial: ingreso, roles principales y demostración de flujo real paso a paso, con voz o subtítulos.
 
-- [ ] Problem it solves / Problema que resuelve
-- [ ] Who it is for / Para quién es
-- [ ] The solution and what sets it apart / La solución y qué la diferencia
-- [ ] Clear closing message / Mensaje final claro
+## Verificaciones previas al cierre
 
-## 2. Short usage tutorial / Tutorial corto de uso
+- La guía pide Google Drive, pero el usuario suministró enlaces de YouTube. Se deben confirmar con el instructor o incorporar enlaces de Drive.
+- Verificar que ambos videos son visibles desde una ventana privada y cumplen las duraciones solicitadas.
+- No mostrar contraseñas, tokens ni datos personales reales.
 
-Shows how the system is used, on the real system. / Muestra cómo se usa el sistema, sobre el sistema real.
-
-- [ ] Sign-in and main roles / Ingreso y roles principales
-- [ ] The main flow, step by step / El flujo principal, paso a paso
-- [ ] The result the user gets / El resultado que obtiene el usuario
-- [ ] Voice or captions that explain each step / Voz o subtítulos que expliquen cada paso
-
-## Rules / Reglas
-
-- Upload them to Google Drive, with access for anyone who has the link. / Súbalos a Google Drive, con acceso para cualquiera que tenga el enlace.
-- Check the links in a private browser window. / Pruebe los enlaces en una ventana privada del navegador.
-- Do not show passwords, tokens or real personal data. / No muestre contraseñas, tokens ni datos personales reales.
-- Use music and images you are allowed to use. / Use música e imágenes que tenga permiso de usar.
+Los videos no se almacenan como archivos binarios en el repositorio.
