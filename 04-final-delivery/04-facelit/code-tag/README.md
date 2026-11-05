@@ -12,7 +12,7 @@ Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo
 
 | Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
 |---|---|---|---|---|---|---|
-| Documentation | [FaceID-Proyect-2026/Documentaci-n-y-despliegue](https://github.com/FaceID-Proyect-2026/Documentaci-n-y-despliegue) | Public / Público<br>**Empty / Vacío** | **Add / Agregar** | | | |
+| Documentation | [FaceID-Proyect-2026/Documentaci-n-y-despliegue](https://github.com/FaceID-Proyect-2026/Documentaci-n-y-despliegue) | Público — vacío y fuera de uso | **Add / Agregar** | No aplica: repositorio vacío; reemplazado por facelit-docs | No aplica | No aplica |
 | Frontend | [FaceID-Proyect-2026/FaceLit](https://github.com/FaceID-Proyect-2026/FaceLit) | Public / Público | **Add / Agregar** | | | |
 | Backend | [FaceID-Proyect-2026/FaceLit-Backend](https://github.com/FaceID-Proyect-2026/FaceLit-Backend) | Public / Público | **Add / Agregar** | | | |
 | Database | [FaceID-Proyect-2026/FaceLit-DB](https://github.com/FaceID-Proyect-2026/FaceLit-DB) | Public / Público | **Add / Agregar** | | | |
