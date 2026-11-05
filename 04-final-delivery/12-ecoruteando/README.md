@@ -53,7 +53,7 @@ Autorización de datos: al marcar la casilla, el integrante confirma sus datos y
 | [`07-improvement-actions/`](07-improvement-actions/) | Improvement actions / Acciones de mejoramiento | ☑ |
 | [`08-manuals/`](08-manuals/) | Manuals / Manuales | ☑ |
 | [`09-project-article/`](09-project-article/) | Project article / Artículo del proyecto | ☑ |
-| [`10-videos/`](10-videos/) | Videos / Videos | ☐ |
+| [`10-videos/`](10-videos/) | Videos / Videos | ☑ |
 | [`code-tag/`](code-tag/) | Repository links, tags and ZIP files / Enlaces, tags y ZIP | ☑ |
 | [`team-roster.md`](team-roster.md) | Team and roles / Equipo y roles | ☑ |
 | [`software-registration.md`](software-registration.md) | Software registration data / Datos para registro de software | ☑ |
@@ -66,4 +66,5 @@ Aquí solo van archivos demasiado pesados para GitHub, como videos de demostraci
 
 | File / Archivo | Size / Tamaño | Link / Enlace |
 |---|---|---|
-| | | |
+| Presentacion-web-Ecoruteando.webm (Pitch Web) | ~66 MB | [Ver en Google Drive](https://drive.google.com/file/d/14-T0hxeWJIEzGLwWZCAQwrv4KRNMlDCZ/view?usp=drive_link) |
+| Presentacion-Movil-Ecoruteando.mp4 (Tutorial Móvil) | ~134 MB | [Ver en Google Drive](https://drive.google.com/file/d/1Gg6YfcmambaHI-tyFGi_VlZ_rbMldf1R/view?usp=drive_link) |
