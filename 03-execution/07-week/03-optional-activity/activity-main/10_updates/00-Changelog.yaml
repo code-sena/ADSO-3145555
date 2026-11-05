@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-update-person-status
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: update default status for existing persons
+      changes:
+        - sqlFile:
+            path: 10_updates/01-update-person-status.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/10_updates/01-update-person-status-rollback.sql

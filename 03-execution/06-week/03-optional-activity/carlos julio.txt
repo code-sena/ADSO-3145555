@@ -1,0 +1,33 @@
+plan de trabajo 
+
+semana 6 pagina web emos echo 
+consumir api hacerle peticiones 
+
+----peticiones de api o request----
+
+todos enviar datos 
+
+get post:crear datos crear n regisro registrar
+put:actualizar datos,nuevos recursos
+past:parcial de elemento o camo
+Delep:eliminar 
+
+-----peticiones a la api---------
+
+fetch nativo de javascript
+axios requiere libreria no.js
+async->awaitt enviar una peticion en segundo plano primer plano que puede hacer el usuario tareas demaciadas largas 
+primer`plano las que son cortas 
+xmlh->base lento y antiguo 
+
+100->Informativo;
+200->Ok funciono 
+300->error de redireccion
+400->error de cliente 
+500->error del servidor
+
+403->Forbiben  no tengo aseso requerido 
+404->
+422->se pasa de cantidad de datos 
+415-> envia archivo y la ai no esta`preparada 
+ 

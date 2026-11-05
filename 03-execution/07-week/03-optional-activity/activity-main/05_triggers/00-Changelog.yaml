@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-trg-person-updated-at
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: trigger set updated_at on person
+      changes:
+        - sqlFile:
+            path: 05_triggers/01-trg-person-updated-at.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/05_triggers/01-trg-person-updated-at-rollback.sql
+
+  - changeSet:
+      id: 02-trg-rol-updated-at
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: trigger set updated_at on rol
+      changes:
+        - sqlFile:
+            path: 05_triggers/02-trg-rol-updated-at.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/05_triggers/02-trg-rol-updated-at-rollback.sql

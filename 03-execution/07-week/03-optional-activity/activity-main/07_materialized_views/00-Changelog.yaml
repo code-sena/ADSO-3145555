@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-mv-person-summary
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: materialized view person summary
+      changes:
+        - sqlFile:
+            path: 07_materialized_views/01-mv-person-summary.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/07_materialized_views/01-mv-person-summary-rollback.sql

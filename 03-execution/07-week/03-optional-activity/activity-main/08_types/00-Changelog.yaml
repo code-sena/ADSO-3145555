@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-type-status-enum
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: enum type for record status
+      changes:
+        - sqlFile:
+            path: 08_types/01-type-status-enum.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/08_types/01-type-status-enum-rollback.sql

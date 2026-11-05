@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-sp-insert-person
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: procedure insert person
+      changes:
+        - sqlFile:
+            path: 04_procedures/01-sp-insert-person.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/04_procedures/01-sp-insert-person-rollback.sql
+
+  - changeSet:
+      id: 02-sp-soft-delete-person
+      author: montealegrejose254@gmail.com
+      context: billing
+      labels: HU-03-dev
+      comment: procedure soft delete person
+      changes:
+        - sqlFile:
+            path: 04_procedures/02-sp-soft-delete-person.sql
+            endDelimiter: \nGO
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: 11_rollbacks/04_procedures/02-sp-soft-delete-person-rollback.sql
