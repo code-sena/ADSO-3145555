@@ -46,8 +46,8 @@ The empty, unused repository remains listed for traceability and is not a source
 
 - No real `.env` file was found in the tracked files of the five current local main checkouts during the initial review.
 - Sensitive variable names were found in historical environment files/examples. Their presence is not proof that the values were used in a real environment.
-- Credential rotation or revocation has not been confirmed by the environment owners. Do not publish a complete-history archive as security-approved until this is resolved.
-- Follow-up verification on 2026-11-05 found no root `.env`, `.env.local`, `.env.production` or `liquibase.properties` in the five inspected Desktop checkouts, and no owner-provided rotation record was available. README rotation instructions are procedures, not evidence that the operation occurred.
+- A rotation record attributed by the delivery coordinator to Valery has now been supplied. It reports completed production rotation and rejection of the old JWT, facial-service and database credentials, but explicitly reports that the old Gmail app password still authenticates. Item 5 remains partial; see [credential-rotation-record.md](credential-rotation-record.md). Do not publish a complete-history archive as fully security-approved until the remaining exposed real credentials are resolved.
+- The earlier local follow-up on 2026-11-05 found no root `.env`, `.env.local`, `.env.production` or `liquibase.properties` in the five inspected Desktop checkouts, and no owner-provided rotation record was available at that time. The subsequently supplied record is documented below; README instructions alone remain procedures rather than execution evidence.
 - The GitHub secret-scanning alerts API was queried for all five repositories, returning HTTP 404 with "Secret scanning is disabled on this repository" in each case. This is not a zero-alert result and provides no revocation evidence. No scanning setting, provider credential or production configuration was changed during this check.
 - To close item 5, the environment owner must identify which historical values were real (versus unused examples) and confirm revocation/rotation by credential category, environment and date, without disclosing values. Relevant categories include JWT signing material, the shared internal facial-service key, database credentials, and any provider key such as Resend that was actually exposed and used. Retired seeded account credentials also require explicit review if they were used in a real environment. Do not claim that deleting files or changing example values revoked any of these credentials.
 - Historical backend documentation contains a JWT signing-secret assignment and token examples requiring review. Values must not be copied into this report.
@@ -70,6 +70,19 @@ The Release remains a draft. These assets preserve the current lightweight tags 
 
 The supplied deployment document reports a DB commit `422aac6` and an uncommitted frontend batching adjustment. The DB commit was not found in the inspected local checkout, and the referenced deployment package/manifests were not found in the four component directories or the checked Downloads files. The team subsequently confirmed that the deployment-only adjustments will be integrated in a future update. Those artifacts were not invented or reconstructed from the narrative; exact reconstruction of the current Hostinger deployment from these ZIPs is not claimed.
 
+## Received production rotation evidence
+
+The delivery coordinator supplied Valery's `Registro_Rotacion_Credenciales.md` from Downloads. Its reported results are preserved in [credential-rotation-record.md](credential-rotation-record.md), without secret values. This is operator-provided evidence reviewed for scope, not a production verification independently executed by this agent.
+
+| Category | Reported production result | Current evidence status |
+|---|---|---|
+| JWT | Old credential accepted before rotation and rejected with 401 afterward; new authenticated profile request returns 200 directly and through public HTTPS | Rotation and application check reported at 2026-11-05 04:18:25, Colombia |
+| Internal facial key | Old key rejected with 401; new key passes authentication and an unknown identifier returns 404; health returns 200 and backend key matches | Rotation and service check reported at the same timestamp; 404 is not claimed as successful facial recognition |
+| Database | Old password rejected through authenticated TCP; new password connects and executes `SELECT 1`; backend/facial health returns 200 | Rotation and connectivity check reported at the same timestamp |
+| Gmail SMTP | Old application password still authenticates; replacement has not been activated and tested | **Pending: revoke old password, activate replacement in VPS/backend, prove old rejection and successful mail operation** |
+
+The record does not classify historical Resend values as real or unused examples, nor report their revocation if they were real. Any other historical real exposed credentials, including a retired seeded account if used, still require owner classification. Do not infer these results from the three completed rotations. Production health/credential tests do not replace Persona 2's independent installation test of the delivered GitHub source.
+
 ## Independent installation record required
 
 Responsible tester: Maria Jose Rodriguez Oyola. Delivery coordinator: Mariana Valenzuela Penagos (`pemarival`).
@@ -78,7 +91,7 @@ Attach a redacted record stating date, clean environment, component commits, ins
 
 ## Team input still required
 
-1. Confirmation of real credential revocation/rotation, without disclosing values.
+1. Complete Gmail app-password revocation/replacement and service validation; classify any other historical exposed real credentials not covered by the received record (including Resend if it was used). JWT, internal facial key and database rotation are now documented by the operator's report, not awaiting an initial report.
 2. Independent clean-installation evidence and acceptance from the tester.
 3. Resolve the presentation/pitch duration requirement and verify the tutorial's duration/content and full playback of both files. Both video links have been supplied in the same anonymously accessible folder; the tutorial is no longer missing.
 4. Actual contributor roles, individual authorization of preloaded personal data, and registration applicant/declarations confirmed by the team/instructor. These fields must not be inferred or checked on someone's behalf.

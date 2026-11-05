@@ -46,6 +46,8 @@ Copy the SHA-256 of every ZIP into [`SHA256SUMS.txt`](SHA256SUMS.txt). / Copie e
 
 ## Verification status / Estado de verificación
 
+Se recibió el [registro de rotación de Valery](credential-rotation-record.md): reporta JWT, clave facial y base de datos rotados y comprobados en producción. Gmail SMTP sigue pendiente: el propio registro indica que la contraseña anterior todavía autentica. El punto 5 no está cerrado; consulta el [estado completo](delivery-status.md#received-production-rotation-evidence).
+
 See [delivery-status.md](delivery-status.md) for exact main commits, successful CI evidence, pending instructor invitations and the security/installation gates. All ten candidate ZIPs have been generated and locally verified; their actual SHA-256 values are in [SHA256SUMS.txt](SHA256SUMS.txt). See [archive-verification.md](archive-verification.md) for restoration/ref checks and scope. Existing tags are not yet accepted as final annotated tags.
 
 The `final-delivery` Release remains an unpublished draft. All ten candidate uploads have matching GitHub/local digests and sizes, as recorded in [delivery-status.md](delivery-status.md). The delivery coordinator can open `final-delivery` in the [fork's Releases list](https://github.com/pemarival/ADSO-3145555/releases), while signed in; this is not a public final-download link. The ZIP columns identify candidate filenames, not published final assets. Rebuild affected archives and update hashes after any final source/tag change.

@@ -1,0 +1,8 @@
+# Registro de rotación de credenciales
+
+| Tipo | Entorno y fecha del cambio | Confirmación de invalidación anterior | Resultado de la comprobación del servicio |
+|---|---|---|---|
+| JWT | Producción, VPS Hostinger. 5 de noviembre de 2026, 04:18:25 (Colombia, UTC-05:00). | Confirmada: una solicitud autenticada con la clave anterior devuelve HTTP 401. Antes del cambio era aceptada. | Con la nueva clave, la consulta autenticada del perfil devuelve HTTP 200 tanto directamente al backend como mediante HTTPS público. |
+| Clave facial | Producción, VPS Hostinger. 5 de noviembre de 2026, 04:18:25 (Colombia, UTC-05:00). | Confirmada: la clave anterior devuelve HTTP 401 en una operación protegida. Antes del cambio era aceptada. | La nueva clave supera la autenticación; la consulta de un identificador inexistente devuelve HTTP 404, como corresponde. Salud facial HTTP 200 y clave del backend coincidente. |
+| Base de datos | Producción, VPS Hostinger. 5 de noviembre de 2026, 04:18:25 (Colombia, UTC-05:00). | Confirmada: la contraseña anterior es rechazada en una conexión TCP que exige autenticación. Antes del cambio era aceptada. | La nueva contraseña permite conectar y ejecutar SELECT 1. Backend y servicio facial activos; comprobaciones de salud HTTP 200. |
+| Correo, Gmail SMTP | Producción, VPS Hostinger. Cambio pendiente; comprobación realizada el 5 de noviembre de 2026. | Pendiente: la contraseña de aplicación anterior todavía autentica. Debe revocarse en la cuenta de Google. | SMTP autentica con la credencial actual. Falta guardar la sustituta en el VPS, activarla y comprobar que la anterior sea rechazada. |
