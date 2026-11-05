@@ -1,40 +1,31 @@
-# Code and tags / Código y tags: SRD
+# Código, tags y copias de respaldo — SRD
 
-## Original repositories / Repositorios originales
+## Repositorios originales de trabajo
 
-Every original working repository of the project must be listed here and must be **public**. The instructor compares what was delivered against these repositories, so they must stay public and keep their full history until the review ends.
+SRD se reorganizó en cinco repositorios independientes. Se conserva SRD-v1 como índice y repositorio histórico. El instructor debe poder contrastar todos los originales con la entrega.
 
-Todos los repositorios originales de trabajo del proyecto deben estar aquí y deben ser **públicos**. El instructor contrasta lo entregado contra estos repositorios, así que deben seguir públicos y con todo su historial hasta terminar la revisión.
-
-If one is missing, add a row. If one is empty or no longer used, write that in the commit column. The visibility shown was checked on 2026-11-04.
-
-Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo en la columna del commit. La visibilidad indicada se revisó el 2026-11-04.
-
-| Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
+| Componente | Repositorio | Visibilidad comprobada | Acceso `ariel5253` | Tag `final-delivery-2026` | ZIP de main | ZIP completo |
 |---|---|---|---|---|---|---|
-| Main repository | [jsgh1/SRD-v1](https://github.com/jsgh1/SRD-v1) | Public / Público | **Add / Agregar** | | | |
+| Histórico/índice | [jsgh1/SRD-v1](https://github.com/jsgh1/SRD-v1) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
+| Backend | [jsgh1/SRD-Backend](https://github.com/jsgh1/SRD-Backend) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
+| Frontend web/móvil/escritorio | [jsgh1/SRD-Frontend](https://github.com/jsgh1/SRD-Frontend) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
+| Bases de datos | [jsgh1/SRD-Database](https://github.com/jsgh1/SRD-Database) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
+| Infraestructura Docker | [jsgh1/SRD-Docker-Infra](https://github.com/jsgh1/SRD-Docker-Infra) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
+| Entregables documentales | [jsgh1/SRD-Docs](https://github.com/jsgh1/SRD-Docs) | Público | Lectura; **solicita escritura** | Pendiente | Pendiente | Pendiente |
 
-Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
+**Auditoría del 5 de noviembre de 2026:** los seis repositorios figuran públicos. La consulta de permisos de `ariel5253` devolvió `read` en cada uno. La guía pide permiso de escritura y debe configurarse por un propietario del repositorio.
 
-Antes de hacer público un repositorio, quite los archivos `.env` y cambie toda contraseña, token o llave que se haya subido alguna vez.
+## Política de versiones
 
-The instructor account `ariel5253` needs write access to every repository, so pending items can be corrected for the software registration. Add it as a collaborator where the table says so.
+1. Integrar cambios **validados** de `dev` a `main` mediante PR y pruebas, sin commits directos a ramas principales.
+2. Comprobar archivos e historial en busca de contraseñas, tokens, llaves y `.env` reales. Rotar cualquier secreto expuesto antes de difundir respaldos.
+3. En cada repositorio crear un tag **anotado** llamado `final-delivery-2026` sobre el commit final de `main`.
+4. Generar por repositorio `<repo>-final-delivery-2026-main.zip` (árbol exacto del tag) y `<repo>-full-export.zip` (todas las referencias y el historial).
+5. Cargar los ZIP al **Release `final-delivery` de este fork**, no al Pull Request; enlazar sus URL en esta tabla.
+6. Registrar el SHA-256 real de cada ZIP en [SHA256SUMS.txt](SHA256SUMS.txt). No declarar hashes antes de generar los archivos.
 
-La cuenta del instructor, `ariel5253`, necesita acceso de escritura en cada repositorio, para poder corregir pendientes del registro de software. Agréguela como colaboradora donde la tabla lo indique.
+## Estado actual
 
-## Why two ZIP files / Por qué dos ZIP
+**Pendiente de congelación del código.** La comparación remota mostró que `dev` contiene cambios aún no integrados en `main` en los cinco repositorios separados. No se crearon tags ni archivos ZIP, y no se declara esta tarea como terminada.
 
-| File / Archivo | Content / Contenido | Purpose / Para qué sirve |
-|---|---|---|
-| `<repo>-final-delivery-2026-main.zip` | Only the code of `main` at tag `final-delivery-2026` / Solo el código de `main` en el tag | The exact version delivered, used for software registration / La versión exacta entregada, la que se usa para registro de software |
-| `<repo>-full-export.zip` | The whole repository: all branches, tags and history / Todo el repositorio: ramas, tags e historial | Proof of the work done and a complete backup / Prueba del trabajo realizado y respaldo completo |
-
-## Where the ZIP files live / Dónde quedan los ZIP
-
-The ZIP files do not go in this folder. They are attached to a GitHub Release in the fork of the person who delivers, named `final-delivery`, and linked in the table above.
-
-Los ZIP no van en esta carpeta. Se adjuntan a un Release de GitHub llamado `final-delivery` en el fork de quien entrega, y se enlazan en la tabla de arriba.
-
-## Integrity / Integridad
-
-Copy the SHA-256 of every ZIP into [`SHA256SUMS.txt`](SHA256SUMS.txt). / Copie el SHA-256 de cada ZIP en ese archivo.
+Enlaces de trabajo: [Backend/dev](https://github.com/jsgh1/SRD-Backend/tree/dev), [Frontend/dev](https://github.com/jsgh1/SRD-Frontend/tree/dev), [Database/dev](https://github.com/jsgh1/SRD-Database/tree/dev), [Docker-Infra/dev](https://github.com/jsgh1/SRD-Docker-Infra/tree/dev), [Docs/dev](https://github.com/jsgh1/SRD-Docs/tree/dev).
