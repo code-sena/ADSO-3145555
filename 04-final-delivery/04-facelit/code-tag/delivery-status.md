@@ -11,7 +11,7 @@ Updated 2026-11-05. The coordinator authorized delivery publication with the lim
 | 3. Repository inventory | Completed | Five active components; unused empty repository retained for traceability |
 | 4. Source in main | Team-confirmed snapshot | No main changed during finalization; deployment-only changes deferred |
 | 5. Credentials | Closed in documented production scope | [Valery's operator record](credential-rotation-record.md); not independent production replay |
-| 6. Installation | Partial final acceptance | Passing automatic retest has DB revision/harness differences; no positive camera test |
+| 6. Installation | Coordinator accepted with exceptions | DB revision and local harness differences explicitly accepted on 2026-11-05; instructor acceptance/camera requirement pending |
 | 7. Visibility / write access | Partial | Five originals public; instructor invitations require effective-write confirmation |
 | 8. Annotated tags | Completed | Five annotated tags retain the selected main commits |
 | 9. ZIPs | Completed | Ten regenerated ZIPs; five full restores passed integrity/ref checks |
@@ -26,7 +26,7 @@ See [archive verification](archive-verification.md) for exact main/tag object ha
 
 The developer checkouts may still retain old local tags. Do not force-update local refs blindly. The archives use refreshed, verified mirrors, not those checkouts.
 
-## Independent installation evidence received — partial
+## Independent installation evidence — coordinator acceptance with exceptions
 
 Responsible tester: María José Rodríguez Oyola. Delivery coordinator: Mariana Valenzuela Penagos.
 
@@ -34,7 +34,7 @@ The [initial execution record](../05-test-documentation/installation-execution-r
 
 **The delivered source is not identical to the full tested setup:** DB test commit `096cd3e99d6936a7dacfe4b216b5e548f0a6eaf8` differs from delivery `cd069ae0cb4947d4b7ebbff17e9d6dc280ab86fd`. The passing browser retest uses an uncommitted test-harness correction, retained as evidence but not applied to main. Positive facial inference is deterministic; the real model's negative black-frame response is not positive recognition. No actual-camera, SMTP-delivery or Hostinger acceptance is asserted.
 
-The coordinator explicitly chose unchanged main snapshots and publication with these limitations. See [full scope](../05-test-documentation/installation-final-scope.md). This does not mark point 6 passed, approve future commits or diagnose the old coordinator error.
+On 2026-11-05 the coordinator explicitly accepted the different DB revision and uncommitted browser-harness correction as known delivery exceptions, retaining unchanged main snapshots. Her decision is no longer pending. See [recorded acceptance and full scope](../05-test-documentation/installation-final-scope.md). This is coordinator acceptance with exceptions, not proof of technical equivalence, a passing real-camera test, instructor acceptance, approval of future commits or diagnosis of the old coordinator error.
 
 ## Received production rotation evidence
 
@@ -57,6 +57,6 @@ The coordinator's authoritative Downloads document package supplied 106 non-code
 ## Remaining human acceptance
 
 - A fresh permission check on 2026-11-05 still returns `read` for `ariel5253` on all five repositories. Confirm effective write after invitation acceptance; public visibility does not imply write.
-- Accept or resolve installation/version/camera limitations with the tester and instructor; do not turn automatic fixtures into camera evidence.
+- The coordinator has accepted the DB/harness differences. Obtain instructor acceptance of the documented scope and determine whether a real-camera test is required; do not turn automatic fixtures into camera evidence.
 - Confirm video requirements and individual data authorizations, applicant/declarations and instructor contribution fields.
 - Review the PR; publication does not authorize merge or represent completed academic acceptance.

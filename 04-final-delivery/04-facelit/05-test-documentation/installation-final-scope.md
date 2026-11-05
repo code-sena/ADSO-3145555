@@ -10,7 +10,11 @@ La coordinadora de entrega solicita conservar las ramas `main` sin cambios. La [
 - La reprueba incluye una corrección local del runner del navegador, conservada como parche en la evidencia. No se aplica a `main` por decisión de la coordinadora. El resultado no se atribuye al commit base sin esa corrección.
 - Se verificaron las 28 huellas del manifiesto de instalación y las cuatro del registro de contribuciones. El CSV contiene 677 registros. Las huellas prueban integridad del paquete, no ejecución independiente por este revisor.
 
-**Punto 6: evidencia automática satisfactoria en el entorno descrito; aceptación de la versión final todavía parcial.** Preparar archivos o publicar una entrega no modifica este resultado ni sustituye la aceptación del instructor.
+## Aceptación de diferencias por la coordinadora — 2026-11-05
+
+Mariana Valenzuela Penagos, coordinadora de entrega, acepta expresamente entregar el código conservando la diferencia entre el commit de DB probado y el entregado, así como la corrección local del script de navegador no incorporada a `main`. Estas diferencias dejan de estar pendientes de su decisión; se conservan como excepciones conocidas, sin afirmar equivalencia técnica entre las versiones ni modificar los resultados originales de María José.
+
+**Punto 6: evidencia automática aceptada por la coordinadora con las excepciones documentadas.** La aceptación académica del instructor y la determinación de si exige reconocimiento positivo con cámara real siguen pendientes. No se afirma que esa prueba se haya realizado ni que la versión exacta entregada haya pasado el mismo flujo sin las diferencias indicadas.
 
 ## Integridad y rutas de origen
 
