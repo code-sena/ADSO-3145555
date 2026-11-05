@@ -6,24 +6,12 @@ Every original working repository of the project must be listed here and must be
 
 Todos los repositorios originales de trabajo del proyecto deben estar aquí y deben ser **públicos**. El instructor contrasta lo entregado contra estos repositorios, así que deben seguir públicos y con todo su historial hasta terminar la revisión.
 
-If one is missing, add a row. If one is empty or no longer used, write that in the commit column. The visibility shown was checked on 2026-11-04.
-
-Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo en la columna del commit. La visibilidad indicada se revisó el 2026-11-04.
-
 | Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
 |---|---|---|---|---|---|---|
-| Main repository | [daniel2004-lsd/EcoRuteando](https://github.com/daniel2004-lsd/EcoRuteando) | Public / Público | **Add / Agregar** | | | |
-| Backend | [daniel2004-lsd/EcoRuteandoBackend](https://github.com/daniel2004-lsd/EcoRuteandoBackend) | Public / Público | **Add / Agregar** | | | |
-| Database | [daniel2004-lsd/EcoRuteandoDb](https://github.com/daniel2004-lsd/EcoRuteandoDb) | Public / Público | **Add / Agregar** | | | |
-| Mobile app | [daniel2004-lsd/Movil-EcoRuteando](https://github.com/daniel2004-lsd/Movil-EcoRuteando) | Public / Público | **Add / Agregar** | | | |
-
-Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
-
-Antes de hacer público un repositorio, quite los archivos `.env` y cambie toda contraseña, token o llave que se haya subido alguna vez.
-
-The instructor account `ariel5253` needs write access to every repository, so pending items can be corrected for the software registration. Add it as a collaborator where the table says so.
-
-La cuenta del instructor, `ariel5253`, necesita acceso de escritura en cada repositorio, para poder corregir pendientes del registro de software. Agréguela como colaboradora donde la tabla lo indique.
+| Main repository / Frontend Web | [daniel2004-lsd/EcoRuteando](https://github.com/daniel2004-lsd/EcoRuteando) | Public / Público | Yes (Write) / Sí (Escritura) | [`de55e66`](https://github.com/daniel2004-lsd/EcoRuteando/commit/de55e668a8e468a5216eba34787dda893f00eb99) | [EcoRuteando-final-delivery-2026-main.zip](https://github.com/daniel2004-lsd/ADSO-3145555/releases/download/final-delivery/EcoRuteando-final-delivery-2026-main.zip) | [EcoRuteando-full-export.zip](https://github.com/daniel2004-lsd/ADSO-3145555/releases/download/final-delivery/EcoRuteando-full-export.zip) |
+| Backend API | [daniel2004-lsd/EcoRuteandoBackend](https://github.com/daniel2004-lsd/EcoRuteandoBackend) | Public / Público | Yes (Write) / Sí (Escritura) | [`41ec529`](https://github.com/daniel2004-lsd/EcoRuteandoBackend/commit/41ec529246170a8fe28dbc8bf5521adf4a226d0b) | [EcoRuteandoBackend-final-delivery-2026-main.zip](https://github.com/daniel2004-lsd/ADSO-3145555/releases/download/final-delivery/EcoRuteandoBackend-final-delivery-2026-main.zip) | [EcoRuteandoBackend-full-export.zip](https://github.com/daniel2004-lsd/ADSO-3145555/releases/download/final-delivery/EcoRuteandoBackend-full-export.zip) |
+| Database | [daniel2004-lsd/EcoRuteandoDb](https://github.com/daniel2004-lsd/EcoRuteandoDb) | Public / Público | Yes (Write) / Sí (Escritura) | [`61ff48f`](https://github.com/daniel2004-lsd/EcoRuteandoDb/commit/61ff48fbef6122e48816dbd40fa147d730dd135a) | [EcoRuteandoDb-final-delivery-2026-main.zip](https://github.com/daniel2004-lsd/ADSO-3145555/releases/download/final-delivery/EcoRuteandoDb-final-delivery-2026-main.zip) | [EcoRuteandoDb-full-export.zip](https://github.com/daniel2004-lsd/ADSO-3145555/releases/download/final-delivery/EcoRuteandoDb-full-export.zip) |
+| Mobile app | [daniel2004-lsd/Movil-EcoRuteando](https://github.com/daniel2004-lsd/Movil-EcoRuteando) | Public / Público | Yes (Write) / Sí (Escritura) | [`a0f7c54`](https://github.com/daniel2004-lsd/Movil-EcoRuteando/commit/a0f7c54dade6493cb102dcce7cefb3603af8fa1e) | [Movil-EcoRuteando-final-delivery-2026-main.zip](https://github.com/daniel2004-lsd/ADSO-3145555/releases/download/final-delivery/Movil-EcoRuteando-final-delivery-2026-main.zip) | [Movil-EcoRuteando-full-export.zip](https://github.com/daniel2004-lsd/ADSO-3145555/releases/download/final-delivery/Movil-EcoRuteando-full-export.zip) |
 
 ## Why two ZIP files / Por qué dos ZIP
 
@@ -34,10 +22,10 @@ La cuenta del instructor, `ariel5253`, necesita acceso de escritura en cada repo
 
 ## Where the ZIP files live / Dónde quedan los ZIP
 
-The ZIP files do not go in this folder. They are attached to a GitHub Release in the fork of the person who delivers, named `final-delivery`, and linked in the table above.
+The ZIP files are attached to a GitHub Release in the fork of the person who delivers (`daniel2004-lsd/ADSO-3145555`), named [`final-delivery`](https://github.com/daniel2004-lsd/ADSO-3145555/releases/tag/final-delivery), and linked in the table above.
 
-Los ZIP no van en esta carpeta. Se adjuntan a un Release de GitHub llamado `final-delivery` en el fork de quien entrega, y se enlazan en la tabla de arriba.
+Los ZIP están adjuntos al Release de GitHub [`final-delivery`](https://github.com/daniel2004-lsd/ADSO-3145555/releases/tag/final-delivery) en el fork de quien entrega (`daniel2004-lsd/ADSO-3145555`), y están enlazados en la tabla superior.
 
 ## Integrity / Integridad
 
-Copy the SHA-256 of every ZIP into [`SHA256SUMS.txt`](SHA256SUMS.txt). / Copie el SHA-256 de cada ZIP en ese archivo.
+Copy of the SHA-256 of every ZIP in [`SHA256SUMS.txt`](SHA256SUMS.txt).
