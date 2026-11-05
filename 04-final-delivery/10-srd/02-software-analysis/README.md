@@ -1,16 +1,8 @@
 # Análisis del software — SRD
 
-**Producto de la entrega final ADSO-3145555.**
+Análisis del sistema, sus procesos y vistas dinámicas.
 
-## Requisitos de la guía
-
-Vistas dinámicas: casos de uso, secuencias, actividades o estados.
-
-## Archivos y evidencias
+## Documentos
 
 - [software-analysis.pdf](software-analysis.pdf)
 - [software-analysis.docx](software-analysis.docx)
-
-Copias de los originales de [SRD-Docs, dev](https://github.com/jsgh1/SRD-Docs/tree/dev/Entregables). Los SHA de objeto coinciden; solo se normalizaron las rutas y los nombres.
-
-**Control de calidad:** la existencia de un archivo no reemplaza la verificación académica de contenido, versión y ausencia de información sensible.
