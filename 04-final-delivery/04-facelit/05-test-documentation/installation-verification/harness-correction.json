@@ -1,0 +1,10 @@
+{
+  "source_base_commit": "6efd92cdd7e4e358b131cbe860cd8585d13e5550",
+  "file": "FaceLit/scripts/test-architecture-browser.cjs",
+  "uncommitted_change": true,
+  "sha256": "6af7d656d3dc97380231663668e96ff7359a2663f6524e87408e45a3b82e8982",
+  "change": "Navigation waits use domcontentloaded instead of networkidle. Login, identity, facial registration and attendance assertions are preserved.",
+  "first_attempt": "facelit-arch-e2e-f74e53e6",
+  "retest_attempt": "facelit-arch-e2e-8c17a013",
+  "note": "The second runner recorded initial revisions before this harness correction. This file identifies the correction used when its browser subprocess loads the script."
+}

@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-05",
+  "metric": "human_non_merge_commits_reachable_from_pinned_main",
+  "main_commits_total": 677,
+  "merges_excluded": 185,
+  "bots_excluded": 2,
+  "denominator": 490,
+  "totals": {
+    "Valery": 79,
+    "Mariana": 221,
+    "Bot": 2,
+    "Maria Jose": 181,
+    "Other or alias": 9
+  },
+  "repositories": {
+    "facelit-docs": {
+      "sha": "299340428bc7b04fa013cd1b4d034f673b9d3dbc",
+      "commits": 13,
+      "merges": 0,
+      "counts": {
+        "Valery": 5,
+        "Mariana": 8
+      },
+      "coauthors": 0,
+      "human_denominator": 13,
+      "percent": {
+        "Valery": 38.46,
+        "Mariana": 61.54
+      },
+      "unmerged": 0
+    },
+    "FaceLit": {
+      "sha": "6efd92cdd7e4e358b131cbe860cd8585d13e5550",
+      "commits": 190,
+      "merges": 61,
+      "counts": {
+        "Bot": 2,
+        "Mariana": 68,
+        "Valery": 51,
+        "Maria Jose": 69
+      },
+      "coauthors": 2,
+      "human_denominator": 188,
+      "percent": {
+        "Mariana": 36.17,
+        "Valery": 27.13,
+        "Maria Jose": 36.7
+      },
+      "unmerged": 29
+    },
+    "FaceLit-Backend": {
+      "sha": "2ba739853a808c8e5902f70eae98706a612f91e6",
+      "commits": 113,
+      "merges": 43,
+      "counts": {
+        "Mariana": 34,
+        "Valery": 12,
+        "Maria Jose": 67
+      },
+      "coauthors": 0,
+      "human_denominator": 113,
+      "percent": {
+        "Mariana": 30.09,
+        "Valery": 10.62,
+        "Maria Jose": 59.29
+      },
+      "unmerged": 16
+    },
+    "FaceLit-DB": {
+      "sha": "cd069ae0cb4947d4b7ebbff17e9d6dc280ab86fd",
+      "commits": 147,
+      "merges": 72,
+      "counts": {
+        "Mariana": 98,
+        "Valery": 6,
+        "Maria Jose": 34,
+        "Other or alias": 9
+      },
+      "coauthors": 0,
+      "human_denominator": 147,
+      "percent": {
+        "Mariana": 66.67,
+        "Valery": 4.08,
+        "Maria Jose": 23.13,
+        "Other or alias": 6.12
+      },
+      "unmerged": 2
+    },
+    "micro-facial": {
+      "sha": "166e4a7f2245456277d57015259c678d8febfa9f",
+      "commits": 29,
+      "merges": 9,
+      "counts": {
+        "Valery": 5,
+        "Maria Jose": 11,
+        "Mariana": 13
+      },
+      "coauthors": 0,
+      "human_denominator": 29,
+      "percent": {
+        "Valery": 17.24,
+        "Maria Jose": 37.93,
+        "Mariana": 44.83
+      },
+      "unmerged": 6
+    }
+  }
+}

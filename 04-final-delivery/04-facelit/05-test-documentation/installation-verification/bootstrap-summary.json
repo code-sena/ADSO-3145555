@@ -1,0 +1,41 @@
+{
+  "tests": 10,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "suites": [
+    {
+      "name": "com.FaceLit.backend.auth.CoordinatorBootstrapIntegrationTest",
+      "timestamp": null,
+      "cases": [
+        "neverPromotesAnOrdinaryUser",
+        "repeatedCreationDoesNotOverwriteCredentialsOrPersonalData",
+        "refusesAdditionalInitialAccountAndRotationOfAnUnknownAccount",
+        "rejectsInvalidInputWithoutLeakingPasswords",
+        "createsOneCoordinatorWithBcryptAndAllowsRealLogin",
+        "rotationPreservesIdentityAndRevokesJwtAndRecoveryAuthorization",
+        "refusesWrongEmailAndInactiveAccountsWithoutReactivation"
+      ],
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.FaceLit.backend.auth.CoordinatorBootstrapRunnerTest",
+      "timestamp": null,
+      "cases": [
+        "oneTimeSetupClosesContextAndDoesNotLogSecrets(CapturedOutput)",
+        "publishedCredentialBlocksStartupWithoutSilentRotation",
+        "normalStartupOnlyChecksForPublishedCredentials"
+      ],
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "database": "H2 disposable test profile",
+  "mail": "mocked",
+  "production_account_changed": false
+}

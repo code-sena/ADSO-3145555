@@ -1,0 +1,83 @@
+ Container facelit-arch-e2e-8c17a013-postgres-1  Running
+####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase at 11:26:34 using Java 21.0.10 (version 5.0.2 #10172 built at 2026-03-04 00:27+0000)
+Liquibase Version: 5.0.2
+
+Running Changeset: 01_ddl/00_extensions/0000changelog.yaml::78bf1438-0529-4c1a-aced-fbd01a6b1c75::pemarival
+Running Changeset: 01_ddl/01_schemas/0000changelog.yaml::facelit-model-schemas::facelit
+Running Changeset: 01_ddl/03_tables/0000changelog.yaml::facelit-model-security::facelit
+Running Changeset: 01_ddl/03_tables/0000changelog.yaml::facelit-model-roleandpermission::facelit
+Running Changeset: 01_ddl/03_tables/0000changelog.yaml::facelit-model-academic::facelit
+Running Changeset: 01_ddl/03_tables/0000changelog.yaml::facelit-model-environment::facelit
+Running Changeset: 01_ddl/03_tables/0000changelog.yaml::facelit-model-notification::facelit
+Running Changeset: 01_ddl/03_tables/0000changelog.yaml::facelit-model-legal::facelit
+Running Changeset: 01_ddl/03_tables/0000changelog.yaml::facelit-model-facialrecognition::facelit
+Running Changeset: 01_ddl/04_alter/018_email_only_exit_reminders.changelog.yaml::facelit-email-only-exit-reminders::facelit
+[Sensitive configuration line omitted]
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-foreignkeys-security::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-foreignkeys-roleandpermission::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-foreignkeys-academic::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-foreignkeys-environment::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-foreignkeys-notification::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-foreignkeys-legal::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-program-audit-dates::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-chip-audit-dates::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-user-document-length::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-environment-state-capacity-unique::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-notification-catalog-fields::facelit
+column "notification_type" of relation "notification" already exists, skipping
+column "title" of relation "notification" already exists, skipping
+column "metadata_json" of relation "notification" already exists, skipping
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-foreignkeys-facialrecognition::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-user-face-embedding-array::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-record-environment-business-times::facelit
+column "entry_time" of relation "record_environment" already exists, skipping
+constraint "chk_record_environment_registration_minutes" of relation "record_environment" does not exist, skipping
+index "idx_record_environment_session" does not exist, skipping
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-facial-event-excuse::facelit
+[Sensitive configuration line omitted]
+[Sensitive configuration line omitted]
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-account-access-requests::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-email-change-recovery-code::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-repair-duplicate-faces::facelit
+Running Changeset: 01_ddl/04_alter/022_facial_event_excuse_default.changelog.yaml::facelit-facial-event-excuse-default::facelit
+Running Changeset: 01_ddl/04_alter/0000changelog.yaml::facelit-hu-mej-002-recovery-session-security::facelit
+Running Changeset: 01_ddl/04_alter/024_supported_language_de.changelog.yaml::facelit-supported-language-de::facelit
+Running Changeset: 01_ddl/04_alter/025_terms_acceptance_notice_version.changelog.yaml::facelit-terms-acceptance-notice-version::facelit
+Running Changeset: 01_ddl/10_indexes/0000changelog.yaml::facelit-indexes-roleandpermission::facelit
+Running Changeset: 01_ddl/10_indexes/0000changelog.yaml::facelit-indexes-academic::facelit
+Running Changeset: 01_ddl/10_indexes/0000changelog.yaml::facelit-indexes-environment::facelit
+relation "idx_record_environment_session" already exists, skipping
+Running Changeset: 01_ddl/10_indexes/0000changelog.yaml::facelit-indexes-notification::facelit
+Running Changeset: 01_ddl/10_indexes/0000changelog.yaml::facelit-indexes-legal::facelit
+Running Changeset: 01_ddl/10_indexes/0000changelog.yaml::facelit-indexes-facialrecognition::facelit
+Running Changeset: 01_ddl/10_indexes/0000changelog.yaml::facelit-unique-facial-event-attendance::facelit
+Running Changeset: 02_dml/00_inserts/0000changelog.yaml::facelit-model-seed::facelit
+Running Changeset: 02_dml/04_patches/0000changelog.yaml::rename-role-values-to-english::facelit
+Running Changeset: 06_migrations/001_english_nomenclature.changelog.yaml::facelit-h50-english-nomenclature-expand::facelit
+Running Changeset: 06_migrations/001_english_nomenclature.changelog.yaml::facelit-h50-english-nomenclature-contract::facelit
+Running Changeset: 06_migrations/002_privacy_notice_version.changelog.yaml::facelit-privacy-notice-version::facelit
+[Sensitive configuration line omitted]
+
+UPDATE SUMMARY
+Run:                         47
+Previously run:               0
+Filtered out:                 0
+-------------------------------
+Total change sets:           47
+
+Liquibase: Update has been successful. Rows affected: 48
+Liquibase command 'update' was executed successfully.

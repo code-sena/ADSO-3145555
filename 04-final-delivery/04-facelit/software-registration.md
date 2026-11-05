@@ -63,13 +63,13 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | Field / Campo | Value / Valor |
 |---|---|
 | Title / Título de la obra | FaceLit |
-| Year of creation / Año de creación | |
+| Year of creation / Año de creación | 2026, según los documentos del proyecto; confirmar con el equipo antes del registro. |
 | Country of origin / País de origen | Colombia |
 | Version registered / Versión a registrar | `final-delivery-2026` |
-| Short description of its functions / Breve descripción de sus funciones | |
-| What sets it apart from similar software / Qué la diferencia de obras similares |  |
-| Programming languages / Lenguajes | |
-| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | |
+| Short description of its functions / Breve descripción de sus funciones | Gestión académica y usuarios, importación CSV, ambientes y sesiones, enrolamiento facial, registro y consulta de asistencia por rol, reportes, notificaciones y preferencias. |
+| What sets it apart from similar software / Qué la diferencia de obras similares | Integra contexto académico, captura por retos de movimiento y consulta de asistencia por roles en un mismo flujo; no se declara exclusividad ni superioridad medida frente a otros productos. |
+| Programming languages / Lenguajes | TypeScript/JavaScript, Java, Python y SQL, según el inventario documental. |
+| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | Aplicación web con cliente Expo/React Native; compilación Android sujeta a validación del artefacto si se entrega esa plataforma. |
 
 ## 6. Declarations / Declaraciones (art. 4 y art. 5, num. 5 y 6)
 
@@ -103,7 +103,17 @@ Relacione código, librerías, modelos, imágenes o datos que el equipo no creó
 
 | Component / Componente | Author or source / Autor o fuente | License / Licencia | Where it is used / Dónde se usa |
 |---|---|---|---|
-| | | | |
+| Expo / React / React Native | Proyectos referenciados en licensing-and-dependencies | MIT según el inventario documental; cotejar avisos del artefacto. | Cliente e interfaz. |
+| Human y xlsx | Inventario del proyecto | MIT (Human código) y Apache-2.0 (xlsx), según la fuente; activos/modelos con procedencia propia. | Cliente y exportación. |
+| Spring Boot 3.4.1 | Spring | Apache-2.0 según la fuente documental. | API Java. |
+| FastAPI 0.115.6 | FastAPI | MIT según la fuente documental. | Servicio facial. |
+| InsightFace 0.7.3 / buffalo_l | DeepInsight / InsightFace | La fuente distingue código MIT y condiciones propias de modelos de investigación no comercial; verificar condiciones aplicables al artefacto. | Detección y reconocimiento facial. |
+| PostgreSQL 16 / pgvector | Proyectos PostgreSQL y pgvector | Avisos propios identificados en licensing-and-dependencies; conservar versión exacta. | Persistencia relacional y vectorial. |
+| Liquibase operativo 5.0.2 / Core 4.29.2 | Liquibase | La fuente identifica FSL-1.1-ALv2 para 5.0.2 y pide conservar aviso del JAR 4.29.2; no asignar una única licencia a ambas. | Migraciones y dependencia de API. |
+| MediaPipe, ONNX Runtime, NumPy, SQLAlchemy, asyncpg, Pydantic Settings y Uvicorn | Inventario del servicio facial | Avisos de cada versión pendientes de incorporar desde el entorno construido. | Servicio facial y datos. |
+
+
+Inventario preliminar transcrito de [la propuesta de licenciamiento y dependencias](03-technical-proposal/licensing-and-dependencies.md), revisión dcf81aa. No constituye una revisión legal nueva ni inventario transitivo completo. El equipo debe añadir modelos, imágenes y dependencias adicionales realmente distribuidos, conservar sus avisos y confirmar esta declaración.
 
 ## 9. Private data / Datos privados
 

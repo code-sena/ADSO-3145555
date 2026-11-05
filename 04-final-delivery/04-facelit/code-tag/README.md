@@ -12,12 +12,12 @@ Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo
 
 | Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
 |---|---|---|---|---|---|---|
-| Documentation | [FaceID-Proyect-2026/Documentaci-n-y-despliegue](https://github.com/FaceID-Proyect-2026/Documentaci-n-y-despliegue) | Public / Público<br>**Empty / Vacío** | **Add / Agregar** | | | |
-| Frontend | [FaceID-Proyect-2026/FaceLit](https://github.com/FaceID-Proyect-2026/FaceLit) | Public / Público | **Add / Agregar** | | | |
-| Backend | [FaceID-Proyect-2026/FaceLit-Backend](https://github.com/FaceID-Proyect-2026/FaceLit-Backend) | Public / Público | **Add / Agregar** | | | |
-| Database | [FaceID-Proyect-2026/FaceLit-DB](https://github.com/FaceID-Proyect-2026/FaceLit-DB) | Public / Público | **Add / Agregar** | | | |
-| Documentation | [FaceID-Proyect-2026/facelit-docs](https://github.com/FaceID-Proyect-2026/facelit-docs) | Public / Público | **Add / Agregar** | | | |
-| AI service | [FaceID-Proyect-2026/micro-facial](https://github.com/FaceID-Proyect-2026/micro-facial) | Public / Público | **Add / Agregar** | | | |
+| Documentation | [FaceID-Proyect-2026/Documentaci-n-y-despliegue](https://github.com/FaceID-Proyect-2026/Documentaci-n-y-despliegue) | Público — vacío y fuera de uso | **Add / Agregar** | No aplica: repositorio vacío; reemplazado por facelit-docs | No aplica | No aplica |
+| Frontend | [FaceID-Proyect-2026/FaceLit](https://github.com/FaceID-Proyect-2026/FaceLit) | Public / Público | Escritura invitada; aceptación pendiente | [`6efd92c`](https://github.com/FaceID-Proyect-2026/FaceLit/tree/final-delivery-2026) — tag anotado | [Descargar ZIP](https://github.com/pemarival/ADSO-3145555/releases/download/final-delivery/FaceLit-final-delivery-2026-main.zip) | [Descargar ZIP](https://github.com/pemarival/ADSO-3145555/releases/download/final-delivery/FaceLit-full-export.zip) |
+| Backend | [FaceID-Proyect-2026/FaceLit-Backend](https://github.com/FaceID-Proyect-2026/FaceLit-Backend) | Public / Público | Escritura invitada; aceptación pendiente | [`2ba7398`](https://github.com/FaceID-Proyect-2026/FaceLit-Backend/tree/final-delivery-2026) — tag anotado | [Descargar ZIP](https://github.com/pemarival/ADSO-3145555/releases/download/final-delivery/FaceLit-Backend-final-delivery-2026-main.zip) | [Descargar ZIP](https://github.com/pemarival/ADSO-3145555/releases/download/final-delivery/FaceLit-Backend-full-export.zip) |
+| Database | [FaceID-Proyect-2026/FaceLit-DB](https://github.com/FaceID-Proyect-2026/FaceLit-DB) | Public / Público | Escritura invitada; aceptación pendiente | [`cd069ae`](https://github.com/FaceID-Proyect-2026/FaceLit-DB/tree/final-delivery-2026) — tag anotado | [Descargar ZIP](https://github.com/pemarival/ADSO-3145555/releases/download/final-delivery/FaceLit-DB-final-delivery-2026-main.zip) | [Descargar ZIP](https://github.com/pemarival/ADSO-3145555/releases/download/final-delivery/FaceLit-DB-full-export.zip) |
+| Documentation | [FaceID-Proyect-2026/facelit-docs](https://github.com/FaceID-Proyect-2026/facelit-docs) | Public / Público | Escritura invitada; aceptación pendiente | [`2993404`](https://github.com/FaceID-Proyect-2026/facelit-docs/tree/final-delivery-2026) — tag anotado | [Descargar ZIP](https://github.com/pemarival/ADSO-3145555/releases/download/final-delivery/facelit-docs-final-delivery-2026-main.zip) | [Descargar ZIP](https://github.com/pemarival/ADSO-3145555/releases/download/final-delivery/facelit-docs-full-export.zip) |
+| AI service | [FaceID-Proyect-2026/micro-facial](https://github.com/FaceID-Proyect-2026/micro-facial) | Public / Público | Escritura invitada; aceptación pendiente | [`166e4a7`](https://github.com/FaceID-Proyect-2026/micro-facial/tree/final-delivery-2026) — tag anotado | [Descargar ZIP](https://github.com/pemarival/ADSO-3145555/releases/download/final-delivery/micro-facial-final-delivery-2026-main.zip) | [Descargar ZIP](https://github.com/pemarival/ADSO-3145555/releases/download/final-delivery/micro-facial-full-export.zip) |
 
 Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
 
@@ -43,3 +43,12 @@ Los ZIP no van en esta carpeta. Se adjuntan a un Release de GitHub llamado `fina
 ## Integrity / Integridad
 
 Copy the SHA-256 of every ZIP into [`SHA256SUMS.txt`](SHA256SUMS.txt). / Copie el SHA-256 de cada ZIP en ese archivo.
+
+## Verification status / Estado de verificación
+
+**Punto 5 cerrado en el alcance de producción documentado**, según el [registro actualizado de Valery](credential-rotation-record.md): JWT, clave facial, base de datos y Gmail rotados; credenciales anteriores rechazadas y nuevas aceptadas. El valor histórico de Resend fue clasificado como marcador de ejemplo. No se enviaron correos durante la comprobación; el registro no sustituye la prueba independiente de instalación. Consulta el [alcance y las limitaciones](delivery-status.md#received-production-rotation-evidence).
+
+Los cinco tags son anotados y conservan los commits de `main` indicados. Se regeneraron los diez ZIP y se verificó la restauración de los cinco repositorios completos. Consulta [la verificación](archive-verification.md), [las huellas SHA-256](SHA256SUMS.txt) y [el estado con limitaciones](delivery-status.md).
+
+Release de entrega: [final-delivery](https://github.com/pemarival/ADSO-3145555/releases/tag/final-delivery). La publicación es un corte de entrega autorizado por la coordinadora, no una declaración de aceptación integral. La prueba de Persona 2 utiliza otro commit de base de datos y una corrección local del runner; el caso facial positivo es determinista. Consulta [el alcance exacto](../05-test-documentation/installation-final-scope.md). No se modificó código ni ninguna rama `main`.
+

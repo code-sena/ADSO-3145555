@@ -1,1 +1,10 @@
-# sha256  file / archivo
+7d6d5e5d63e172173053a4b6d483c5295ba5361f417f09aeb85954058a562a59  FaceLit-Backend-final-delivery-2026-main.zip
+a7b781812e0702e3795a5836bdacba119a92742238b36d76729748dc29e9f2e0  FaceLit-Backend-full-export.zip
+2f43aa982331320e31825bb255474a707a7e0181bfcf5062141105947aa96b36  FaceLit-DB-final-delivery-2026-main.zip
+e18e592139ac99253e9cb9120d8581833b952bf3966be09d7f16aa5b3df5de0a  FaceLit-DB-full-export.zip
+d55ec574bb617600610bafbe5eb4d8b24de3b6563603a3314d27399ec979ba02  facelit-docs-final-delivery-2026-main.zip
+f2c6b9693ae1d3c62cea6621e54e733968c17c2a6251d94a6ea69b9c1a942a42  facelit-docs-full-export.zip
+db40ea77e9ed1141f18551ecc3d9e22a7ba10c0415e6a1c349e3a36ebeeedd1f  FaceLit-final-delivery-2026-main.zip
+5430445b663dec90bcb38887d47d6eaaa3dacf9dadf9530d7bf6af7bb10fcc3f  FaceLit-full-export.zip
+ae0737b9a25a9bd32b8a2076e1771e8466822437c1dadfe6bfb7681cab8e2682  micro-facial-final-delivery-2026-main.zip
+96e36d986486a53eda6b25ed3d94710373d770673a147489ed06f7b5aed249f0  micro-facial-full-export.zip
