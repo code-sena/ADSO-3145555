@@ -19,13 +19,29 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 
 ## Summary / Resumen
 
-- **Problem it solves / Problema que resuelve:**
-- **Target users / Usuarios:**
-- **Main features / Funciones principales:**
-- **Technology stack / Tecnologías:**
-- **Production URL / URL en producción:**
-- **Demo credentials / Credenciales de prueba:** do not write real passwords here / no escriba contraseñas reales aquí
+- *Problem it solves / Problema que resuelve:* Facilita la gestión de hogares y dispositivos conectados, el control de dispositivos compatibles y la consulta del consumo eléctrico.
 
+- *Target users / Usuarios:* Usuarios que necesitan gestionar hogares y dispositivos conectados. El perfil específico de usuario está pendiente de validación.
+
+- *Main features / Funciones principales:*
+  - Autenticación, activación de cuentas y recuperación de contraseñas.
+  - Gestión de hogares, invitaciones y membresías.
+  - Gestión de dispositivos y órdenes de encendido y apagado.
+  - Consulta de consumo eléctrico.
+  - Comunicación mediante MQTT y Socket.IO.
+  - API de notificaciones.
+
+- *Technology stack / Tecnologías:*
+  - Backend: NestJS 11, TypeScript, Prisma 7 y Node.js.
+  - Frontend web: React 18, TypeScript y Vite 6.
+  - Aplicación móvil: React Native, Expo 57 y TypeScript.
+  - Base de datos: PostgreSQL.
+  - Comunicación: MQTT y Socket.IO.
+  - Gestión de migraciones: Liquibase.
+
+- *Production URL / URL en producción:* Pendiente de confirmar.
+
+- *Demo credentials / Credenciales de prueba:* Pendiente de confirmar. No publicar contraseñas reales.
 ## Team members / Integrantes
 
 > Names and document numbers were preloaded by the instructor from the Sofía Plus report. Each member checks their row, completes GitHub user and role, and marks the last column. Report any error, missing member or extra member to the instructor.
