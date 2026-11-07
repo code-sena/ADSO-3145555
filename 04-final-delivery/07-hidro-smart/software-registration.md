@@ -31,7 +31,7 @@ El roster consolidado registra actividad de los aprendices en PT_HS y los compon
 | Nombre                               |   Ficha | Identidad Git observada                             | Aportes observados en los repositorios                                                                                | Confirmación para el registro      |
 | ------------------------------------ | ------: | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | 3145555 | `joseale879`                                      | PT_HS, backend, frontend web/móvil, base de datos, firmware y documentación; desarrollo e integración transversal. | Pendiente de confirmación personal |
-| JOSE DAVID AMAYA MOSQUERA            | 3145555 | `joseamaya009`; `José David Amaya Mosquera`    | PT_HS, backend, frontend, base de datos y firmware; desarrollo e integración.                                        | Pendiente de confirmación personal |
+| JOSE DAVID AMAYA MOSQUERA            | 3145555 | `joseamaya009`; `José David Amaya Mosquera`    | PT_HS, backend, frontend, base de datos, firmware y documentación; desarrollo integral e integración de todos los componentes. | Pendiente de confirmación personal |
 | EMERSON CALET MOLANO CARDOZO         | 3145555 | `EmersonMolano`; `Emerson Calet Molano Cardozo` | PT_HS, backend, frontend, base de datos y documentación.                                                             | Pendiente de confirmación personal |
 
 ### Instructores

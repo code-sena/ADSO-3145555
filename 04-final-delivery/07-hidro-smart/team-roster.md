@@ -11,7 +11,7 @@
 | Nombre según la lista del proyecto | Ficha | Usuario o identidad Git observada | Repositorios con actividad asociada | Áreas de trabajo observadas | Autoría para el registro |
 |---|---:|---|---|---|---|
 | JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | 3145555 | `joseale879` | PT_HS, BK_HS, FT_HS, BD_HS, Firmaware_HS y DOCS_HS | Desarrollo e integración transversal: backend, frontend web/móvil, base de datos, firmware y documentación. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
-| JOSE DAVID AMAYA MOSQUERA | 3145555 | `joseamaya009`; `José David Amaya Mosquera` | PT_HS, BK_HS, FT_HS, BD_HS y Firmaware_HS | Desarrollo en backend, frontend y base de datos; actividad de desarrollo e integración del firmware ESP32. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
+| JOSE DAVID AMAYA MOSQUERA | 3145555 | `joseamaya009`; `José David Amaya Mosquera` | PT_HS, BK_HS, FT_HS, BD_HS y Firmaware_HS | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación, al igual que los demás integrantes. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
 | EMERSON CALET MOLANO CARDOZO | 3145555 | `EmersonMolano`; `Emerson Calet Molano Cardozo` | PT_HS, BK_HS, FT_HS, BD_HS y DOCS_HS | Desarrollo en backend, frontend y base de datos; documentación del proyecto. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
 
 Los números de documento se entregan por un canal privado al responsable del trámite y no se almacenan en este archivo.
@@ -23,7 +23,7 @@ Estas descripciones resumen las áreas observadas en los historiales y completan
 | Integrante | Rol y responsabilidad basada en actividad Git |
 |---|---|
 | JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | Líder de integración y desarrollo transversal entre componentes: backend, frontend web/móvil, base de datos, firmware y documentación. |
-| JOSE DAVID AMAYA MOSQUERA | Desarrollador backend/frontend e integrador del firmware ESP32, con participación en la base de datos. |
+| JOSE DAVID AMAYA MOSQUERA | Desarrollador integral de todos los componentes del proyecto: backend, frontend web/móvil, base de datos, firmware y documentación, al igual que los demás integrantes. |
 | EMERSON CALET MOLANO CARDOZO | Desarrollador de base de datos y aplicaciones, con responsabilidad en la documentación del proyecto. |
 
 ## Instructores relacionados en el borrador del equipo

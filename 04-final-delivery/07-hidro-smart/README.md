@@ -35,7 +35,7 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role / Rol | Verified and authorized / Verificado y autorizado |
 |---|---|---|---|---|---|---|
 | JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | CC | 1070600183 | 3145555 | joseale879 | Líder de integración y desarrollo transversal | ☑ |
-| JOSE DAVID AMAYA MOSQUERA | CC | 1076907220 | 3145555 | joseamaya009 | Desarrollo backend/frontend e integración de firmware ESP32 | ☑ |
+| JOSE DAVID AMAYA MOSQUERA | CC | 1076907220 | 3145555 | joseamaya009 | Desarrollador integral de todos los componentes, al igual que los demás integrantes | ☑ |
 | EMERSON CALET MOLANO CARDOZO | CC | 1077228448 | 3145555 | EmersonMolano | Base de datos, aplicaciones y documentación | ☑ |
 
 Data use authorization: by checking the box, the member confirms their data and authorizes publishing their name, document number and ficha in this public repository, for the software registration process (Ley 1581 de 2012). Anyone who does not authorize it tells the instructor before delivering.
