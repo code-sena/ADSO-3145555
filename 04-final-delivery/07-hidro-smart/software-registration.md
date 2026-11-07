@@ -63,13 +63,13 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | Field / Campo | Value / Valor |
 |---|---|
 | Title / Título de la obra | Hidro Smart |
-| Year of creation / Año de creación | |
+| Year of creation / Año de creación | Pending institutional confirmation / Pendiente de confirmación institucional |
 | Country of origin / País de origen | Colombia |
 | Version registered / Versión a registrar | `final-delivery-2026` |
-| Short description of its functions / Breve descripción de sus funciones | |
+| Short description of its functions / Breve descripción de sus funciones | Modular platform for water-consumption monitoring that integrates connected devices, MQTT messaging, API/backend services, PostgreSQL persistence and web/mobile clients, according to the consolidated project documentation. / Plataforma modular para monitoreo del consumo de agua que integra dispositivos conectados, mensajería MQTT, servicios API/backend, persistencia PostgreSQL y clientes web/móviles, según la documentación consolidada del proyecto. |
 | What sets it apart from similar software / Qué la diferencia de obras similares |  |
-| Programming languages / Lenguajes | |
-| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | |
+| Programming languages / Lenguajes | Pending confirmation from the delivered source repositories / Pendiente de confirmación a partir de los repositorios fuente entregados |
+| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | Web, mobile and connected device/firmware / Web, móvil y dispositivo/firmware conectado |
 
 ## 6. Declarations / Declaraciones (art. 4 y art. 5, num. 5 y 6)
 
@@ -92,8 +92,10 @@ At least one is required. Attach all three. / Se exige al menos uno. Adjunte los
 | Element / Elemento | Where it is / Dónde está | Ready / Listo |
 |---|---|---|
 | Computer program / Programa de computador | ZIP files `final-delivery-2026` listed in `code-tag/README.md` / ZIP relacionados en `code-tag/README.md` | ☐ |
-| Program description / Descripción de programa | `02-software-analysis/` and `04-software-design/` | ☐ |
-| Auxiliary material / Material auxiliar | `08-manuals/` | ☐ |
+| Program description / Descripción de programa | `02-software-analysis/` and `04-software-design/` | ☑ |
+| Auxiliary material / Material auxiliar | `08-manuals/` | ☑ |
+
+The applicant, roles, authorship contributions, declarations, third-party inventory, tag/ZIP/Release evidence and publication authorization remain pending because the reviewed sources do not provide those confirmations. / El solicitante, los roles, los aportes de autoría, las declaraciones, el inventario de terceros, la evidencia de tag/ZIP/Release y la autorización de publicación siguen pendientes porque las fuentes revisadas no proporcionan esas confirmaciones.
 
 ## 8. Third-party components / Componentes de terceros
 
