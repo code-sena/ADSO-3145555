@@ -1,0 +1,274 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 5 /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 5177 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 04-software-design) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F2 17 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 781 Tm (Producto 04 \227 Dise\361o del software) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 748 Tm (Servicio Nacional de Aprendizaje \(SENA\)) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 734 Tm (Programa: An\341lisis y Desarrollo de Software) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 720 Tm (Ficha: 3145555) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 706 Tm (Proyecto: SmartHome) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 692 Tm (Elaborado por: Natalia Chala Chala, Kevin Stiven L\363pez Amaya y Karen Daniela Holgu\355n Cruz) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 678 Tm (Instructor: Jos\351 de Jes\372s Motta Vargas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 664 Tm (Fecha de actualizaci\363n: 6 de noviembre de 2026) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 641 Tm (1. Presentaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 612 Tm (Este documento actualiza el dise\361o del software de SmartHome a partir de dos principios:) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 598 Tm (describir lo que realmente puede sostenerse con evidencia e integrar el material visual y) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 584 Tm (documental del equipo sin confundirlo con pruebas de funcionamiento. Por esa raz\363n se) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 570 Tm (distinguen tres capas de lectura: dise\361o previsto, dise\361o implementado y elementos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 556 Tm (hist\363ricos de apoyo \(prototipos y diagramas conservados en Drive\).) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 533 Tm (2. Fuentes de dise\361o consideradas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 504 Tm (| Fuente | Aporte al dise\361o | Criterio de uso |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 490 Tm (| C\363digo del backend, web y m\363vil | Estructura de m\363dulos, rutas, servicios, componentes y) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 476 Tm (contratos. | Fuente principal para el dise\361o implementado. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 462 Tm (| Repositorio de base de datos | Modelo l\363gico/f\355sico, migraciones y versionamiento. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 448 Tm (Fuente principal de persistencia. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 434 Tm (| SRS revisado | Alcance, actores, reglas y requisitos. | Fuente de alineaci\363n funcional.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 420 Tm (|) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 406 Tm (| Prototipos y diagramas del equipo | Visualizaci\363n hist\363rica del sistema. | Se citan como) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 392 Tm (apoyo, no como prueba de producci\363n. |) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 369 Tm (3. Dise\361o arquitect\363nico) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 340 Tm (3.1 Visi\363n general) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 314 Tm (SmartHome se entiende mejor como una soluci\363n compuesta por cuatro bloques:) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 291 Tm (1. Cliente web para gesti\363n y consulta desde navegador.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 277 Tm (2. Cliente m\363vil para operaci\363n desde Android/Expo.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 263 Tm (3. Backend que centraliza reglas de negocio, seguridad, persistencia e integraci\363n.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 249 Tm (4. Base de datos e integraci\363n IoT para almacenar la informaci\363n y conectar eventos o) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 235 Tm (telemetr\355a.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 212 Tm (3.2 Decisiones de arquitectura que s\355 pueden sostenerse) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 186 Tm (| Decisi\363n | Sustento | Observaci\363n |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 172 Tm (| Separaci\363n cliente / servidor | Existe frontend web, app m\363vil y backend independientes.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 158 Tm (| Es una separaci\363n observable en repositorios. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 144 Tm (| Organizaci\363n modular del backend | Los m\363dulos del backend agrupan dominios y) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 130 Tm (responsabilidades. | Favorece escalabilidad y mantenibilidad. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 116 Tm (| Persistencia relacional versionada | PostgreSQL y Liquibase aparecen como piezas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 102 Tm (centrales. | La fuente de verdad del esquema es el repositorio de BD. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 88 Tm (| Integraci\363n IoT por mensajer\355a | La documentaci\363n y el c\363digo la relacionan con MQTT y) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 1 / 5) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 5454 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 04-software-design) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 790 Tm (dispositivos compatibles. | Requiere pruebas f\355sicas para su confirmaci\363n operativa. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 776 Tm (| Soporte de tiempo real | Se documenta y se observa la intenci\363n de actualizar) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 762 Tm (informaci\363n en vivo. | Debe validarse en pruebas integradas. |) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 739 Tm (3.3 Qu\351 no se declara como garant\355a de dise\361o implementado) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 713 Tm (No se presentan como hechos probados, sino como metas o afirmaciones hist\363ricas, los) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 699 Tm (siguientes puntos: disponibilidad del 99 %, soporte de 10.000 dispositivos, cumplimiento) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 685 Tm (formal de accesibilidad AA, sincronizaci\363n offline completa, MFA obligatorio o tiempos de) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 671 Tm (respuesta garantizados en todos los entornos. Estos puntos pueden mantenerse como visi\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 657 Tm (del proyecto, pero no como caracter\355sticas verificadas solo con documentaci\363n hist\363rica.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 634 Tm (4. Dise\361o por componentes) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 605 Tm (4.1 Frontend web) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 579 Tm (El frontend web concentra pantallas de autenticaci\363n, panel principal, hogares,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 565 Tm (dispositivos, consumo, notificaciones y configuraci\363n. Su dise\361o privilegia una navegaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 551 Tm (lateral o jer\341rquica y el uso de componentes orientados a administraci\363n y consulta de) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 537 Tm (informaci\363n.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 514 Tm (Aporte del material del equipo: el Drive contiene prototipos hist\363ricos del dashboard,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 500 Tm (gesti\363n de dispositivos, configuraci\363n de idioma, configuraci\363n de notificaciones,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 486 Tm (reportes de consumo y otros recorridos. Estos prototipos son \372tiles para ilustrar) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 472 Tm (intenci\363n de UX/UI y consistencia visual.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 449 Tm (4.2 Frontend m\363vil) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 423 Tm (El frontend m\363vil distribuye las funciones principales en pantallas compactas: inicio,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 409 Tm (hogares, energ\355a, avisos, perfil y pantallas especializadas. Esta organizaci\363n responde al) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 395 Tm (uso desde Android y a patrones de navegaci\363n t\341ctil.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 372 Tm (Aporte del material del equipo: en Drive se hallaron prototipos de inicio de sesi\363n,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 358 Tm (gesti\363n de dispositivos, reportes, restauraci\363n de datos, registro de usuario y otros) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 344 Tm (flujos. En este documento se consideran como referencia de dise\361o y no como capturas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 330 Tm (funcionales de la aplicaci\363n final.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 307 Tm (4.3 Backend) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 281 Tm (El backend es el n\372cleo de orquestaci\363n del sistema. Su papel es recibir solicitudes desde) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 267 Tm (los clientes, aplicar reglas de negocio, validar acceso, interactuar con la base de datos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 253 Tm (y coordinar integraciones como notificaciones, telemetr\355a o mensajer\355a. En el dise\361o) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 239 Tm (acad\351mico conviene presentarlo como el punto de convergencia entre autenticaci\363n, hogares,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 225 Tm (dispositivos, consumo y auditor\355a.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 202 Tm (4.4 Capa de datos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 176 Tm (La persistencia del proyecto descansa en PostgreSQL y su evoluci\363n estructural se gobierna) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 162 Tm (con Liquibase. Por ello, el dise\361o de base de datos no debe tomarse de diagramas sueltos o) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 148 Tm (documentos antiguos como fuente \372nica, sino contrastarse siempre con el changelog y los) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 134 Tm (scripts vigentes.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 111 Tm (5. Patrones y convenciones observables) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 82 Tm (| \301rea | Patr\363n / convenci\363n identificable | Valor para el dise\361o |) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 2 / 5) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 4988 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 04-software-design) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 790 Tm (| Backend | Organizaci\363n modular, controladores, servicios y casos de uso / reglas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 776 Tm (encapsuladas. | Facilita separaci\363n de responsabilidades. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 762 Tm (| Backend | DTOs, validaciones y control de acceso. | Mantiene contratos claros y protege) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 748 Tm (operaciones sensibles. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 734 Tm (| Frontend | Componentizaci\363n y separaci\363n entre vistas, hooks o servicios. | Mejora) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 720 Tm (reutilizaci\363n y mantenibilidad. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 706 Tm (| Persistencia | Versionamiento de esquema con Liquibase. | Da trazabilidad a cambios) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 692 Tm (estructurales. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 678 Tm (| Integraci\363n | Uso de APIs y canales de mensajer\355a. | Desacopla clientes del detalle) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 664 Tm (interno del procesamiento. |) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 641 Tm (6. Dise\361o de datos: modelo conceptual, l\363gico y f\355sico) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 612 Tm (6.1 Modelo conceptual resumido) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 586 Tm (A nivel conceptual, SmartHome gira alrededor de estas entidades de negocio:) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 563 Tm (\225 Usuario) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 549 Tm (\225 Rol / membres\355a) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 535 Tm (\225 Hogar) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 521 Tm (\225 Zona o espacio) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 507 Tm (\225 Dispositivo) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 493 Tm (\225 Lectura / consumo / energ\355a) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 479 Tm (\225 Notificaci\363n / alerta) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 465 Tm (\225 Auditor\355a) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 442 Tm (6.2 Relaci\363n l\363gica esperada) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 416 Tm (| Entidad | Relaci\363n principal | Prop\363sito |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 402 Tm (| Usuario | se vincula a uno o varios hogares | compartir acceso y permisos |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 388 Tm (| Hogar | agrupa zonas y dispositivos | contexto operativo del consumo |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 374 Tm (| Dispositivo | pertenece a un hogar o zona | fuente de estado y control |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 360 Tm (| Lectura / consumo | se asocia a dispositivo y/o hogar | an\341lisis energ\351tico |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 346 Tm (| Notificaci\363n | se dirige al usuario o al hogar | alertas y avisos del sistema |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 332 Tm (| Auditor\355a | registra acciones relevantes | trazabilidad y control |) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 309 Tm (6.3 Regla editorial importante) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 283 Tm (Cuando exista una diferencia entre un diagrama hist\363rico del Drive y el esquema actual del) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 269 Tm (repositorio de base de datos, prevalece el repositorio versionado. Los diagramas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 255 Tm (hist\363ricos sirven para explicar, no para reemplazar la fuente t\351cnica oficial del modelo) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 241 Tm (f\355sico.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 218 Tm (7. Dise\361o de interfaces y prototipos del equipo) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 189 Tm (La mejora principal solicitada para este documento era incorporar prototipos y diagramas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 175 Tm (originales del equipo. Aunque esta versi\363n no incrusta im\341genes sobre las p\341ginas, s\355) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 161 Tm (reorganiza su uso documental para que queden bien clasificados y listos para ser) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 147 Tm (integrados visualmente sin superponer texto.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 124 Tm (7.1 Prototipos web identificados) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 98 Tm (\225 Dashboard principal) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 84 Tm (\225 Gesti\363n de dispositivos) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 3 / 5) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 4987 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 04-software-design) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 790 Tm (\225 Gesti\363n de hogares) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 776 Tm (\225 Configuraci\363n de idioma) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 762 Tm (\225 Configuraci\363n de notificaciones) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 748 Tm (\225 Reportes de consumo energ\351tico) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 734 Tm (\225 Recomendaciones de ahorro) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 720 Tm (\225 Registro, login y recuperaci\363n de contrase\361a) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 697 Tm (7.2 Prototipos m\363viles identificados) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 671 Tm (\225 Inicio de sesi\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 657 Tm (\225 Registro de usuario) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 643 Tm (\225 Mis hogares) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 629 Tm (\225 Gesti\363n de dispositivos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 615 Tm (\225 Reportes y datos hist\363ricos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 601 Tm (\225 Modo offline \(como propuesta de dise\361o\)) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 587 Tm (\225 Integraci\363n con asistentes de voz) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 573 Tm (\225 Personalizaci\363n de tema) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 550 Tm (7.3 Uso correcto de estos prototipos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 524 Tm (1. Deben citarse como prototipos hist\363ricos del equipo.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 510 Tm (2. No deben presentarse como capturas de una build ejecutada, a menos que exista evidencia) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 496 Tm (adicional.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 482 Tm (3. Cada figura debe ir en su propio bloque, con pie de figura y sin superposici\363n de) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 468 Tm (texto.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 445 Tm (8. Diagramas del equipo y su papel en la documentaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 416 Tm (En el Drive se localizaron diagramas de casos de uso, secuencia, actividad, modelo) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 402 Tm (relacional, despliegue y componentes. Su papel dentro del producto 04 es el siguiente:) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 379 Tm (| Tipo de diagrama | Utilidad en el documento |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 365 Tm (| Casos de uso | explicar alcance funcional y actores |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 351 Tm (| Secuencia | explicar interacci\363n entre cliente, backend y persistencia |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 337 Tm (| Actividad | describir decisiones y recorridos operativos |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 323 Tm (| Modelo relacional / ER | apoyar la explicaci\363n del dise\361o de datos |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 309 Tm (| Despliegue | ilustrar la distribuci\363n de componentes |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 295 Tm (| Componentes | explicar la divisi\363n del sistema por m\363dulos o capas |) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 272 Tm (9. Hallazgos de dise\361o) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 243 Tm (1. El dise\361o del proyecto es m\341s s\363lido cuando se presenta como arquitectura modular y por) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 229 Tm (componentes, no como un \372nico patr\363n r\355gido aplicado a todo.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 215 Tm (2. Los prototipos del equipo son un activo valioso para la entrega, siempre que se) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 201 Tm (etiqueten correctamente.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 187 Tm (3. El modelo de datos debe documentarse desde Liquibase/PostgreSQL y no desde una imagen) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 173 Tm (antigua aislada.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 159 Tm (4. El backend debe describirse como centro de orquestaci\363n del sistema, especialmente para) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 145 Tm (autenticaci\363n, hogares, dispositivos y consumo.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 131 Tm (5. La documentaci\363n final debe separar con claridad: dise\361o propuesto, dise\361o implementado) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 117 Tm (y funcionalidad pendiente de validaci\363n.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 94 Tm (10. Conclusi\363n) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 4 / 5) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 911 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 04-software-design) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 790 Tm (La presente actualizaci\363n del producto 04 mejora la coherencia entre la documentaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 776 Tm (visual del equipo y la evidencia t\351cnica del proyecto. Con esta versi\363n, el dise\361o del) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 762 Tm (software queda mejor sustentado, m\341s honesto frente a sus l\355mites y m\341s \372til para) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 748 Tm (exposici\363n acad\351mica, revisi\363n del instructor y continuidad del proyecto.) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 5 / 5) Tj ET
+endstream
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000142 00000 n 
+0000000239 00000 n 
+0000000341 00000 n 
+0000000436 00000 n 
+0000000582 00000 n 
+0000005810 00000 n 
+0000005956 00000 n 
+0000011461 00000 n 
+0000011609 00000 n 
+0000016649 00000 n 
+0000016797 00000 n 
+0000021836 00000 n 
+0000021984 00000 n 
+trailer
+<< /Size 16 /Root 1 0 R >>
+startxref
+22946
+%%EOF

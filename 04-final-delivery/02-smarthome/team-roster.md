@@ -27,6 +27,10 @@ Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, Q
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role in the project / Rol en el proyecto | Author / Autor |
 |---|---|---|---|---|---|---|
-| KAREN DANIELA HOLGUIN CRUZ | CC | 1079176743 | 3145555 | Karendaniela09 | | Yes / Sí |
-| NATALIA CHALA CHALA | CC | 1075508373 | 3145555 | nataliachala1 | | Yes / Sí |
-| KEVIN STIVEN LOPEZ AMAYA | CC | 1077724241 | 3145555 |  | | Yes / Sí |
+| KAREN DANIELA HOLGUIN CRUZ | CC | 1079176743 | 3145555 | Karendaniela09 | PostgreSQL, migraciones Liquibase y documentación (por ratificar) | Yes / Sí |
+| NATALIA CHALA CHALA | CC | 1075508373 | 3145555 | nataliachala1 | Infraestructura, Docker y despliegue local (por ratificar) | Yes / Sí |
+| KEVIN STIVEN LOPEZ AMAYA | CC | 1077724241 | 3145555 | Kevin-Stiven-Lopez-Amaya404 | Backend NestJS/MQTT y documentación técnica de entrega (por ratificar) | Yes / Sí |
+
+## Nota de verificación
+
+Los roles proceden del documento de despliegue local/staging (octubre de 2026) y de los archivos aportados al PR #17. Se presentan para ratificación por cada integrante; no representan autorización de publicación ni reconocimiento legal definitivo de titularidad.

@@ -1,0 +1,186 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 3 /Kids [6 0 R 8 0 R 10 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 4998 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 05-test-documentation) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F2 17 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 781 Tm (Producto 05 \227 Documentaci\363n de pruebas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 748 Tm (Servicio Nacional de Aprendizaje \(SENA\)) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 734 Tm (Programa: An\341lisis y Desarrollo de Software) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 720 Tm (Ficha: 3145555) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 706 Tm (Proyecto: SmartHome) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 692 Tm (Elaborado por: Natalia Chala Chala, Kevin Stiven L\363pez Amaya y Karen Daniela Holgu\355n Cruz) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 678 Tm (Instructor: Jos\351 de Jes\372s Motta Vargas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 664 Tm (Fecha de actualizaci\363n: 6 de noviembre de 2026) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 641 Tm (1. Presentaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 612 Tm (Este documento consolida el plan de pruebas de SmartHome, su estrategia de ejecuci\363n y una) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 598 Tm (matriz de 19 casos enlazados con requisitos del SRS. La actualizaci\363n incorpora la mejora) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 584 Tm (solicitada: cada caso se vincula ahora con uno o varios RF/RNF y se conserva la diferencia) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 570 Tm (entre lo probado autom\341ticamente, lo observado por evidencia documental y lo que a\372n est\341) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 556 Tm (pendiente de ejecuci\363n manual o f\355sica.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 533 Tm (2. Alcance) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 504 Tm (Se consideran cuatro tipos de validaci\363n:) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 481 Tm (1. Automatizadas / CI: lint, tipado, build, Jest, contratos y auditor\355as.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 467 Tm (2. Integraci\363n controlada: base de datos, migraciones, reglas de seguridad y comunicaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 453 Tm (entre capas.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 439 Tm (3. Funcionales manuales: navegaci\363n, formularios, roles, consumo, reportes y) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 425 Tm (notificaciones.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 411 Tm (4. End-to-end con hardware: integraci\363n real con canales IoT y dispositivo compatible.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 388 Tm (3. Evidencias base utilizadas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 359 Tm (| C\363digo | Evidencia | Estado | Observaci\363n |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 345 Tm (| E-01 | CI backend | Aprobada | Lint, TypeScript, pruebas y build. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 331 Tm (| E-02 | CI frontend web | Aprobada | Validaci\363n y build del cliente web. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 317 Tm (| E-03 | CI base de datos | Aprobada | Liquibase y controles de BD en entorno de CI. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 303 Tm (| E-04 | CI aplicaci\363n m\363vil | Aprobada | Exportaci\363n y validaciones del cliente m\363vil. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 289 Tm (| E-05 | Auditor\355a de dependencias m\363vil | Fallida | Hay hallazgos de dependencias que) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 275 Tm (deben atenderse. |) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 252 Tm (4. Criterios generales de aceptaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 223 Tm (\225 Todo caso debe indicar requisito asociado, tipo de prueba, resultado esperado y estado.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 209 Tm (\225 Un caso solo puede declararse aprobado si existe evidencia verificable.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 195 Tm (\225 Los prototipos del Drive no se usan como evidencia de ejecuci\363n; solo como referencia) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 181 Tm (visual.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 167 Tm (\225 La integraci\363n con hardware o red local no se marca como aprobada sin acta o evidencia) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 153 Tm (real de laboratorio.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 130 Tm (5. Matriz de casos de prueba) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 101 Tm (| ID | Caso de prueba | Requisito\(s\) asociados | Tipo | Estado | Evidencia / fuente |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 87 Tm (| CP-01 | Registro b\341sico de usuario | RF1.1 | Funcional / integraci\363n | Pendiente |) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 1 / 3) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 6090 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 05-test-documentation) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 790 Tm (Requiere evidencia manual o automatizada espec\355fica |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 776 Tm (| CP-02 | Inicio de sesi\363n con credenciales v\341lidas | RF1.2 | Automatizada / funcional |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 762 Tm (Parcialmente respaldado | E-01, E-02, E-04 |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 748 Tm (| CP-03 | Cierre de sesi\363n y revocaci\363n de acceso | RF1.4 | Funcional | Pendiente | Debe) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 734 Tm (ejecutarse en web y m\363vil |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 720 Tm (| CP-04 | Recuperaci\363n de contrase\361a | RF1.8 | Funcional | Pendiente | Requiere flujo real) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 706 Tm (o simulaci\363n controlada |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 692 Tm (| CP-05 | Creaci\363n de hogar | RF2.1 | Funcional / integraci\363n | Pendiente | Se necesita) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 678 Tm (ejecuci\363n sobre backend activo |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 664 Tm (| CP-06 | Modificaci\363n de hogar | RF2.2 | Funcional | Pendiente | Debe validarse con) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 650 Tm (permisos |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 636 Tm (| CP-07 | Vinculaci\363n de dispositivo a hogar | RF2.3, RF3.1 | Integraci\363n | Pendiente |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 622 Tm (Requiere backend + BD |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 608 Tm (| CP-08 | Registro/configuraci\363n de dispositivo | RF3.1, RF3.2 | Funcional / integraci\363n |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 594 Tm (Pendiente | Debe contrastarse con API y UI |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 580 Tm (| CP-09 | Actualizaci\363n y desactivaci\363n de dispositivo | RF3.3, RF3.4 | Funcional |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 566 Tm (Pendiente | Falta ejecuci\363n documentada |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 552 Tm (| CP-10 | Monitoreo y control de dispositivo | RF3.5 | Integraci\363n / E2E | Pendiente) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 538 Tm (cr\355tico | La orden publicada no basta sin confirmaci\363n f\355sica |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 524 Tm (| CP-11 | Consulta de reportes hist\363ricos | RF4.1 | Funcional | Pendiente | Requiere datos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 510 Tm (cargados |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 496 Tm (| CP-12 | Visualizaci\363n de consumo en tiempo real | RF4.2 | Integraci\363n / E2E | Pendiente) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 482 Tm (| Necesita entorno con telemetr\355a activa |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 468 Tm (| CP-13 | Generaci\363n de gr\341ficos de consumo | RF4.3 | Funcional | Pendiente | Validaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 454 Tm (visual y de datos |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 440 Tm (| CP-14 | Visualizaci\363n de notificaciones | RF4.4 | Funcional | Pendiente | Validar) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 426 Tm (lectura, listado y estados |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 412 Tm (| CP-15 | Sincronizaci\363n entre clientes / actualizaci\363n de datos | RF5.1 | Integraci\363n |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 398 Tm (Pendiente | Requiere backend, BD y clientes activos |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 384 Tm (| CP-16 | Restauraci\363n/recuperaci\363n de informaci\363n | RF5.3 | Integraci\363n | Pendiente |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 370 Tm (Debe comprobarse el procedimiento real |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 356 Tm (| CP-17 | Configuraci\363n de idioma | RF6.1 | Funcional | Pendiente | Validar persistencia) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 342 Tm (del ajuste |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 328 Tm (| CP-18 | Personalizaci\363n de tema | RF6.2 | Funcional | Pendiente | Validar aplicaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 314 Tm (consistente del tema |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 300 Tm (| CP-19 | Seguridad de dependencias y control de calidad m\363vil | RNF seguridad / pol\355tica) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 286 Tm (CI | Automatizada | Fallida | E-05 |) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 263 Tm (6. Lectura t\351cnica de la matriz) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 234 Tm (6.1 Casos con mejor respaldo hoy) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 208 Tm (Los casos con mayor soporte verificable son los que dependen de los pipelines de calidad:) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 194 Tm (compilaci\363n, validaciones est\341ticas, pruebas del backend, verificaciones del frontend,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 180 Tm (ejecuci\363n del flujo de base de datos y exportaci\363n de la app m\363vil. Esto no significa que) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 166 Tm (la experiencia completa de usuario haya sido aprobada; significa que existe un piso) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 152 Tm (t\351cnico razonable para continuar con pruebas funcionales.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 129 Tm (6.2 Casos pendientes que no deben maquillarse como aprobados) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 103 Tm (Los casos CP-10, CP-12 y CP-15 son especialmente sensibles porque involucran integraci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 89 Tm (real: control sobre dispositivo, consumo en tiempo real y sincronizaci\363n entre) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 2 / 3) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 3378 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 05-test-documentation) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 790 Tm (plataformas. Estos casos no deben pasar a \223aprobados\224 sin evidencia concreta.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 767 Tm (6.3 Caso con hallazgo abierto) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 741 Tm (El caso CP-19 permanece en estado fallido porque la auditor\355a m\363vil report\363) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 727 Tm (vulnerabilidades de dependencias. Este hallazgo debe mantenerse visible en la entrega) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 713 Tm (porque representa una condici\363n real del estado del proyecto.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 690 Tm (7. Ambiente de prueba recomendado) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 661 Tm (| Ambiente | Componentes m\355nimos | Uso |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 647 Tm (| CI / automatizado | Repositorios, workflows y runners configurados | calidad t\351cnica) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 633 Tm (base |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 619 Tm (| Local integrado | PostgreSQL, Liquibase, backend, frontend web, app m\363vil | validaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 605 Tm (funcional e integraci\363n |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 591 Tm (| Laboratorio IoT | Entorno local integrado + dispositivo compatible + broker / canal IoT) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 577 Tm (| pruebas end-to-end con hardware |) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 554 Tm (8. Evidencia que a\372n conviene recolectar) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 525 Tm (\225 Capturas o acta de ejecuci\363n de login, hogares, dispositivos y notificaciones.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 511 Tm (\225 Evidencia de control f\355sico sobre dispositivo compatible.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 497 Tm (\225 Confirmaci\363n de consumo en tiempo real y trazas asociadas.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 483 Tm (\225 Registro de correcci\363n del hallazgo de dependencias m\363viles.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 469 Tm (\225 Validaci\363n del procedimiento de restauraci\363n o recuperaci\363n de informaci\363n.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 446 Tm (9. Conclusi\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 417 Tm (La documentaci\363n de pruebas queda mejor estructurada al relacionar los 19 casos con) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 403 Tm (requisitos concretos del SRS. La actualizaci\363n tambi\351n mejora la honestidad t\351cnica del) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 389 Tm (entregable: conserva las evidencias reales de GitHub Actions, reconoce el hallazgo abierto) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 375 Tm (en la auditor\355a m\363vil y evita marcar como aprobados los escenarios que todav\355a necesitan) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 361 Tm (ejecuci\363n manual o de laboratorio.) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 3 / 3) Tj ET
+endstream
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000128 00000 n 
+0000000225 00000 n 
+0000000327 00000 n 
+0000000422 00000 n 
+0000000568 00000 n 
+0000005617 00000 n 
+0000005763 00000 n 
+0000011904 00000 n 
+0000012052 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+15482
+%%EOF

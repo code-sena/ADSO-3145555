@@ -1,0 +1,239 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 4 /Kids [6 0 R 8 0 R 10 0 R 12 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 5433 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 02-software-analysis) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F2 17 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 781 Tm (Producto 02 \227 An\341lisis del software) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 748 Tm (Servicio Nacional de Aprendizaje \(SENA\)) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 734 Tm (Programa: An\341lisis y Desarrollo de Software) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 720 Tm (Ficha: 3145555) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 706 Tm (Proyecto: SmartHome) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 692 Tm (Elaborado por: Natalia Chala Chala, Kevin Stiven L\363pez Amaya y Karen Daniela Holgu\355n Cruz) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 678 Tm (Instructor: Jos\351 de Jes\372s Motta Vargas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 664 Tm (Fecha de actualizaci\363n: 6 de noviembre de 2026) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 641 Tm (1. Presentaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 612 Tm (Este documento actualiza el an\341lisis del software de SmartHome con un criterio m\341s) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 598 Tm (estricto de trazabilidad. Se integran tres tipos de fuente: el c\363digo de los repositorios,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 584 Tm (el SRS revisado en 2026 y la documentaci\363n hist\363rica disponible en Drive. El objetivo es) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 570 Tm (describir c\363mo se comporta el sistema y qu\351 flujos est\341n representados en sus casos de uso) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 556 Tm (y vistas din\341micas, sin afirmar como implementado aquello que solo aparece en documentos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 542 Tm (hist\363ricos.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 519 Tm (El an\341lisis se concentra en cuatro ejes funcionales que s\355 son relevantes para la entrega:) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 505 Tm (autenticaci\363n, gesti\363n de hogares y espacios, control/monitoreo de dispositivos y consulta) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 491 Tm (del consumo energ\351tico. Tambi\351n se dejan expl\355citos los l\355mites: una respuesta HTTP) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 477 Tm (exitosa o la publicaci\363n de un mensaje MQTT no equivalen, por s\355 solas, a la confirmaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 463 Tm (f\355sica del dispositivo.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 440 Tm (2. Fuentes utilizadas y criterio de lectura) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 411 Tm (| Tipo de fuente | Descripci\363n | Uso en este documento |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 397 Tm (| Repositorios del proyecto | Backend, frontend web, frontend m\363vil y base de datos. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 383 Tm (Fuente principal para describir lo implementado. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 369 Tm (| SRS final revisado | Requisitos funcionales y no funcionales, roles, alcance y) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 355 Tm (restricciones. | Fuente principal de trazabilidad RF/RNF. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 341 Tm (| Drive del equipo | Diagramas, prototipos, navegaci\363n y documentos hist\363ricos. | Fuente) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 327 Tm (de apoyo para comprender la intenci\363n del dise\361o. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 313 Tm (| CI / GitHub Actions | Workflows y resultados autom\341ticos. | Fuente de contraste para) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 299 Tm (afirmar qu\351 fue probado y qu\351 no. |) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 276 Tm (2.1 Repositorios y referencias de trabajo) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 250 Tm (| Componente | Repositorio | Referencia base usada en el an\341lisis |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 236 Tm (| Backend | nataliachala1/smarthome-backend | rama dev y evidencia documental previa |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 222 Tm (| Frontend web | nataliachala1/smarthome-frontend-web | rama dev y evidencia documental) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 208 Tm (previa |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 194 Tm (| Frontend m\363vil | Kevin-Stiven-Lopez-Amaya404/from_movil | rama dev y evidencia) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 180 Tm (documental previa |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 166 Tm (| Base de datos | nataliachala1/smarthome-database | rama dev/main y changelog Liquibase |) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 143 Tm (3. Alcance funcional analizado) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 114 Tm (De acuerdo con el SRS revisado, SmartHome contempla gesti\363n de usuarios, hogares,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 100 Tm (dispositivos, monitoreo de consumo, reportes, notificaciones y opciones de) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 86 Tm (personalizaci\363n. Para este documento se priorizan los flujos que permiten explicar la) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 1 / 4) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 5657 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 02-software-analysis) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 790 Tm (l\363gica principal del sistema y conectarla con vistas din\341micas \372tiles para la entrega.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 767 Tm (3.1 Actores identificados) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 741 Tm (\225 Usuario autenticado: consulta informaci\363n de hogares, dispositivos, consumo,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 727 Tm (notificaciones y reportes.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 713 Tm (\225 Administrador o usuario con mayores permisos: puede ejecutar tareas de administraci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 699 Tm (seg\372n su rol global o rol por hogar.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 685 Tm (\225 Invitado o miembro restringido: consume informaci\363n y tiene permisos limitados sobre) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 671 Tm (acciones sensibles.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 657 Tm (\225 Backend SmartHome: orquesta validaciones, reglas de negocio, acceso a datos y emisi\363n de) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 643 Tm (eventos.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 629 Tm (\225 Dispositivo IoT / canal MQTT: recibe \363rdenes o entrega telemetr\355a cuando el entorno est\341) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 615 Tm (configurado.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 601 Tm (\225 Base de datos PostgreSQL: persiste usuarios, hogares, membres\355as, dispositivos,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 587 Tm (telemetr\355a y auditor\355a.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 564 Tm (4. Matriz de trazabilidad entre requisitos y flujos analizados) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 535 Tm (| Flujo / caso de uso analizado | Requisitos del SRS relacionados | Qu\351 se analiza |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 521 Tm (| Inicio de sesi\363n | RF1.2, RF1.4, RF1.8 | Validaci\363n de credenciales, generaci\363n de) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 507 Tm (sesi\363n, cierre y recuperaci\363n. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 493 Tm (| Gesti\363n b\341sica de hogares | RF2.1, RF2.2, RF2.3 | Creaci\363n/actualizaci\363n del hogar y) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 479 Tm (v\355nculo con dispositivos. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 465 Tm (| Registro y gesti\363n de dispositivos | RF3.1, RF3.2, RF3.3, RF3.4 | Alta, configuraci\363n,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 451 Tm (actualizaci\363n y desactivaci\363n. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 437 Tm (| Monitoreo y control del dispositivo | RF3.5, RF4.2 | Consulta del estado, control remoto) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 423 Tm (y sincronizaci\363n del estado. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 409 Tm (| Reportes y consumo | RF4.1, RF4.3 | Consulta hist\363rica, gr\341ficos y consolidaci\363n de) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 395 Tm (consumo. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 381 Tm (| Notificaciones | RF4.4 | Visualizaci\363n y manejo de avisos del sistema. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 367 Tm (| Sincronizaci\363n entre plataformas | RF5.1, RF5.3 | Consistencia entre clientes y) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 353 Tm (recuperaci\363n de informaci\363n. |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 339 Tm (| Personalizaci\363n | RF6.1, RF6.2 | Idioma, tema y preferencias de interfaz. |) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 316 Tm (5. Relaci\363n entre los diagramas y los requisitos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 287 Tm (La mejora principal de esta versi\363n consiste en dejar de tratar los diagramas como piezas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 273 Tm (aisladas. Cada vista din\341mica ahora se entiende como un soporte visual de uno o varios) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 259 Tm (requisitos.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 236 Tm (| Vista din\341mica | Prop\363sito | Requisitos asociados |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 222 Tm (| Casos de uso del sistema | Delimitar actores y funcionalidades principales. | RF1.*,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 208 Tm (RF2.*, RF3.*, RF4.*, RF5.*, RF6.* |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 194 Tm (| Secuencia de inicio de sesi\363n | Mostrar el intercambio cliente ? backend ? persistencia.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 180 Tm (| RF1.2, RF1.4, RF1.8 |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 166 Tm (| Actividad de control de dispositivo | Representar decisiones y permisos antes de emitir) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 152 Tm (una orden. | RF3.5, RF2.3 |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 138 Tm (| Secuencia de consulta de consumo | Representar lectura de datos y respuesta al usuario.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 124 Tm (| RF4.1, RF4.2, RF4.3 |) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 110 Tm (| Actividad de notificaciones / alertas | Mostrar generaci\363n, recuperaci\363n y lectura de) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 96 Tm (avisos. | RF4.4 |) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 2 / 4) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 5613 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 02-software-analysis) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 790 Tm (6. An\341lisis de flujos principales) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 761 Tm (6.1 Flujo 1 \227 autenticaci\363n del usuario) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 735 Tm (El recorrido inicia cuando el usuario env\355a sus credenciales desde el cliente web o m\363vil.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 721 Tm (El backend valida formato, identidad y estado de la cuenta; si la verificaci\363n es exitosa,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 707 Tm (se genera una sesi\363n o token y el cliente habilita el acceso a m\363dulos protegidos. En este) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 693 Tm (flujo tambi\351n se relacionan procesos de cierre de sesi\363n y recuperaci\363n de contrase\361a,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 679 Tm (porque forman parte del ciclo de autenticaci\363n.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 656 Tm (Lo que s\355 se puede afirmar: existe una estructura funcional donde la autenticaci\363n es un) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 642 Tm (m\363dulo reconocible y est\341 conectada con el consumo de APIs desde web y m\363vil.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 628 Tm (Lo que no debe afirmarse sin nueva evidencia: que MFA est\351 operativo y obligatorio en) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 614 Tm (v1.0, porque el SRS revisado lo deja fuera de alcance y los documentos hist\363ricos no son) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 600 Tm (prueba suficiente.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 577 Tm (6.2 Flujo 2 \227 gesti\363n y control de dispositivos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 551 Tm (Una vez autenticado, el usuario accede al listado de dispositivos de su hogar. Desde ese) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 537 Tm (punto puede consultar estados, editar datos, asociar un dispositivo a un contexto del) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 523 Tm (hogar y, si tiene permisos, emitir acciones de control. El backend valida membres\355a y rol) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 509 Tm (antes de ejecutar la l\363gica correspondiente.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 486 Tm (Cuando el caso de uso implica control remoto, la aplicaci\363n puede terminar en una) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 472 Tm (publicaci\363n de evento, comando o mensaje hacia el componente que se comunica con el canal) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 458 Tm (IoT. Por eso el an\341lisis separa dos resultados distintos:) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 435 Tm (1. Orden aceptada por el sistema: el backend admite la solicitud y genera la acci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 421 Tm (interna.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 407 Tm (2. Accionamiento f\355sico comprobado: requiere evidencia adicional de laboratorio o pruebas) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 393 Tm (integradas.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 370 Tm (6.3 Flujo 3 \227 consulta de consumo energ\351tico) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 344 Tm (El consumo energ\351tico se consulta desde la interfaz como datos en tiempo real, hist\363ricos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 330 Tm (o reportes consolidados. En el recorrido participan el backend, la base de datos y, cuando) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 316 Tm (aplica, canales de actualizaci\363n en tiempo real. La capa cliente organiza filtros por) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 302 Tm (hogar, per\355odo, dispositivo o agrupaci\363n temporal.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 279 Tm (Este flujo se relaciona directamente con RF4.1, RF4.2 y RF4.3, y adem\341s depende de que la) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 265 Tm (base de datos y el pipeline de datos est\351n correctamente configurados. La presencia de la) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 251 Tm (interfaz y del servicio no equivale a garantizar un volumen de telemetr\355a real si no hay) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 237 Tm (un entorno IoT activo.) Tj ET
+BT /F2 11 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 214 Tm (6.4 Flujo 4 \227 notificaciones y sincronizaci\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 188 Tm (Las notificaciones sirven como punto de uni\363n entre consumo, alertas y experiencia del) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 174 Tm (usuario. Su an\341lisis se conecta con RF4.4 y con la parte de sincronizaci\363n de RF5.1. Desde) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 160 Tm (la perspectiva de arquitectura, su presencia demuestra que el sistema no es solo CRUD:) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 146 Tm (tambi\351n busca mantener al usuario informado frente a cambios relevantes.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 123 Tm (7. Hallazgos principales) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 94 Tm (1. El sistema presenta una organizaci\363n suficiente para describir los flujos principales) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 80 Tm (sin depender \372nicamente de pantallas.) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 3 / 4) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 3019 >>
+stream
+BT /F2 8 Tf 0.32 0.39 0.48 rg 1 0 0 1 48 816 Tm (SMART HOME | ADSO 3145555 | 02-software-analysis) Tj ET
+0.3 w 48 809 m 547 809 l S
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 790 Tm (2. El SRS actualizado corrige o limita algunas afirmaciones hist\363ricas; por ejemplo, MFA y) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 776 Tm (operaci\363n offline total no deben tratarse como caracter\355sticas verificadas de la versi\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 762 Tm (1.0.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 748 Tm (3. El an\341lisis de control de dispositivos debe conservar la distinci\363n entre orden emitida) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 734 Tm (y acci\363n f\355sica comprobada.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 720 Tm (4. Los diagramas del equipo son \372tiles, pero deben citarse como apoyo documental y no como) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 706 Tm (prueba de ejecuci\363n.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 692 Tm (5. La trazabilidad mejora cuando cada caso de uso se conecta expl\355citamente con uno o) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 678 Tm (varios requisitos RF/RNF.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 655 Tm (8. Limitaciones y pendientes) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 626 Tm (\225 Este documento no sustituye las pruebas funcionales del producto 05.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 612 Tm (\225 No se adjuntan credenciales, IP privadas ni secretos de entorno.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 598 Tm (\225 La confirmaci\363n de integraci\363n IoT, WebSocket y hardware Shelly depende de ensayos) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 584 Tm (controlados y evidencias adicionales.) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 570 Tm (\225 La conciliaci\363n final con la versi\363n etiquetada en main debe hacerse antes del cierre) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 556 Tm (formal de la entrega.) Tj ET
+BT /F2 13 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 533 Tm (9. Conclusi\363n) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 504 Tm (SmartHome puede describirse de forma consistente como un sistema con clientes web y m\363vil,) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 490 Tm (backend central, persistencia en PostgreSQL y componentes de integraci\363n IoT. La mejora) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 476 Tm (introducida en esta versi\363n del documento consiste en amarrar ese an\341lisis a los) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 462 Tm (requisitos oficiales del SRS, evitando afirmaciones no verificadas. En consecuencia, el) Tj ET
+BT /F1 10 Tf 0.11 0.16 0.23 rg 1 0 0 1 49 448 Tm (producto 02 queda mejor sustentado para una revisi\363n acad\351mica y t\351cnica.) Tj ET
+0.3 w 48 46 m 547 46 l S
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 48 33 Tm (Documento acad\351mico \227 SmartHome) Tj ET
+BT /F1 8 Tf 0.35 0.4 0.45 rg 1 0 0 1 475 33 Tm (P\341gina 4 / 4) Tj ET
+endstream
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000135 00000 n 
+0000000232 00000 n 
+0000000334 00000 n 
+0000000429 00000 n 
+0000000575 00000 n 
+0000006059 00000 n 
+0000006205 00000 n 
+0000011913 00000 n 
+0000012061 00000 n 
+0000017726 00000 n 
+0000017874 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+20945
+%%EOF

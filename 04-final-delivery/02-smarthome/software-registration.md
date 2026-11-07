@@ -38,9 +38,9 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | EDDIER YAIR LIBERATO CUENCA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | JHON WILLIAN CORREDOR ARAUJO | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | ANDRES MORENO COLLAZOS | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| KAREN DANIELA HOLGUIN CRUZ | CC | 1079176743 | 3145555 | |
-| NATALIA CHALA CHALA | CC | 1075508373 | 3145555 | |
-| KEVIN STIVEN LOPEZ AMAYA | CC | 1077724241 | 3145555 | |
+| KAREN DANIELA HOLGUIN CRUZ | CC | 1079176743 | 3145555 | Modelo de datos PostgreSQL, migraciones Liquibase y documentación (por ratificar). |
+| NATALIA CHALA CHALA | CC | 1075508373 | 3145555 | Infraestructura Docker, despliegue local y configuración del entorno (por ratificar). |
+| KEVIN STIVEN LOPEZ AMAYA | CC | 1077724241 | 3145555 | Backend NestJS/MQTT y documentación técnica de la entrega (por ratificar). |
 
 ## 3. Producer / Productor (art. 5, num. 3)
 
@@ -63,23 +63,23 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | Field / Campo | Value / Valor |
 |---|---|
 | Title / Título de la obra | SmartHome |
-| Year of creation / Año de creación | |
+| Year of creation / Año de creación | 2025 (primeros documentos identificados; confirmar fecha del primer código en Git) |
 | Country of origin / País de origen | Colombia |
-| Version registered / Versión a registrar | `final-delivery-2026` |
-| Short description of its functions / Breve descripción de sus funciones | |
-| What sets it apart from similar software / Qué la diferencia de obras similares |  |
-| Programming languages / Lenguajes | |
-| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | |
+| Version registered / Versión a registrar | final-delivery-2026 — etiqueta prevista, pendiente de creación/validación en repositorios originales |
+| Short description of its functions / Breve descripción de sus funciones | Gestiona hogares y miembros, dispositivos eléctricos IoT, control de cargas, telemetría, consumo, alertas e históricos. |
+| What sets it apart from similar software / Qué la diferencia de obras similares | Integra panel web y aplicación Android, telemetría MQTT por dispositivo, roles por hogar y PostgreSQL RLS. |
+| Programming languages / Lenguajes | TypeScript, JavaScript y SQL; configuración de servicios mediante YAML/Dockerfile. |
+| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | Web y móvil Android, con API/backend y dispositivos IoT compatibles. |
 
 ## 6. Declarations / Declaraciones (art. 4 y art. 5, num. 5 y 6)
 
 | Declaration / Declaración | Option / Opción |
 |---|---|
-| Origin / Origen | ☐ Original ☐ Derived work / Obra derivada |
-| If derived, base work / Si es derivada, obra de base | |
-| Type of work / Clase de obra | ☐ Individual ☐ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
-| Publication / Publicación | ☐ Unpublished / Inédita ☐ Published / Publicada |
-| If published, date and place / Si está publicada, fecha y lugar | |
+| Origin / Origen | ☐ Original ☐ Derived work / Obra derivada — declaración y licencias pendientes de ratificar por los autores. |
+| If derived, base work / Si es derivada, obra de base | Pendiente de evaluación legal de obras y componentes reutilizados. |
+| Type of work / Clase de obra | ☐ Individual ☐ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma — elección por ratificar con titulares. |
+| Publication / Publicación | ☐ Unpublished / Inédita ☐ Published / Publicada — definir con el Centro; repositorios públicos no equivalen a declaración aprobada. |
+| If published, date and place / Si está publicada, fecha y lugar | Repositorios públicos GitHub; fecha de primera publicación y lugar legal pendientes de confirmar. |
 
 Software is treated as unpublished unless the rights holder states otherwise (art. 4). A public repository may count as publication: the team records it here, and the Centro decides the final declaration.
 
@@ -117,3 +117,8 @@ Relacione código, librerías, modelos, imágenes o datos que el equipo no creó
 - [ ] The listed authors are the people who created the software. / Los autores relacionados son quienes crearon el software.
 - [ ] Third-party components are declared. / Los componentes de terceros están declarados.
 - [ ] No passwords, tokens or keys are included. / No se incluyen contraseñas, tokens ni llaves.
+
+
+## Control de verificación para registro (7 de noviembre de 2026)
+
+Los campos técnicos se han completado desde la arquitectura, el proyecto y el informe de despliegue. **No se ha firmado ni aceptado por los integrantes ninguna declaración jurídica nueva.** Son pendientes de ratificación: identificación del solicitante, roles y aportes de los tres aprendices, primer año del código, tipo legal de obra, origen/originalidad, estado de publicación y componentes de terceros con sus licencias. No se han alterado las casillas finales de consentimiento ni las declaraciones bajo la sección 10.
