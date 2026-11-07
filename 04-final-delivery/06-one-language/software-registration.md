@@ -24,61 +24,51 @@ Llene todos los campos vacíos. Sigue el Decreto 1360 de 1989.
 
 ## 2. Authors / Autores (art. 5, num. 2)
 
-Authors are the instructors and the apprentices listed in `team-roster.md`. Each apprentice checks their data and writes their contribution. / Los autores son los instructores y aprendices de `team-roster.md`. Cada aprendiz revisa sus datos y escribe su aporte.
+The software authors and developers are Juan Pablo Gómez Perdomo and Johan Alexander Acero Salazar. Instructors provided guidance and support and are not declared as authors. / Los autores y desarrolladores del software son Juan Pablo Gómez Perdomo y Johan Alexander Acero Salazar. Los instructores brindaron orientación y apoyo y no se declaran como autores.
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | Contribution / Aporte |
 |---|---|---|---|---|
-| JESUS ARIEL GONZALEZ BONILLA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| CARLOS FABIAN MARTINEZ MORA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| CARLOS JULIO CADENA SARASTY | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| JAVIER HUMBERTO PINTO DIAZ | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| KAROL DANIELA CORREA TRUJILLO | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| JOSE DE JESUS MOTTA VARGAS | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| FERNELLY CARVAJAL SILVA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| EDDIER YAIR LIBERATO CUENCA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| JHON WILLIAN CORREDOR ARAUJO | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| ANDRES MORENO COLLAZOS | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| JUAN PABLO GOMEZ PERDOMO | CC | 1138274575 | 3145555 | |
-| JOHAN ALEXANDER ACERO SALAZAR | CC | 1138274651 | 3145555 | |
+| JUAN PABLO GOMEZ PERDOMO | CC | Kept privately / En custodia privada | 3145555 | Software author and developer / Autor y desarrollador del software One Language |
+| JOHAN ALEXANDER ACERO SALAZAR | CC | Kept privately / En custodia privada | 3145555 | Software author and developer / Autor y desarrollador del software One Language |
 
 ## 3. Producer / Productor (art. 5, num. 3)
 
 | Field / Campo | Value / Valor |
 |---|---|
-| Producer name / Nombre del productor | Supporting and cross-cutting instructors / Instructores de apoyo y transversales: JESUS ARIEL GONZALEZ BONILLA, CARLOS FABIAN MARTINEZ MORA, CARLOS JULIO CADENA SARASTY, JAVIER HUMBERTO PINTO DIAZ, KAROL DANIELA CORREA TRUJILLO, JOSE DE JESUS MOTTA VARGAS, FERNELLY CARVAJAL SILVA, EDDIER YAIR LIBERATO CUENCA, JHON WILLIAN CORREDOR ARAUJO, ANDRES MORENO COLLAZOS. Project apprentices / Aprendices del equipo: JUAN PABLO GOMEZ PERDOMO, JOHAN ALEXANDER ACERO SALAZAR. |
-| ID document or NIT / Identificación o NIT | Apprentices: section 2. Instructors: kept privately by the lead instructor. / Aprendices: sección 2. Instructores: en custodia del instructor líder. |
+| Producer name / Nombre del productor | To confirm with SENA and the authors under the applicable registration criteria. Instructors are support, not authors. / Por confirmar con el SENA y los autores según los criterios de registro aplicables. Los instructores son apoyo, no autores. |
+| ID document or NIT / Identificación o NIT | Complete after confirming the producer. / Completar al confirmar el productor. |
 
 ## 4. Rights holder / Titular de los derechos patrimoniales
 
 | Field / Campo | Value / Valor |
 |---|---|
-| Rights holder / Titular | Supporting and cross-cutting instructors / Instructores de apoyo y transversales: JESUS ARIEL GONZALEZ BONILLA, CARLOS FABIAN MARTINEZ MORA, CARLOS JULIO CADENA SARASTY, JAVIER HUMBERTO PINTO DIAZ, KAROL DANIELA CORREA TRUJILLO, JOSE DE JESUS MOTTA VARGAS, FERNELLY CARVAJAL SILVA, EDDIER YAIR LIBERATO CUENCA, JHON WILLIAN CORREDOR ARAUJO, ANDRES MORENO COLLAZOS. Project apprentices / Aprendices del equipo: JUAN PABLO GOMEZ PERDOMO, JOHAN ALEXANDER ACERO SALAZAR. |
-| ID document or NIT / Identificación o NIT | Apprentices: section 2. Instructors: kept privately by the lead instructor. / Aprendices: sección 2. Instructores: en custodia del instructor líder. |
-| How rights were acquired / Cómo adquirió los derechos, si no es el autor | Not applicable: the rights holders are the authors / No aplica: los titulares son los autores |
-| Document that proves it / Documento que lo prueba | Not applicable / No aplica |
+| Rights holder / Titular | Juan Pablo Gómez Perdomo and Johan Alexander Acero Salazar, subject to confirming that no rights were assigned to SENA or another entity. / Juan Pablo Gómez Perdomo y Johan Alexander Acero Salazar, sujeto a confirmar que no hayan cedido derechos al SENA u otra entidad. |
+| ID document or NIT / Identificación o NIT | See section 2; provide privately in the official filing. / Ver sección 2; aportar por canal privado en el trámite oficial. |
+| How rights were acquired / Cómo adquirió los derechos, si no es el autor | Authors' rights are claimed as original; verify any applicable training, employment, or assignment agreement. / Se manifiestan derechos de autoría original; verificar cualquier acuerdo formativo, laboral o de cesión aplicable. |
+| Document that proves it / Documento que lo prueba | To confirm; attach any applicable rights-transfer or institutional authorization document. / Por confirmar; adjuntar el documento de cesión o autorización institucional que aplique. |
 
 ## 5. The work / La obra (art. 5, num. 4)
 
 | Field / Campo | Value / Valor |
 |---|---|
 | Title / Título de la obra | One Language |
-| Year of creation / Año de creación | |
+| Year of creation / Año de creación | Por confirmar con los autores; los commits disponibles no prueban por sí solos la fecha original de creación. |
 | Country of origin / País de origen | Colombia |
 | Version registered / Versión a registrar | `final-delivery-2026` |
-| Short description of its functions / Breve descripción de sus funciones | |
-| What sets it apart from similar software / Qué la diferencia de obras similares |  |
-| Programming languages / Lenguajes | |
-| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | |
+| Short description of its functions / Breve descripción de sus funciones | Plataforma web y móvil que recibe video de cámara, clasifica señas aisladas de un vocabulario limitado de LSC y muestra la predicción en texto, con voz opcional. También gestiona cuentas, permisos y traducciones guardadas. |
+| What sets it apart from similar software / Qué la diferencia de obras similares | Integra clientes web y móvil con un servicio de inferencia en tiempo real y el historial de traducciones. El alcance actual es vocabulario limitado de señas aisladas; no afirmar traducción continua ni reemplazo de intérprete. |
+| Programming languages / Lenguajes | Java, Python, JavaScript, TypeScript y SQL; HTML y CSS para las interfaces. |
+| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | Aplicación web y móvil, API backend y servicio de inferencia de IA. |
 
 ## 6. Declarations / Declaraciones (art. 4 y art. 5, num. 5 y 6)
 
 | Declaration / Declaración | Option / Opción |
 |---|---|
-| Origin / Origen | ☐ Original ☐ Derived work / Obra derivada |
-| If derived, base work / Si es derivada, obra de base | |
-| Type of work / Clase de obra | ☐ Individual ☐ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
-| Publication / Publicación | ☐ Unpublished / Inédita ☐ Published / Publicada |
-| If published, date and place / Si está publicada, fecha y lugar | |
+| Origin / Origen | ☒ Original ☐ Derived work / Obra derivada |
+| If derived, base work / Si es derivada, obra de base | Not applicable / No aplica |
+| Type of work / Clase de obra | ☐ Individual ☒ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
+| Publication / Publicación | ☐ Unpublished / Inédita ☒ Published / Publicada |
+| If published, date and place / Si está publicada, fecha y lugar | 4 November 2026 (public production/release `final-delivery`; confirm this was the first public disclosure), online from Colombia: https://onelanguage.tech. / 4 de noviembre de 2026 (publicación en producción/release `final-delivery`; confirmar que fue la primera divulgación pública), en línea desde Colombia: https://onelanguage.tech. |
 
 Software is treated as unpublished unless the rights holder states otherwise (art. 4). A public repository may count as publication: the team records it here, and the Centro decides the final declaration.
 

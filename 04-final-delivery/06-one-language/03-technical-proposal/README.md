@@ -1,15 +1,19 @@
-# Technical proposal / Propuesta técnica
+# Technical Proposal / Propuesta tecnica
 
-**Training project deliverable / Producto del proyecto formativo:** Documentación de propuesta técnica del software.
+**Training deliverable:** software technical proposal and technology justification.
 
-## Required content / Contenido requerido
+## Deliverables
 
-- [ ] Software technical proposal / Propuesta técnica del software
-- [ ] Selected technologies and why / Tecnologías seleccionadas y su justificación
+- [x] technical-proposal.pdf - seven-page PDF draft.
+- [x] technical-proposal.docx - editable Word source.
+- [ ] Technical review and approval by the One Language team.
 
-## Format / Formato
+## Scope and status
 
-- Final version in PDF, plus the editable source when it exists. / Versión final en PDF y, si existe, el archivo fuente editable.
-- English file names, without spaces or accents: `requirements-specification.pdf`. / Nombres de archivo en inglés, sin espacios ni tildes.
-- Files over 50 MB go to Drive and are listed in the project `README.md`. / Los archivos de más de 50 MB van a Drive y se relacionan en el `README.md` del proyecto.
-- Do not add passwords, tokens, keys or real user data. / No incluya contraseñas, tokens, llaves ni datos reales de usuarios.
+The document describes the architecture and technologies observed in the local snapshots of the One Language repositories. It distinguishes implemented behavior from proposed improvements and acceptance criteria. The criteria are not test results; the team must confirm the cited branches and revisions before approving a final version.
+
+No credentials, tokens, keys, or real user data are included. This is a draft for review, not a production certification.
+
+## Format
+
+Filenames use English words without spaces or accents. The PDF is below the 50 MB limit and is stored alongside its editable Word source.

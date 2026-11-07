@@ -1,17 +1,21 @@
-# Software design / Diseño del software
+# Software Design / Diseno del software
 
-**Training project deliverable / Producto del proyecto formativo:** Documentación de diseño del software (interfaces gráficas, modelo arquitectónico, patrones de diseño, modelo de datos).
+**Training deliverable:** graphical interface prototypes, architecture, design patterns, and conceptual, logical, and physical data models.
 
-## Required content / Contenido requerido
+## Deliverables
 
-- [ ] Graphical interfaces: mockups or prototype / Interfaces gráficas: mockups o prototipo
-- [ ] Architectural model / Modelo arquitectónico
-- [ ] Design patterns applied, with where they are used / Patrones de diseño aplicados, indicando dónde se usan
-- [ ] Data model: conceptual, logical and physical / Modelo de datos: conceptual, lógico y físico
+- [x] software-design.pdf - nine-page draft.
+- [x] software-design.docx - editable Word source.
+- [ ] Technical review and approval by the One Language team.
 
-## Format / Formato
+## Scope and status
 
-- Final version in PDF, plus the editable source when it exists. / Versión final en PDF y, si existe, el archivo fuente editable.
-- English file names, without spaces or accents: `requirements-specification.pdf`. / Nombres de archivo en inglés, sin espacios ni tildes.
-- Files over 50 MB go to Drive and are listed in the project `README.md`. / Los archivos de más de 50 MB van a Drive y se relacionan en el `README.md` del proyecto.
-- Do not add passwords, tokens, keys or real user data. / No incluya contraseñas, tokens, llaves ni datos reales de usuarios.
+The document describes the design observed in local snapshots of the One Language repositories. The interface diagrams are low-fidelity wireframes, not final screenshots. The database model reflects the Liquibase changesets in the reviewed branch and distinguishes removed historical tables from the active schema.
+
+The document flags a mismatch between the voice_feedback database column and the current backend entity/API mapping. This is a review item, not a claim that the field is currently synchronized.
+
+No credentials, tokens, keys, or real user data are included. This draft is not a production, security, or test certification.
+
+## Format
+
+Filenames use English words without spaces or accents. The PDF is below the 50 MB limit and is stored with its editable Word source.

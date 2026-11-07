@@ -1,15 +1,17 @@
-# Software analysis / Análisis del software
+# Software Analysis / Analisis del software
 
-**Training project deliverable / Producto del proyecto formativo:** Documentación de análisis del software (vistas dinámicas del software).
+**Training project deliverable / Producto del proyecto formativo:** analisis del software y vistas dinamicas de One Language.
 
-## Required content / Contenido requerido
+## Deliverables
 
-- [ ] Software analysis document / Documento de análisis del software
-- [ ] Dynamic views: use cases, sequence, activity or state diagrams / Vistas dinámicas: casos de uso, secuencia, actividades o estados
+- [x] Editable Word document / Documento Word editable: software-analysis.docx
+- [x] PDF draft / Borrador PDF: software-analysis.pdf
+- [ ] Team technical review and approval / Revision tecnica y aprobacion del equipo
 
-## Format / Formato
+## Scope and status / Alcance y estado
 
-- Final version in PDF, plus the editable source when it exists. / Versión final en PDF y, si existe, el archivo fuente editable.
-- English file names, without spaces or accents: `requirements-specification.pdf`. / Nombres de archivo en inglés, sin espacios ni tildes.
-- Files over 50 MB go to Drive and are listed in the project `README.md`. / Los archivos de más de 50 MB van a Drive y se relacionan en el `README.md` del proyecto.
-- Do not add passwords, tokens, keys or real user data. / No incluya contraseñas, tokens, llaves ni datos reales de usuarios.
+The document covers the current web and mobile clients, REST backend, AI WebSocket service, and database interactions. It includes actors, use cases, the real-time translation sequence, and the main activity flow. It is a technical draft based on the local source snapshots listed in the document; the team must confirm those revisions and validate the flows against acceptance criteria before treating it as final.
+
+El documento cubre los clientes web y movil, API REST, servicio IA por WebSocket e interacciones con la base de datos. Incluye actores, casos de uso, secuencia de traduccion en tiempo real y flujo de actividad. Es un borrador tecnico basado en las revisiones locales indicadas; el equipo debe confirmar esas revisiones y validar los flujos frente a criterios de aceptacion antes de considerarlo final.
+
+No credentials, tokens, or real user data are included. The PDF is under 50 MB and is stored in this folder.
