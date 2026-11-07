@@ -38,7 +38,7 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | EDDIER YAIR LIBERATO CUENCA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | JHON WILLIAN CORREDOR ARAUJO | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | ANDRES MORENO COLLAZOS | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| FREINIER STEVEN CARDONA PEREZ | TI | 1077726586 | 3145555 | |
+| FREINIER STEVEN CARDONA PEREZ | TI | 1077726586 | 3145555 | Desarrollo de backend y frontend, base de datos, pruebas y documentación |
 
 ## 3. Producer / Productor (art. 5, num. 3)
 
@@ -61,13 +61,13 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | Field / Campo | Value / Valor |
 |---|---|
 | Title / Título de la obra | Alerta Mujer |
-| Year of creation / Año de creación | |
+| Year of creation / Año de creación | 2026 |
 | Country of origin / País de origen | Colombia |
-| Version registered / Versión a registrar | `final-delivery-2026` |
-| Short description of its functions / Breve descripción de sus funciones | |
-| What sets it apart from similar software / Qué la diferencia de obras similares | **Required: a similar title exists in the other ficha / Obligatorio: existe un título similar en la otra ficha** |
-| Programming languages / Lenguajes | |
-| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | |
+| Version registered / Versión a registrar | [`final-delivery-2026`](code-tag/README.md), tag anotado sobre `main` en los cuatro repositorios originales |
+| Short description of its functions / Breve descripción de sus funciones | Aplicación móvil y plataforma web para registrar cuentas, gestionar contactos de confianza y activar alertas SOS; conserva el estado de la emergencia, ubicaciones, evidencias capturadas manualmente y mensajes para consulta de participantes autorizados y atención administrativa. |
+| What sets it apart from similar software / Qué la diferencia de obras similares | Integra activación SOS móvil, seguimiento de la alerta, evidencias fotográficas en almacenamiento privado, chat y un panel administrativo; la comparación formal con la obra homónima de otra ficha queda sujeta a revisión institucional. |
+| Programming languages / Lenguajes | Java, TypeScript y SQL |
+| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | Aplicación móvil (React Native/Expo) y aplicación web |
 
 ## 6. Declarations / Declaraciones (art. 4 y art. 5, num. 5 y 6)
 
@@ -89,9 +89,9 @@ At least one is required. Attach all three. / Se exige al menos uno. Adjunte los
 
 | Element / Elemento | Where it is / Dónde está | Ready / Listo |
 |---|---|---|
-| Computer program / Programa de computador | ZIP files `final-delivery-2026` listed in `code-tag/README.md` / ZIP relacionados en `code-tag/README.md` | ☐ |
-| Program description / Descripción de programa | `02-software-analysis/` and `04-software-design/` | ☐ |
-| Auxiliary material / Material auxiliar | `08-manuals/` | ☐ |
+| Computer program / Programa de computador | ZIP files `final-delivery-2026` listed in `code-tag/README.md` / ZIP relacionados en `code-tag/README.md` | ☑ Ocho ZIP publicados con SHA-256 |
+| Program description / Descripción de programa | `02-software-analysis/` and `04-software-design/` | ☑ PDF + DOCX en ambas carpetas |
+| Auxiliary material / Material auxiliar | `08-manuals/` | ☑ 3 PDF + 3 DOCX |
 
 ## 8. Third-party components / Componentes de terceros
 
@@ -101,7 +101,12 @@ Relacione código, librerías, modelos, imágenes o datos que el equipo no creó
 
 | Component / Componente | Author or source / Autor o fuente | License / Licencia | Where it is used / Dónde se usa |
 |---|---|---|---|
-| | | | |
+| React y React DOM | Paquetes npm `react` y `react-dom`; `AlertaMujer_Frontend/web/package-lock.json` | MIT | Aplicación web |
+| React Native | Paquete npm `react-native`; `AlertaMujer_Frontend/mobile/package-lock.json` | MIT | Aplicación móvil |
+| Expo y Expo Router | Paquetes npm `expo` y `expo-router`; `AlertaMujer_Frontend/mobile/package-lock.json` | MIT | Aplicación móvil |
+| Vite | Paquete npm `vite`; `AlertaMujer_Frontend/web/package-lock.json` | MIT | Construcción y desarrollo web |
+
+El listado identifica componentes principales con licencia registrada en los archivos de dependencias. Antes de declarar completo el inventario se deben revisar las demás bibliotecas, dependencias transitivas y recursos visuales usados en la versión final.
 
 ## 9. Private data / Datos privados
 
@@ -114,4 +119,4 @@ Relacione código, librerías, modelos, imágenes o datos que el equipo no creó
 - [ ] The information is true and the names match the official ID documents. / La información es veraz y los nombres coinciden con los documentos de identidad.
 - [ ] The listed authors are the people who created the software. / Los autores relacionados son quienes crearon el software.
 - [ ] Third-party components are declared. / Los componentes de terceros están declarados.
-- [ ] No passwords, tokens or keys are included. / No se incluyen contraseñas, tokens ni llaves.
+- [x] No passwords, tokens or keys are included. / No se incluyen contraseñas, tokens ni llaves.

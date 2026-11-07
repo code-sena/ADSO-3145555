@@ -4,8 +4,8 @@ Two videos are required. / Se requieren dos videos.
 
 | Video | Duration / Duración | Link / Enlace | Done / Listo |
 |---|---|---|---|
-| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos | | ☐ |
-| Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | | ☐ |
+| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos | [Ver pitch](https://www.youtube.com/watch?v=b_TRdjd9YgI) | ☑ Enlace publicado |
+| Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | [Ver tutorial](https://www.youtube.com/watch?v=ToMrkmw4pIU) | ☑ Enlace publicado |
 
 ## 1. Advertising pitch / Pitch publicitario
 
@@ -27,7 +27,7 @@ Shows how the system is used, on the real system. / Muestra cómo se usa el sist
 
 ## Rules / Reglas
 
-- Upload them to Google Drive, with access for anyone who has the link. / Súbalos a Google Drive, con acceso para cualquiera que tenga el enlace.
-- Check the links in a private browser window. / Pruebe los enlaces en una ventana privada del navegador.
+- Published on YouTube with access through the links above. / Publicados en YouTube con acceso mediante los enlaces anteriores.
+- Both links returned public YouTube metadata on 2026-11-06; verify playback in a private browser window. / Ambos enlaces devolvieron metadatos públicos de YouTube el 2026-11-06; verifique su reproducción en una ventana privada.
 - Do not show passwords, tokens or real personal data. / No muestre contraseñas, tokens ni datos personales reales.
 - Use music and images you are allowed to use. / Use música e imágenes que tenga permiso de usar.
