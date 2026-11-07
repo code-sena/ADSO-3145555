@@ -26,18 +26,35 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 ## Summary / Resumen Ejecutivo
 
 - **Problem it solves / Problema que resuelve:** Automatiza, centraliza y moderniza la gestión integral del alquiler y control de flotas vehiculares en Colombia, eliminando procesos manuales en papel, errores de liquidación y falta de trazabilidad mediante reservas en 4 pasos, pagos digitales (Wompi) y en efectivo con vencimiento dinámico, validación documental KYC, firma electrónica de contratos y entrega/recepción validada con PIN de 6 dígitos.
-- **Target users / Perfiles de usuario:**
-  - **Cliente Final (`USER`):** Catálogo, reservas, carga de documentos KYC, pago online/efectivo, recepción con PIN de 6 dígitos y calificación del servicio desde la App Móvil o Web.
-  - **Encargado de Sucursal (`MANAGER` / Panel `/encargado/*`):** Operación diaria de su sucursal asignada (validación documental KYC de cédula y licencia, confirmación de pagos en efectivo en caja, entrega Check-In con PIN de 6 dígitos, devolución Check-Out, gestión de domicilios/delivery, flota local y reseñas).
-  - **Administrador General (`ADMIN` / Panel `/admin/*`):** Gobierno corporativo nacional (ciudades, sucursales, asignación de encargados, flota global, usuarios y roles RBAC, promociones/cupones, reportes financieros y auditoría inmutable).
+- **Target users / Perfiles de usuario:** el sistema maneja cuatro perfiles con control de acceso por roles (RBAC). El código de cada rol es el mismo que está en la tabla `iam.roles` de la base de datos.
 
-## Apprentices team / Equipo de Aprendices (Desarrollo Full-Stack en los 5 Repositorios)
+  | Perfil | Código de rol | Canal | Qué puede hacer |
+  |---|---|---|---|
+  | **Cliente** | `CUSTOMER` | App móvil y web | Registrarse e iniciar sesión, consultar el catálogo, reservar en 4 pasos, cargar documentos KYC (cédula y licencia), pagar en línea (Wompi) o en efectivo, firmar el contrato electrónicamente, recibir el vehículo con PIN de 6 dígitos, calificar el servicio, abrir solicitudes de soporte y gestionar su perfil. |
+  | **Empleado de sucursal** | `EMPLOYEE` | Panel web | Atención en mostrador de su sucursal: inspecciones del vehículo, apoyo en entregas y devoluciones, atención al cliente y respuesta a reseñas. |
+  | **Administrador de sucursal (encargado)** | `BRANCH_ADMIN` | Panel web (`/encargado/*`) | Operación diaria de la sucursal asignada: validación documental KYC, confirmación de pagos en efectivo, entrega (Check-In) con PIN, devolución (Check-Out), domicilios, flota local, personal, reseñas y auditoría de su sucursal. |
+  | **Superadministrador** | `SUPER_ADMIN` | Panel web (`/admin/*`) | Gestión nacional: ciudades, sucursales, asignación de encargados, flota global, usuarios y roles, promociones y cupones, reportes financieros y bitácora de auditoría de todo el sistema. |
 
-| Full name / Nombre completo | GitHub | Role & Scope / Rol y Alcance |
-|---|---|---|
-| **LAURA VANESSA PÉREZ PERDOMO** | [@vanessaperdomo](https://github.com/vanessaperdomo) | Desarrolladora Full-Stack (`Back-end`, `front-end_web`, `front-end_movil`, `database`, `Documentation`) |
-| **DANNA VALENTINA BARRIOS PENAGOS** | [@Dannabarrios](https://github.com/Dannabarrios) | Desarrolladora Full-Stack (`Back-end`, `front-end_web`, `front-end_movil`, `database`, `Documentation`) |
-| **EMILY SHARITH AMÉZQUITA SAAVEDRA** | [@sharithsaavedra1](https://github.com/sharithsaavedra1) | Desarrolladora Full-Stack (`Back-end`, `front-end_web`, `front-end_movil`, `database`, `Documentation`) |
+- **Main features / Funciones principales:** catálogo de vehículos por sucursal, reservas con vencimiento automático, pagos digitales y en efectivo, validación documental KYC, contratos con firma electrónica, entrega y devolución con PIN, notificaciones, soporte, reseñas, reportes administrativos, auditoría forense y aplicación en 5 idiomas.
+- **Technology stack / Tecnologías:** Backend en Java 21 con Spring Boot 4 (API REST, Spring Security con JWT, JPA/Hibernate); base de datos PostgreSQL; frontend web con React 19 y Vite; app móvil con React Native y Expo (TypeScript, Zustand, Axios, i18next).
+- **Production URL / URL en producción:** [https://drivique.tech](https://drivique.tech) (web), [https://app.drivique.tech](https://app.drivique.tech) (móvil) y [https://drivique.tech/api/v1](https://drivique.tech/api/v1) (API).
+- **Demo credentials / Credenciales de prueba:** no se publican en este repositorio. Se entregan al instructor por un canal privado.
+
+## Team members / Integrantes
+
+> Names and document numbers were preloaded by the instructor from the Sofía Plus report. Each member checks their row, completes GitHub user and role, and marks the last column. Report any error, missing member or extra member to the instructor.
+>
+> Los nombres y documentos los precargó el instructor desde el reporte de Sofía Plus. Cada integrante revisa su fila, completa usuario de GitHub y rol, y marca la última columna. Reporte al instructor cualquier error, o si falta o sobra alguien.
+
+| Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role / Rol | Verified and authorized / Verificado y autorizado |
+|---|---|---|---|---|---|---|
+| DANNA VALENTINA BARRIOS PENAGOS | CC | 1084923587 | 3145555 | Dannabarrios | Full-Stack Developer | ☑ |
+| LAURA VANESSA PEREZ PERDOMO | CC | 1075228306 | 3145555 | vanessaperdomo | Full-Stack Developer & Team Representative | ☑ |
+| EMILY SHARITH AMEZQUITA SAAVEDRA | CC | 1075243904 | 3145555 | sharithsaavedra1 | Full-Stack Developer | ☑ |
+
+Data use authorization: by checking the box, the member confirms their data and authorizes publishing their name, document number and ficha in this public repository, for the software registration process (Ley 1581 de 2012). Anyone who does not authorize it tells the instructor before delivering.
+
+Autorización de datos: al marcar la casilla, el integrante confirma sus datos y autoriza publicar su nombre, número de documento y ficha en este repositorio público, para el trámite de registro de software (Ley 1581 de 2012). Quien no lo autorice se lo informa al instructor antes de entregar.
 
 ## Deliverables Index / Índice Completo de Carpetas Entregables
 
