@@ -4,7 +4,12 @@
 
 ## Required content / Contenido requerido
 
-- [ ] Final article of the project / Artículo final del proyecto
+- [x] Final article of the project / Artículo final del proyecto
+
+## Delivered files / Archivos entregados
+
+- `project-article.docx` — editable source / fuente editable
+- `project-article.pdf` — PDF export / exportación PDF
 
 ## Format / Formato
 

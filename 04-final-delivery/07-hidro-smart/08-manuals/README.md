@@ -4,9 +4,15 @@
 
 ## Required content / Contenido requerido
 
-- [ ] Technical manual / Manual técnico
-- [ ] Installation manual / Manual de instalación
-- [ ] End-user manual / Manual de usuario final
+- [x] Technical manual / Manual técnico
+- [x] Installation manual / Manual de instalación
+- [x] End-user manual / Manual de usuario final
+
+## Delivered files / Archivos entregados
+
+- `technical-manual.docx` and `technical-manual.pdf`
+- `installation-manual.docx` and `installation-manual.pdf`
+- `user-manual.docx` and `user-manual.pdf`
 
 ## Format / Formato
 

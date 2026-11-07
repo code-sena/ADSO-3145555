@@ -4,9 +4,16 @@
 
 ## Required content / Contenido requerido
 
-- [ ] Test plan / Plan de pruebas
-- [ ] Test cases / Casos de prueba
-- [ ] Test results with evidence / Resultados de las pruebas con evidencia
+- [x] Test plan / Plan de pruebas
+- [x] Test cases / Casos de prueba
+- [x] Test results with evidence / Resultados de las pruebas con evidencia
+
+The report preserves the documented evidence cut-off and explicitly states that tests were not re-run during document preparation. Open items remain identified as pending.
+
+## Delivered files / Archivos entregados
+
+- `test-documentation.docx` — editable source / fuente editable
+- `test-documentation.pdf` — PDF export / exportación PDF
 
 ## Format / Formato
 
