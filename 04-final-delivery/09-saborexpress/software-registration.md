@@ -38,7 +38,7 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | EDDIER YAIR LIBERATO CUENCA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | JHON WILLIAN CORREDOR ARAUJO | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | ANDRES MORENO COLLAZOS | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| YERSON STIVEN CUELLAR RUBIANO | CC | 1075225114 | 3145555 | |
+| YERSON STIVEN CUELLAR RUBIANO | CC | 1075225114 | 3145555 | Desarrollo backend, web y movil; modelado de datos, pruebas y documentacion |
 
 ## 3. Producer / Productor (art. 5, num. 3)
 
@@ -61,13 +61,13 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | Field / Campo | Value / Valor |
 |---|---|
 | Title / Título de la obra | SaborExpress |
-| Year of creation / Año de creación | |
+| Year of creation / Año de creación | 2026 (revisar frente al inicio real del proyecto) |
 | Country of origin / País de origen | Colombia |
 | Version registered / Versión a registrar | `final-delivery-2026` |
-| Short description of its functions / Breve descripción de sus funciones | |
-| What sets it apart from similar software / Qué la diferencia de obras similares |  |
-| Programming languages / Lenguajes | |
-| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | |
+| Short description of its functions / Breve descripción de sus funciones | Plataforma web y movil para administrar sedes, usuarios, roles, catalogos, mesas, pedidos, cocina, caja, pagos, facturas, entregas y notificaciones de un restaurante. |
+| What sets it apart from similar software / Qué la diferencia de obras similares | Integracion de procesos de restaurante en web y movil, autorizacion por rol y sede, eventos en tiempo real con SignalR y pagos con Wompi (sujetos a validacion operativa). |
+| Programming languages / Lenguajes | C#, TypeScript y JavaScript; SQL para persistencia PostgreSQL. |
+| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | Aplicacion web y aplicacion movil (Android/Expo React Native). No se declara aplicacion de escritorio. |
 
 ## 6. Declarations / Declaraciones (art. 4 y art. 5, num. 5 y 6)
 

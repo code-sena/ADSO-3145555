@@ -1,0 +1,11 @@
+digraph G { graph [fontname="DejaVu Sans", bgcolor="white", pad="0.28", ranksep="0.64", nodesep="0.44", splines=polyline]; node [shape=box, style="rounded,filled", fillcolor="#EAF3F5", color="#9AB8BF", fontname="DejaVu Sans", fontsize=11, fontcolor="#143247", margin="0.16,0.12"]; edge [color="#567A86", fontname="DejaVu Sans", fontsize=9, fontcolor="#314959", arrowsize=.7]; rankdir=LR; label="SaborExpress | Modelo de datos conceptual (no es DDL exacto)"; labelloc=t; fontsize=16; fontname="DejaVu Sans"; node[shape=record,fillcolor="#EDF4F6",fontsize=10];
+BR[label="{Sedes | id (PK) | configuración, estado}"];
+USER[label="{Usuarios y roles | user_id (PK) | permisos}"];
+EMP[label="{Empleados | employee_id (PK) | branch_id (FK)}"];
+CAT[label="{Categorías | id (PK) | nombre}"];
+PRO[label="{Productos | id (PK) | category_id (FK) | precio}"];
+ORD[label="{Pedidos | id (PK) | branch_id (FK) | cliente/mesa | estado}",fillcolor="#D8F1E8"];
+DET[label="{Detalles pedido | id (PK) | order_id (FK) | product_id (FK) | cantidad}"];
+PAY[label="{Pagos | id (PK) | order_id (FK) | referencia/estado}"];
+DEL[label="{Entregas | id (PK) | order_id (FK) | repartidor/estado}"];
+BR->EMP[label="1:N"]; BR->ORD[label="1:N"]; USER->EMP[label="roles"]; CAT->PRO[label="1:N"]; ORD->DET[label="1:N"]; PRO->DET[label="1:N"]; ORD->PAY[label="1:N"]; ORD->DEL[label="0:N"]; }

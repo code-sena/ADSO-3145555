@@ -1,16 +1,8 @@
-# Requirements specification / Especificación de requisitos
+# requirements specification
 
-**Training project deliverable / Producto del proyecto formativo:** Informe de especificación de requisitos.
+**SaborExpress — ficha 3145555. Entregables documentales:**
+- [01_SaborExpress_Especificacion_de_Requisitos_SRS.pdf](01_SaborExpress_Especificacion_de_Requisitos_SRS.pdf) — version PDF
+- [01_SaborExpress_Especificacion_de_Requisitos_SRS.docx](01_SaborExpress_Especificacion_de_Requisitos_SRS.docx) — editable
+- [01_SaborExpress_Especificacion_de_Requisitos_SRS.md](01_SaborExpress_Especificacion_de_Requisitos_SRS.md) — fuente de texto
 
-## Required content / Contenido requerido
-
-- [ ] Requirements specification report / Informe de especificación de requisitos
-- [ ] Functional and non-functional requirements / Requisitos funcionales y no funcionales
-- [ ] User stories and prioritized backlog, if used / Historias de usuario y backlog priorizado, si se usaron
-
-## Format / Formato
-
-- Final version in PDF, plus the editable source when it exists. / Versión final en PDF y, si existe, el archivo fuente editable.
-- English file names, without spaces or accents: `requirements-specification.pdf`. / Nombres de archivo en inglés, sin espacios ni tildes.
-- Files over 50 MB go to Drive and are listed in the project `README.md`. / Los archivos de más de 50 MB van a Drive y se relacionan en el `README.md` del proyecto.
-- Do not add passwords, tokens, keys or real user data. / No incluya contraseñas, tokens, llaves ni datos reales de usuarios.
+Procedencia: repositorio original `yersonct/SaborExpressDocs`, carpeta `docs-SaborExpress`, rama `main`. La aprobacion y conformidad final requiere revision del integrante.

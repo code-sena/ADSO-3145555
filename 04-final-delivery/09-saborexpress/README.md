@@ -14,16 +14,16 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 | Process / Proceso | Completion of the technologist taught stage / Finalización de la etapa lectiva del tecnólogo |
 | Research seedbed / Semillero de investigación | Developers & Geeks |
 | Delivery version / Versión entregada | `final-delivery-2026` |
-| Delivery date / Fecha de entrega | |
-| Delivered by / Entregado por | |
+| Delivery date / Fecha de entrega | 2026-11-07 (preparacion documental; radicacion al crear el PR) |
+| Delivered by / Entregado por | Yerson Stiven Cuellar Rubiano (GitHub: yersonct) |
 
 ## Summary / Resumen
 
-- **Problem it solves / Problema que resuelve:**
-- **Target users / Usuarios:**
-- **Main features / Funciones principales:**
-- **Technology stack / Tecnologías:**
-- **Production URL / URL en producción:**
+- **Problem it solves / Problema que resuelve:** Centraliza procesos de mesas, pedidos, cocina, pagos y domicilios que suelen manejarse de forma dispersa en los restaurantes. Centraliza procesos de mesas, pedidos, cocina, pagos y domicilios que suelen manejarse de forma dispersa en los restaurantes. Centraliza procesos de mesas, pedidos, cocina, pagos y domicilios que suelen manejarse de forma dispersa en los restaurantes.
+- **Target users / Usuarios:** gerente, administrador, mesero, cajero, cocina, repartidor y cliente. gerente, administrador, mesero, cajero, cocina, repartidor y cliente. gerente, administrador, mesero, cajero, cocina, repartidor y cliente.
+- **Main features / Funciones principales:** gestion de sedes, catalogo, mesas, pedidos, cocina, caja, integracion de pago Wompi, facturacion, entregas, notificaciones y control por roles. gestion de sedes, catalogo, mesas, pedidos, cocina, caja, integracion de pago Wompi, facturacion, entregas, notificaciones y control por roles. gestion de sedes, catalogo, mesas, pedidos, cocina, caja, integracion de pago Wompi, facturacion, entregas, notificaciones y control por roles.
+- **Technology stack / Tecnologías:** API ASP.NET Core 8, Entity Framework Core y PostgreSQL (Neon); web Next.js, TypeScript; movil React Native/Expo; SignalR; despliegues Render y Vercel. API ASP.NET Core 8, Entity Framework Core y PostgreSQL (Neon); web Next.js, TypeScript; movil React Native/Expo; SignalR; despliegues Render y Vercel. API ASP.NET Core 8, Entity Framework Core y PostgreSQL (Neon); web Next.js, TypeScript; movil React Native/Expo; SignalR; despliegues Render y Vercel.
+- **Production URL / URL en producción:** https://sabor-express-web.vercel.app (web); https://saborexpressback.onrender.com (API, verificar disponibilidad el dia de la entrega). https://sabor-express-web.vercel.app (web); https://saborexpressback.onrender.com (API, verificar disponibilidad el dia de la entrega). https://sabor-express-web.vercel.app (web); https://saborexpressback.onrender.com (API, verificar disponibilidad el dia de la entrega).
 - **Demo credentials / Credenciales de prueba:** do not write real passwords here / no escriba contraseñas reales aquí
 
 ## Team members / Integrantes
@@ -34,7 +34,7 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role / Rol | Verified and authorized / Verificado y autorizado |
 |---|---|---|---|---|---|---|
-| YERSON STIVEN CUELLAR RUBIANO | CC | 1075225114 | 3145555 |  | | ☐ |
+| YERSON STIVEN CUELLAR RUBIANO | CC | 1075225114 | 3145555 | yersonct | Desarrollo backend, web y movil; pruebas y documentacion | ☐ |
 
 Data use authorization: by checking the box, the member confirms their data and authorizes publishing their name, document number and ficha in this public repository, for the software registration process (Ley 1581 de 2012). Anyone who does not authorize it tells the instructor before delivering.
 

@@ -1,16 +1,14 @@
-# Manuals / Manuales
+# manuals
 
-**Training project deliverable / Producto del proyecto formativo:** Manuales técnico, instalación y usuario final.
+**SaborExpress — ficha 3145555. Entregables documentales:**
+- [04_Manual_tecnico_SaborExpress.pdf](04_Manual_tecnico_SaborExpress.pdf) — version PDF
+- [04_Manual_tecnico_SaborExpress.docx](04_Manual_tecnico_SaborExpress.docx) — editable
+- [04_Manual_tecnico_SaborExpress.md](04_Manual_tecnico_SaborExpress.md) — fuente de texto
+- [05_Manual_de_instalacion_SaborExpress.pdf](05_Manual_de_instalacion_SaborExpress.pdf) — version PDF
+- [05_Manual_de_instalacion_SaborExpress.docx](05_Manual_de_instalacion_SaborExpress.docx) — editable
+- [05_Manual_de_instalacion_SaborExpress.md](05_Manual_de_instalacion_SaborExpress.md) — fuente de texto
+- [06_Manual_de_usuario_final_SaborExpress.pdf](06_Manual_de_usuario_final_SaborExpress.pdf) — version PDF
+- [06_Manual_de_usuario_final_SaborExpress.docx](06_Manual_de_usuario_final_SaborExpress.docx) — editable
+- [06_Manual_de_usuario_final_SaborExpress.md](06_Manual_de_usuario_final_SaborExpress.md) — fuente de texto
 
-## Required content / Contenido requerido
-
-- [ ] Technical manual / Manual técnico
-- [ ] Installation manual / Manual de instalación
-- [ ] End-user manual / Manual de usuario final
-
-## Format / Formato
-
-- Final version in PDF, plus the editable source when it exists. / Versión final en PDF y, si existe, el archivo fuente editable.
-- English file names, without spaces or accents: `requirements-specification.pdf`. / Nombres de archivo en inglés, sin espacios ni tildes.
-- Files over 50 MB go to Drive and are listed in the project `README.md`. / Los archivos de más de 50 MB van a Drive y se relacionan en el `README.md` del proyecto.
-- Do not add passwords, tokens, keys or real user data. / No incluya contraseñas, tokens, llaves ni datos reales de usuarios.
+Procedencia: repositorio original `yersonct/SaborExpressDocs`, carpeta `docs-SaborExpress`, rama `main`. La aprobacion y conformidad final requiere revision del integrante.
