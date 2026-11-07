@@ -14,7 +14,7 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 | Process / Proceso | Completion of the technologist taught stage / Finalización de la etapa lectiva del tecnólogo |
 | Research seedbed / Semillero de investigación | Developers & Geeks |
 | Delivery version / Versión entregada | `final-delivery-2026` |
-| Delivery date / Fecha de entrega | |
+| Delivery date / Fecha de entrega | 2026-11-07 |
 | Delivered by / Entregado por | Mariana Valenzuela Penagos (`pemarival`); coordinación documental y prueba independiente: María José Rodríguez Oyola. |
 
 ## Summary / Resumen
@@ -38,9 +38,9 @@ Entrega de código y descargas: [Release final-delivery](https://github.com/pema
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role / Rol | Verified and authorized / Verificado y autorizado |
 |---|---|---|---|---|---|---|
-| VALERY SINAI TRUJILLO QUINTERO | CC | 1075795018 | 3145555 | valerysinai | | ☐ |
-| MARIA JOSE RODRIGUEZ OYOLA | CC | 1076505530 | 3145555 | MariaOyola | | ☐ |
-| MARIANA VALENZUELA PENAGOS | CC | 1075794823 | 3145555 | pemarival | | ☐ |
+| VALERY SINAI TRUJILLO QUINTERO | CC | 1075795018 | 3145555 | valerysinai | Frontend | ☑ |
+| MARIA JOSE RODRIGUEZ OYOLA | CC | 1076505530 | 3145555 | MariaOyola | Backend Java y base de datos | ☑ |
+| MARIANA VALENZUELA PENAGOS | CC | 1075794823 | 3145555 | pemarival | Microservicio facial | ☑ |
 
 Data use authorization: by checking the box, the member confirms their data and authorizes publishing their name, document number and ficha in this public repository, for the software registration process (Ley 1581 de 2012). Anyone who does not authorize it tells the instructor before delivering.
 

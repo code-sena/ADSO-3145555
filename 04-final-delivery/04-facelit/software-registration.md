@@ -38,9 +38,9 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | EDDIER YAIR LIBERATO CUENCA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | JHON WILLIAN CORREDOR ARAUJO | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | ANDRES MORENO COLLAZOS | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| VALERY SINAI TRUJILLO QUINTERO | CC | 1075795018 | 3145555 | |
-| MARIA JOSE RODRIGUEZ OYOLA | CC | 1076505530 | 3145555 | |
-| MARIANA VALENZUELA PENAGOS | CC | 1075794823 | 3145555 | |
+| VALERY SINAI TRUJILLO QUINTERO | CC | 1075795018 | 3145555 | Frontend: pantalla de acceso, landing y guía descargable; documentación final; colaboración en integración y servicio facial. |
+| MARIA JOSE RODRIGUEZ OYOLA | CC | 1076505530 | 3145555 | Backend Java y base de datos: autorización de asistencia, inicialización de coordinación, persistencia y pruebas/CI de migraciones; colaboración en cliente y servicio facial. |
+| MARIANA VALENZUELA PENAGOS | CC | 1075794823 | 3145555 | Microservicio facial: MediaPipe y retos; cambios de ambientes, esquema y migraciones, backend y material documental. |
 
 ## 3. Producer / Productor (art. 5, num. 3)
 
@@ -75,11 +75,11 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 
 | Declaration / Declaración | Option / Opción |
 |---|---|
-| Origin / Origen | ☐ Original ☐ Derived work / Obra derivada |
-| If derived, base work / Si es derivada, obra de base | |
-| Type of work / Clase de obra | ☐ Individual ☐ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
-| Publication / Publicación | ☐ Unpublished / Inédita ☐ Published / Publicada |
-| If published, date and place / Si está publicada, fecha y lugar | |
+| Origin / Origen | ☑ Original ☐ Derived work / Obra derivada |
+| If derived, base work / Si es derivada, obra de base | No aplica: obra original del equipo. |
+| Type of work / Clase de obra | ☐ Individual ☑ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
+| Publication / Publicación | ☐ Unpublished / Inédita ☑ Published / Publicada |
+| If published, date and place / Si está publicada, fecha y lugar | 2026-11-07, repositorios públicos de GitHub del proyecto y repositorio documental de la entrega. |
 
 Software is treated as unpublished unless the rights holder states otherwise (art. 4). A public repository may count as publication: the team records it here, and the Centro decides the final declaration.
 

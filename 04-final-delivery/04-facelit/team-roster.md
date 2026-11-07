@@ -27,6 +27,6 @@ Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, Q
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role in the project / Rol en el proyecto | Author / Autor |
 |---|---|---|---|---|---|---|
-| VALERY SINAI TRUJILLO QUINTERO | CC | 1075795018 | 3145555 | valerysinai | | Yes / Sí |
-| MARIA JOSE RODRIGUEZ OYOLA | CC | 1076505530 | 3145555 | MariaOyola | | Yes / Sí |
-| MARIANA VALENZUELA PENAGOS | CC | 1075794823 | 3145555 | pemarival | | Yes / Sí |
+| VALERY SINAI TRUJILLO QUINTERO | CC | 1075795018 | 3145555 | valerysinai | Frontend | Yes / Sí |
+| MARIA JOSE RODRIGUEZ OYOLA | CC | 1076505530 | 3145555 | MariaOyola | Backend Java y base de datos | Yes / Sí |
+| MARIANA VALENZUELA PENAGOS | CC | 1075794823 | 3145555 | pemarival | Microservicio facial | Yes / Sí |
