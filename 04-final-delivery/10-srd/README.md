@@ -32,7 +32,7 @@ El sistema está diseñado con arquitectura de microservicios y enfoque multi-te
 
 | Nombre completo | Tipo | Documento | Ficha | GitHub | Rol | Datos verificados y autorizados |
 |---|---|---|---|---|---|---|
-| JUAN SEBASTIAN GONZALEZ HORTA | CC | 1077227978 | 3145555 | jsgh1 | Desarrollo full-stack, infraestructura, pruebas y documentación | ☐ |
+| JUAN SEBASTIAN GONZALEZ HORTA | CC | 1077227978 | 3145555 | jsgh1 | Desarrollo full-stack, infraestructura, pruebas y documentación | ☒ |
 
 El registro de instructores, áreas y contribuciones está en [team-roster.md](team-roster.md).
 
