@@ -17,8 +17,12 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 | Delivery date / Fecha de entrega | Noviembre 2026 |
 | Delivered by / Entregado por | Laura Vanessa Pérez Perdomo, Danna Valentina Barrios Penagos, Emily Sharith Amézquita Saavedra |
 | Production URL / URL de producción Web | [https://drivique.tech](https://drivique.tech) |
-| Mobile PWA URL / URL Móvil | [https://app.drivique.tech](https://app.drivique.tech) |
+| Mobile PWA URL / URL Móvil | [https://app.drivique.tech/onboarding](https://app.drivique.tech/onboarding) |
 | API URL / URL de API Backend | [https://drivique.tech/api/v1](https://drivique.tech/api/v1) |
+| Figma — Diseño App Móvil | [drivique — Diseño App en Figma](https://www.figma.com/design/YAosTPAwhs1kzLwR0hVDFF/drivique?node-id=2-15&t=p1nyTX6R0C9D8AWb-1) |
+| Figma — Prototipo Interactivo App Móvil | [drivique — Prototipo Interactivo App](https://www.figma.com/proto/YAosTPAwhs1kzLwR0hVDFF/drivique?node-id=437-253&p=f&t=p1nyTX6R0C9D8AWb-0&scaling=scale-down&content-scaling=fixed&page-id=2%3A15&starting-point-node-id=437%3A253&show-proto-sidebar=1) |
+| Figma — Diseño Plataforma Web | [drivique — Diseño Web en Figma](https://www.figma.com/design/YAosTPAwhs1kzLwR0hVDFF/drivique?node-id=381-2&p=f&t=p1nyTX6R0C9D8AWb-0) |
+| Figma — Prototipo Interactivo Web | [drivique — Prototipo Interactivo Web](https://www.figma.com/proto/YAosTPAwhs1kzLwR0hVDFF/drivique?node-id=411-2&p=f&t=p1nyTX6R0C9D8AWb-0&scaling=scale-down&content-scaling=fixed&page-id=381%3A2) |
 | Video 1 — Pitch Publicitario (1–2 min) | [Ver Video 1 en Google Drive](https://drive.google.com/file/d/1Xp9Xvw5L0WXruAmh-Xp4TWbKdTnGoi7j/view?usp=sharing) |
 | Video 2 — Tutorial Corto de Uso (`DRIVIQUE.mp4`, 3–5 min) | [Ver Video 2 en Google Drive](https://drive.google.com/file/d/1eRwp5Ljfp8rNEf-WkiWG1_5aG3CYTDJm/view) |
 | Google Drive Folder / Carpeta Drive Oficial | [Documentos finales del Proyecto — Google Drive](https://drive.google.com/drive/u/0/folders/1JlSajKFWAOp61nfC0iB8kkIeRJ__CIWh) |
