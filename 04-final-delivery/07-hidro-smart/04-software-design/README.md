@@ -13,6 +13,7 @@
 
 - `software-design.docx` and `software-design.pdf` — design document / documento de diseño
 - `data-dictionary.docx` and `data-dictionary.pdf` — supporting data-model artifact / soporte del modelo de datos
+- [`HidroSmart.fig`](HidroSmart.fig) — editable Figma design source / archivo fuente editable del diseño en Figma
 - `ui-wireframe.pdf` — supporting interface wireframe artifact / soporte de wireframes de interfaz
 - `diagrams/` — editable Drawio sources and Markdown descriptions / fuentes editables Drawio y descripciones Markdown
 - Additional Markdown sources — architecture, schema inventory, entity relationship and wireframe / fuentes Markdown adicionales de arquitectura, inventario de esquema, entidad-relación y wireframe
