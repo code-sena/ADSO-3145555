@@ -27,4 +27,4 @@ Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, Q
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role in the project / Rol en el proyecto | Author / Autor |
 |---|---|---|---|---|---|---|
-| FREINIER STEVEN CARDONA PEREZ | TI | 1077726586 | 3145555 | FreinierCardona | | Yes / Sí |
+| FREINIER STEVEN CARDONA PEREZ | TI | 1077726586 | 3145555 | FreinierCardona | Desarrollo de backend y frontend, base de datos, pruebas y documentación | Yes / Sí |
