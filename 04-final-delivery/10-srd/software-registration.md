@@ -1,8 +1,6 @@
 # Software registration: SRD / Registro de software: SRD
 
-Fill in every empty field. It follows Decreto 1360 de 1989.
-
-Llene todos los campos vacíos. Sigue el Decreto 1360 de 1989.
+Información del proyecto para la solicitud de registro de software ante la Dirección Nacional de Derecho de Autor, según el Decreto 1360 de 1989.
 
 ## Institutional context / Marco institucional
 
@@ -17,8 +15,8 @@ Llene todos los campos vacíos. Sigue el Decreto 1360 de 1989.
 
 | Field / Campo | Value / Valor |
 |---|---|
-| Full name / Nombre |  |
-| ID document / Identificación | |
+| Full name / Nombre | JUAN SEBASTIAN GONZALEZ HORTA |
+| ID document / Identificación | Ver identificación en la sección 2 |
 | Acts on own behalf or as representative / Actúa en nombre propio o como representante | ☐ Own behalf / Nombre propio ☐ Representative / Representante |
 | Proof of representation / Prueba de representación, si aplica | |
 
@@ -38,7 +36,7 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | EDDIER YAIR LIBERATO CUENCA | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | JHON WILLIAN CORREDOR ARAUJO | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
 | ANDRES MORENO COLLAZOS | | Kept privately / En custodia | | Instructor: see `team-roster.md` / ver `team-roster.md` |
-| JUAN SEBASTIAN GONZALEZ HORTA | CC | 1077227978 | 3145555 | |
+| JUAN SEBASTIAN GONZALEZ HORTA | CC | 1077227978 | 3145555 | Desarrollo full-stack, arquitectura de microservicios, base de datos, infraestructura, pruebas y documentación |
 
 ## 3. Producer / Productor (art. 5, num. 3)
 
@@ -61,23 +59,23 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 | Field / Campo | Value / Valor |
 |---|---|
 | Title / Título de la obra | SRD |
-| Year of creation / Año de creación | |
+| Year of creation / Año de creación | 2026 |
 | Country of origin / País de origen | Colombia |
 | Version registered / Versión a registrar | `final-delivery-2026` |
-| Short description of its functions / Breve descripción de sus funciones | |
-| What sets it apart from similar software / Qué la diferencia de obras similares |  |
-| Programming languages / Lenguajes | |
-| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | |
+| Short description of its functions / Breve descripción de sus funciones | SRD es una plataforma multi-tenant orientada a Juntas de Acción Comunal: gestión de identidad y roles, registros, archivos, configuración, calendario, notificaciones, tesorería, inventario, chat y auditoría. |
+| What sets it apart from similar software / Qué la diferencia de obras similares | Enfoque a la operación de JAC, segregación lógica por junta, dominios de microservicios y clientes web, móvil y escritorio.  |
+| Programming languages / Lenguajes | PHP, TypeScript, JavaScript y SQL. |
+| Type: web, mobile, desktop, device / Tipo: web, móvil, escritorio, dispositivo | Web (React), móvil (React Native/Expo) y escritorio Windows (Electron). |
 
 ## 6. Declarations / Declaraciones (art. 4 y art. 5, num. 5 y 6)
 
 | Declaration / Declaración | Option / Opción |
 |---|---|
-| Origin / Origen | ☐ Original ☐ Derived work / Obra derivada |
+| Origin / Origen | ☒ Original ☐ Derived work / Obra derivada |
 | If derived, base work / Si es derivada, obra de base | |
-| Type of work / Clase de obra | ☐ Individual ☐ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
-| Publication / Publicación | ☐ Unpublished / Inédita ☐ Published / Publicada |
-| If published, date and place / Si está publicada, fecha y lugar | |
+| Type of work / Clase de obra | ☒ Individual ☐ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
+| Publication / Publicación | ☒ Unpublished / Inédita ☐ Published / Publicada |
+| If published, date and place / Si está publicada, fecha y lugar | Not applicable for the unpublished-work declaration; the training center confirms the final legal classification. / No aplica para la declaración de obra inédita; el centro de formación confirma la clasificación legal final. |
 
 Software is treated as unpublished unless the rights holder states otherwise (art. 4). A public repository may count as publication: the team records it here, and the Centro decides the final declaration.
 
@@ -89,9 +87,9 @@ At least one is required. Attach all three. / Se exige al menos uno. Adjunte los
 
 | Element / Elemento | Where it is / Dónde está | Ready / Listo |
 |---|---|---|
-| Computer program / Programa de computador | ZIP files `final-delivery-2026` listed in `code-tag/README.md` / ZIP relacionados en `code-tag/README.md` | ☐ |
-| Program description / Descripción de programa | `02-software-analysis/` and `04-software-design/` | ☐ |
-| Auxiliary material / Material auxiliar | `08-manuals/` | ☐ |
+| Computer program / Programa de computador | [Archivos ZIP publicados en el Release final-delivery](https://github.com/jsgh1/JuanSebastianGonzalez/releases/tag/final-delivery); repositorios y hashes documentados en `code-tag/README.md` | Incluido |
+| Program description / Descripción de programa | `02-software-analysis/` y `04-software-design/`, ambos con PDF y Word | Incluido |
+| Auxiliary material / Material auxiliar | `08-manuals/` contiene manual técnico, de instalación y de usuario en PDF y DOCX | Incluido |
 
 ## 8. Third-party components / Componentes de terceros
 
@@ -101,7 +99,9 @@ Relacione código, librerías, modelos, imágenes o datos que el equipo no creó
 
 | Component / Componente | Author or source / Autor o fuente | License / Licencia | Where it is used / Dónde se usa |
 |---|---|---|---|
-| | | | |
+| Laravel | Proyecto Laravel | Licencia declarada por el proyecto original | Backend de microservicios y API Gateway |
+| React, React Native, Expo y Electron | Proyectos respectivos | Licencias declaradas por los proyectos originales | Clientes web, móvil y escritorio |
+| MySQL, Docker, Nginx, ClamAV y Reverb | Proyectos respectivos | Licencias y condiciones de distribución de cada proyecto | Persistencia, infraestructura, proxy, antivirus y tiempo real |
 
 ## 9. Private data / Datos privados
 
