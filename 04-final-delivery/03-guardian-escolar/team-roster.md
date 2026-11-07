@@ -12,21 +12,25 @@ Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, Q
 
 | Full name / Nombre completo | Role / Rol | Area / Área | Contribution / Aporte | Author / Autor |
 |---|---|---|---|---|
-| JESUS ARIEL GONZALEZ BONILLA | Instructor | Desarrollo, Diseño, Evaluación de requisitos, Inducción, Investigación | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| CARLOS FABIAN MARTINEZ MORA | Instructor | Inducción | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| CARLOS JULIO CADENA SARASTY | Instructor | Desarrollo, Diseño, Establecimiento de requisitos, Evaluación de requisitos, Herramientas informáticas, Inducción | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| JAVIER HUMBERTO PINTO DIAZ | Instructor | Evaluación de requisitos, Herramientas informáticas | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| KAROL DANIELA CORREA TRUJILLO | Instructor | Establecimiento de requisitos, Evaluación de requisitos, Inducción | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| JOSE DE JESUS MOTTA VARGAS | Instructor | Desarrollo, Establecimiento de requisitos, Evaluación de requisitos, Herramientas informáticas, Propuesta técnica | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| FERNELLY CARVAJAL SILVA | Instructor | To confirm / Por confirmar | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| EDDIER YAIR LIBERATO CUENCA | Instructor | To confirm / Por confirmar | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| JHON WILLIAN CORREDOR ARAUJO | Instructor | Diseño, Establecimiento de requisitos, Evaluación de requisitos | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| ANDRES MORENO COLLAZOS | Instructor | Diseño, Evaluación de requisitos, Inducción | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
+| JESUS ARIEL GONZALEZ BONILLA | Instructor | Desarrollo, Diseño, Evaluación de requisitos, Inducción, Investigación | ☑ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
+| CARLOS FABIAN MARTINEZ MORA | Instructor | Inducción | ☐ Direct / Directo ☑ Indirect / Indirecto | Yes / Sí |
+| CARLOS JULIO CADENA SARASTY | Instructor | Desarrollo, Diseño, Establecimiento de requisitos, Evaluación de requisitos, Herramientas informáticas, Inducción | ☑ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
+| JAVIER HUMBERTO PINTO DIAZ | Instructor | Evaluación de requisitos, Herramientas informáticas | ☐ Direct / Directo ☑ Indirect / Indirecto | Yes / Sí |
+| KAROL DANIELA CORREA TRUJILLO | Instructor | Establecimiento de requisitos, Evaluación de requisitos, Inducción | ☐ Direct / Directo ☑ Indirect / Indirecto | Yes / Sí |
+| JOSE DE JESUS MOTTA VARGAS | Instructor | Desarrollo, Establecimiento de requisitos, Evaluación de requisitos, Herramientas informáticas, Propuesta técnica | ☑ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
+| FERNELLY CARVAJAL SILVA | Instructor | To confirm / Por confirmar | ☐ Direct / Directo ☑ Indirect / Indirecto | Yes / Sí |
+| EDDIER YAIR LIBERATO CUENCA | Instructor | To confirm / Por confirmar | ☐ Direct / Directo ☑ Indirect / Indirecto | Yes / Sí |
+| JHON WILLIAN CORREDOR ARAUJO | Instructor | Diseño, Establecimiento de requisitos, Evaluación de requisitos | ☑ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
+| ANDRES MORENO COLLAZOS | Instructor | Diseño, Evaluación de requisitos, Inducción | ☐ Direct / Directo ☑ Indirect / Indirecto | Yes / Sí |
 
 ## Apprentices / Aprendices
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role in the project / Rol en el proyecto | Author / Autor |
 |---|---|---|---|---|---|---|
-| KEVIN ANDREY CULMA GOMEZ | TI | 1130024165 | 3145555 | Andrey31072 | | Yes / Sí |
-| NICOLAS ESTID RUIZ SASTOQUE | CC | 1029144515 | 3145555 | Nicolasruiz918 | | Yes / Sí |
-| JHON CAMILO SUAZA SANCHEZ | CC | 1077230121 | 3145555 | JhonCamiloSuaza | | Yes / Sí |
+| KEVIN ANDREY CULMA GOMEZ | TI | 1130024165 | 3145555 | Andrey31072 | Documentation, QA and frontend support / Documentación, QA y apoyo frontend | Yes / Sí |
+| NICOLAS ESTID RUIZ SASTOQUE | CC | 1029144515 | 3145555 | Nicolasruiz918 | Backend, frontend, database, infrastructure, integration and release coordination / Backend, frontend, base de datos, infraestructura, integración y coordinación de entregas | Yes / Sí |
+| JHON CAMILO SUAZA SANCHEZ | CC | 1077230121 | 3145555 | JhonCamiloSuaza | Frontend, tracking and user interface / Frontend, seguimiento e interfaz de usuario | Yes / Sí |
+
+The roles above summarize the repository contributions visible in the project history and must be confirmed by the corresponding apprentice before the final submission.
+
+Los roles anteriores resumen los aportes visibles en el historial del proyecto y deben ser confirmados por cada aprendiz antes de la entrega final.
