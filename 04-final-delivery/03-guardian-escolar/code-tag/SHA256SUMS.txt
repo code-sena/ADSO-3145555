@@ -1,1 +1,11 @@
 # sha256  file / archivo
+80d5ac6e922fc07665cf561c0fabbd5b6a510c6dda9c99dcff06948b0fa0c660  Backend-Guardian-Escolar-final-delivery-2026-main.zip
+ab90045a7dfdd87df0c4d351aefdbcaa6dd485a63da2628c750975d9878b149e  Backend-Guardian-Escolar-full-export.zip
+ec6fde87f5f5ebefb1a9c34dc381307e1f220cbc4d957a63c2e357561e6f7d69  DB-Structure-Guardian-Escolar-final-delivery-2026-main.zip
+1893ee6408983330dc4a5c36bdf64d90b5b0ba5a16be96c337adec1d79fc3ff5  DB-Structure-Guardian-Escolar-full-export.zip
+6c9643da9a94517f9641e85ab8e065d2e2a9e88078c920e0f2e7ed78a0d2f191  Docker-Infra-Guardian-Escolar-final-delivery-2026-main.zip
+d8e1ff140d02e9f8503b71d63bc5ddca7f73c8f2bd459ada9ac706741950c42d  Docker-Infra-Guardian-Escolar-full-export.zip
+2cdaf2090dcd4eb40da0aa0cc82c545e7c462c7430230f2f6b286859881da988  Docs-Guardian-Escolar-final-delivery-2026-main.zip
+3758e4447989524ed37b4737684f2f088d82efa69872fe9525bd92559e512cb2  Docs-Guardian-Escolar-full-export.zip
+933dc012b8e2c5d31781f1990460771d41b45d0afc0642482dc0a9f80f225f9f  Fronted-GuardianEscolar--final-delivery-2026-main.zip
+909aabc00a5ef78c11c1a2f984a09e6b8b0ebe2c2996dd7008477d8e2c87153c  Fronted-GuardianEscolar--full-export.zip
