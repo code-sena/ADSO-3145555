@@ -26,7 +26,7 @@ El sistema está diseñado con arquitectura de microservicios y enfoque multi-te
 
 **Aplicaciones:** web, móvil y escritorio para Windows.
 
-**Enlace del sistema:** [SRD — Acceso web](https://srv2093837.hstgr.cloud/login).
+**Enlace del sistema:** [SRD — Acceso web](https://srd-jsgh1.duckdns.org/).
 
 ## Integrante
 
