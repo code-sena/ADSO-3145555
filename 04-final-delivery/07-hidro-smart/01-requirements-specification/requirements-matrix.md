@@ -26,7 +26,7 @@ El SRS convertido conserva requisitos y antecedentes de su documento académico.
 | Mejora | improvement-actions/ | Borrador presente | Confirmar responsables, estado, evidencia y fecha de cierre de acciones. |
 | Manuales | manuals/ | Manual técnico, instalación y usuario presentes | Validar pasos, pantallas y funciones contra el artefacto final. |
 | Artículo | project-article/ | Borrador presente | Comprobar resultados y referencias; no afirmar métricas sin evidencia. |
-| Videos | `10-videos/README.md` | Pitch y tutorial registrados; ambos enlaces Drive responden HTTP 200 sin autenticación | Confirmar duración y contenido mediante revisión visual. |
+| Videos | `10-videos/README.md` | Pitch público 01:40; tutorial público 28:20; ambos enlaces Drive responden HTTP 200 sin autenticación | Reemplazar el tutorial por una versión de 03:00 a 05:00 y verificar visualmente el contenido de ambos videos. |
 | Código y trazabilidad | `code-tag/README.md`, `code-tag/SHA256SUMS.txt` | Seis repositorios, tags, 12 ZIP, Release y SHA-256 verificados | Mantener los enlaces públicos y conservar la trazabilidad durante la revisión. |
 
 ## 3. Trazabilidad funcional
