@@ -10,10 +10,11 @@ If one is missing, add a row. If one is empty or no longer used, write that in t
 
 Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo en la columna del commit. La visibilidad indicada se revisó el 2026-11-04.
 
-| Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
-|---|---|---|---|---|---|---|
-| Backend | [STIVENPM/backend](https://github.com/STIVENPM/backend) | Public / Público | **Add / Agregar** | | | |
-| Web frontend | [Santiag077127/Frontend-lavarapido](https://github.com/Santiag077127/Frontend-lavarapido) | Public / Público | **Add / Agregar** | | | |
+| Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Branch / Rama | Tag | Commit of tag / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
+|---|---|---|---|---|---|---|---|---|
+| Backend | [STIVENPM/backend](https://github.com/STIVENPM/backend) | Public / Público | **Add / Agregar** | `main` | `final-delivery-2026` | `ca87189c4832df4b48c30af1d29901a92dd4f80c` | `backend-final-delivery-2026-main.zip` — [Download / Descargar](https://github.com/Santiag077127/ADSO-3145555/releases/download/final-delivery/backend-final-delivery-2026-main.zip) | `backend-full-export.zip` — [Download / Descargar](https://github.com/Santiag077127/ADSO-3145555/releases/download/final-delivery/backend-full-export.zip) |
+| Web frontend | [Santiag077127/Frontend-lavarapido](https://github.com/Santiag077127/Frontend-lavarapido) | Public / Público | **Add / Agregar** | `main` | `final-delivery-2026` | `c0aabf75afb3e3b55c9ae5ea34095424700d8838` | `Frontend-lavarapido-final-delivery-2026-main.zip` — [Download / Descargar](https://github.com/Santiag077127/ADSO-3145555/releases/download/final-delivery/Frontend-lavarapido-final-delivery-2026-main.zip) | `Frontend-lavarapido-full-export.zip` — [Download / Descargar](https://github.com/Santiag077127/ADSO-3145555/releases/download/final-delivery/Frontend-lavarapido-full-export.zip) |
+| Database / Base de datos | [Santiag077127/lavarapido-base-datos](https://github.com/Santiag077127/lavarapido-base-datos) | Public / Público | **Add / Agregar** | `main` | `final-delivery-2026` | `e8f64dd0a3d6ad522bf9429bfe2ca89321b18ea7` | `lavarapido-base-datos-final-delivery-2026-main.zip` — [Download / Descargar](https://github.com/Santiag077127/ADSO-3145555/releases/download/final-delivery/lavarapido-base-datos-final-delivery-2026-main.zip) | `lavarapido-base-datos-full-export.zip` — [Download / Descargar](https://github.com/Santiag077127/ADSO-3145555/releases/download/final-delivery/lavarapido-base-datos-full-export.zip) |
 
 Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
 
@@ -36,6 +37,13 @@ The ZIP files do not go in this folder. They are attached to a GitHub Release in
 
 Los ZIP no van en esta carpeta. Se adjuntan a un Release de GitHub llamado `final-delivery` en el fork de quien entrega, y se enlazan en la tabla de arriba.
 
+The `final-delivery` Release is published. The six ZIP files are attached there and linked in the table above. / El Release `final-delivery` está publicado. Los seis archivos ZIP están adjuntos allí y enlazados en la tabla anterior.
+
 ## Integrity / Integridad
 
 Copy the SHA-256 of every ZIP into [`SHA256SUMS.txt`](SHA256SUMS.txt). / Copie el SHA-256 de cada ZIP en ese archivo.
+
+## Publication blockers / Bloqueos de publicación
+
+- Backend: the team reported a potentially active credential in repository history. Review and rotate it before publication; no credential value is included here. / Backend: el equipo reportó una credencial potencialmente activa en el historial. Revísela y rótela antes de publicar; aquí no se incluye su valor.
+- Database: the provenance of some seed data has not been confirmed. Verify its source and publication authorization before delivery. / Base de datos: no se ha confirmado la procedencia de algunos datos semilla. Verifique su fuente y autorización de publicación antes de entregar.

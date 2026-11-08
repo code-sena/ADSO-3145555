@@ -1,1 +1,9 @@
 # sha256  file / archivo
+# Hashes supplied by the team; ZIP files were not found locally and these values are pending direct validation.
+# Hashes proporcionados por el equipo; los ZIP no se encontraron localmente y estos valores están pendientes de validación directa.
+35561F2A090FC1A01EC8414F835B2DBBB0D6A956CE94AFE366F15937AFD19964  backend-final-delivery-2026-main.zip
+6F95D3246976D4ADD9EBDE3EA09F646D6125ED8EC7B5935EEFE6BA54E2A7215D  backend-full-export.zip
+A9FAC481C031FF75B4EB23174C4A758A6658791BDEA87422E9E79D90D54EA2B1  Frontend-lavarapido-final-delivery-2026-main.zip
+A74C049E525348897F0EC2E29E8DF207C8F5F891E0A726AD4550E1EB28785285  Frontend-lavarapido-full-export.zip
+F1AB8CA9AD0BE7D2AC61209C0F16BE19C2E8EA9163DB83986131FD9E067A155D  lavarapido-base-datos-final-delivery-2026-main.zip
+89375EC57351176547A849EA9495932C966599F48E43A5F9C94FBA9CEA7AA401  lavarapido-base-datos-full-export.zip
