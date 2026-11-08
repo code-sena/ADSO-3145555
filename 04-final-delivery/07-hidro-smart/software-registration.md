@@ -46,6 +46,8 @@ Los instructores enumerados en `team-roster.md` se mantienen como personas relac
 | Titular de los derechos patrimoniales | Declaración del equipo: los tres aprendices son titulares conjuntos. Esta declaración queda condicionada a verificar que no exista encargo, contrato o regla institucional del SENA que asigne los derechos patrimoniales a otra entidad. |
 | Transferencia de derechos             | El equipo no declara transferencia. Antes de presentar, verificar el contrato o instrumento formativo aplicable; no adjuntar una cesión inexistente. |
 
+**Contexto informado por el equipo:** HidroSmart fue desarrollado como proyecto formativo del SENA para evidenciar y aprobar RAPS técnicos. El instructor aportó la idea general de los proyectos de la cohorte. No se ha aportado un contrato de obra por encargo, cesión de derechos, acta de proyecto SENNOVA/semillero ni documento que determine una titularidad patrimonial distinta; por eso este archivo conserva la declaración del equipo como hipótesis de titularidad y deja la confirmación institucional pendiente.
+
 ## 5. Datos de la obra
 
 | Campo | Valor confirmado | Estado |

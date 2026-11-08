@@ -24,6 +24,6 @@ Los tags de los seis repositorios de componentes son ancestros de sus ramas remo
 ## Cierres externos pendientes
 
 - Aportar evidencia de producción, correo, restauración de base de datos, MQTT y prueba física del ESP32.
-- Confirmar en el trámite externo el productor y la titularidad declarados por el equipo, revisar si el instrumento formativo del SENA cambia los derechos patrimoniales, y confirmar si el instructor aportó alguna expresión original; la autoría y los aportes de los tres aprendices ya fueron confirmados por el equipo.
+- Confirmar en el trámite externo el productor y la titularidad declarados por el equipo. HidroSmart fue un proyecto formativo para evidenciar RAPS técnicos; falta verificar si fue independiente, si usó recursos institucionales o si quedó bajo un proyecto/semillero/encargo del SENA. La idea general del instructor está documentada, pero falta confirmar si aportó alguna expresión original; la autoría y los aportes de los tres aprendices ya fueron confirmados por el equipo.
 - Completar la revisión de secretos y datos personales en los adjuntos, y conservar la aprobación del instructor en el Pull Request.
 
