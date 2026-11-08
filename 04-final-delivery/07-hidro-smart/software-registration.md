@@ -42,11 +42,11 @@ Los instructores enumerados en `team-roster.md` se mantienen como personas relac
 
 | Campo                                 | Estado actual                                                                                                                                                                           |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Productor o productores               | Declaración del equipo: José Alejandro Montealegre, José David Amaya y Emerson Calet coordinaron y desarrollaron conjuntamente HidroSmart. Confirmar esta calidad en el trámite y en los soportes adjuntos. |
-| Titular de los derechos patrimoniales | Declaración del equipo: los tres aprendices son titulares conjuntos. Esta declaración queda condicionada a verificar que no exista encargo, contrato o regla institucional del SENA que asigne los derechos patrimoniales a otra entidad. |
+| Productor o productores               | Declaración del equipo: José Alejandro Montealegre, José David Amaya y Emerson Calet coordinaron y desarrollaron conjuntamente HidroSmart. Confirmar esta calidad en el trámite y en los soportes adjuntos, junto con el posible reconocimiento institucional del SENA. |
+| Titular de los derechos patrimoniales | El equipo declara titularidad conjunta, pero informa que usó ocasionalmente computadores/equipos del SENA bajo acompañamiento formativo. No se puede afirmar titularidad exclusiva del equipo hasta que el Centro o la instancia jurídica del SENA determine si aplica la regla institucional sobre desarrollos realizados con recursos de la entidad. |
 | Transferencia de derechos             | El equipo no declara transferencia. Antes de presentar, verificar el contrato o instrumento formativo aplicable; no adjuntar una cesión inexistente. |
 
-**Contexto informado por el equipo:** HidroSmart fue desarrollado como proyecto formativo del SENA para evidenciar y aprobar RAPS técnicos. El instructor aportó la idea general de los proyectos de la cohorte. No se ha aportado un contrato de obra por encargo, cesión de derechos, acta de proyecto SENNOVA/semillero ni documento que determine una titularidad patrimonial distinta; por eso este archivo conserva la declaración del equipo como hipótesis de titularidad y deja la confirmación institucional pendiente.
+**Contexto informado por el equipo:** HidroSmart fue desarrollado como proyecto formativo del SENA para evidenciar y aprobar RAPS técnicos, usando principalmente equipos y cuentas propias, pero también computadores/equipos del SENA en algunas sesiones. No hubo contrato, encargo, SENNOVA ni semillero según la declaración del equipo. El instructor aportó la idea general de los proyectos de la cohorte. La titularidad patrimonial requiere confirmación institucional porque la guía del SENA distingue entre obras independientes y desarrollos realizados con recursos o coordinación de la entidad.
 
 ## 5. Datos de la obra
 
@@ -141,3 +141,4 @@ No almacenar aquí cédulas, direcciones, nacionalidad, teléfonos, correos pers
 - [DNDA: Registro de software y pasos del trámite](https://www.derechodeautor.gov.co/es/registro-de-software)
 - [DNDA: Guía para la inscripción de obras, fonogramas, actos y contratos (edición 2026)](https://www.derechodeautor.gov.co/es/guia-para-la-inscripcion-de-obras-fonogramas-actos-y-contratos-en-el-registro-nacional-del-derecho)
 - [Decreto 1066 de 2015, Gestor Normativo de Función Pública](https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=76835)
+- [SENA: Guía de propiedad intelectual SIGA](https://repositorio.sena.edu.co/bitstream/handle/11404/7440/DE-F-025_PROPIEDAD_INTELECTUAL_SIGA_V02.pdf?isAllowed=true&sequence=1)
