@@ -9,6 +9,8 @@ Two videos are required. / Se requieren dos videos.
 
 > Note / Nota: The first Drive link is the advertising pitch and the second is the short usage tutorial. / El primer enlace de Drive corresponde al pitch publicitario y el segundo al tutorial corto de uso.
 
+Public access check / Verificación de acceso público: both Drive pages returned HTTP 200 without authentication on 2026-11-07. Duration and content checklists below still require visual review of each video before final approval. / Las dos páginas de Drive respondieron HTTP 200 sin autenticación el 2026-11-07. Las listas de duración y contenido todavía requieren revisión visual de cada video antes de la aprobación final.
+
 ## 1. Advertising pitch / Pitch publicitario
 
 Sells the product to someone who does not know it. / Presenta el producto a alguien que no lo conoce.
