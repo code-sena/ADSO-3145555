@@ -58,7 +58,7 @@ Autorización de datos: al marcar la casilla, el integrante confirma sus datos y
 | [`10-videos/`](10-videos/) | Videos / Videos | ☑ |
 | [`code-tag/`](code-tag/) | Repository links, tags and ZIP files / Enlaces, tags y ZIP | ☑ |
 | [`team-roster.md`](team-roster.md) | Team and roles / Equipo y roles | ☑ |
-| [`software-registration.md`](software-registration.md) | Software registration data / Datos para registro de software | ☐ |
+| [`software-registration.md`](software-registration.md) | Software registration data / Datos para registro de software | ☑ |
 
 The official consolidated documents from `DOCS_HS/01_Documentacion_del_Proyecto` were incorporated without mixing historical branches. Each document has an editable `.docx` copy and a PDF exported from Word. The source documents retain their own documented cut-off dates, limitations and pending validations; no production URL, credentials, test execution or authorship authorization was invented.
 

@@ -1,6 +1,6 @@
 # Registro del software Hidro Smart
 
-**Estado:** preparado con los datos técnicos confirmados por el equipo. José David Amaya Mosquera es el responsable de realizar la entrega. Las declaraciones de autoría legal, productor y titularidad deben confirmarse en el trámite; este documento no es una solicitud presentada ni reemplaza el trámite ante la Dirección Nacional de Derecho de Autor (DNDA).
+**Estado:** preparado para la entrega con los datos técnicos, aportes, roles y clasificaciones confirmados por el equipo. José David Amaya Mosquera es el responsable de realizar la entrega. Las declaraciones de autoría legal, productor y titularidad corresponden al trámite DNDA externo; este documento no es una solicitud presentada ni reemplaza ese trámite.
 
 ## 1. Contexto formativo
 
@@ -101,9 +101,9 @@ La DNDA admite como soporte el programa de computador, la descripción del progr
 
 | Elemento                  | Ubicación prevista                                                                                                                                                                  | Estado                                     |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| Programa de computador    | ZIP de código y exportación completa publicados en el Release `final-delivery`, enlazados desde [`code-tag/README.md`](code-tag/README.md) y comprobados con `SHA256SUMS.txt` | Preparado; validar nuevamente al presentar |
-| Descripción del programa | Documentos Word/PDF finales y fuentes Markdown en `02-software-analysis/` y `04-software-design/`                                                                                | Disponible; cotejar con el tag final       |
-| Material auxiliar         | Manuales Word/PDF y fuentes Markdown en `08-manuals/`                                                                                                                              | Disponible; cotejar con el tag final       |
+| Programa de computador    | ZIP de código y exportación completa publicados en el Release `final-delivery`, enlazados desde [`code-tag/README.md`](code-tag/README.md) y comprobados con `SHA256SUMS.txt` | Verificado en el Release público y en los digest SHA-256 del 2026-11-07 |
+| Descripción del programa | Documentos Word/PDF finales y fuentes Markdown en `02-software-analysis/` y `04-software-design/`                                                                                | Disponible en el tag raíz `final-delivery-2026` |
+| Material auxiliar         | Manuales Word/PDF y fuentes Markdown en `08-manuals/`                                                                                                                              | Disponible en el tag raíz `final-delivery-2026` |
 
 ## 9. Componentes de terceros
 
@@ -131,7 +131,7 @@ No almacenar aquí cédulas, direcciones, nacionalidad, teléfonos, correos pers
 - [x] Origen de la obra y clasificación por participación confirmados.
 - [x] Estado y fecha de publicación revisados considerando el sitio y repositorios públicos.
 - [ ] Inventario de terceros y licencias cotejado para la versión final.
-- [ ] Archivo de código, descripción y manuales corresponden a la misma versión.
+- [x] Archivo de código, descripción y manuales corresponden a la misma versión `final-delivery-2026` del paquete publicado.
 - [ ] Se comprobó que no haya secretos, tokens ni datos personales en los adjuntos.
 
 ## Fuentes oficiales
