@@ -209,18 +209,29 @@ El [contrato MQTT del firmware](../04-software-design/architecture.md) documenta
 
 En la consulta remota del 2026-11-05 al SHA `32be1cf`, cuatro ejecuciones de Actions y nueve check-runs terminaron correctamente; el estado combinado figuró `pending` con cero contextos. Consulta el detalle y sus límites en [evidencia de CI](ci-evidence.md).
 
-## Verificación local de cierre 2026-11-07
+## Verificación local de cierre actualizada 2026-11-07
 
-Se intentó ejecutar la validación reproducible sin modificar el código ni los archivos versionados:
+La instalación reproducible se completó desde los lockfiles versionados; `node_modules` no se incorpora al repositorio. Se usó una caché local temporal para evitar residuos del primer intento de npm en Windows:
+
+```powershell
+npm ci --prefix BK_HS --cache .npm-cache-hs-ci --no-audit --no-fund
+npm ci --prefix FT_HS/frontend --cache .npm-cache-hs-ci --no-audit --no-fund
+```
+
+La referencia de código es PT_HS `final-delivery-2026` en `64e03d82696646571fd5e2ad97431c84a12b68e2`. Resultados reproducidos:
 
 | Repositorio | Comando | Resultado | Límite observado |
 |---|---|---|---|
-| BK_HS | `npm run check` | Correcto: 217 archivos de producción revisados. | Validación estática únicamente. |
-| BK_HS | `npm test` | 190 pruebas pasaron y 6 no iniciaron. | Faltan dependencias instaladas (`jsonwebtoken`, `express`, `nodemailer` y `pg`) por el bloqueo de instalación de npm. |
-| FT_HS | `npm run lint`, `npm run typecheck`, `npm run build` | No iniciaron. | Faltan `prettier`, `tsc` y `vite`. |
-| FT_HS | `npm test` | 3 suites no iniciaron. | Falta `esbuild` en la instalación local. |
+| BK_HS | `npm run check` / `npm run lint` | Correcto: 219 archivos de producción revisados. | Validación estática. |
+| BK_HS | `npm test` | 202 pruebas aprobadas, 0 fallidas. | Sin límite para esta suite. |
+| BK_HS | `npm run test:integration` | 6 aprobadas, 0 fallidas y 1 omitida. | La omitida es Flespi/TLS por no disponer de credencial externa. |
+| FT_HS/frontend | `npm run lint` | Correcto: todos los archivos usan formato Prettier. | Sin límite para lint. |
+| FT_HS/frontend | `npm run typecheck` | Correcto. | Sin límite para tipado. |
+| FT_HS/frontend | `npm test` | 22 pruebas aprobadas, 0 fallidas. | Sin límite para esta suite. |
+| FT_HS/frontend | `npm run build` | Correcto: build de producción generado. | Advertencia informativa de chunks grandes en el bundle móvil. |
+| FT_HS/frontend | `npm run mobile:prepare` | Correcto: bundle web móvil generado. | Sin dispositivo físico en esta ejecución. |
 
-La instalación de dependencias se intentó con `npm ci` y quedó bloqueada por errores de permisos/terminación de npm. No se presenta este intento como una ejecución completa ni como aprobación funcional. Debe repetirse en un entorno con dependencias instaladas y asociarse al SHA exacto del tag `final-delivery-2026`.
+El primer intento local, documentado anteriormente, quedó incompleto por permisos de OneDrive y una instalación parcial de npm; queda reemplazado por esta corrida limpia. Las dependencias faltantes no eran declaraciones ausentes del proyecto: se resolvieron instalando los lockfiles con `npm ci`.
 
 ## Smoke check público 2026-11-07
 

@@ -29,18 +29,17 @@ Ejecuciones históricas: [HidroSmart validation #41923198240](https://github.com
 - El endpoint de commit status informó `pending` con cero contextos. Por tanto, los workflows/check-runs están verdes, pero el estado combinado del commit no aparece aprobado; no describir el gate global como verde.
 - CI de software/compilación no acredita telemetría física, BLE, ACL remota, entrega real de correos, base desplegada ni aceptación de requisitos.
 
-## Candidato local `final-delivery-2026` consultado el 2026-11-07
+## Tag corregido `final-delivery-2026` verificado el 2026-11-08
 
-La verificación local confirmó que el tag `final-delivery-2026` apunta al `main` local en los seis repositorios incluidos. Esta tabla no sustituye la consulta remota de GitHub ni demuestra que los workflows se hayan ejecutado sobre estos SHA.
+El tag de PT_HS fue actualizado al commit `64e03d82696646571fd5e2ad97431c84a12b68e2` después de corregir dos fallos de Liquibase y el formato frontend. La ejecución remota [HidroSmart validation #42447230775](https://github.com/joseale879/PT_HS/actions/runs/42447230775) terminó `success` en los 11 pasos: instalación npm, stack local, `Validate and update database`, API/web, seed, calidad backend, calidad frontend y mobile.
 
-| Repositorio | SHA local de `main` y tag | Estado de CI para el candidato |
-|---|---|---|
-| PT_HS | `8dd45ca349134ad0851a536af5f90760b10691f3` | No revalidado remotamente |
-| BK_HS | `190263da952afba5d4ce7f6c2d83c0fde2b239c4` | No revalidado remotamente |
-| FT_HS | `91a5ef3125ed73d4d9d410f772b54923f8099430` | No revalidado remotamente |
-| BD_HS | `42ee03b5906dfdcbd9e9f6c7f03ddc453250d23b` | No revalidado remotamente |
-| Firmaware_HS | `917fcfd2129ea6ff92860a4321b1fd7863957d85` | No revalidado remotamente |
-| DOCS_HS | `054a063a667f637a55b3641f83a9e4dded1faa5b` | No revalidado remotamente |
+El fallo original [#41974700842](https://github.com/joseale879/PT_HS/actions/runs/41974700842) queda como antecedente histórico del tag anterior (`8dd45ca`), no como estado del tag vigente. El Release de la entrega fue actualizado con los dos ZIP nuevos de PT_HS y sus SHA-256 se sincronizaron en `code-tag/SHA256SUMS.txt`.
+
+Correcciones aplicadas en PT_HS:
+
+- `035_saving_goal_daily_period.sql` se ejecuta como una unidad (`splitStatements: false`) para preservar el bloque PL/pgSQL `$$...$$`.
+- La siembra de reglas de fuga ya no usa `ON CONFLICT` antes de que exista el índice parcial correspondiente.
+- Se formatearon seis archivos frontend para que `prettier --check` pase en CI.
 
 ## Comprobaciones en los repositorios separados
 
@@ -54,10 +53,8 @@ Consulta remota de `main` el 2026-11-05:
 | Firmaware_HS | `2e5cfca7d0573e4225a07c6b7b13ea23e9570f4d` | Sin check-runs ni contextos de estado visibles para ese SHA. |
 | DOCS_HS | `8ad8a018dd5d0875fa4b3360fa2071c1c4a2adde` | Sin check-runs ni contextos de estado visibles para ese SHA. |
 
-La comprobación remota posterior del 2026-11-07 confirmó la relación de versión siguiente: PT_HS `8dd45ca` está contenido en el `main` remoto `32be1cf`; FT_HS `91a5ef3` está contenido en `bb5920d`; Firmaware_HS `917fcfd` está contenido en `2e5cfca`; DOCS_HS `054a063` está contenido en `8ad8a01`; BK_HS y BD_HS tienen el tag directamente sobre su `main`. Los tags, no los tips posteriores de `main`, son la versión exacta usada para los ZIP del Release.
-
-Para PT_HS se encontraron cinco ejecuciones asociadas al SHA del tag: dos `HidroSmart CI` terminaron `success`, pero tres `HidroSmart validation` terminaron `failure`. La ejecución del tag falló en `Validate and update database`; `Start API and web`, `Seed integration role users`, `Backend quality`, `Frontend quality` y `Mobile quality` quedaron omitidos. Los otros cinco repositorios no tienen workflows asociados a sus SHA de tag. No se presenta el gate como verde.
+La comprobación remota actual confirma que PT_HS `64e03d8` es el tag vigente y que su workflow está verde. Los demás componentes conservan los SHA exactos registrados en la tabla de `code-tag/README.md`; los tags, no los tips posteriores de `main`, son la versión usada para los ZIP del Release.
 
 ## Alcance y límites
 
-La evidencia de CI registra las ejecuciones del proveedor para los SHA indicados; no acredita pruebas físicas del ESP32, funcionamiento actual de Brevo/Flespi/Neon, permisos de revisión, ni aceptación funcional de cada requisito. Las consultas de estado son un corte remoto del 2026-11-05; volver a verificarlas si cambia un SHA. La instalación local de dependencias para repetir las pruebas se bloqueó por errores de permisos de npm, por lo que no se presenta un resultado local nuevo. La entrega debe enlazar resultados a cada caso y a los SHA exactos que finalmente se aprueben.
+La evidencia de CI registra las ejecuciones del proveedor para los SHA indicados; no acredita pruebas físicas del ESP32, funcionamiento actual de Brevo/Flespi/Neon, permisos de revisión, ni aceptación funcional de cada requisito. La instalación local de dependencias quedó reproducible mediante `npm ci` usando `BK_HS/package-lock.json` y `FT_HS/frontend/package-lock.json`; sus resultados detallados están en [test-plan-results.md](test-plan-results.md). La integración Flespi/TLS permanece omitida por falta de credencial externa.
