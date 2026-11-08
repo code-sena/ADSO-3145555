@@ -107,15 +107,15 @@ La DNDA admite como soporte el programa de computador, la descripción del progr
 
 ## 9. Componentes de terceros
 
-Inventario preliminar basado en los manifiestos y configuración del código. No es todavía una lista completa de licencias; antes de presentar, cotejar las versiones del tag final con sus archivos `package-lock.json`, `platformio.ini`, licencias y avisos de autoría.
+Inventario de los componentes principales basado en los manifiestos, los lockfiles, `platformio.ini` y las licencias de sus proyectos de origen. Los lockfiles también contienen dependencias transitivas; si el trámite exige un SBOM completo, debe generarse desde esos lockfiles y conservar sus avisos.
 
 | Componente o tecnología                                      | Uso identificado                                             | Licencia/atribución                                                                                                 |
 | ------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| React, React Native y Expo                                    | Interfaces web y móvil                                      | Verificar licencia y versión en el inventario del tag final                                                         |
-| Express, MQTT.js y `pg`                                     | API, comunicación MQTT y acceso PostgreSQL desde el backend | Verificar licencia y versión en el inventario del tag final                                                         |
-| PostgreSQL y Liquibase                                        | Persistencia y gestión de migraciones de base de datos      | Verificar licencias/versiones incluidas o requeridas en despliegue                                                   |
-| Arduino framework, PubSubClient, ArduinoJson y NimBLE-Arduino | Firmware ESP32, MQTT, JSON y BLE                             | Verificar licencia y versión fijadas en la configuración final de PlatformIO                                       |
-| Flespi                                                        | Servicio externo de broker MQTT                              | Servicio de terceros; registrar proveedor y condiciones aplicables, no presentarlo como código creado por el equipo |
+| React, React Native y Expo                                    | Interfaces web y móvil                                      | MIT; consultar [React](https://github.com/facebook/react/blob/main/LICENSE), [React Native](https://github.com/facebook/react-native/blob/main/LICENSE) y [Expo](https://github.com/expo/expo/blob/main/LICENSE). |
+| Express, MQTT.js y `pg`                                      | API, comunicación MQTT y acceso PostgreSQL desde el backend | MIT; consultar [Express](https://github.com/expressjs/express/blob/master/LICENSE), [MQTT.js](https://github.com/mqttjs/MQTT.js/blob/main/LICENSE.md) y [node-postgres](https://github.com/brianc/node-postgres/blob/master/LICENSE). |
+| PostgreSQL 16 y Liquibase 5.0.2                              | Persistencia y gestión de migraciones de base de datos      | PostgreSQL License para PostgreSQL; FSL-1.1-ALv2 para Liquibase Community 5.0.2. Consultar [PostgreSQL](https://www.postgresql.org/about/licence/) y [Liquibase 5.0.2](https://github.com/liquibase/liquibase/blob/v5.0.2/LICENSE.txt). |
+| Arduino framework, PubSubClient, ArduinoJson y NimBLE-Arduino | Firmware ESP32, MQTT, JSON y BLE                             | LGPL-2.1 para Arduino-ESP32; MIT para PubSubClient y ArduinoJson; Apache-2.0 para NimBLE-Arduino. Consultar [Arduino-ESP32](https://github.com/espressif/arduino-esp32/blob/master/LICENSE.md), [PubSubClient](https://github.com/knolleary/pubsubclient/blob/master/LICENSE.txt), [ArduinoJson](https://github.com/bblanchon/ArduinoJson/blob/7.x/LICENSE.txt) y [NimBLE-Arduino](https://github.com/h2zero/NimBLE-Arduino/blob/master/LICENSE). |
+| Flespi                                                        | Servicio externo de broker MQTT                              | Servicio de terceros; revisar las condiciones del servicio de la cuenta y no presentarlo como código creado por el equipo. |
 
 ## 10. Datos personales
 
@@ -130,7 +130,7 @@ No almacenar aquí cédulas, direcciones, nacionalidad, teléfonos, correos pers
 - [x] Descripción, lenguajes, tipo y diferenciador revisados contra el tag final.
 - [x] Origen de la obra y clasificación por participación confirmados.
 - [x] Estado y fecha de publicación revisados considerando el sitio y repositorios públicos.
-- [ ] Inventario de terceros y licencias cotejado para la versión final.
+- [x] Inventario de los principales terceros y sus licencias cotejado contra los manifiestos y la configuración de la versión final; las dependencias transitivas permanecen identificadas por los lockfiles.
 - [x] Archivo de código, descripción y manuales corresponden a la misma versión `final-delivery-2026` del paquete publicado.
 - [ ] Se comprobó que no haya secretos, tokens ni datos personales en los adjuntos.
 
