@@ -1,7 +1,7 @@
 # Matriz de requisitos y cobertura de la entrega
 
-**Estado:** versión de trabajo actualizada para la estructura `04-final-delivery/07-hidro-smart`.
-**Corte documental:** 2026-11-05.
+**Estado:** candidata final documentada para la estructura `04-final-delivery/07-hidro-smart`.
+**Corte documental:** 2026-11-07.
 
 ## 1. Propósito y fuentes
 
@@ -13,21 +13,21 @@ El SRS convertido conserva requisitos y antecedentes de su documento académico.
 
 | Entregable | Archivo(s) de esta carpeta | Estado actual | Cierre requerido |
 |---|---|---|---|
-| Datos generales y resumen | `README.md` | Borrador actualizado | Completar fecha, responsable, tag/SHA y confirmar semillero. |
-| Equipo y aportes | `team-roster.md` | Actividad consolidada entre PT_HS y repos separados | Confirmación de nombres, roles y aportes; instructor confirma contribuciones fuera de Git. |
-| Registro de software | `software-registration.md` | Borrador con datos técnicos conocidos | Solicitante, autores/productor, titularidad, año, versión y declaraciones confirmadas. |
-| Especificación de requisitos | requirements-specification.md | SRS académico convertido, cifras de contexto corregidas y anexo cotejado estáticamente con PT_HS `main` (`32be1cf`) | Aceptar requisitos con el equipo y asociar cada estado de implementación con una prueba de la versión final. |
+| Datos generales y resumen | `README.md` | Completado para la entrega: fecha, responsable, URL, integrantes y versión registrados | Confirmar el semillero únicamente si el instructor lo exige como campo obligatorio. |
+| Equipo y aportes | `team-roster.md` | Roles y autorización de publicación de datos confirmados por el equipo | Confirmar autoría legal y aportes ante el instructor si se usarán en el trámite DNDA. |
+| Registro de software | `software-registration.md` | Preparado para la entrega con secciones 5 y 6 y responsable identificados | Completar en el trámite externo la calidad de representación, productor, titularidad y transferencia, si aplica. |
+| Especificación de requisitos | requirements-specification.md | SRS académico convertido, cifras de contexto corregidas y anexo cotejado contra el alcance del tag `final-delivery-2026` de PT_HS (`8dd45ca`) | Asociar cada estado de implementación con una prueba de la versión final. |
 | Matriz de requisitos | Este archivo | Actualizada a la estructura de entrega actual | Añadir ID/resultado de pruebas cuando se cierre cada requisito. |
-| Análisis del sistema | system-analysis.md | Borrador presente | Cotejar actores, flujos y permisos con la versión final. |
+| Análisis del sistema | system-analysis.md, system-analysis.pdf | Fuente Markdown y PDF complementario incluidos | Cotejar actores, flujos y permisos con la versión final. |
 | Propuesta técnica | technical-proposal.md | Borrador presente con contenido histórico | Reconciliar stack, costos, cifras y beneficios; no presentar estimaciones como resultados medidos. |
 | Diseño de software | software-design/ | Borradores, diagramas y wireframe presentes | Revisar diagramas y modelos contra código/migraciones; corregir cualquier referencia a entregables que no existan. |
-| Pruebas | test-documentation/ | Plan, resultados históricos y consulta de GitHub Actions para PT_HS `main` (`32be1cf`) | Las dos ejecuciones de workflow y los nueve check-runs consultados terminaron `success`; el endpoint de commit status sigue `pending` con cero contextos. No declarar verde el estado combinado. No se encontraron ejecuciones de Actions para `main` en los repositorios separados durante esta consulta. Repetir la consulta al fijar el tag. |
-| Implementación y operación | implementation-procedure/ | Fuentes Markdown y PDF presentes | Validar desde clon limpio y confirmar pasos y URLs. |
+| Pruebas | test-documentation/ | Plan, resultados históricos y evidencia de CI acotada; tags y Release verificados | Ejecutar CI y pruebas funcionales sobre el SHA exacto del tag si la rúbrica exige una corrida reciente. |
+| Implementación y operación | implementation-procedure/ | Fuentes Markdown y PDF presentes, URL documentada y Release público disponible | Aportar evidencia de disponibilidad y smoke test de producción. |
 | Mejora | improvement-actions/ | Borrador presente | Confirmar responsables, estado, evidencia y fecha de cierre de acciones. |
 | Manuales | manuals/ | Manual técnico, instalación y usuario presentes | Validar pasos, pantallas y funciones contra el artefacto final. |
 | Artículo | project-article/ | Borrador presente | Comprobar resultados y referencias; no afirmar métricas sin evidencia. |
-| Videos | `10-videos/README.md` | Enlace Canva recibido para explicación | Verificar duración/acceso y clasificarlo; falta el tutorial corto obligatorio. El video de despliegue es complementario. |
-| Código y trazabilidad | `code-tag/README.md`, `code-tag/SHA256SUMS.txt` | Estructura incompleta | Completar repositorios, tag/SHA, ZIP, hashes y Release después de aprobar la versión. |
+| Videos | `10-videos/README.md` | Pitch y tutorial registrados; ambos enlaces Drive responden HTTP 200 sin autenticación | Confirmar duración y contenido mediante revisión visual. |
+| Código y trazabilidad | `code-tag/README.md`, `code-tag/SHA256SUMS.txt` | Seis repositorios, tags, 12 ZIP, Release y SHA-256 verificados | Mantener los enlaces públicos y conservar la trazabilidad durante la revisión. |
 
 ## 3. Trazabilidad funcional
 
@@ -46,13 +46,13 @@ Los requisitos detallados permanecen en el SRS. Esta tabla agrupa los flujos que
 
 ## 4. Evidencia técnica disponible y límites
 
-**CI:** La carpeta `05-test-documentation/ci-evidence.md` distingue CI histórica de HU-20 y la consulta remota del `main` actual. No se debe declarar aprobado el estado combinado mientras figure `pending` ni extrapolar los checks de PT_HS a los repositorios separados.
+**CI:** La carpeta `05-test-documentation/ci-evidence.md` distingue evidencia histórica de CI y la versión exacta de los tags. No se debe declarar aprobado el estado combinado mientras figure `pending` ni extrapolar los checks de PT_HS a los repositorios separados.
 
-**Web:** La URL indicada es `https://pt-hs.pages.dev/login`; su registro en documentos no prueba disponibilidad al momento de la entrega.
+**Web:** La URL indicada es `https://pt-hs.pages.dev/login`; está registrada en la entrega, pero todavía debe conservarse un smoke test reproducible de la versión candidata.
 
-**Video:** Se aportó un enlace Canva para una explicación del proyecto; falta verificar su duración, permisos y correspondencia con los criterios del pitch/tutorial.
+**Video:** Se registraron enlaces Drive separados para pitch y tutorial. Ambos responden sin autenticación; falta verificar duración y correspondencia con los criterios de contenido.
 
-**Repositorios:** Reflejan trabajo y antecedentes de componentes, pero la entrega debe identificar claramente qué código integrado se registra y qué repositorios son espejos, forks o fuentes complementarias.
+**Repositorios:** La entrega identifica seis repositorios originales y usa los tags `final-delivery-2026` como versión exacta. Los `main` posteriores pueden contener commits descendientes; no deben confundirse con el contenido de los ZIP del Release.
 
 ## 5. Datos institucionales por confirmar
 
