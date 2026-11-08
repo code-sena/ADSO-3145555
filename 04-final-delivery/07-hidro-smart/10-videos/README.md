@@ -4,10 +4,10 @@ Two videos are required. / Se requieren dos videos.
 
 | Video | Duration / Duración | Link / Enlace | Done / Listo |
 |---|---|---|---|
-| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos | Pending recording / Pendiente de grabación | ☐ |
+| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos | [Watch video / Ver video](https://drive.google.com/file/d/1RNz6TrlFj95TRxpB58ErwyKKuFkHXX_H/view?usp=sharing) | ☑ |
 | Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | [Watch video / Ver video](https://drive.google.com/file/d/1BHZjpvWngDVXF95D4veNg06rjzEx-SwF/view?usp=sharing) | ☑ |
 
-> Note / Nota: The provided Drive link is the short usage tutorial. The advertising pitch has not been recorded yet. / El enlace de Drive proporcionado corresponde al tutorial corto de uso. El pitch publicitario aún no ha sido grabado.
+> Note / Nota: The first Drive link is the advertising pitch and the second is the short usage tutorial. / El primer enlace de Drive corresponde al pitch publicitario y el segundo al tutorial corto de uso.
 
 ## 1. Advertising pitch / Pitch publicitario
 
