@@ -4,12 +4,12 @@ Two videos are required. / Se requieren dos videos.
 
 | Video | Duration / Duración | Link / Enlace | Done / Listo |
 |---|---|---|---|
-| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos | [Watch video / Ver video](https://drive.google.com/file/d/1RNz6TrlFj95TRxpB58ErwyKKuFkHXX_H/view?usp=sharing) | ☑ |
-| Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | [Watch video / Ver video](https://drive.google.com/file/d/1BHZjpvWngDVXF95D4veNg06rjzEx-SwF/view?usp=sharing) | ☑ |
+| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos; measured 01:40 / medido 01:40 | [Watch video / Ver video](https://drive.google.com/file/d/1RNz6TrlFj95TRxpB58ErwyKKuFkHXX_H/view?usp=sharing) | ☐ |
+| Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos; measured 28:20 / medido 28:20 | [Watch video / Ver video](https://drive.google.com/file/d/1BHZjpvWngDVXF95D4veNg06rjzEx-SwF/view?usp=sharing) | ☐ |
 
 > Note / Nota: The first Drive link is the advertising pitch and the second is the short usage tutorial. / El primer enlace de Drive corresponde al pitch publicitario y el segundo al tutorial corto de uso.
 
-Public access check / Verificación de acceso público: both Drive pages returned HTTP 200 without authentication on 2026-11-07. Duration and content checklists below still require visual review of each video before final approval. / Las dos páginas de Drive respondieron HTTP 200 sin autenticación el 2026-11-07. Las listas de duración y contenido todavía requieren revisión visual de cada video antes de la aprobación final.
+Public access check / Verificación de acceso público: both Drive downloads returned HTTP 200 without authentication on 2026-11-07. The pitch measured 01:40 and fits its required range. The tutorial measured 28:20 and does not fit the required 03:00-05:00 range; replace it before final approval. The content checklists below still require visual review. / Las descargas de Drive respondieron HTTP 200 sin autenticación el 2026-11-07. El pitch midió 01:40 y cumple su rango. El tutorial midió 28:20 y no cumple el rango requerido de 03:00-05:00; reemplácelo antes de la aprobación final. Las listas de contenido todavía requieren revisión visual.
 
 ## 1. Advertising pitch / Pitch publicitario
 

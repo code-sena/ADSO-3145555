@@ -16,10 +16,11 @@ Esta tabla describe la arquitectura objetivo de PT_HS. No sustituye la comprobac
 
 | Servicio | URL | Nota |
 |---|---|---|
-| Aplicación web, inicio de sesión | [https://pt-hs.pages.dev/login](https://pt-hs.pages.dev/login) | URL proporcionada por el equipo. Verificar disponibilidad y rutas principales antes de grabar evidencias. |
+| Aplicación web, inicio de sesión | [https://pt-hs.pages.dev/login](https://pt-hs.pages.dev/login) | Respondió HTTP 200 sin autenticación el 2026-11-07; verificar login y rutas principales antes de afirmar el smoke test funcional. |
 | Sitio base | [https://pt-hs.pages.dev](https://pt-hs.pages.dev) | Dominio de Cloudflare Pages indicado para el frontend. |
+| API, health | [https://pt-hs.onrender.com/health](https://pt-hs.onrender.com/health) | Respondió HTTP 200 con `status: ok` y `database: hidro_smart` el 2026-11-07. |
 
-La inclusión de estas URLs en la documentación no constituye una prueba de disponibilidad del despliegue.
+La respuesta HTTP 200 de la URL de inicio de sesión es evidencia de disponibilidad pública del documento HTML, pero no constituye por sí sola una prueba funcional del despliegue ni de sus integraciones.
 
 ## Variables
 

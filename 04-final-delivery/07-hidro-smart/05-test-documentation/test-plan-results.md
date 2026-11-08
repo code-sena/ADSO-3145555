@@ -221,3 +221,10 @@ Se intentó ejecutar la validación reproducible sin modificar el código ni los
 | FT_HS | `npm test` | 3 suites no iniciaron. | Falta `esbuild` en la instalación local. |
 
 La instalación de dependencias se intentó con `npm ci` y quedó bloqueada por errores de permisos/terminación de npm. No se presenta este intento como una ejecución completa ni como aprobación funcional. Debe repetirse en un entorno con dependencias instaladas y asociarse al SHA exacto del tag `final-delivery-2026`.
+
+## Smoke check público 2026-11-07
+
+| Servicio | Resultado observado | Alcance |
+|---|---|---|
+| `https://pt-hs.pages.dev/login` | HTTP 200; documento HTML de HidroSmart | Confirma disponibilidad pública de la página, no autenticación ni flujo funcional. |
+| `https://pt-hs.onrender.com/health` | HTTP 200; `status: ok`, `database: hidro_smart` | Confirma salud básica de la API y conexión reportada con la base; no cubre roles, correo, MQTT, frontend autenticado ni ESP32. |
