@@ -28,7 +28,7 @@ Estas descripciones resumen las áreas observadas en los historiales y completan
 
 ## Instructores relacionados en el borrador del equipo
 
-Las áreas de esta tabla estaban consignadas en el roster anterior. No encontré esos nombres como autores de commits en los historiales locales revisados; eso no descarta asesorías, revisiones, aportes presenciales ni trabajo en otros repositorios. El instructor líder y cada instructor deben confirmar el aporte y si corresponde declarar autoría.
+Las áreas de esta tabla estaban consignadas en el roster anterior. No encontré esos nombres como autores de commits en los historiales locales revisados; eso no descarta asesorías, revisiones, aportes presenciales ni trabajo en otros repositorios. Según la declaración del equipo, el instructor aportó la idea general de los proyectos de la cohorte, incluido HidroSmart; ese aporte no se declara automáticamente como autoría. El instructor líder y cada instructor deben confirmar si hubo código, documentación, diagramas, diseño u otra expresión original aportada por ellos.
 
 | Nombre | Áreas consignadas previamente | Tipo de aporte | ¿Autor del software? |
 |---|---|---|---|

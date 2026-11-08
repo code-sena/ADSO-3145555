@@ -42,9 +42,9 @@ Los instructores enumerados en `team-roster.md` se mantienen como personas relac
 
 | Campo                                 | Estado actual                                                                                                                                                                           |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Productor o productores               | Pendiente de confirmación. Identificar a quienes tuvieron la iniciativa, coordinación y responsabilidad de producir el software; no asumir que coincide con toda la lista de autores. |
-| Titular de los derechos patrimoniales | Pendiente de confirmación por autores y equipo formativo. No se encontró en los documentos revisados una cesión o autorización que permita asignarlo a una persona o entidad.       |
-| Transferencia de derechos             | Pendiente. No marcar transferencia ni adjuntar una afirmación sin el documento firmado que corresponda.                                                                                |
+| Productor o productores               | Declaración del equipo: José Alejandro Montealegre, José David Amaya y Emerson Calet coordinaron y desarrollaron conjuntamente HidroSmart. Confirmar esta calidad en el trámite y en los soportes adjuntos. |
+| Titular de los derechos patrimoniales | Declaración del equipo: los tres aprendices son titulares conjuntos. Esta declaración queda condicionada a verificar que no exista encargo, contrato o regla institucional del SENA que asigne los derechos patrimoniales a otra entidad. |
+| Transferencia de derechos             | El equipo no declara transferencia. Antes de presentar, verificar el contrato o instrumento formativo aplicable; no adjuntar una cesión inexistente. |
 
 ## 5. Datos de la obra
 
@@ -125,7 +125,7 @@ No almacenar aquí cédulas, direcciones, nacionalidad, teléfonos, correos pers
 
 - [ ] Solicitante y calidad de representación confirmados.
 - [x] Los tres aprendices y sus aportes confirmados por el equipo; queda pendiente revisar la participación de instructores.
-- [ ] Productor(es) y titularidad confirmados con soporte documental si aplica.
+- [ ] Productor(es) y titularidad declarados por el equipo; falta verificar el instrumento formativo o contractual del SENA y adjuntar soporte si aplica.
 - [x] Año de finalización, versión, tag y SHA del paquete registrados.
 - [x] Descripción, lenguajes, tipo y diferenciador revisados contra el tag final.
 - [x] Origen de la obra y clasificación por participación confirmados.
