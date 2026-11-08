@@ -18,6 +18,7 @@ Los tags de los seis repositorios de componentes son ancestros de sus ramas remo
 - Tutorial público descargable: duración 28:20; no cumple el rango requerido de 03:00 a 05:00 y debe reemplazarse por una versión recortada o un nuevo tutorial.
 - La página pública de inicio de sesión respondió HTTP 200 y la API `/health` respondió HTTP 200 con estado `ok` y base `hidro_smart`.
 - El chequeo estático del backend pasó sobre 217 archivos.
+- En PT_HS, el CI del tag tiene dos workflows `HidroSmart CI` exitosos, pero la validación falla en `Validate and update database`; no es un gate verde.
 - La instalación local de dependencias no pudo completarse; las pruebas que requieren paquetes npm no se presentan como aprobadas.
 
 ## Cierres externos pendientes

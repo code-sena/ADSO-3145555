@@ -54,7 +54,9 @@ Consulta remota de `main` el 2026-11-05:
 | Firmaware_HS | `2e5cfca7d0573e4225a07c6b7b13ea23e9570f4d` | Sin check-runs ni contextos de estado visibles para ese SHA. |
 | DOCS_HS | `8ad8a018dd5d0875fa4b3360fa2071c1c4a2adde` | Sin check-runs ni contextos de estado visibles para ese SHA. |
 
-La comprobación remota posterior del 2026-11-07 confirmó la relación de versión siguiente: PT_HS `8dd45ca` está contenido en el `main` remoto `32be1cf`; FT_HS `91a5ef3` está contenido en `bb5920d`; Firmaware_HS `917fcfd` está contenido en `2e5cfca`; DOCS_HS `054a063` está contenido en `8ad8a01`; BK_HS y BD_HS tienen el tag directamente sobre su `main`. Los tags, no los tips posteriores de `main`, son la versión exacta usada para los ZIP del Release. Falta reejecutar CI sobre esos SHA exactos si la rúbrica exige un check reciente del tag.
+La comprobación remota posterior del 2026-11-07 confirmó la relación de versión siguiente: PT_HS `8dd45ca` está contenido en el `main` remoto `32be1cf`; FT_HS `91a5ef3` está contenido en `bb5920d`; Firmaware_HS `917fcfd` está contenido en `2e5cfca`; DOCS_HS `054a063` está contenido en `8ad8a01`; BK_HS y BD_HS tienen el tag directamente sobre su `main`. Los tags, no los tips posteriores de `main`, son la versión exacta usada para los ZIP del Release.
+
+Para PT_HS se encontraron cinco ejecuciones asociadas al SHA del tag: dos `HidroSmart CI` terminaron `success`, pero tres `HidroSmart validation` terminaron `failure`. La ejecución del tag falló en `Validate and update database`; `Start API and web`, `Seed integration role users`, `Backend quality`, `Frontend quality` y `Mobile quality` quedaron omitidos. Los otros cinco repositorios no tienen workflows asociados a sus SHA de tag. No se presenta el gate como verde.
 
 ## Alcance y límites
 
