@@ -207,4 +207,17 @@ El código de referencia es PT_HS `main` (`32be1cf787f20120dfd3b4cc72226dab55d88
 
 El [contrato MQTT del firmware](../04-software-design/architecture.md) documenta Flespi/TLS y Mosquitto para desarrollo. Esto no equivale a una prueba reciente de la ACL, del token remoto ni de una placa física. Conserva como evidencia histórica los resultados fechados de las secciones anteriores.
 
-En la consulta remota del 2026-11-05 al SHA `32be1cf`, cuatro ejecuciones de Actions y nueve check-runs terminaron correctamente; el estado combinado figuró `pending` con cero contextos. Consulta el detalle y sus límites en [evidencia de CI](ci-evidence.md). No se ejecutaron pruebas locales durante esta revisión documental.
+En la consulta remota del 2026-11-05 al SHA `32be1cf`, cuatro ejecuciones de Actions y nueve check-runs terminaron correctamente; el estado combinado figuró `pending` con cero contextos. Consulta el detalle y sus límites en [evidencia de CI](ci-evidence.md).
+
+## Verificación local de cierre 2026-11-07
+
+Se intentó ejecutar la validación reproducible sin modificar el código ni los archivos versionados:
+
+| Repositorio | Comando | Resultado | Límite observado |
+|---|---|---|---|
+| BK_HS | `npm run check` | Correcto: 217 archivos de producción revisados. | Validación estática únicamente. |
+| BK_HS | `npm test` | 190 pruebas pasaron y 6 no iniciaron. | Faltan dependencias instaladas (`jsonwebtoken`, `express`, `nodemailer` y `pg`) por el bloqueo de instalación de npm. |
+| FT_HS | `npm run lint`, `npm run typecheck`, `npm run build` | No iniciaron. | Faltan `prettier`, `tsc` y `vite`. |
+| FT_HS | `npm test` | 3 suites no iniciaron. | Falta `esbuild` en la instalación local. |
+
+La instalación de dependencias se intentó con `npm ci` y quedó bloqueada por errores de permisos/terminación de npm. No se presenta este intento como una ejecución completa ni como aprobación funcional. Debe repetirse en un entorno con dependencias instaladas y asociarse al SHA exacto del tag `final-delivery-2026`.
