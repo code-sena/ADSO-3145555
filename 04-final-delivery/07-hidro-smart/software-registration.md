@@ -24,15 +24,15 @@
 
 La DNDA distingue actuar en nombre propio de actuar con representación y puede requerir autorización o prueba de representación. Verifique la opción exacta en el formulario oficial antes de enviarlo.
 
-## 3. Autores candidatos
+## 3. Autores declarados por el equipo
 
-El roster consolidado registra actividad de los aprendices en PT_HS y los componentes separados. La actividad Git sirve como evidencia de trabajo, pero cada persona debe confirmar que sus aportes creativos forman parte de la versión que se va a registrar. Los números de documento se completan en privado, no en este archivo.
+El roster consolidado registra actividad de los aprendices en PT_HS y los componentes separados. Los tres integrantes confirmaron el 2026-11-08 que sus aportes creativos forman parte de la versión que se va a registrar. Los números de documento se completan en privado, no en este archivo.
 
 | Nombre                               |   Ficha | Identidad Git observada                             | Aportes observados en los repositorios                                                                                | Confirmación para el registro      |
 | ------------------------------------ | ------: | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | 3145555 | `joseale879`                                      | PT_HS, backend, frontend web/móvil, base de datos, firmware y documentación; desarrollo e integración transversal. | Pendiente de confirmación personal |
-| JOSE DAVID AMAYA MOSQUERA            | 3145555 | `joseamaya009`; `José David Amaya Mosquera`    | PT_HS, backend, frontend, base de datos, firmware y documentación; desarrollo integral e integración de todos los componentes. | Pendiente de confirmación personal |
-| EMERSON CALET MOLANO CARDOZO         | 3145555 | `EmersonMolano`; `Emerson Calet Molano Cardozo` | PT_HS, backend, frontend, base de datos y documentación.                                                             | Pendiente de confirmación personal |
+| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | 3145555 | `joseale879`                                      | PT_HS, backend, frontend web/móvil, base de datos, firmware y documentación; desarrollo e integración transversal. | Confirmado por el equipo el 2026-11-08 |
+| JOSE DAVID AMAYA MOSQUERA            | 3145555 | `joseamaya009`; `José David Amaya Mosquera`    | PT_HS, backend, frontend, base de datos, firmware y documentación; desarrollo integral e integración de todos los componentes. | Confirmado por el equipo el 2026-11-08 |
+| EMERSON CALET MOLANO CARDOZO         | 3145555 | `EmersonMolano`; `Emerson Calet Molano Cardozo` | PT_HS, backend, frontend, base de datos y documentación.                                                             | Confirmado por el equipo el 2026-11-08 |
 
 ### Instructores
 
@@ -124,7 +124,7 @@ No almacenar aquí cédulas, direcciones, nacionalidad, teléfonos, correos pers
 ## 11. Lista de cierre
 
 - [ ] Solicitante y calidad de representación confirmados.
-- [ ] Cada autor y su aporte confirmados; revisar también la participación de instructores.
+- [x] Los tres aprendices y sus aportes confirmados por el equipo; queda pendiente revisar la participación de instructores.
 - [ ] Productor(es) y titularidad confirmados con soporte documental si aplica.
 - [x] Año de finalización, versión, tag y SHA del paquete registrados.
 - [x] Descripción, lenguajes, tipo y diferenciador revisados contra el tag final.

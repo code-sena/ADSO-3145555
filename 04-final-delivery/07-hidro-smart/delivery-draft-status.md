@@ -24,6 +24,6 @@ Los tags de los seis repositorios de componentes son ancestros de sus ramas remo
 ## Cierres externos pendientes
 
 - Aportar evidencia de producción, correo, restauración de base de datos, MQTT y prueba física del ESP32.
-- Confirmar en el trámite externo la autoría, productor, titularidad, participación de instructores y licencias de terceros.
+- Confirmar en el trámite externo el productor, la titularidad, la participación de instructores y las licencias de terceros; la autoría y los aportes de los tres aprendices ya fueron confirmados por el equipo.
 - Completar la revisión de secretos y datos personales en los adjuntos, y conservar la aprobación del instructor en el Pull Request.
 

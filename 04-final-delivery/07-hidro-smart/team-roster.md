@@ -1,6 +1,6 @@
 # Equipo y aportes de Hidro Smart
 
-**Estado:** roles y autorización de publicación de datos confirmados por el equipo; las declaraciones de autoría legal, productor y titularidad deben confirmarse antes del trámite DNDA.
+**Estado:** roles, autorización de publicación de datos y autoría de los tres aprendices confirmados por el equipo; productor, titularidad y participación de instructores deben confirmarse antes del trámite DNDA.
 
 **Fuente:** revisión consolidada de PT_HS y de los repositorios separados BK_HS, FT_HS, BD_HS, Firmaware_HS y DOCS_HS, además de la lista de instructores del borrador anterior. Las copias del monorepo y de los componentes se consideran evidencia del mismo proyecto, no equipos diferentes.
 
@@ -60,12 +60,12 @@ Se consolidó la actividad Git local de PT_HS y de cada repositorio separado lis
 
 Esta tabla conserva la procedencia de la revisión de autoría. El snapshot remoto consultado el 2026-11-05 usa las ramas `main` de cada repositorio y está registrado con SHA completos en `code-tag/README.md`; no se recalculó la autoría legal a partir de ese snapshot.
 
-Las identidades Git con nombre de usuario y nombre personal se agruparon cuando el historial permite asociarlas: `joseamaya009` / `José David Amaya Mosquera`, y `EmersonMolano` / `Emerson Calet Molano Cardozo`. El equipo debe confirmar que esas identidades corresponden a las personas indicadas.
+Las identidades Git con nombre de usuario y nombre personal se agruparon cuando el historial permite asociarlas: `joseamaya009` / `José David Amaya Mosquera`, y `EmersonMolano` / `Emerson Calet Molano Cardozo`. El equipo confirmó que esas identidades corresponden a las personas indicadas el 2026-11-08.
 
 ## Confirmaciones pendientes antes de presentar el registro
 
 - [x] Los tres integrantes autorizaron la publicación de los datos incluidos en la README para esta entrega, según la confirmación recibida el 2026-11-07.
-- [ ] Cada aprendiz confirma su nombre legal, usuario Git, áreas de trabajo y autoría de los aportes creativos.
+- [x] Cada aprendiz confirma su nombre legal, usuario Git, áreas de trabajo y autoría de los aportes creativos, según la autorización del equipo recibida el 2026-11-08.
 - [ ] El instructor líder confirma qué instructores participaron, cómo fue su aporte y si alguno creó parte del software o de los materiales que se registrarán.
 - [ ] El equipo confirma si falta alguna persona que haya contribuido creativamente, aunque no aparezca en Git.
 - [ ] El responsable del trámite recibe por un canal privado los datos personales requeridos.
