@@ -10,6 +10,10 @@ If one is missing, add a row. If one is empty or no longer used, write that in t
 
 Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo en la columna del commit. La visibilidad indicada se revisó el 2026-11-05.
 
+Live verification performed on 2026-11-07 confirmed that the six tag targets are ancestors of the corresponding remote `main` branches. Some `main` branches have advanced after the tag; that does not invalidate the tagged delivery. The `final-delivery-2026` Release contains the 12 listed ZIP assets, and their GitHub SHA-256 digests match `SHA256SUMS.txt`.
+
+La verificación en vivo realizada el 2026-11-07 confirmó que los seis destinos de tag son ancestros de las ramas `main` remotas correspondientes. Algunas ramas `main` avanzaron después del tag; eso no invalida la entrega etiquetada. El Release `final-delivery-2026` contiene los 12 ZIP listados y sus digest SHA-256 de GitHub coinciden con `SHA256SUMS.txt`.
+
 | Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
 |---|---|---|---|---|---|---|
 | Main repository | [joseale879/PT_HS](https://github.com/joseale879/PT_HS) | Public / Público | Write; reported granted by the team / Escritura; informado como concedido por el equipo | `8dd45ca349134ad0851a536af5f90760b10691f3` | [main ZIP](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/PT_HS-final-delivery-2026-main.zip) | [full export](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/PT_HS-full-export.zip) |

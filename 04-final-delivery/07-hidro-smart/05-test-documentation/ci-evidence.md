@@ -54,6 +54,8 @@ Consulta remota de `main` el 2026-11-05:
 | Firmaware_HS | `2e5cfca7d0573e4225a07c6b7b13ea23e9570f4d` | Sin check-runs ni contextos de estado visibles para ese SHA. |
 | DOCS_HS | `8ad8a018dd5d0875fa4b3360fa2071c1c4a2adde` | Sin check-runs ni contextos de estado visibles para ese SHA. |
 
+La comprobación remota posterior del 2026-11-07 confirmó la relación de versión siguiente: PT_HS `8dd45ca` está contenido en el `main` remoto `32be1cf`; FT_HS `91a5ef3` está contenido en `bb5920d`; Firmaware_HS `917fcfd` está contenido en `2e5cfca`; DOCS_HS `054a063` está contenido en `8ad8a01`; BK_HS y BD_HS tienen el tag directamente sobre su `main`. Los tags, no los tips posteriores de `main`, son la versión exacta usada para los ZIP del Release. Falta reejecutar CI sobre esos SHA exactos si la rúbrica exige un check reciente del tag.
+
 ## Alcance y límites
 
 La evidencia de CI registra las ejecuciones del proveedor para los SHA indicados; no acredita pruebas físicas del ESP32, funcionamiento actual de Brevo/Flespi/Neon, permisos de revisión, ni aceptación funcional de cada requisito. Las consultas de estado son un corte remoto del 2026-11-05; volver a verificarlas si cambia un SHA. La instalación local de dependencias para repetir las pruebas se bloqueó por errores de permisos de npm, por lo que no se presenta un resultado local nuevo. La entrega debe enlazar resultados a cada caso y a los SHA exactos que finalmente se aprueben.
