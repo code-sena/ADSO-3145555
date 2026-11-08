@@ -1,6 +1,6 @@
 # Estado de la entrega Hidro Smart
 
-**Corte:** 2026-11-07  
+**Corte:** 2026-11-08
 **Versión:** `final-delivery-2026`  
 **Responsable de la entrega:** José David Amaya Mosquera (`joseamaya009`)
 
@@ -15,16 +15,15 @@ Los tags de los seis repositorios de componentes son ancestros de sus ramas remo
 - Figma y respuestas del formulario incluidos en `04-software-design/`.
 - Documentos editables, PDF y fuentes Markdown/Drawio incluidos.
 - Pitch público descargable: duración 01:40.
-- Tutorial público descargable: duración 28:20; no cumple el rango requerido de 03:00 a 05:00 y debe reemplazarse por una versión recortada o un nuevo tutorial.
+- Tutorial público descargable: duración 03:02; cumple el rango requerido de 03:00 a 05:00 y contiene narración de los pasos principales. El enlace y la verificación de acceso están registrados en `10-videos/README.md`.
 - La página pública de inicio de sesión respondió HTTP 200 y la API `/health` respondió HTTP 200 con estado `ok` y base `hidro_smart`.
 - El chequeo estático del backend pasó sobre 217 archivos.
-- En PT_HS, el CI del tag tiene dos workflows `HidroSmart CI` exitosos, pero la validación falla en `Validate and update database`; no es un gate verde.
-- La instalación local de dependencias no pudo completarse; las pruebas que requieren paquetes npm no se presentan como aprobadas.
+- En PT_HS, la ejecución del tag `final-delivery-2026` (`64e03d8`) completó correctamente los 11 pasos del workflow `HidroSmart CI`, incluida la validación y actualización de la base de datos.
+- La instalación local es reproducible con `npm ci` usando los lockfiles versionados. El backend pasó lint y 202 pruebas unitarias; la integración pasó 6 pruebas y omitió 1 que requiere credencial externa Flespi/TLS. El frontend pasó lint, typecheck, 22 pruebas, build y preparación móvil.
 
 ## Cierres externos pendientes
 
-- Reemplazar el tutorial por una versión de 3 a 5 minutos y verificar visualmente sus cuatro puntos de contenido.
-- Ejecutar las pruebas con dependencias instaladas y asociarlas al SHA exacto del tag.
 - Aportar evidencia de producción, correo, restauración de base de datos, MQTT y prueba física del ESP32.
-- Confirmar en el trámite externo la autoría, productor, titularidad y licencias de terceros.
+- Confirmar en el trámite externo la autoría, productor, titularidad, participación de instructores y licencias de terceros.
+- Completar la revisión de secretos y datos personales en los adjuntos, y conservar la aprobación del instructor en el Pull Request.
 

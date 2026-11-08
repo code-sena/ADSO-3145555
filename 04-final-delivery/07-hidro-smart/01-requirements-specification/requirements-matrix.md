@@ -46,11 +46,11 @@ Los requisitos detallados permanecen en el SRS. Esta tabla agrupa los flujos que
 
 ## 4. Evidencia técnica disponible y límites
 
-**CI:** La carpeta `05-test-documentation/ci-evidence.md` distingue evidencia histórica de CI y la versión exacta de los tags. No se debe declarar aprobado el estado combinado mientras figure `pending` ni extrapolar los checks de PT_HS a los repositorios separados.
+**CI:** La carpeta `05-test-documentation/ci-evidence.md` distingue la evidencia histórica de la versión exacta de los tags. Para `PT_HS`, el workflow del tag `final-delivery-2026` completó sus 11 pasos, incluida la validación de base de datos. Los checks de PT_HS no se extrapolan a los repositorios separados; sus resultados locales reproducibles están descritos por separado.
 
-**Web:** La URL indicada es `https://pt-hs.pages.dev/login`; está registrada en la entrega, pero todavía debe conservarse un smoke test reproducible de la versión candidata.
+**Web:** La URL indicada es `https://pt-hs.pages.dev/login`; respondió HTTP 200 en la comprobación de la versión candidata y se conserva en la entrega junto con la evidencia disponible.
 
-**Video:** Se registraron enlaces Drive separados para pitch y tutorial. Ambos responden sin autenticación; falta verificar duración y correspondencia con los criterios de contenido.
+**Video:** Se registraron enlaces Drive separados para pitch y tutorial. Ambos responden sin autenticación; el pitch mide 01:40 y el tutorial narrado mide 03:02. La duración y los cuatro criterios del tutorial están marcados en `10-videos/README.md`.
 
 **Repositorios:** La entrega identifica seis repositorios originales y usa los tags `final-delivery-2026` como versión exacta. Los `main` posteriores pueden contener commits descendientes; no deben confundirse con el contenido de los ZIP del Release.
 
