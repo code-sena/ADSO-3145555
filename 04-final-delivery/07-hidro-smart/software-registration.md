@@ -1,6 +1,6 @@
 # Registro del software Hidro Smart
 
-**Estado:** borrador preparado con datos que aparecen en el monorepo PT_HS y en los repositorios separados. Las secciones 5 y 6 fueron confirmadas por el equipo para esta entrega; el documento no es una solicitud presentada ni reemplaza el trámite ante la Dirección Nacional de Derecho de Autor (DNDA).
+**Estado:** preparado con los datos técnicos confirmados por el equipo. José David Amaya Mosquera es el responsable de realizar la entrega. Las declaraciones de autoría legal, productor y titularidad deben confirmarse en el trámite; este documento no es una solicitud presentada ni reemplaza el trámite ante la Dirección Nacional de Derecho de Autor (DNDA).
 
 ## 1. Contexto formativo
 
@@ -13,13 +13,13 @@
 
 ## 2. Solicitante
 
-**Pendiente de definir por el equipo.** Debe ser la persona que presentará la solicitud y cuya identidad se usará en el formulario de la DNDA.
+**Responsable informado por el equipo:** José David Amaya Mosquera (`joseamaya009`) realizará la entrega y deberá diligenciar la solicitud con sus datos por el canal privado indicado por el instructor.
 
 | Campo                  | Dato                                                                                                      |
 | ---------------------- | --------------------------------------------------------------------------------------------------------- |
-| Nombre legal           | Pendiente; completar directamente en el trámite o por canal privado                                      |
+| Nombre legal           | José David Amaya Mosquera; confirmar directamente en el trámite o por canal privado                      |
 | Documento de identidad | Pendiente; no guardar el número en este repositorio                                                      |
-| Calidad en que actúa  | Pendiente: nombre propio o representación autorizada                                                     |
+| Calidad en que actúa  | Responsable de la entrega; confirmar en el trámite si actúa en nombre propio o con representación         |
 | Poder o autorización  | Solo aplica si actúa en representación de otra persona; confirmar y adjuntar al trámite si corresponde |
 
 La DNDA distingue actuar en nombre propio de actuar con representación y puede requerir autorización o prueba de representación. Verifique la opción exacta en el formulario oficial antes de enviarlo.

@@ -1,6 +1,6 @@
 # Equipo y aportes de Hidro Smart
 
-**Estado:** roles completados con base en la actividad observada; autorizaciones y autoría legal aún requieren confirmación individual.
+**Estado:** roles y autorización de publicación de datos confirmados por el equipo; las declaraciones de autoría legal, productor y titularidad deben confirmarse antes del trámite DNDA.
 
 **Fuente:** revisión consolidada de PT_HS y de los repositorios separados BK_HS, FT_HS, BD_HS, Firmaware_HS y DOCS_HS, además de la lista de instructores del borrador anterior. Las copias del monorepo y de los componentes se consideran evidencia del mismo proyecto, no equipos diferentes.
 
@@ -10,9 +10,9 @@
 
 | Nombre según la lista del proyecto | Ficha | Usuario o identidad Git observada | Repositorios con actividad asociada | Áreas de trabajo observadas | Autoría para el registro |
 |---|---:|---|---|---|---|
-| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | 3145555 | `joseale879` | PT_HS, BK_HS, FT_HS, BD_HS, Firmaware_HS y DOCS_HS | Desarrollo e integración transversal: backend, frontend web/móvil, base de datos, firmware y documentación. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
+| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | 3145555 | `joseale879` | PT_HS, BK_HS, FT_HS, BD_HS, Firmaware_HS y DOCS_HS | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación, al igual que los demás integrantes. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
 | JOSE DAVID AMAYA MOSQUERA | 3145555 | `joseamaya009`; `José David Amaya Mosquera` | PT_HS, BK_HS, FT_HS, BD_HS y Firmaware_HS | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación, al igual que los demás integrantes. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
-| EMERSON CALET MOLANO CARDOZO | 3145555 | `EmersonMolano`; `Emerson Calet Molano Cardozo` | PT_HS, BK_HS, FT_HS, BD_HS y DOCS_HS | Desarrollo en backend, frontend y base de datos; documentación del proyecto. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
+| EMERSON CALET MOLANO CARDOZO | 3145555 | `EmersonMolano`; `Emerson Calet Molano Cardozo` | PT_HS, BK_HS, FT_HS, BD_HS y DOCS_HS | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación, al igual que los demás integrantes. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
 
 Los números de documento se entregan por un canal privado al responsable del trámite y no se almacenan en este archivo.
 
@@ -22,9 +22,9 @@ Estas descripciones resumen las áreas observadas en los historiales y completan
 
 | Integrante | Rol y responsabilidad basada en actividad Git |
 |---|---|
-| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | Líder de integración y desarrollo transversal entre componentes: backend, frontend web/móvil, base de datos, firmware y documentación. |
+| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación. |
 | JOSE DAVID AMAYA MOSQUERA | Desarrollador integral de todos los componentes del proyecto: backend, frontend web/móvil, base de datos, firmware y documentación, al igual que los demás integrantes. |
-| EMERSON CALET MOLANO CARDOZO | Desarrollador de base de datos y aplicaciones, con responsabilidad en la documentación del proyecto. |
+| EMERSON CALET MOLANO CARDOZO | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación. |
 
 ## Instructores relacionados en el borrador del equipo
 
@@ -64,6 +64,7 @@ Las identidades Git con nombre de usuario y nombre personal se agruparon cuando 
 
 ## Confirmaciones pendientes antes de presentar el registro
 
+- [x] Los tres integrantes autorizaron la publicación de los datos incluidos en la README para esta entrega, según la confirmación recibida el 2026-11-07.
 - [ ] Cada aprendiz confirma su nombre legal, usuario Git, áreas de trabajo y autoría de los aportes creativos.
 - [ ] El instructor líder confirma qué instructores participaron, cómo fue su aporte y si alguno creó parte del software o de los materiales que se registrarán.
 - [ ] El equipo confirma si falta alguna persona que haya contribuido creativamente, aunque no aparezca en Git.

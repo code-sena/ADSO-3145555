@@ -34,9 +34,9 @@ Final delivery of the training project / Entrega final del proyecto formativo.
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role / Rol | Verified and authorized / Verificado y autorizado |
 |---|---|---|---|---|---|---|
-| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | CC | 1070600183 | 3145555 | joseale879 | Líder de integración y desarrollo transversal | ☑ |
+| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | CC | 1070600183 | 3145555 | joseale879 | Desarrollador integral de todos los componentes, al igual que los demás integrantes | ☑ |
 | JOSE DAVID AMAYA MOSQUERA | CC | 1076907220 | 3145555 | joseamaya009 | Desarrollador integral de todos los componentes, al igual que los demás integrantes | ☑ |
-| EMERSON CALET MOLANO CARDOZO | CC | 1077228448 | 3145555 | EmersonMolano | Base de datos, aplicaciones y documentación | ☑ |
+| EMERSON CALET MOLANO CARDOZO | CC | 1077228448 | 3145555 | EmersonMolano | Desarrollador integral de todos los componentes, al igual que los demás integrantes | ☑ |
 
 Data use authorization: by checking the box, the member confirms their data and authorizes publishing their name, document number and ficha in this public repository, for the software registration process (Ley 1581 de 2012). Anyone who does not authorize it tells the instructor before delivering.
 
@@ -57,7 +57,7 @@ Autorización de datos: al marcar la casilla, el integrante confirma sus datos y
 | [`09-project-article/`](09-project-article/) | Project article / Artículo del proyecto | ☑ |
 | [`10-videos/`](10-videos/) | Videos / Videos | ☑ |
 | [`code-tag/`](code-tag/) | Repository links, tags and ZIP files / Enlaces, tags y ZIP | ☑ |
-| [`team-roster.md`](team-roster.md) | Team and roles / Equipo y roles | ☐ |
+| [`team-roster.md`](team-roster.md) | Team and roles / Equipo y roles | ☑ |
 | [`software-registration.md`](software-registration.md) | Software registration data / Datos para registro de software | ☐ |
 
 The official consolidated documents from `DOCS_HS/01_Documentacion_del_Proyecto` were incorporated without mixing historical branches. Each document has an editable `.docx` copy and a PDF exported from Word. The source documents retain their own documented cut-off dates, limitations and pending validations; no production URL, credentials, test execution or authorship authorization was invented.

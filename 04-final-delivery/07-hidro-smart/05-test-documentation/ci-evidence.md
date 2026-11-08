@@ -29,6 +29,19 @@ Ejecuciones históricas: [HidroSmart validation #41923198240](https://github.com
 - El endpoint de commit status informó `pending` con cero contextos. Por tanto, los workflows/check-runs están verdes, pero el estado combinado del commit no aparece aprobado; no describir el gate global como verde.
 - CI de software/compilación no acredita telemetría física, BLE, ACL remota, entrega real de correos, base desplegada ni aceptación de requisitos.
 
+## Candidato local `final-delivery-2026` consultado el 2026-11-07
+
+La verificación local confirmó que el tag `final-delivery-2026` apunta al `main` local en los seis repositorios incluidos. Esta tabla no sustituye la consulta remota de GitHub ni demuestra que los workflows se hayan ejecutado sobre estos SHA.
+
+| Repositorio | SHA local de `main` y tag | Estado de CI para el candidato |
+|---|---|---|
+| PT_HS | `8dd45ca349134ad0851a536af5f90760b10691f3` | No revalidado remotamente |
+| BK_HS | `190263da952afba5d4ce7f6c2d83c0fde2b239c4` | No revalidado remotamente |
+| FT_HS | `91a5ef3125ed73d4d9d410f772b54923f8099430` | No revalidado remotamente |
+| BD_HS | `42ee03b5906dfdcbd9e9f6c7f03ddc453250d23b` | No revalidado remotamente |
+| Firmaware_HS | `917fcfd2129ea6ff92860a4321b1fd7863957d85` | No revalidado remotamente |
+| DOCS_HS | `054a063a667f637a55b3641f83a9e4dded1faa5b` | No revalidado remotamente |
+
 ## Comprobaciones en los repositorios separados
 
 Consulta remota de `main` el 2026-11-05:
@@ -43,4 +56,4 @@ Consulta remota de `main` el 2026-11-05:
 
 ## Alcance y límites
 
-La evidencia de CI registra las ejecuciones del proveedor para los SHA indicados; no acredita pruebas físicas del ESP32, funcionamiento actual de Brevo/Flespi/Neon, permisos de revisión, ni aceptación funcional de cada requisito. Las consultas de estado son un corte remoto del 2026-11-05; volver a verificarlas si cambia un SHA. En esta revisión documental no se ejecutaron pruebas locales. La entrega debe enlazar resultados a cada caso y a los SHA exactos que finalmente se aprueben.
+La evidencia de CI registra las ejecuciones del proveedor para los SHA indicados; no acredita pruebas físicas del ESP32, funcionamiento actual de Brevo/Flespi/Neon, permisos de revisión, ni aceptación funcional de cada requisito. Las consultas de estado son un corte remoto del 2026-11-05; volver a verificarlas si cambia un SHA. La instalación local de dependencias para repetir las pruebas se bloqueó por errores de permisos de npm, por lo que no se presenta un resultado local nuevo. La entrega debe enlazar resultados a cada caso y a los SHA exactos que finalmente se aprueben.

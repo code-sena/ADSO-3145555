@@ -11,6 +11,8 @@
 
 - `software-analysis.docx` — editable source / fuente editable
 - `software-analysis.pdf` — PDF export / exportación PDF
+- `system-analysis.md` — complementary editable source / fuente editable complementaria
+- `system-analysis.pdf` — complementary PDF export / exportación PDF complementaria
 
 ## Format / Formato
 
