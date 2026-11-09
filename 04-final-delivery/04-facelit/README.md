@@ -59,7 +59,7 @@ Autorización de datos: al marcar la casilla, el integrante confirma sus datos y
 | [`07-improvement-actions/`](07-improvement-actions/) | Improvement actions / Acciones de mejoramiento | ☐ |
 | [`08-manuals/`](08-manuals/) | Manuals / Manuales | ☐ |
 | [`09-project-article/`](09-project-article/) | Project article / Artículo del proyecto | ☐ |
-| [`10-videos/`](10-videos/) | Videos / Videos | ☐ |
+| [`10-videos/`](10-videos/) | Videos / Videos | ☑ |
 | [`code-tag/`](code-tag/) | Repository links, tags and ZIP files / Enlaces, tags y ZIP | ☐ |
 | [`team-roster.md`](team-roster.md) | Team and roles / Equipo y roles | ☐ |
 | [`software-registration.md`](software-registration.md) | Software registration data / Datos para registro de software | ☐ |
@@ -72,8 +72,8 @@ Aquí solo van archivos demasiado pesados para GitHub, como videos de demostraci
 
 | File / Archivo | Size / Tamaño | Link / Enlace |
 |---|---|---|
-| Presentación FaceLit.mp4 | 215,064,307 bytes (205.1 MiB), 4 min 31 s | [Carpeta de presentación — Drive](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT); carpeta accesible sin sesión comprobada el 2026-11-05; reproducción completa pendiente. |
-| Tutorial.mp4 | Tamaño y duración pendientes de comprobar | [Tutorial — Drive](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT); nombre del archivo visible sin iniciar sesión, comprobado el 2026-11-05; reproducción completa pendiente. |
+| pitch | 1 min 50 s | [Pitch publicitario — Drive](https://drive.google.com/drive/folders/1g6zS8GQ-b6YLMu8mm3y77bA9sVucYGXL) |
+| Tutorial | 4 min 9 s | [Tutorial — Drive](https://drive.google.com/drive/folders/1g6zS8GQ-b6YLMu8mm3y77bA9sVucYGXL) |
 
 
 ## Actualización documental - Persona 2

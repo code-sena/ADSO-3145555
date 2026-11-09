@@ -1,29 +1,22 @@
 # Videos: FaceLit
 
-Two videos are required. / Se requieren dos videos.
-
-## Archivos recibidos / Received files
-
-Se localizó el archivo de presentación entregado por el equipo: `Presentación FaceLit.mp4`.
-
-- Duración confirmada: **2 min 1 s** (121 s); el pitch fue reducido, pero supera por 1 segundo el máximo permitido.
-- Tamaño y SHA-256 indicados abajo corresponden al archivo anterior de 4 min 31 s y se conservan como referencia histórica.
-- Tamaño anterior: **215,064,307 bytes** (aproximadamente 205.1 MiB).
-- SHA-256 anterior: `fb001eae8199b6174aab1e6ed2a2485ac3d62243c4a9a2594332810eafc6bc0d`.
-- Enlace compartido: [carpeta de Drive — videos de FaceLit](https://drive.google.com/drive/folders/1g6zS8GQ-b6YLMu8mm3y77bA9sVucYGXL?usp=sharing).
-- Clasificación confirmada por el equipo: **video de presentación**, no tutorial. La versión actual queda 1 segundo por encima del límite máximo de 2 minutos exigido para el pitch.
-- Acceso a la carpeta sin iniciar sesión: **comprobado el 2026-11-05**, mediante una solicitud HTTP sin autenticación: respuesta 200, título «presentación - Google Drive» y nombre del video visible. La reproducción completa del archivo permanece **pendiente de comprobar**.
-
-Los videos permanecen fuera de Git. El equipo confirmó que la misma carpeta contiene la presentación y el tutorial. Una consulta sin autenticación mostró ambos nombres: `Pitch publicitario` y `Tutorial`. Las duraciones confirmadas son **2 min 1 s** para el pitch y **4 min 9 s** para el tutorial.
+Final versions of the project videos. / Versiones finales de los videos del proyecto.
 
 | Video | Duration / Duración | Link / Enlace | Done / Listo |
 |---|---|---|---|
-| Advertising pitch / Pitch publicitario | Comprobado: **2 min 1 s** (121 s); exigido: 1 a 2 minutos | [Videos de FaceLit — Drive](https://drive.google.com/drive/folders/1g6zS8GQ-b6YLMu8mm3y77bA9sVucYGXL?usp=sharing) | ☐ Excede el máximo por 1 s |
-| Short usage tutorial / Tutorial corto de uso | Comprobado: **4 min 9 s** (249 s); exigido: 3 a 5 minutos | [Videos de FaceLit — Drive](https://drive.google.com/drive/folders/1g6zS8GQ-b6YLMu8mm3y77bA9sVucYGXL?usp=sharing) | ☑ Duración dentro del rango |
+| Advertising pitch / Pitch publicitario | 1 minute 50 seconds / 1 minuto y 50 segundos | [Open folder — file: pitch / Abrir carpeta — archivo: pitch](https://drive.google.com/drive/folders/1g6zS8GQ-b6YLMu8mm3y77bA9sVucYGXL) | ☑ |
+| Short usage tutorial / Tutorial corto de uso | 4 minutes 9 seconds / 4 minutos y 9 segundos | [Open folder — file: Tutorial / Abrir carpeta — archivo: Tutorial](https://drive.google.com/drive/folders/1g6zS8GQ-b6YLMu8mm3y77bA9sVucYGXL) | ☑ |
+
+Both videos meet the required duration: 1–2 minutes for the pitch and 3–5 minutes for the tutorial. / Ambos videos cumplen la duración requerida: 1–2 minutos para el pitch y 3–5 minutos para el tutorial.
 
 ## 1. Advertising pitch / Pitch publicitario
 
 Sells the product to someone who does not know it. / Presenta el producto a alguien que no lo conoce.
+
+**Final file / Archivo final:** `pitch`
+**Duration / Duración:** 1:50
+
+Content checklist / Lista de verificación del contenido:
 
 - [ ] Problem it solves / Problema que resuelve
 - [ ] Who it is for / Para quién es
@@ -33,6 +26,11 @@ Sells the product to someone who does not know it. / Presenta el producto a algu
 ## 2. Short usage tutorial / Tutorial corto de uso
 
 Shows how the system is used, on the real system. / Muestra cómo se usa el sistema, sobre el sistema real.
+
+**Final file / Archivo final:** `Tutorial`
+**Duration / Duración:** 4:09
+
+Content checklist / Lista de verificación del contenido:
 
 - [ ] Sign-in and main roles / Ingreso y roles principales
 - [ ] The main flow, step by step / El flujo principal, paso a paso
@@ -45,12 +43,3 @@ Shows how the system is used, on the real system. / Muestra cómo se usa el sist
 - Check the links in a private browser window. / Pruebe los enlaces en una ventana privada del navegador.
 - Do not show passwords, tokens or real personal data. / No muestre contraseñas, tokens ni datos personales reales.
 - Use music and images you are allowed to use. / Use música e imágenes que tenga permiso de usar.
-
-
-## Actualización documental - Persona 2
-
-Fuente: facelit-docs, commit `dcf81aad429eeffbbe9f9ac17d0b7946e82c3dcb`, revisión del 5 de noviembre de 2026.
-
-- [video-recording-plan.md](video-recording-plan.md)
-
-Consulte [cambios, fuentes y pendientes](../delivery-review.md). Las casillas oficiales conservan su estado: documentación organizada no equivale a aceptación completa del producto. Para cambios de estado y despliegue, priorice SRS V4.1 y el informe actualizado frente a notas de cortes anteriores.

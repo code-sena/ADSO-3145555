@@ -52,11 +52,11 @@ The team deliberately retained Hostinger-only changes locally and deferred their
 
 The coordinator's authoritative Downloads document package supplied 106 non-code-tag files; original PDF bytes were preserved. New installation evidence (29 files) and contribution evidence (5 files) were imported byte-for-byte; the 28 installation-manifest hashes and four contribution hashes matched. The CSV has 677 rows; its contribution percentages count commits, not effort, rights or grades. See [contributions](../05-test-documentation/team-contributions/README.md). Personal authorizations remain unchecked.
 
-[Both videos](https://drive.google.com/drive/folders/1xxpKgaNFhQJD3j3ghriaaXjS0GgABbkT) were listed in an unauthenticated folder response. Full playback/tutorial duration remain unverified. The known presentation duration is 4:31, outside the guide's 1–2 minute pitch range. See [video details](../10-videos/README.md).
+[Both videos](https://drive.google.com/drive/folders/1g6zS8GQ-b6YLMu8mm3y77bA9sVucYGXL) are present in the shared folder. The final pitch is 1:50 and the tutorial is 4:09; both meet the guide's duration requirements. See [video details](../10-videos/README.md).
 
 ## Remaining human acceptance
 
 - A fresh permission check on 2026-11-05 still returns `read` for `ariel5253` on all five repositories. Confirm effective write after invitation acceptance; public visibility does not imply write.
 - The coordinator has accepted the DB/harness differences. Obtain instructor acceptance of the documented scope and determine whether a real-camera test is required; do not turn automatic fixtures into camera evidence.
-- Confirm video requirements and individual data authorizations, applicant/declarations and instructor contribution fields.
+- Confirm individual data authorizations, applicant/declarations and instructor contribution fields.
 - Review the PR; publication does not authorize merge or represent completed academic acceptance.

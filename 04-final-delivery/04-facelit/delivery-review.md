@@ -44,7 +44,7 @@ Fecha: 5 de noviembre de 2026. Fuente facelit-docs fijada en dcf81aad429eeffbbe9
 | 09 Artículo | Complemento actualizado con SRS V4.1, capturas y diferencias del paquete publicado. |
 | README general | Resumen y URL documentada del producto; índice local y aviso de pendientes. |
 | Registro | Campos descriptivos respaldados por fuentes e inventario preliminar de terceros; sin marcar declaraciones ni elegir solicitante, autoría o publicación. |
-| Videos | Pitch confirmado en 2 min 1 s y requiere recortar 1 segundo; tutorial confirmado en 4 min 9 s, dentro del rango de 3 a 5 minutos. Enlace público actualizado en la carpeta de Drive. |
+| Videos | Pitch final confirmado en 1 min 50 s y tutorial confirmado en 4 min 9 s; ambos cumplen sus rangos de duración. Enlace público actualizado en la carpeta de Drive. |
 
 ## Fuente documental y precedencia
 
@@ -67,7 +67,7 @@ La fuente declara frontend base 6efd92c con cambio local de consultas en lotes d
 1. Cada integrante confirma su rol, aporte y datos; cada autorización corresponde a su titular. No se marcaron en su nombre.
 2. Confirmar solicitante, declaraciones de obra, publicación, año definitivo y registro con el equipo/instructor. La descripción técnica y tabla preliminar de terceros están preparadas con sus fuentes.
 3. Completar inventario exacto de componentes/modelos distribuidos y avisos; las condiciones citadas proceden de la documentación, no de una revisión legal nueva.
-4. Recortar 1 segundo del pitch para dejarlo en un máximo de 2 minutos; el tutorial de 4 min 9 s ya cumple el rango de 3-5 minutos. Probar ambos enlaces en ventana privada.
+4. Probar en ventana privada los enlaces públicos del pitch final de 1 min 50 s y del tutorial de 4 min 9 s.
 5. Revisar con Persona 1 los documentos frente al artefacto exacto entregado y aportar evidencia de los criterios que el SRS mantiene por verificar.
 
 ## Qué no se realizó
