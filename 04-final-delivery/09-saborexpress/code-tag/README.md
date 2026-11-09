@@ -21,9 +21,9 @@ Before making a repository public, remove `.env` files and change any password, 
 
 Antes de hacer público un repositorio, quite los archivos `.env` y cambie toda contraseña, token o llave que se haya subido alguna vez.
 
-The instructor account `ariel5253` needs write access to every repository, so pending items can be corrected for the software registration. Add it as a collaborator where the table says so.
+Write access for the instructor account `ariel5253` was verified in all four repositories on 2026-11-08; no collaborator change remains pending for this delivery.
 
-La cuenta del instructor, `ariel5253`, necesita acceso de escritura en cada repositorio, para poder corregir pendientes del registro de software. Agréguela como colaboradora donde la tabla lo indique.
+El acceso de escritura de la cuenta del instructor, `ariel5253`, fue verificado el 2026-11-08 en los cuatro repositorios; no queda pendiente ningún cambio de colaborador para esta entrega.
 
 ## Why two ZIP files / Por qué dos ZIP
 
