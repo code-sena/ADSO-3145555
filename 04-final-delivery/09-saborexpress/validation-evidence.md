@@ -12,23 +12,23 @@ Este archivo separa la evidencia reproducible de las verificaciones que requiere
 | Fork delivery commit / Commit de entrega del fork | `b85a40e` |
 | PR / Pull Request | [code-sena/ADSO-3145555 #18](https://github.com/code-sena/ADSO-3145555/pull/18) |
 | Release | [final-delivery](https://github.com/yersonct/ADSO-3145555/releases/tag/final-delivery) |
-| API tag | `21ad9764b5cd32b9262ec318be8c5de74d417725` |
-| Docs tag | `cfe0046db3a7ba0ffbf5115b76dfa0c5e1a1e03e` |
-| Mobile tag | `5016d9a85d07ae2f23cb232fede2446701ef0cb1` |
-| Web tag | `3c01ea88d0d86b41886d9555cb7f50bb0d3491fd` |
+| API tag | `e30d24af10be757bee9e08993a5ac970d6173211` |
+| Docs tag | `61ae5cdca9319852d605d52be11883f1a2769929` |
+| Mobile tag | `91a59b090f5716c58dfb9229b0509af23593077e` |
+| Web tag | `582b7148bc2aa84bb4c76a24aa6b0b6122e9f189` |
 
 ## Correction branches / Ramas de corrección
 
-The code corrections are published for review in branches separate from `main`. The exact `final-delivery-2026` tags remain immutable at the SHAs listed above until the owner merges and retags them.
+The code corrections are now merged into `main`, and `final-delivery-2026` points to the corrected main commit in each repository.
 
-Las correcciones de código están publicadas para revisión en ramas separadas de `main`. Los tags exactos `final-delivery-2026` permanecen en los SHA relacionados arriba hasta que el propietario fusione y vuelva a etiquetar los cambios.
+Las correcciones de código ya están fusionadas en `main`, y `final-delivery-2026` apunta al commit corregido de `main` en cada repositorio.
 
-| Repository / Repositorio | Branch / Rama | Commit |
+| Repository / Repositorio | Main commit / Commit de main | Tag |
 |---|---|---|
-| [SaborExpressBack](https://github.com/yersonct/SaborExpressBack/tree/fix/final-delivery-rubric-20261108) | `fix/final-delivery-rubric-20261108` | `e30d24a` |
-| [SaborExpressDocs](https://github.com/yersonct/SaborExpressDocs/tree/fix/final-delivery-rubric-20261108) | `fix/final-delivery-rubric-20261108` | `61ae5cd` |
-| [SaborExpressMovil](https://github.com/yersonct/SaborExpressMovil/tree/fix/final-delivery-rubric-20261108) | `fix/final-delivery-rubric-20261108` | `91a59b0` |
-| [SaborExpressWeb](https://github.com/yersonct/SaborExpressWeb/tree/fix/final-delivery-rubric-20261108) | `fix/final-delivery-rubric-20261108` | `582b714` |
+| [SaborExpressBack](https://github.com/yersonct/SaborExpressBack) | `e30d24a` | `final-delivery-2026` |
+| [SaborExpressDocs](https://github.com/yersonct/SaborExpressDocs) | `61ae5cd` | `final-delivery-2026` |
+| [SaborExpressMovil](https://github.com/yersonct/SaborExpressMovil) | `91a59b0` | `final-delivery-2026` |
+| [SaborExpressWeb](https://github.com/yersonct/SaborExpressWeb) | `582b714` | `final-delivery-2026` |
 
 ## Reproducible repository checks / Verificaciones reproducibles
 

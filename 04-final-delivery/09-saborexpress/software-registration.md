@@ -8,7 +8,7 @@ Los campos públicos conocidos del expediente están diligenciados abajo. Los do
 
 | Field / Campo | Value / Valor |
 |---|---|
-| Purpose / Propósito | Request registration before the Dirección Nacional de Derecho de Autor in the name of the declared software author, with instructors recorded only as training-process contributors / Solicitar el registro ante la Dirección Nacional de Derecho de Autor a nombre del autor de software declarado, con los instructores registrados únicamente como colaboradores del proceso formativo |
+| Purpose / Propósito | Request registration before the Dirección Nacional de Derecho de Autor in the name of the apprentice and instructor teams that supported or contributed to the training project / Solicitar el registro ante la Dirección Nacional de Derecho de Autor a nombre de los equipos de aprendices e instructores que apoyaron o contribuyeron al proyecto formativo |
 | Process / Proceso | Completion of the taught stage of the technologist program / Finalización de la etapa lectiva del tecnólogo |
 | Training project / Proyecto formativo | Desarrollo de software orientado a servicios |
 | Research seedbed / Semillero de investigación | Developers & Geeks |
@@ -19,32 +19,42 @@ Los campos públicos conocidos del expediente están diligenciados abajo. Los do
 |---|---|
 | Full name / Nombre | YERSON STIVEN CUELLAR RUBIANO |
 | ID document / Identificación | CC 1075225114 |
-| Acts on own behalf or as representative / Actúa en nombre propio o como representante | ☑ Own behalf / Nombre propio ☐ Representative / Representante |
-| Proof of representation / Prueba de representación, si aplica | Not applicable / No aplica |
+| Acts on own behalf or as representative / Actúa en nombre propio o como representante | ☐ Own behalf / Nombre propio ☑ Representative / Representante |
+| Proof of representation / Prueba de representación, si aplica | Team declaration in this package and private institutional authorization / Declaración del equipo en este paquete y autorización institucional privada |
 
 ## 2. Authors / Autores (art. 5, num. 2)
 
-The software author declared by this package is the apprentice listed below. Instructors are recorded in `team-roster.md` as indirect training-process contributors, not as software authors. / El autor del software declarado por este paquete es el aprendiz relacionado abajo. Los instructores están registrados en `team-roster.md` como colaboradores indirectos del proceso formativo, no como autores del software.
+The authors and contributors declared by this package are the instructors and apprentice listed below, following the final-delivery guide. Private instructor identifiers remain under institutional custody. / Los autores y colaboradores declarados por este paquete son los instructores y el aprendiz relacionados abajo, conforme a la guía de entrega final. Los identificadores privados de los instructores permanecen bajo custodia institucional.
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | Contribution / Aporte |
 |---|---|---|---|---|
+| JESUS ARIEL GONZALEZ BONILLA | Instructor | Kept privately / En custodia | 3145555 | Direct project guidance / Orientación directa del proyecto |
+| CARLOS FABIAN MARTINEZ MORA | Instructor | Kept privately / En custodia | 3145555 | Indirect training support / Apoyo formativo indirecto |
+| CARLOS JULIO CADENA SARASTY | Instructor | Kept privately / En custodia | 3145555 | Direct project guidance / Orientación directa del proyecto |
+| JAVIER HUMBERTO PINTO DIAZ | Instructor | Kept privately / En custodia | 3145555 | Indirect training support / Apoyo formativo indirecto |
+| KAROL DANIELA CORREA TRUJILLO | Instructor | Kept privately / En custodia | 3145555 | Indirect training support / Apoyo formativo indirecto |
+| JOSE DE JESUS MOTTA VARGAS | Instructor | Kept privately / En custodia | 3145555 | Direct project guidance / Orientación directa del proyecto |
+| FERNELLY CARVAJAL SILVA | Instructor | Kept privately / En custodia | 3145555 | Indirect training support / Apoyo formativo indirecto |
+| EDDIER YAIR LIBERATO CUENCA | Instructor | Kept privately / En custodia | 3145555 | Indirect training support / Apoyo formativo indirecto |
+| JHON WILLIAN CORREDOR ARAUJO | Instructor | Kept privately / En custodia | 3145555 | Direct project guidance / Orientación directa del proyecto |
+| ANDRES MORENO COLLAZOS | Instructor | Kept privately / En custodia | 3145555 | Direct project guidance / Orientación directa del proyecto |
 | YERSON STIVEN CUELLAR RUBIANO | CC | 1075225114 | 3145555 | Desarrollo backend, web y móvil; modelado de datos, pruebas y documentación |
 
 ## 3. Producer / Productor (art. 5, num. 3)
 
 | Field / Campo | Value / Valor |
 |---|---|
-| Producer name / Nombre del productor | YERSON STIVEN CUELLAR RUBIANO |
-| ID document or NIT / Identificación o NIT | CC 1075225114 |
+| Producer name / Nombre del productor | Instructor and apprentice teams listed in section 2 / Equipos de instructores y aprendices relacionados en la sección 2 |
+| ID document or NIT / Identificación o NIT | Apprentice: CC 1075225114. Instructor documents remain under institutional custody. / Aprendiz: CC 1075225114. Los documentos de los instructores permanecen bajo custodia institucional. |
 
 ## 4. Rights holder / Titular de los derechos patrimoniales
 
 | Field / Campo | Value / Valor |
 |---|---|
-| Rights holder / Titular | YERSON STIVEN CUELLAR RUBIANO |
-| ID document or NIT / Identificación o NIT | CC 1075225114 |
-| How rights were acquired / Cómo adquirió los derechos, si no es el autor | Not applicable: the declared rights holder is the author / No aplica: el titular declarado es el autor |
-| Document that proves it / Documento que lo prueba | Not applicable for an author acting on their own behalf / No aplica para el autor que actúa en nombre propio |
+| Rights holder / Titular | Instructor and apprentice teams listed in section 2, subject to the institutional filing decision / Equipos de instructores y aprendices relacionados en la sección 2, sujetos a la decisión institucional de radicación |
+| ID document or NIT / Identificación o NIT | Apprentice: CC 1075225114. Instructor documents remain under institutional custody. / Aprendiz: CC 1075225114. Los documentos de los instructores permanecen bajo custodia institucional. |
+| How rights were acquired / Cómo adquirió los derechos, si no es el autor | Authors and contributors identified through the training-project delivery process / Autores y colaboradores identificados mediante el proceso de entrega del proyecto formativo |
+| Document that proves it / Documento que lo prueba | Training-project records and private institutional filing documents / Registros del proyecto formativo y documentos privados de radicación institucional |
 
 ## 5. The work / La obra (art. 5, num. 4)
 
@@ -65,7 +75,7 @@ The software author declared by this package is the apprentice listed below. Ins
 |---|---|
 | Origin / Origen | ☑ Original ☐ Derived work / Obra derivada |
 | If derived, base work / Si es derivada, obra de base | |
-| Type of work / Clase de obra | ☑ Individual / Individual ☐ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
+| Type of work / Clase de obra | ☐ Individual / Individual ☑ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
 | Publication / Publicación | ☐ Unpublished / Inédita ☑ Published / Publicada |
 | If published, date and place / Si está publicada, fecha y lugar | 2026-11-07 — GitHub public repositories `yersonct/SaborExpressBack`, `SaborExpressDocs`, `SaborExpressMovil` and `SaborExpressWeb`; Release `final-delivery`. |
 
