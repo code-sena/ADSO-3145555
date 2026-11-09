@@ -27,4 +27,4 @@ Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, Q
 
 | Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role in the project / Rol en el proyecto | Author / Autor |
 |---|---|---|---|---|---|---|
-| YERSON STIVEN CUELLAR RUBIANO | CC | 1075225114 | 3145555 |  | | Yes / Sí |
+| YERSON STIVEN CUELLAR RUBIANO | CC | 1075225114 | 3145555 |  | Desarrollo backend, web y móvil; modelado de datos, pruebas y documentación | Yes / Sí |

@@ -12,10 +12,10 @@ Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo
 
 | Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
 |---|---|---|---|---|---|---|
-| Backend | [yersonct/SaborExpressBack](https://github.com/yersonct/SaborExpressBack) | Public / Público | **Add / Agregar** | | | |
-| Documentation | [yersonct/SaborExpressDocs](https://github.com/yersonct/SaborExpressDocs) | Public / Público | **Add / Agregar** | | | |
-| Mobile app | [yersonct/SaborExpressMovil](https://github.com/yersonct/SaborExpressMovil) | Public / Público | **Add / Agregar** | | | |
-| Main repository | [yersonct/SaborExpressWeb](https://github.com/yersonct/SaborExpressWeb) | Public / Público | **Add / Agregar** | | | |
+| Backend | [yersonct/SaborExpressBack](https://github.com/yersonct/SaborExpressBack) | Public / Público | **Add / Agregar** | `21ad9764b5cd32b9262ec318be8c5de74d417725` | [Main ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressBack-final-delivery-2026-main.zip) | [Full export ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressBack-full-export.zip) |
+| Documentation | [yersonct/SaborExpressDocs](https://github.com/yersonct/SaborExpressDocs) | Public / Público | **Add / Agregar** | `cfe0046db3a7ba0ffbf5115b76dfa0c5e1a1e03e` | [Main ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressDocs-final-delivery-2026-main.zip) | [Full export ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressDocs-full-export.zip) |
+| Mobile app | [yersonct/SaborExpressMovil](https://github.com/yersonct/SaborExpressMovil) | Public / Público | **Add / Agregar** | `5016d9a85d07ae2f23cb232fede2446701ef0cb1` | [Main ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressMovil-final-delivery-2026-main.zip) | [Full export ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressMovil-full-export.zip) |
+| Main repository | [yersonct/SaborExpressWeb](https://github.com/yersonct/SaborExpressWeb) | Public / Público | **Add / Agregar** | `3c01ea88d0d86b41886d9555cb7f50bb0d3491fd` | [Main ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressWeb-final-delivery-2026-main.zip) | [Full export ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressWeb-full-export.zip) |
 
 Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
 

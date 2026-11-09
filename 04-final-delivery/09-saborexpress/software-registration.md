@@ -73,10 +73,10 @@ Authors are the instructors and the apprentices listed in `team-roster.md`. Each
 
 | Declaration / Declaración | Option / Opción |
 |---|---|
-| Origin / Origen | ☐ Original ☐ Derived work / Obra derivada |
+| Origin / Origen | ☑ Original ☐ Derived work / Obra derivada |
 | If derived, base work / Si es derivada, obra de base | |
-| Type of work / Clase de obra | ☐ Individual ☐ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
-| Publication / Publicación | ☐ Unpublished / Inédita ☐ Published / Publicada |
+| Type of work / Clase de obra | ☐ Individual ☑ In collaboration / En colaboración ☐ Collective / Colectiva ☐ Anonymous / Anónima ☐ Pseudonymous / Seudónima ☐ Posthumous / Póstuma |
+| Publication / Publicación | ☐ Unpublished / Inédita ☑ Published / Publicada |
 | If published, date and place / Si está publicada, fecha y lugar | |
 
 Software is treated as unpublished unless the rights holder states otherwise (art. 4). A public repository may count as publication: the team records it here, and the Centro decides the final declaration.
