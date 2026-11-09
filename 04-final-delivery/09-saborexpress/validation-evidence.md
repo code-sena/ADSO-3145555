@@ -9,7 +9,7 @@ Este archivo separa la evidencia reproducible de las verificaciones que requiere
 | Item / Elemento | Value / Valor |
 |---|---|
 | Delivery tag / Tag de entrega | `final-delivery-2026` |
-| Fork delivery commit / Commit de entrega del fork | `893192c` |
+| Fork delivery commit / Commit de entrega del fork | `cf57c17` |
 | PR / Pull Request | [code-sena/ADSO-3145555 #18](https://github.com/code-sena/ADSO-3145555/pull/18) |
 | Release | [final-delivery](https://github.com/yersonct/ADSO-3145555/releases/tag/final-delivery) |
 | API tag | `e30d24af10be757bee9e08993a5ac970d6173211` |
