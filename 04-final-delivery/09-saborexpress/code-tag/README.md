@@ -12,18 +12,18 @@ Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo
 
 | Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
 |---|---|---|---|---|---|---|
-| Backend | [yersonct/SaborExpressBack](https://github.com/yersonct/SaborExpressBack) | Public / Público | **Add / Agregar** | | | |
-| Documentation | [yersonct/SaborExpressDocs](https://github.com/yersonct/SaborExpressDocs) | Public / Público | **Add / Agregar** | | | |
-| Mobile app | [yersonct/SaborExpressMovil](https://github.com/yersonct/SaborExpressMovil) | Public / Público | **Add / Agregar** | | | |
-| Main repository | [yersonct/SaborExpressWeb](https://github.com/yersonct/SaborExpressWeb) | Public / Público | **Add / Agregar** | | | |
+| Backend | [yersonct/SaborExpressBack](https://github.com/yersonct/SaborExpressBack) | Public / Público | **Write verified / Escritura verificada** | `e30d24af10be757bee9e08993a5ac970d6173211` | [Main ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressBack-final-delivery-2026-main.zip) | [Full export ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressBack-full-export.zip) |
+| Documentation | [yersonct/SaborExpressDocs](https://github.com/yersonct/SaborExpressDocs) | Public / Público | **Write verified / Escritura verificada** | `61ae5cdca9319852d605d52be11883f1a2769929` | [Main ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressDocs-final-delivery-2026-main.zip) | [Full export ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressDocs-full-export.zip) |
+| Mobile app | [yersonct/SaborExpressMovil](https://github.com/yersonct/SaborExpressMovil) | Public / Público | **Write verified / Escritura verificada** | `91a59b090f5716c58dfb9229b0509af23593077e` | [Main ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressMovil-final-delivery-2026-main.zip) | [Full export ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressMovil-full-export.zip) |
+| Main repository | [yersonct/SaborExpressWeb](https://github.com/yersonct/SaborExpressWeb) | Public / Público | **Write verified / Escritura verificada** | `582b7148bc2aa84bb4c76a24aa6b0b6122e9f189` | [Main ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressWeb-final-delivery-2026-main.zip) | [Full export ZIP](https://github.com/yersonct/ADSO-3145555/releases/download/final-delivery/SaborExpressWeb-full-export.zip) |
 
 Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
 
 Antes de hacer público un repositorio, quite los archivos `.env` y cambie toda contraseña, token o llave que se haya subido alguna vez.
 
-The instructor account `ariel5253` needs write access to every repository, so pending items can be corrected for the software registration. Add it as a collaborator where the table says so.
+Write access for the instructor account `ariel5253` was verified in all four repositories on 2026-11-08; no collaborator change remains pending for this delivery.
 
-La cuenta del instructor, `ariel5253`, necesita acceso de escritura en cada repositorio, para poder corregir pendientes del registro de software. Agréguela como colaboradora donde la tabla lo indique.
+El acceso de escritura de la cuenta del instructor, `ariel5253`, fue verificado el 2026-11-08 en los cuatro repositorios; no queda pendiente ningún cambio de colaborador para esta entrega.
 
 ## Why two ZIP files / Por qué dos ZIP
 

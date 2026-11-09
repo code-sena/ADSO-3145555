@@ -1,0 +1,9 @@
+digraph G { graph [fontname="DejaVu Sans", bgcolor="white", pad="0.28", ranksep="0.64", nodesep="0.44", splines=polyline]; node [shape=box, style="rounded,filled", fillcolor="#EAF3F5", color="#9AB8BF", fontname="DejaVu Sans", fontsize=11, fontcolor="#143247", margin="0.16,0.12"]; edge [color="#567A86", fontname="DejaVu Sans", fontsize=9, fontcolor="#314959", arrowsize=.7]; rankdir=LR; label="SaborExpress | Vista de despliegue y separación de ambientes"; labelloc=t; fontsize=16; fontname="DejaVu Sans";
+GH[label="GitHub\nBack · Web · Móvil · Docs",fillcolor="#EDF2F8"];
+WEB[label="Vercel\nPortal Next.js",fillcolor="#D9EDF9"];
+STG[label="Render - Staging\nASP.NET Core 8",fillcolor="#D8F2EA"];
+PROD[label="Render - Producción\nASP.NET Core 8",fillcolor="#D8F2EA"];
+NEONSTG[label="Neon - Base staging\nseparada",shape=cylinder]; NEONPR[label="Neon - Base producción\nseparada",shape=cylinder];
+EXPO[label="Expo/EAS móvil\ncompilación APK/cliente",fillcolor="#D9EDF9"];
+GO[label="GitHub Actions\nQA, seguridad y gates",fillcolor="#FFF2DD"];
+GH->WEB[label="build web"]; GH->GO; GO->STG[label="rama staging"]; GO->PROD[label="main, solo tras aprobación",style=dashed]; GH->EXPO[label="build móvil",style=dashed]; STG->NEONSTG; PROD->NEONPR; }

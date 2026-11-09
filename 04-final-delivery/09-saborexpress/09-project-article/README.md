@@ -1,14 +1,14 @@
-# Project article / Artículo del proyecto
+# project article
 
-**Training project deliverable / Producto del proyecto formativo:** Artículo del proyecto.
+**SaborExpress — ficha 3145555. Entregables documentales:**
+- [07_Articulo_investigacion_SaborExpress_ES.pdf](07_Articulo_investigacion_SaborExpress_ES.pdf) — version PDF
+- [07_Articulo_investigacion_SaborExpress_ES.docx](07_Articulo_investigacion_SaborExpress_ES.docx) — editable
+- [07_Articulo_investigacion_SaborExpress_ES.md](07_Articulo_investigacion_SaborExpress_ES.md) — fuente de texto
+- [07_Articulo_investigacion_SaborExpress_EN.pdf](07_Articulo_investigacion_SaborExpress_EN.pdf) — version PDF
+- [07_Articulo_investigacion_SaborExpress_EN.docx](07_Articulo_investigacion_SaborExpress_EN.docx) — editable
+- [07_Articulo_investigacion_SaborExpress_EN.md](07_Articulo_investigacion_SaborExpress_EN.md) — fuente de texto
+- [11_Referencias_bibliograficas_SaborExpress.pdf](11_Referencias_bibliograficas_SaborExpress.pdf) — version PDF
+- [11_Referencias_bibliograficas_SaborExpress.docx](11_Referencias_bibliograficas_SaborExpress.docx) — editable
+- [11_Referencias_bibliograficas_SaborExpress.md](11_Referencias_bibliograficas_SaborExpress.md) — fuente de texto
 
-## Required content / Contenido requerido
-
-- [ ] Final article of the project / Artículo final del proyecto
-
-## Format / Formato
-
-- Final version in PDF, plus the editable source when it exists. / Versión final en PDF y, si existe, el archivo fuente editable.
-- English file names, without spaces or accents: `requirements-specification.pdf`. / Nombres de archivo en inglés, sin espacios ni tildes.
-- Files over 50 MB go to Drive and are listed in the project `README.md`. / Los archivos de más de 50 MB van a Drive y se relacionan en el `README.md` del proyecto.
-- Do not add passwords, tokens, keys or real user data. / No incluya contraseñas, tokens, llaves ni datos reales de usuarios.
+Procedencia: repositorio original `yersonct/SaborExpressDocs`, carpeta `docs-SaborExpress`, rama `main`. La aprobacion y conformidad final requiere revision del integrante.
