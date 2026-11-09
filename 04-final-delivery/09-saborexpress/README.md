@@ -64,9 +64,10 @@ Only files too heavy for GitHub go here, such as demo videos. Everything else st
 
 Aquí solo van archivos demasiado pesados para GitHub, como videos de demostración. Todo lo demás vive en esta carpeta.
 
-| File / Archivo | Size / Tamaño | Link / Enlace |
-|---|---|---|
-| No external file / No hay archivo externo | — | The two videos are included in [`10-videos/`](10-videos/). / Los dos videos están incluidos en el repositorio. |
+| File / Archivo | Size / Tamaño | Link / Enlace | Delivered / Entregado |
+|---|---|---|---|
+| Tutorial video / Video tutorial | Drive | [Open tutorial / Abrir tutorial](https://drive.google.com/file/d/1mNa4IUzUQP0oI254oYfMzy7R5ur528Hu/view?usp=sharing) | ☑ |
+| Pitch video / Video pitch | Drive | [Open pitch / Abrir pitch](https://drive.google.com/drive/folders/1hNEgLGBepPOUKu5OOA_3jsCvw9azRSBc?usp=sharing) | ☑ |
 
 ## Validation status / Estado de validación
 

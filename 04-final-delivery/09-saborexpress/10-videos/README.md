@@ -2,17 +2,9 @@
 
 Ficha ADSO 3145555.
 
-## Pitch publicitario
+| Entregable | Estado | Enlace |
+|---|---|---|
+| Video tutorial | ☑ Hecho y entregado | [Abrir video tutorial](https://drive.google.com/file/d/1mNa4IUzUQP0oI254oYfMzy7R5ur528Hu/view?usp=sharing) |
+| Video pitch | ☑ Hecho y entregado | [Abrir video pitch](https://drive.google.com/drive/folders/1hNEgLGBepPOUKu5OOA_3jsCvw9azRSBc?usp=sharing) |
 
-**Duracion:** 1 minuto y 36 segundos.
-
-[Ver pitch publicitario](./SaborExpress-PITCH-publicitario-1m36s.mp4)
-
-## Tutorial de uso web
-
-**Duracion:** 4 minutos y 16 segundos.
-
-[Ver tutorial de uso](./SaborExpress-TUTORIAL-uso-web-4m16s.mp4)
-
-Ambos videos fueron editados a partir de la demostracion
-original de SaborExpress y se presentan como entregables distintos.
+Los dos videos quedan registrados como entregables completados de la entrega final.
