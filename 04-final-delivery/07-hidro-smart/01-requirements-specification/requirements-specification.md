@@ -3550,7 +3550,7 @@ RNF9 Requerimientos técnicos
 
 ## Diagrama UML de casos de uso.
 
-[<u><strong>https://drive.google.com/open?id=1\_S3C4k7N0oDvtXIebcFDupXPOaXKEgQU&amp;usp=drive\_copy</strong></u>](https://drive.google.com/open?id=1_S3C4k7N0oDvtXIebcFDupXPOaXKEgQU&usp=drive_copy)
+[<u><strong>https://drive.google.com/drive/folders/1jIoAx99qIwPt0lQcZ4ltIn23225zSe3o?usp=sharing</strong></u>](https://drive.google.com/drive/folders/1jIoAx99qIwPt0lQcZ4ltIn23225zSe3o?usp=sharing)
 
 
 

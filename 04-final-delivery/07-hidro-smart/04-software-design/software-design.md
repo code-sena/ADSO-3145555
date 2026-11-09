@@ -167,11 +167,11 @@ Quedan fuera del alcance inicial: integración con sistemas externos de acueduct
 
 •    Amaya Mosquera, J. D., Molano Cardozo, E. C. &amp; Montealegre Rodríguez, J. A. (2025). Diseño conceptual y arquitectura de información. SENA. 
 
-[<u>https://drive.google.com/drive/folders/1O1brvYi-oYlElVLB6hLb7HU881uh8dJU?usp=sharing</u>](https://drive.google.com/drive/folders/1O1brvYi-oYlElVLB6hLb7HU881uh8dJU?usp=sharing)
+[<u>https://docs.google.com/document/d/17hTIQJPkeWehn6jrOAQP1H1r6Msdb9L4/edit?usp=sharing&ouid=104764955911282672379&rtpof=true&sd=true </u>](https://docs.google.com/document/d/17hTIQJPkeWehn6jrOAQP1H1r6Msdb9L4/edit?usp=sharing&ouid=104764955911282672379&rtpof=true&sd=true )
 
 •    Motta Vargas, J. de J. (2025). Acta General del Proceso del Proyecto Hidro Smart. SENA.
 
-[<u>https://drive.google.com/drive/folders/1Ts6xxuiW3DcT0RjO286Ns21UE2N0LR2N?usp=drive\_link</u>](https://drive.google.com/drive/folders/1Ts6xxuiW3DcT0RjO286Ns21UE2N0LR2N?usp=drive_link)
+[<u>https://docs.google.com/document/d/13iGF7gaDVy-dOP79u6Z-OnCX5z0ehyoI/edit?usp=sharing&ouid=104764955911282672379&rtpof=true&sd=true</u>](https://docs.google.com/document/d/13iGF7gaDVy-dOP79u6Z-OnCX5z0ehyoI/edit?usp=sharing&ouid=104764955911282672379&rtpof=true&sd=true)
 
 •    Amaya Mosquera, J. D. et al. (2026). Encuesta sobre el Consumo de Agua – Hidro Smart \[Formulario Google\].
 
@@ -179,15 +179,15 @@ Quedan fuera del alcance inicial: integración con sistemas externos de acueduct
 
 •    Equipo Hidro Smart. (2026). Mapa de Procesos.
 
-[<u>https://drive.google.com/drive/folders/1l84t0bhXedeTjBIChnlTzT97f-v6jG-g?usp=drive\_link</u>](https://drive.google.com/drive/folders/1l84t0bhXedeTjBIChnlTzT97f-v6jG-g?usp=drive_link)
+[<u>https://drive.google.com/file/d/1Qk7t0UY9O6Y6Bd9Mv4uM698XJJuXYITN/view?usp=sharing</u>](https://drive.google.com/file/d/1Qk7t0UY9O6Y6Bd9Mv4uM698XJJuXYITN/view?usp=sharing )
 
 •    Equipo Hidro Smart. (2026). Modelo Entidad-Relación (MER).
 
-[<u>https://drive.google.com/drive/folders/10q-U9\_k-FVHzPtbMjG2GP4O6VEaU28QJ?usp=drive\_link</u>](https://drive.google.com/drive/folders/10q-U9_k-FVHzPtbMjG2GP4O6VEaU28QJ?usp=drive_link)
+[<u>https://drive.google.com/drive/folders/1fytOPior9VgV0fDioUFHEXnLBXPlkuI_?usp=sharing</u>](https://drive.google.com/drive/folders/1fytOPior9VgV0fDioUFHEXnLBXPlkuI_?usp=sharing)
 
 •    Equipo Hidro Smart. (2026). Wireframes de Interfaz – Figma \[Prototipo web y móvil\].
 
-[<u>https://drive.google.com/drive/folders/1W8b38qeR7oNWkIHniYXydKEc5ZTbtNnn?usp=drive\_link</u>](https://drive.google.com/drive/folders/1W8b38qeR7oNWkIHniYXydKEc5ZTbtNnn?usp=drive_link)
+[<u>https://drive.google.com/file/d/1-oivju5GncQboQu21cglUMguOfbN7KLJ/view?usp=sharing</u>](https://drive.google.com/file/d/1-oivju5GncQboQu21cglUMguOfbN7KLJ/view?usp=sharing)
 
 
 
