@@ -1,0 +1,20 @@
+ Container facelit-arch-e2e-f74e53e6-postgres-1  Running
+####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase at 11:10:46 using Java 21.0.10 (version 5.0.2 #10172 built at 2026-03-04 00:27+0000)
+Liquibase Version: 5.0.2
+
+No validation errors found.
+Liquibase command 'validate' was executed successfully.

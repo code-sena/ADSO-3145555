@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-11-05T06:08:46.537543-05:00",
+  "repos": {
+    "FaceLit": {
+      "sha": "6efd92cdd7e4e358b131cbe860cd8585d13e5550",
+      "status": ""
+    },
+    "FaceLit-Backend": {
+      "sha": "2ba739853a808c8e5902f70eae98706a612f91e6",
+      "status": ""
+    },
+    "FaceLit-DB": {
+      "sha": "096cd3e99d6936a7dacfe4b216b5e548f0a6eaf8",
+      "status": ""
+    },
+    "micro-facial": {
+      "sha": "166e4a7f2245456277d57015259c678d8febfa9f",
+      "status": ""
+    }
+  },
+  "docker": {
+    "exit_code": 0,
+    "output": "facelit-embedding-service-embedding-service-1 Up 40 minutes (healthy) 0.0.0.0:8091->8090/tcp, [::]:8091->8090/tcp\nfacelit-docker-compose-postgres-1 Up 46 minutes (healthy) 0.0.0.0:5439->5432/tcp, [::]:5439->5432/tcp\n"
+  },
+  "facial_logs": {
+    "exit_code": 0,
+    "output": "Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}\nApplied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}\nset det-size: (640, 640)\nINFO:     127.0.0.1:48236 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:56676 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:45454 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:54210 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:34692 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:45982 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:36040 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:36058 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:41620 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:44952 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:46330 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:55756 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52904 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:50392 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:37962 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:33180 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52834 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:50770 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:60518 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     Started server process [7]\nINFO:     Waiting for application startup.\nINFO: Created TensorFlow Lite XNNPACK delegate for CPU.\nWARNING: All log messages before absl::InitializeLog() is called are written to STDERR\nW0000 00:00:1793876321.184127     443 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.\nW0000 00:00:1793876321.685622     443 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.\n/opt/venv/lib/python3.11/site-packages/google/protobuf/symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.\n  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://0.0.0.0:8090 (Press CTRL+C to quit)\n"
+  },
+  "http": {
+    "8080": {
+      "error": "<urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>"
+    },
+    "8081": {
+      "error": "<urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>"
+    },
+    "8090": {
+      "error": "HTTP Error 501: Not Implemented"
+    },
+    "8091": {
+      "status": 200,
+      "body": "{\"status\":\"ok\",\"service\":\"FaceLit Embedding Service\"}"
+    }
+  }
+}

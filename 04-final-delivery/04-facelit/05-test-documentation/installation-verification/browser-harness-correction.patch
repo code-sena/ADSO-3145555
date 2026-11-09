@@ -1,0 +1,36 @@
+diff --git a/scripts/test-architecture-browser.cjs b/scripts/test-architecture-browser.cjs
+index 70c5b24..c73cec7 100644
+--- a/scripts/test-architecture-browser.cjs
++++ b/scripts/test-architecture-browser.cjs
+@@ -35,12 +35,14 @@ const server = http.createServer((request, response) => {
+     page = await context.newPage();
+     const errors = [];
+     page.on('pageerror', error => errors.push(error.message));
+-    await page.goto('http://127.0.0.1:18081/auth/login', { waitUntil: 'networkidle' });
++    await page.goto('http://127.0.0.1:18081/auth/login', { waitUntil: 'domcontentloaded' });
+     await page.locator('input').first().fill('98765001');
+     await page.locator('input[type=password]').fill('Architecture1!');
+     await page.getByText('Iniciar sesiÃ³n', { exact: true }).last().click();
+     await page.waitForURL(url => url.pathname.startsWith('/apprentice'), { timeout: 30000 });
+-    await page.goto('http://127.0.0.1:18081/apprentice/facial', { waitUntil: 'networkidle' });
++    // Realtime connections can remain open after the screen is usable. Readiness
++    // is established by the identity/registration assertions below, not network idle.
++    await page.goto('http://127.0.0.1:18081/apprentice/facial', { waitUntil: 'domcontentloaded' });
+     await page.getByText(/Learner Fixture/).first().waitFor();
+     await page.getByText(/registrad/i).first().waitFor();
+     await page.screenshot({ path: path.join(artifacts, 'apprentice-registration.png'), fullPage: true });
+@@ -48,12 +50,12 @@ const server = http.createServer((request, response) => {
+     const teacher = await browser.newContext({ viewport: { width: 1360, height: 920 }, locale: 'es-CO' });
+     page = await teacher.newPage();
+     page.on('pageerror', error => errors.push(error.message));
+-    await page.goto('http://127.0.0.1:18081/auth/login', { waitUntil: 'networkidle' });
++    await page.goto('http://127.0.0.1:18081/auth/login', { waitUntil: 'domcontentloaded' });
+     await page.locator('input').first().fill('98765002');
+     await page.locator('input[type=password]').fill('Architecture1!');
+     await page.getByText('Iniciar sesiÃ³n', { exact: true }).last().click();
+     await page.waitForURL(url => url.pathname.startsWith('/instructor'), { timeout: 30000 });
+-    await page.goto('http://127.0.0.1:18081/instructor/attendance/by-ficha', { waitUntil: 'networkidle' });
++    await page.goto('http://127.0.0.1:18081/instructor/attendance/by-ficha', { waitUntil: 'domcontentloaded' });
+     await page.getByPlaceholder('Selecciona una ficha', { exact: true }).click();
+     await page.getByText('Ficha 9876501', { exact: true }).first().click();
+     const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Bogota', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
