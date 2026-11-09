@@ -1,33 +1,25 @@
 # Videos: SmartHome
 
-Two videos are required. / Se requieren dos videos.
+**Tabla 1**
 
-| Video | Duration / Duración | Link / Enlace | Done / Listo |
-|---|---|---|---|
-| Advertising pitch / Pitch publicitario | 1 to 2 minutes / 1 a 2 minutos | | ☐ |
-| Short usage tutorial / Tutorial corto de uso | 3 to 5 minutes / 3 a 5 minutos | | ☐ |
+*Videos de la entrega final*
 
-## 1. Advertising pitch / Pitch publicitario
+| Video | Archivo | Duración | Rango exigido | Enlace |
+|---|---|---:|---|---|
+| **Pitch** | `pitch-publicitario.mp4` | 01:30 | 01:00–02:00 | [Ver en Drive](https://drive.google.com/file/d/15RA6TZaiIlZhd5isQAHOYZWuhg8eXAaI/view) |
+| **Tutorial** | `aplicativo.mp4` | 04:54 | 03:00–05:00 | [Ver en Drive](https://drive.google.com/file/d/1Ibl-IyE0H5PFERU_6D1f4x5mvL_TGDzE/view) |
 
-Sells the product to someone who does not know it. / Presenta el producto a alguien que no lo conoce.
+Fuente: elaboración propia. Duraciones medidas con `ffprobe` sobre los archivos descargados de Drive el 2026-11-09.
 
-- [ ] Problem it solves / Problema que resuelve
-- [ ] Who it is for / Para quién es
-- [ ] The solution and what sets it apart / La solución y qué la diferencia
-- [ ] Clear closing message / Mensaje final claro
+- **Pitch:** presenta el problema (no sabemos cómo consumimos la energía), la solución (plataforma web y app móvil con dispositivos Shelly), cómo funciona (dispositivo, MQTT, backend y base de datos), las funciones y los beneficios. Es visual, con subtítulos.
+- **Tutorial:** recorrido por la aplicación móvil en 12 capítulos: registro e inicio de sesión, hogares, energía y consumo, tarifas y metas, alertas en tiempo real, invitación de personas, gestión de dispositivos, perfil, configuración, sincronización, panel de dispositivos y cierre de sesión.
 
-## 2. Short usage tutorial / Tutorial corto de uso
+## Acceso
 
-Shows how the system is used, on the real system. / Muestra cómo se usa el sistema, sobre el sistema real.
+Los dos videos están en la carpeta pública [SmartHome / VIDEOS](https://drive.google.com/drive/folders/1AbzF8DXtZo0moXV-CeV4_u3RIVs4y_LY), con las subcarpetas `PITCH-PUBLICITARIO` y `TUTORIAL-FUNCIONAL`. Compartidos como **Cualquier persona con el enlace → Lector**. Se comprobó el 2026-11-09 que los dos archivos y las carpetas abren sin iniciar sesión.
 
-- [ ] Sign-in and main roles / Ingreso y roles principales
-- [ ] The main flow, step by step / El flujo principal, paso a paso
-- [ ] The result the user gets / El resultado que obtiene el usuario
-- [ ] Voice or captions that explain each step / Voz o subtítulos que expliquen cada paso
+Carpeta general del proyecto: [V1](https://drive.google.com/drive/folders/1XixiaSgSRYYQ-v05Cc7eiCjQqPzcn5i1).
 
-## Rules / Reglas
+## Privacidad
 
-- Upload them to Google Drive, with access for anyone who has the link. / Súbalos a Google Drive, con acceso para cualquiera que tenga el enlace.
-- Check the links in a private browser window. / Pruebe los enlaces en una ventana privada del navegador.
-- Do not show passwords, tokens or real personal data. / No muestre contraseñas, tokens ni datos personales reales.
-- Use music and images you are allowed to use. / Use música e imágenes que tenga permiso de usar.
+El tutorial muestra los correos de dos integrantes en las pantallas de invitación (alrededor de 02:55–03:10) y de perfil (alrededor de 03:35). Karen y Natalia aceptaron que el video se publique así (decisión comunicada por el equipo el 2026-11-09). Si alguna cambia de opinión, se reemplaza el archivo en Drive con el mismo nombre y esas zonas difuminadas; el enlace no cambia.

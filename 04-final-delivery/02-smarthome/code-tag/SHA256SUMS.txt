@@ -1,1 +1,22 @@
-# sha256  file / archivo
+# Commit de cada tag final-delivery-2026 (verificado el 2026-11-08)
+# from_movil               d6f55d8e5bece07c236fcd07cd76e9e08072b39a Kevin-Stiven-Lopez-Amaya404/from_movil
+# smart-home-database      aa20de5230627f5ef0aaa346664cd940d458622f nataliachala1/smart-home-database
+# smart-home-doc           aab94a12aa8f4bb2c7fd3fe30d0f231cb5e239fb Kevin-Stiven-Lopez-Amaya404/smart-home-doc
+# smart-home-docs          ce8a6b5859ff7b6fcfee527d9007ee5089cad1ce Kevin-Stiven-Lopez-Amaya404/smart-home-docs
+# smarthome-backend        59de92da0b47700f2a5e02459777cb2faa39cbb3 nataliachala1/smarthome-backend
+# smarthome-database       b11971aa3e7ad448ca6e55882f0930a6172dc3c4 nataliachala1/smarthome-database
+# smarthome-frontend-web   961ae3235c325761df537c382691e165d76a767e nataliachala1/smarthome-frontend-web
+304d91e62f14ce6d66a20eaf85eed55e8edd7388c5cc18dbb3ec041d9b610982  from_movil-final-delivery-2026-main.zip
+791c00a42e9ab0bb5ea3f1e0b9071b16c0c4de8bc2ac6a1fc454b7dbe89d6d75  from_movil-full-export.zip
+357c4740986cac332ef18fc4f279c969acbdf4d6d222dd479b950e4b1006642d  smart-home-database-final-delivery-2026-main.zip
+0f40e66787732fdc3acfe968b4273ea8db0b0bd5af3e1d4ca691518a166c0d1b  smart-home-database-full-export.zip
+add20341ee36f240a5a8fa080dbc6630307e5fb2e6ceba39801fb7b047c14f98  smart-home-doc-final-delivery-2026-main.zip
+acbf300b16080dd9dc949e413419c0967bd8ff98070a2a2c0a2637066d995001  smart-home-doc-full-export.zip
+6b98ef03e68c0e9548a127d9f61dd5a01519aaafb61c9bfda2b1e456c2eb9da0  smart-home-docs-final-delivery-2026-main.zip
+1bf7a3fb3c07dfe455c09beb84f4f6cfa977fdf65870986bbad9d4d38c5d5214  smart-home-docs-full-export.zip
+60a3ff4c71c3143972a9a28bb7cfc58ce1e30f134da3a61e32bd6bc0fca85b69  smarthome-backend-final-delivery-2026-main.zip
+518450a6a977a13573889e0eeeebef214418a6c0d1fbcdfcf067e09899d19d64  smarthome-backend-full-export.zip
+69b6e11e3412e79389060a1da99a35c004ba20012e9d532ed49697a469c89bc8  smarthome-database-final-delivery-2026-main.zip
+1215ca7985576c1637abe619be38459741d4a497e55f06e89a482626c87e5dce  smarthome-database-full-export.zip
+319cea29815124cbfda898299d0f5ba41ca521158e9206059b8a06bec707706f  smarthome-frontend-web-final-delivery-2026-main.zip
+03e41cb1e2f4318e3f1cfefb1b79ad290b09eb5fd015137ba36c0e53fdcb94dd  smarthome-frontend-web-full-export.zip
