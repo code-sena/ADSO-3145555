@@ -9,13 +9,26 @@ Este archivo separa la evidencia reproducible de las verificaciones que requiere
 | Item / Elemento | Value / Valor |
 |---|---|
 | Delivery tag / Tag de entrega | `final-delivery-2026` |
-| Fork delivery commit / Commit de entrega del fork | `28c9d3b107183a48e4952f12345de5afb68ee264` |
+| Fork delivery commit / Commit de entrega del fork | `b85a40e` |
 | PR / Pull Request | [code-sena/ADSO-3145555 #18](https://github.com/code-sena/ADSO-3145555/pull/18) |
 | Release | [final-delivery](https://github.com/yersonct/ADSO-3145555/releases/tag/final-delivery) |
 | API tag | `21ad9764b5cd32b9262ec318be8c5de74d417725` |
 | Docs tag | `cfe0046db3a7ba0ffbf5115b76dfa0c5e1a1e03e` |
 | Mobile tag | `5016d9a85d07ae2f23cb232fede2446701ef0cb1` |
 | Web tag | `3c01ea88d0d86b41886d9555cb7f50bb0d3491fd` |
+
+## Correction branches / Ramas de corrección
+
+The code corrections are published for review in branches separate from `main`. The exact `final-delivery-2026` tags remain immutable at the SHAs listed above until the owner merges and retags them.
+
+Las correcciones de código están publicadas para revisión en ramas separadas de `main`. Los tags exactos `final-delivery-2026` permanecen en los SHA relacionados arriba hasta que el propietario fusione y vuelva a etiquetar los cambios.
+
+| Repository / Repositorio | Branch / Rama | Commit |
+|---|---|---|
+| [SaborExpressBack](https://github.com/yersonct/SaborExpressBack/tree/fix/final-delivery-rubric-20261108) | `fix/final-delivery-rubric-20261108` | `e30d24a` |
+| [SaborExpressDocs](https://github.com/yersonct/SaborExpressDocs/tree/fix/final-delivery-rubric-20261108) | `fix/final-delivery-rubric-20261108` | `61ae5cd` |
+| [SaborExpressMovil](https://github.com/yersonct/SaborExpressMovil/tree/fix/final-delivery-rubric-20261108) | `fix/final-delivery-rubric-20261108` | `91a59b0` |
+| [SaborExpressWeb](https://github.com/yersonct/SaborExpressWeb/tree/fix/final-delivery-rubric-20261108) | `fix/final-delivery-rubric-20261108` | `582b714` |
 
 ## Reproducible repository checks / Verificaciones reproducibles
 
