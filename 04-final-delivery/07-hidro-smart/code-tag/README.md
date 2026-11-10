@@ -6,25 +6,34 @@ Every original working repository of the project must be listed here and must be
 
 Todos los repositorios originales de trabajo del proyecto deben estar aquí y deben ser **públicos**. El instructor contrasta lo entregado contra estos repositorios, así que deben seguir públicos y con todo su historial hasta terminar la revisión.
 
-If one is missing, add a row. If one is empty or no longer used, write that in the commit column. The visibility shown was checked on 2026-11-04.
+If one is missing, add a row. If one is empty or no longer used, write that in the commit column. The visibility shown was checked on 2026-11-05.
 
-Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo en la columna del commit. La visibilidad indicada se revisó el 2026-11-04.
+Si falta alguno, agregue la fila. Si uno está vacío o ya no se usa, indíquelo en la columna del commit. La visibilidad indicada se revisó el 2026-11-05.
+
+Live verification performed on 2026-11-07/08 confirmed that the six tag targets are ancestors of the corresponding remote `main` branches. PT_HS was corrected and re-tagged at `64e03d82696646571fd5e2ad97431c84a12b68e2`; its validation workflow passed all steps. The `final-delivery-2026` Release contains the 12 listed ZIP assets, and their GitHub SHA-256 digests match `SHA256SUMS.txt`.
+
+La verificación en vivo realizada el 2026-11-07/08 confirmó que los seis destinos de tag son ancestros de las ramas `main` remotas correspondientes. PT_HS fue corregido y retagueado en `64e03d82696646571fd5e2ad97431c84a12b68e2`; su workflow de validación pasó todos los pasos. El Release `final-delivery-2026` contiene los 12 ZIP listados y sus digest SHA-256 de GitHub coinciden con `SHA256SUMS.txt`.
 
 | Component / Componente | Repository / Repositorio | Status / Estado | Access for `ariel5253` / Acceso de `ariel5253` | Commit of tag `final-delivery-2026` / Commit del tag | Main version ZIP / ZIP versión main | Full export ZIP / ZIP completo |
 |---|---|---|---|---|---|---|
-| Main repository | [joseale879/PT_HS](https://github.com/joseale879/PT_HS) | Public / Público | **Add / Agregar** | | | |
-| Database | [joseamaya009/BD_HS](https://github.com/joseamaya009/BD_HS) | Public / Público<br>Fork: the original is listed below / Fork: el original está abajo | **Add / Agregar** | | | |
-| Backend | [joseamaya009/BK_HS](https://github.com/joseamaya009/BK_HS) | Public / Público | **Add / Agregar** | | | |
-| Web frontend | [joseamaya009/FT_HS](https://github.com/joseamaya009/FT_HS) | Public / Público | **Add / Agregar** | | | |
-| Database | [EmersonMolano/BD_HS](https://github.com/EmersonMolano/BD_HS) | Public / Público | **Add / Agregar** | | | |
+| Main repository | [joseale879/PT_HS](https://github.com/joseale879/PT_HS) | Public / Público | Write; reported granted by the team / Escritura; informado como concedido por el equipo | `64e03d82696646571fd5e2ad97431c84a12b68e2` | [main ZIP](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/PT_HS-final-delivery-2026-main.zip) | [full export](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/PT_HS-full-export.zip) |
+| Database | [EmersonMolano/BD_HS](https://github.com/EmersonMolano/BD_HS) | Public / Público | Write; reported granted by the team / Escritura; informado como concedido por el equipo | `42ee03b5906dfdcbd9e9f6c7f03ddc453250d23b` | [main ZIP](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/BD_HS-final-delivery-2026-main.zip) | [full export](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/BD_HS-full-export.zip) |
+| Backend | [joseamaya009/BK_HS](https://github.com/joseamaya009/BK_HS) | Public / Público | Write / Escritura | `190263da952afba5d4ce7f6c2d83c0fde2b239c4` | [main ZIP](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/BK_HS-final-delivery-2026-main.zip) | [full export](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/BK_HS-full-export.zip) |
+| Web frontend | [joseamaya009/FT_HS](https://github.com/joseamaya009/FT_HS) | Public / Público | Write / Escritura | `91a5ef3125ed73d4d9d410f772b54923f8099430` | [main ZIP](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/FT_HS-final-delivery-2026-main.zip) | [full export](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/FT_HS-full-export.zip) |
+| Firmware | [joseamaya009/Firmaware_HS](https://github.com/joseamaya009/Firmaware_HS) | Public / Público | Write / Escritura | `917fcfd2129ea6ff92860a4321b1fd7863957d85` | [main ZIP](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/Firmaware_HS-final-delivery-2026-main.zip) | [full export](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/Firmaware_HS-full-export.zip) |
+| Documentation | [EmersonMolano/DOCS_HS](https://github.com/EmersonMolano/DOCS_HS) | Public / Público | Write; reported granted by the team / Escritura; informado como concedido por el equipo | `054a063a667f637a55b3641f83a9e4dded1faa5b` | [main ZIP](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/DOCS_HS-final-delivery-2026-main.zip) | [full export](https://github.com/joseamaya009/ADSO-3145555/releases/download/final-delivery-2026/DOCS_HS-full-export.zip) |
 
 Before making a repository public, remove `.env` files and change any password, token or key that was ever committed.
 
 Antes de hacer público un repositorio, quite los archivos `.env` y cambie toda contraseña, token o llave que se haya subido alguna vez.
 
-The instructor account `ariel5253` needs write access to every repository, so pending items can be corrected for the software registration. Add it as a collaborator where the table says so.
+The instructor account `ariel5253` needs write access to every repository, so pending items can be corrected for the software registration. The team reported on 2026-11-07 that write access is already granted on all six repositories; the owner should keep the collaborator pages available for the instructor's live verification.
 
-La cuenta del instructor, `ariel5253`, necesita acceso de escritura en cada repositorio, para poder corregir pendientes del registro de software. Agréguela como colaboradora donde la tabla lo indique.
+La cuenta del instructor, `ariel5253`, necesita acceso de escritura en cada repositorio, para poder corregir pendientes del registro de software. El equipo informó el 2026-11-07 que el acceso de escritura ya está concedido en los seis repositorios; el propietario debe conservar disponibles las páginas de colaboradores para la verificación directa del instructor.
+
+The tag `final-delivery-2026`, both ZIP variants and Release links were recorded in this manifest. The team reported on 2026-11-07 that `ariel5253` has write access on all six repositories; live collaborator and Release verification must still be performed from GitHub before final approval.
+
+El tag `final-delivery-2026`, las dos variantes ZIP y los enlaces de los Releases están registrados en este inventario. El equipo informó el 2026-11-07 que `ariel5253` tiene acceso de escritura en los seis repositorios; antes de la aprobación final se debe verificar en GitHub el acceso de colaboradores y los Releases.
 
 ## Why two ZIP files / Por qué dos ZIP
 

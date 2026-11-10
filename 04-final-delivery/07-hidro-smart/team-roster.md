@@ -1,32 +1,76 @@
-# Team and roles: Hidro Smart / Equipo y roles: Hidro Smart
+# Equipo y aportes de Hidro Smart
 
-Team list for software registration. Instructors contributed directly or indirectly to the process; apprentices took part in the project.
+**Estado:** roles, autorización de publicación de datos y autoría de los tres aprendices confirmados por el equipo; productor, titularidad y participación de instructores deben confirmarse antes del trámite DNDA.
 
-Lista del equipo para registro de software. Los instructores aportaron directa o indirectamente al proceso; los aprendices hicieron parte del proyecto.
+**Fuente:** revisión consolidada de PT_HS y de los repositorios separados BK_HS, FT_HS, BD_HS, Firmaware_HS y DOCS_HS, además de la lista de instructores del borrador anterior. Las copias del monorepo y de los componentes se consideran evidencia del mismo proyecto, no equipos diferentes.
 
-The apprentices complete their role, such as backend, frontend, database, QA or documentation. The instructor marks the type of contribution. Instructor ID documents are kept privately.
+> La actividad en Git ayuda a identificar áreas de trabajo, pero por sí sola no determina la autoría legal ni registra aportes realizados fuera de Git. Cada integrante debe revisar y confirmar su fila antes de presentar el registro. No publicar números de documento, direcciones, teléfonos ni correos personales en este repositorio.
 
-Los aprendices completan su rol, por ejemplo backend, frontend, base de datos, QA o documentación. El instructor marca el tipo de aporte. Los documentos de los instructores quedan en custodia del instructor líder.
+## Aprendices
 
-## Instructors / Instructores
+| Nombre según la lista del proyecto | Ficha | Usuario o identidad Git observada | Repositorios con actividad asociada | Áreas de trabajo observadas | Autoría para el registro |
+|---|---:|---|---|---|---|
+| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | 3145555 | `joseale879` | PT_HS, BK_HS, FT_HS, BD_HS, Firmaware_HS y DOCS_HS | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación, al igual que los demás integrantes. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
+| JOSE DAVID AMAYA MOSQUERA | 3145555 | `joseamaya009`; `José David Amaya Mosquera` | PT_HS, BK_HS, FT_HS, BD_HS y Firmaware_HS | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación, al igual que los demás integrantes. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
+| EMERSON CALET MOLANO CARDOZO | 3145555 | `EmersonMolano`; `Emerson Calet Molano Cardozo` | PT_HS, BK_HS, FT_HS, BD_HS y DOCS_HS | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación, al igual que los demás integrantes. | Colaborador del proyecto; confirmar personalmente que los aportes creativos incluidos en la versión a registrar son suyos. |
 
-| Full name / Nombre completo | Role / Rol | Area / Área | Contribution / Aporte | Author / Autor |
-|---|---|---|---|---|
-| JESUS ARIEL GONZALEZ BONILLA | Instructor | Desarrollo, Diseño, Evaluación de requisitos, Inducción, Investigación | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| CARLOS FABIAN MARTINEZ MORA | Instructor | Inducción | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| CARLOS JULIO CADENA SARASTY | Instructor | Desarrollo, Diseño, Establecimiento de requisitos, Evaluación de requisitos, Herramientas informáticas, Inducción | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| JAVIER HUMBERTO PINTO DIAZ | Instructor | Evaluación de requisitos, Herramientas informáticas | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| KAROL DANIELA CORREA TRUJILLO | Instructor | Establecimiento de requisitos, Evaluación de requisitos, Inducción | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| JOSE DE JESUS MOTTA VARGAS | Instructor | Desarrollo, Establecimiento de requisitos, Evaluación de requisitos, Herramientas informáticas, Propuesta técnica | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| FERNELLY CARVAJAL SILVA | Instructor | To confirm / Por confirmar | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| EDDIER YAIR LIBERATO CUENCA | Instructor | To confirm / Por confirmar | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| JHON WILLIAN CORREDOR ARAUJO | Instructor | Diseño, Establecimiento de requisitos, Evaluación de requisitos | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
-| ANDRES MORENO COLLAZOS | Instructor | Diseño, Evaluación de requisitos, Inducción | ☐ Direct / Directo ☐ Indirect / Indirecto | Yes / Sí |
+Los números de documento se entregan por un canal privado al responsable del trámite y no se almacenan en este archivo.
 
-## Apprentices / Aprendices
+### Roles y responsabilidades funcionales
 
-| Full name / Nombre completo | Doc. type / Tipo | Doc. number / Número | Ficha | GitHub user / Usuario | Role in the project / Rol en el proyecto | Author / Autor |
-|---|---|---|---|---|---|---|
-| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | CC | 1070600183 | 3145555 | joseale879 | | Yes / Sí |
-| JOSE DAVID AMAYA MOSQUERA | CC | 1076907220 | 3145555 | joseamaya009 | | Yes / Sí |
-| EMERSON CALET MOLANO CARDOZO | CC | 1077228448 | 3145555 | EmersonMolano | | Yes / Sí |
+Estas descripciones resumen las áreas observadas en los historiales y completan el rol solicitado para la entrega. No sustituyen la confirmación de autoría legal ni una asignación contractual.
+
+| Integrante | Rol y responsabilidad basada en actividad Git |
+|---|---|
+| JOSE ALEJANDRO MONTEALEGRE RODRIGUEZ | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación. |
+| JOSE DAVID AMAYA MOSQUERA | Desarrollador integral de todos los componentes del proyecto: backend, frontend web/móvil, base de datos, firmware y documentación, al igual que los demás integrantes. |
+| EMERSON CALET MOLANO CARDOZO | Desarrollador integral de todos los componentes: backend, frontend web/móvil, base de datos, firmware y documentación. |
+
+## Instructores relacionados en el borrador del equipo
+
+Las áreas de esta tabla estaban consignadas en el roster anterior. No encontré esos nombres como autores de commits en los historiales locales revisados; eso no descarta asesorías, revisiones, aportes presenciales ni trabajo en otros repositorios. Según la declaración del equipo, el instructor aportó la idea general de los proyectos de la cohorte, incluido HidroSmart; ese aporte no se declara automáticamente como autoría. El instructor líder y cada instructor deben confirmar si hubo código, documentación, diagramas, diseño u otra expresión original aportada por ellos.
+
+| Nombre | Áreas consignadas previamente | Tipo de aporte | ¿Autor del software? |
+|---|---|---|---|
+| JESUS ARIEL GONZALEZ BONILLA | Desarrollo, diseño, evaluación de requisitos, inducción e investigación | Por confirmar: directo o indirecto | Por confirmar con el instructor y el equipo |
+| CARLOS FABIAN MARTINEZ MORA | Inducción | Por confirmar: directo o indirecto | Por confirmar con el instructor y el equipo |
+| CARLOS JULIO CADENA SARASTY | Desarrollo, diseño, establecimiento y evaluación de requisitos, herramientas informáticas e inducción | Por confirmar: directo o indirecto | Por confirmar con el instructor y el equipo |
+| JAVIER HUMBERTO PINTO DIAZ | Evaluación de requisitos y herramientas informáticas | Por confirmar: directo o indirecto | Por confirmar con el instructor y el equipo |
+| KAROL DANIELA CORREA TRUJILLO | Establecimiento y evaluación de requisitos e inducción | Por confirmar: directo o indirecto | Por confirmar con el instructor y el equipo |
+| JOSE DE JESUS MOTTA VARGAS | Desarrollo, establecimiento y evaluación de requisitos, herramientas informáticas y propuesta técnica | Por confirmar: directo o indirecto | Por confirmar con el instructor y el equipo |
+| FERNELLY CARVAJAL SILVA | Sin detalle en el roster anterior | Por confirmar | Por confirmar con el instructor y el equipo |
+| EDDIER YAIR LIBERATO CUENCA | Sin detalle en el roster anterior | Por confirmar | Por confirmar con el instructor y el equipo |
+| JHON WILLIAN CORREDOR ARAUJO | Diseño, establecimiento y evaluación de requisitos | Por confirmar: directo o indirecto | Por confirmar con el instructor y el equipo |
+| ANDRES MORENO COLLAZOS | Diseño, evaluación de requisitos e inducción | Por confirmar: directo o indirecto | Por confirmar con el instructor y el equipo |
+
+Los documentos de identidad de los instructores permanecen bajo custodia del instructor líder y no se publican aquí.
+
+## Historiales consultados
+
+Se consolidó la actividad Git local de PT_HS y de cada repositorio separado listado abajo. Las ramas indican los checkouts usados en la revisión histórica de autoría del 2026-11-04; no son la referencia remota actual ni significan que los repositorios estén sincronizados. La tabla de aprendices agrupa alias que corresponden a la misma persona para no duplicar integrantes. Para los SHA remotos actuales de `main` y el estado de los tags, consulta [código y tags](code-tag/README.md).
+
+| Repositorio | Rama local revisada |
+|---|---|
+| PT_HS | `hu-20-dev` |
+| BK_HS | `hu-15-dev` |
+| FT_HS | `hu-16-staging` |
+| BD_HS | `hu-23-dev` |
+| Firmaware_HS | `hu-03-dev` |
+| DOCS_HS | `main` |
+
+Esta tabla conserva la procedencia de la revisión de autoría. El snapshot remoto consultado el 2026-11-05 usa las ramas `main` de cada repositorio y está registrado con SHA completos en `code-tag/README.md`; no se recalculó la autoría legal a partir de ese snapshot.
+
+Las identidades Git con nombre de usuario y nombre personal se agruparon cuando el historial permite asociarlas: `joseamaya009` / `José David Amaya Mosquera`, y `EmersonMolano` / `Emerson Calet Molano Cardozo`. El equipo confirmó que esas identidades corresponden a las personas indicadas el 2026-11-08.
+
+## Confirmaciones pendientes antes de presentar el registro
+
+- [x] Los tres integrantes autorizaron la publicación de los datos incluidos en la README para esta entrega, según la confirmación recibida el 2026-11-07.
+- [x] Cada aprendiz confirma su nombre legal, usuario Git, áreas de trabajo y autoría de los aportes creativos, según la autorización del equipo recibida el 2026-11-08.
+- [ ] El instructor líder confirma qué instructores participaron, cómo fue su aporte y si alguno creó parte del software o de los materiales que se registrarán.
+- [ ] El equipo confirma si falta alguna persona que haya contribuido creativamente, aunque no aparezca en Git.
+- [ ] El responsable del trámite recibe por un canal privado los datos personales requeridos.
+- [ ] La lista final de autores coincide con las personas que se declararán en el formulario y con los soportes adjuntos.
+
+## Referencia para el trámite
+
+La DNDA indica que deben registrarse los autores que intervinieron en la creación, y define al productor como quien tuvo la iniciativa, coordinación y responsabilidad de la producción del software. El equipo debe completar esas declaraciones en el formulario oficial y respaldarlas con la documentación adjunta. Véase la [guía oficial de registro de software de la DNDA](https://www.derechodeautor.gov.co/es/registro-de-software).

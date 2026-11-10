@@ -4,8 +4,15 @@
 
 ## Required content / Contenido requerido
 
-- [ ] Software analysis document / Documento de análisis del software
-- [ ] Dynamic views: use cases, sequence, activity or state diagrams / Vistas dinámicas: casos de uso, secuencia, actividades o estados
+- [x] Software analysis document / Documento de análisis del software
+- [x] Dynamic views: use cases, sequence, activity or state diagrams / Vistas dinámicas: casos de uso, secuencia, actividades o estados
+
+## Delivered files / Archivos entregados
+
+- `software-analysis.docx` — editable source / fuente editable
+- `software-analysis.pdf` — PDF export / exportación PDF
+- `system-analysis.md` — complementary editable source / fuente editable complementaria
+- `system-analysis.pdf` — complementary PDF export / exportación PDF complementaria
 
 ## Format / Formato
 

@@ -4,9 +4,14 @@
 
 ## Required content / Contenido requerido
 
-- [ ] Requirements specification report / Informe de especificación de requisitos
-- [ ] Functional and non-functional requirements / Requisitos funcionales y no funcionales
-- [ ] User stories and prioritized backlog, if used / Historias de usuario y backlog priorizado, si se usaron
+- [x] Requirements specification report / Informe de especificación de requisitos
+- [x] Functional and non-functional requirements / Requisitos funcionales y no funcionales
+- [x] User stories and prioritized backlog, if used / Historias de usuario y backlog priorizado, si se usaron
+
+## Delivered files / Archivos entregados
+
+- `requirements-specification.docx` — editable source / fuente editable
+- `requirements-specification.pdf` — PDF export / exportación PDF
 
 ## Format / Formato
 

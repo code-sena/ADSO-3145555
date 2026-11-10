@@ -4,8 +4,17 @@
 
 ## Required content / Contenido requerido
 
-- [ ] Implementation procedure, with environments and steps / Procedimiento de implementación, con ambientes y pasos
-- [ ] Deployment evidence and production URL, if deployed / Evidencia de despliegue y URL de producción, si se desplegó
+- [x] Implementation procedure, with environments and steps / Procedimiento de implementación, con ambientes y pasos
+- [x] Deployment evidence and production URL, if deployed / Evidencia de despliegue y URL de producción, si se desplegó
+
+The public login URL responded with HTTP 200 without authentication on 2026-11-07. The public API health endpoint responded with HTTP 200 and `status: ok`, `database: hidro_smart`. This confirms HTTP availability and basic API health; the functional smoke test, authentication, data persistence and integrations still require execution in the production environment.
+
+La URL pública de inicio de sesión respondió HTTP 200 sin autenticación el 2026-11-07. El endpoint público de salud de la API respondió HTTP 200 con estado `ok` y base `hidro_smart`. Esto confirma disponibilidad HTTP y salud básica de la API; el smoke test funcional, la autenticación, la persistencia de datos y las integraciones todavía requieren ejecución en producción.
+
+## Delivered files / Archivos entregados
+
+- `implementation-procedure.docx` — editable source / fuente editable
+- `implementation-procedure.pdf` — PDF export / exportación PDF
 
 ## Format / Formato
 
